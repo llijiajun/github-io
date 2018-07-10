@@ -1,0 +1,11 @@
+---
+title:Hello, My Blog
+---
+
+{{page.title}}
+
+{% for post in site.ports %}
+
+{{ post.date_to_string}} <a href='{{site.baseurl}} {{post.url}}'>{{post.title}}</a>
+
+{% endfor %}
