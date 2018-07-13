@@ -1,1 +1,3 @@
 baseurl: /github-io
+
+theme: jekyll-theme-midnight
