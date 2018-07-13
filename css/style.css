@@ -459,6 +459,16 @@ section.our-contacts {
 	-moz-background-size: 100% 100%;
 	-o-background-size: 100% 100%;
 }
+section.our-contacts2 {
+	padding:100px 0;
+	background:url(../images/contact2.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:100% 100%;
+	-webkit-background-size:100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+}
 section.our-contacts h3 {
 	color: #fff;
 }
