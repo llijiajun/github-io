@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/github-io/lorem-ipsum</loc>
+<lastmod>2015-09-06T00:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/github-io/download-this-theme</loc>
+<lastmod>2015-09-09T00:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/github-io/very-long-title-post</loc>
+<lastmod>2016-10-18T00:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/github-io/C-01_article</loc>
+<lastmod>2018-07-10T00:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/github-io/404</loc>
+</url>
+<url>
+<loc>http://localhost:4000/github-io/C</loc>
+</url>
+<url>
+<loc>http://localhost:4000/github-io/about</loc>
+</url>
+<url>
+<loc>http://localhost:4000/github-io/</loc>
+</url>
+</urlset>

@@ -1,0 +1,4 @@
+sitemap: http://localhost:4000/github-io/sitemap.xml
+
+user-agent: EmailCollector
+disallow: /

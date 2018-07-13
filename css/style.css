@@ -851,7 +851,7 @@ section.footer .footer-right ul.social-icons2 li a i.fa.fa-google-plus:hover {
 /*-- /Back To Top --*/
 
 /*-- responsive design --*/
-@media(max-width: 1600px){
+@media(max-width: 2000px){
 	.carousel, .carousel .item {
     height: 795px;
 }
