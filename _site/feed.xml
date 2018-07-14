@@ -1,14 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>The Plain</title>
-    <description>A minimalist Jekyll theme</description>
-    <link>http://localhost:4000/github-io</link>
-    
-      
-        <item>
-          <title>C 01_article</title>
-          <description>&lt;h2 id=&quot;第一篇博客&quot;&gt;第一篇博客&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/github-io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/github-io/" rel="alternate" type="text/html" /><updated>2018-07-14T20:18:29+08:00</updated><id>http://localhost:4000/github-io/</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Hades Jun</title><link href="http://localhost:4000/github-io/2018-07-10/C-01_article" rel="alternate" type="text/html" title="Hades Jun" /><published>2018-07-10T00:00:00+08:00</published><updated>2018-07-10T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-10/C-01_article</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-10/C-01_article">&lt;h2 id=&quot;第一篇博客&quot;&gt;第一篇博客&lt;/h2&gt;
 
 &lt;h2 id=&quot;关于-hello-world&quot;&gt;关于 Hello World&lt;/h2&gt;
 &lt;h2 id=&quot;c语言&quot;&gt;C语言&lt;/h2&gt;
@@ -18,18 +8,7 @@ int main(){
   printf(&quot;HelloWorld&quot;);
   return 0;
 }
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-          <pubDate>2018-07-10T00:00:00+08:00</pubDate>
-          <link>http://localhost:4000/github-io/C-01_article</link>
-          <guid isPermaLink="true">http://localhost:4000/github-io/C-01_article</guid>
-        </item>
-      
-    
-      
-        <item>
-          <title>For Example of very Long Title Would Be Typography Elements in One</title>
-          <description>&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This markdown cheatsheet is a typography demo for this theme. Check out this post to learn more about this markdown usage when you want to get started with this theme. Enjoy!&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><summary type="html">第一篇博客</summary></entry><entry><title type="html">For Example of very Long Title Would Be Typography Elements in One</title><link href="http://localhost:4000/github-io/2016-10-18/very-long-title-post" rel="alternate" type="text/html" title="For Example of very Long Title Would Be Typography Elements in One" /><published>2016-10-18T00:00:00+08:00</published><updated>2016-10-18T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2016-10-18/very-long-title-post</id><content type="html" xml:base="http://localhost:4000/github-io/2016-10-18/very-long-title-post">&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This markdown cheatsheet is a typography demo for this theme. Check out this post to learn more about this markdown usage when you want to get started with this theme. Enjoy!&lt;/p&gt;
 
 &lt;h2 id=&quot;typography-elements-in-one&quot;&gt;Typography Elements in One&lt;/h2&gt;
 
@@ -210,31 +189,9 @@ But let's throw in a &amp;lt;b&amp;gt;tag&amp;lt;/b&amp;gt;.
       &lt;p&gt;A footnote you can link to - &lt;a href=&quot;#&quot;&gt;click here!&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-          <pubDate>2016-10-18T00:00:00+08:00</pubDate>
-          <link>http://localhost:4000/github-io/very-long-title-post</link>
-          <guid isPermaLink="true">http://localhost:4000/github-io/very-long-title-post</guid>
-        </item>
-      
-    
-      
-        <item>
-          <title>Download this Theme</title>
-          <description>&lt;p&gt;The Plain is a minimalist Jekyll theme, designed to focus on writing that really matters to you and your audience. Everything else is just a distraction. Nothing more other than useful and understandable information sharing. I have made a final update to this theme. This theme is suit best for personal blog type, but not limited to.&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">NOTE: This markdown cheatsheet is a typography demo for this theme. Check out this post to learn more about this markdown usage when you want to get started with this theme. Enjoy!</summary></entry><entry><title type="html">Download this Theme</title><link href="http://localhost:4000/github-io/2015-09-09/download-this-theme" rel="alternate" type="text/html" title="Download this Theme" /><published>2015-09-09T00:00:00+08:00</published><updated>2015-09-09T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2015-09-09/download-this-theme</id><content type="html" xml:base="http://localhost:4000/github-io/2015-09-09/download-this-theme">&lt;p&gt;The Plain is a minimalist Jekyll theme, designed to focus on writing that really matters to you and your audience. Everything else is just a distraction. Nothing more other than useful and understandable information sharing. I have made a final update to this theme. This theme is suit best for personal blog type, but not limited to.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fork&lt;/em&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;em&gt;download&lt;/em&gt;&lt;/strong&gt; the theme &lt;a href=&quot;https://github.com/heiswayi/the-plain&quot;&gt;here on GitHub&lt;/a&gt;.&lt;/p&gt;
-</description>
-          <pubDate>2015-09-09T00:00:00+08:00</pubDate>
-          <link>http://localhost:4000/github-io/download-this-theme</link>
-          <guid isPermaLink="true">http://localhost:4000/github-io/download-this-theme</guid>
-        </item>
-      
-    
-      
-        <item>
-          <title>Lorem Ipsum</title>
-          <description>&lt;h3 id=&quot;the-standard-lorem-ipsum-passage-used-since-the-1500s&quot;&gt;The standard Lorem Ipsum passage, used since the 1500s&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fork&lt;/em&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;em&gt;download&lt;/em&gt;&lt;/strong&gt; the theme &lt;a href=&quot;https://github.com/heiswayi/the-plain&quot;&gt;here on GitHub&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">The Plain is a minimalist Jekyll theme, designed to focus on writing that really matters to you and your audience. Everything else is just a distraction. Nothing more other than useful and understandable information sharing. I have made a final update to this theme. This theme is suit best for personal blog type, but not limited to.</summary></entry><entry><title type="html">Lorem Ipsum</title><link href="http://localhost:4000/github-io/2015-09-06/lorem-ipsum" rel="alternate" type="text/html" title="Lorem Ipsum" /><published>2015-09-06T00:00:00+08:00</published><updated>2015-09-06T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2015-09-06/lorem-ipsum</id><content type="html" xml:base="http://localhost:4000/github-io/2015-09-06/lorem-ipsum">&lt;h3 id=&quot;the-standard-lorem-ipsum-passage-used-since-the-1500s&quot;&gt;The standard Lorem Ipsum passage, used since the 1500s&lt;/h3&gt;
 
 &lt;p&gt;“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”&lt;/p&gt;
 
@@ -252,13 +209,4 @@ But let's throw in a &amp;lt;b&amp;gt;tag&amp;lt;/b&amp;gt;.
 
 &lt;h3 id=&quot;1914-translation-by-h-rackham-1&quot;&gt;1914 translation by H. Rackham&lt;/h3&gt;
 
-&lt;p&gt;“On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.”&lt;/p&gt;
-</description>
-          <pubDate>2015-09-06T00:00:00+08:00</pubDate>
-          <link>http://localhost:4000/github-io/lorem-ipsum</link>
-          <guid isPermaLink="true">http://localhost:4000/github-io/lorem-ipsum</guid>
-        </item>
-      
-    
-  </channel>
-</rss>
+&lt;p&gt;“On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.”&lt;/p&gt;</content><author><name></name></author><summary type="html">The standard Lorem Ipsum passage, used since the 1500s</summary></entry></feed>
