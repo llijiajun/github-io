@@ -1,5 +1,5 @@
 ---
-layout: chome
+layout: rhome
 title: C
 ---
 
