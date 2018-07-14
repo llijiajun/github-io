@@ -32,5 +32,11 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 gem "tale"
+<<<<<<< HEAD
 #gem "jekyll-remote-theme"
 #gem "jekyll-paginate"
+=======
+
+#gem "jekyll-remote-theme"
+#gem "jekyll-paginate"
+>>>>>>> 3ac199821e9787295233c1054c58f3a7dd8ccb26
