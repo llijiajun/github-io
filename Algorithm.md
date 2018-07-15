@@ -1,0 +1,5 @@
+---
+layout: algorithmhome
+title: C
+---
+

@@ -1,15 +1,12 @@
 ---
 layout: post
 title: "About"
-author: "Chester"
+author: "Hades Jun"
 permalink: /about/
 ---
 
-A friend of mine writes short stories. One sunny day, I asked if he wanted a website to showcase his works and he agreed. I decided to use GitHub Pages to host his site. That way he wouldn't have to buy a domain and a server.
+无聊之余，用github建立了一个简单的网站，使用了[chesterhow的Tale](https://github.com/chesterhow/tale)模板，或许以后有空会自己研究写一个模板看看，主要记录这么多年来的一些想法，并追回一下当年写文章的习惯。
 
-While doing some research up on GitHub Pages, I accidentally chanced upon this _simple, blog-aware, static site generator_ called [Jekyll](https://jekyllrb.com/) which works really well with GitHub Pages. I figured it would do just fine for my friend and I set about searching for a pretty theme. I wanted a theme with a _book-ish_ vibe. Unfortunately, most of the themes were too modern. Eventually, I caved and begun working on my own theme. With the help of [Poole](https://github.com/poole/poole), the Jekyll Butler, I was able to build **Tale**.
+不断尝试，希望也能将这个网站搭建得完整而有意义。
 
-## Contribute
-Feel free to create an issue or make a pull request on [GitHub](https://github.com/chesterhow/tale).
-
-Thanks for reading!
+谢谢阅读!

@@ -1,33 +1,216 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/github-io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/github-io/" rel="alternate" type="text/html" /><updated>2018-07-15T11:37:53+08:00</updated><id>http://localhost:4000/github-io/</id><title type="html">Hades Jun</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Hades Jun</title><link href="http://localhost:4000/github-io/matlab/2018-07-10/C-01_article" rel="alternate" type="text/html" title="Hades Jun" /><published>2018-07-10T00:00:00+08:00</published><updated>2018-07-10T00:00:00+08:00</updated><id>http://localhost:4000/github-io/matlab/2018-07-10/C-01_article</id><content type="html" xml:base="http://localhost:4000/github-io/matlab/2018-07-10/C-01_article">&lt;h2 id=&quot;第一篇博客&quot;&gt;第一篇博客&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/github-io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/github-io/" rel="alternate" type="text/html" /><updated>2018-07-15T14:34:11+08:00</updated><id>http://localhost:4000/github-io/</id><title type="html">Hades Jun</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Python base skill</title><link href="http://localhost:4000/github-io/2018-07-15/Python-01_base" rel="alternate" type="text/html" title="Python base skill" /><published>2018-07-15T00:00:00+08:00</published><updated>2018-07-15T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-15/Python-01_base</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-15/Python-01_base">&lt;h2 id=&quot;标准数据类型&quot;&gt;标准数据类型&lt;/h2&gt;
+&lt;p&gt;与其他语言十分不一样的是python 封装的几种数据类型&lt;/p&gt;
+
+&lt;h2 id=&quot;六种数据类型&quot;&gt;六种数据类型&lt;/h2&gt;
+
+&lt;h3 id=&quot;number&quot;&gt;Number&lt;/h3&gt;
+&lt;p&gt;不用理会浮点型、整数型、为计算带来很多方便，当然不足之处还是运算比较慢，容易不精准计算&lt;/p&gt;
+
+&lt;h3 id=&quot;string-字符串&quot;&gt;String 字符串&lt;/h3&gt;
+&lt;p&gt;从String库提供的字符串处理函数来说，python String相对于其他语言十分的方便和友好&lt;/p&gt;
+
+&lt;h3 id=&quot;list-列表&quot;&gt;List 列表&lt;/h3&gt;
+&lt;p&gt;主要用[]修饰，比其他语言方便的一点是什么东西都能放，实在是特别好用&lt;/p&gt;
+
+&lt;h3 id=&quot;tuple-元组&quot;&gt;Tuple 元组&lt;/h3&gt;
+&lt;p&gt;主要用()修饰，和列表不同之处在于，不可修改&lt;/p&gt;
+
+&lt;h3 id=&quot;set-集合&quot;&gt;Set 集合&lt;/h3&gt;
+&lt;p&gt;和列表很像，区别是没有重复的项&lt;/p&gt;
+
+&lt;h3 id=&quot;dictionary-字典&quot;&gt;Dictionary 字典&lt;/h3&gt;
+&lt;p&gt;是我认为除了列表以外最好用的一种容器类型&lt;/p&gt;
+
+&lt;p&gt;从Python语言的发明来看，这几种数据类型竟然真的几乎可以覆盖数据工作的方方面面，也就难怪python如此受人欢迎。&lt;/p&gt;
+
+&lt;p&gt;而python最为让新手难受，让老手方便的一点，自然是那严格的缩进规则&lt;/p&gt;
+
+&lt;h2 id=&quot;简单python程序&quot;&gt;简单python程序&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;#python2
+print &quot;HelloWorld&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;#python3
+print(&quot;HelloWorld&quot;)
+&lt;/code&gt;&lt;/pre&gt;</content><author><name>冥郡</name></author><summary type="html">标准数据类型 与其他语言十分不一样的是python 封装的几种数据类型</summary></entry><entry><title type="html">Java HelloWorld</title><link href="http://localhost:4000/github-io/2018-07-15/Java-01_HelloWorld" rel="alternate" type="text/html" title="Java HelloWorld" /><published>2018-07-15T00:00:00+08:00</published><updated>2018-07-15T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-15/Java-01_HelloWorld</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-15/Java-01_HelloWorld">&lt;h2 id=&quot;java-helloworld&quot;&gt;Java HelloWorld&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{java}&quot;&gt;//Helloworld.java
+public class HelloWorld{
+	public static void main(String args[]){
+		System.out.println(&quot;HelloWorld&quot;);
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;</content><author><name>冥郡</name></author><summary type="html">Java HelloWorld</summary></entry><entry><title type="html">C and C++ HelloWorld</title><link href="http://localhost:4000/github-io/2018-07-10/C-01_HelloWorld" rel="alternate" type="text/html" title="C and C++ HelloWorld" /><published>2018-07-10T00:00:00+08:00</published><updated>2018-07-10T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-10/C-01_HelloWorld</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-10/C-01_HelloWorld">&lt;h2 id=&quot;第一篇博客&quot;&gt;第一篇博客&lt;/h2&gt;
 
 &lt;h2 id=&quot;关于-hello-world&quot;&gt;关于 Hello World&lt;/h2&gt;
-&lt;h2 id=&quot;c语言&quot;&gt;C语言&lt;/h2&gt;
+&lt;h2 id=&quot;c&quot;&gt;C&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-{c}&quot;&gt;#include&amp;lt;stdio.h&amp;gt;
 int main(){
   printf(&quot;HelloWorld&quot;);
   return 0;
 }
-&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><summary type="html">第一篇博客</summary></entry><entry><title type="html">Introducing Tale</title><link href="http://localhost:4000/github-io/matlab/2017-03-29/introducing-tale" rel="alternate" type="text/html" title="Introducing Tale" /><published>2017-03-29T00:00:00+08:00</published><updated>2017-03-29T00:00:00+08:00</updated><id>http://localhost:4000/github-io/matlab/2017-03-29/introducing-tale</id><content type="html" xml:base="http://localhost:4000/github-io/matlab/2017-03-29/introducing-tale">&lt;p&gt;Tale is a minimal &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; theme curated for storytellers. It is designed and developed by &lt;a href=&quot;https://github.com/chesterhow/&quot;&gt;myself&lt;/a&gt; for a friend who writes short stories.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&quot;tale-features&quot;&gt;Tale features&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Compatible with GitHub Pages&lt;/li&gt;
-  &lt;li&gt;Responsive design (looks just as good on mobile)&lt;/li&gt;
-  &lt;li&gt;Syntax highlighting, with the help of Pygments&lt;/li&gt;
-  &lt;li&gt;Markdown and HTML text formatting&lt;/li&gt;
-  &lt;li&gt;Pagination of posts&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&quot;c-1&quot;&gt;C++&lt;/h2&gt;
 
-&lt;p&gt;Head over to the &lt;a href=&quot;/github-io/2017-03-16/example-content&quot;&gt;Example Content&lt;/a&gt; post for a showcase of Tale’s text formatting features.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-{c++}&quot;&gt;#include&amp;lt;iostream&amp;gt;
+using namespace std;
+int main(){
+	cout&amp;lt;&amp;lt;&quot;HelloWorld&quot;&amp;lt;&amp;lt;endl;
+}
+&lt;/code&gt;&lt;/pre&gt;</content><author><name>冥郡</name></author><summary type="html">第一篇博客</summary></entry><entry><title type="html">情绪</title><link href="http://localhost:4000/github-io/2018-05-15/Poem-01" rel="alternate" type="text/html" title="情绪" /><published>2018-05-15T00:00:00+08:00</published><updated>2018-05-15T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-05-15/Poem-01</id><content type="html" xml:base="http://localhost:4000/github-io/2018-05-15/Poem-01">&lt;p&gt;曾经我将纷纷扰扰&lt;/p&gt;
 
-&lt;h2 id=&quot;browser-support&quot;&gt;Browser Support&lt;/h2&gt;
-&lt;p&gt;Tale works on most if not all modern browsers, including Chrome, Safari and Firefox 👍🏼&lt;/p&gt;
+&lt;p&gt;封入文字&lt;/p&gt;
 
-&lt;h2 id=&quot;download-or-contribute&quot;&gt;Download or Contribute&lt;/h2&gt;
-&lt;p&gt;Tale is publicly hosted on GitHub, so go ahead and download or fork it at the &lt;a href=&quot;https://github.com/chesterhow/tale&quot;&gt;GitHub repository&lt;/a&gt;. If you spot any bugs or have any suggestions, feel free to create an issue or make a pull request.&lt;/p&gt;
+&lt;p&gt;敲打琢磨&lt;/p&gt;
 
-&lt;p&gt;Thanks for checking out Tale!&lt;/p&gt;</content><author><name>Chester</name></author><summary type="html">Tale is a minimal Jekyll theme curated for storytellers. It is designed and developed by myself for a friend who writes short stories.</summary></entry><entry><title type="html">Example Content</title><link href="http://localhost:4000/github-io/python/2017-03-16/example-content" rel="alternate" type="text/html" title="Example Content" /><published>2017-03-16T00:00:00+08:00</published><updated>2017-03-16T00:00:00+08:00</updated><id>http://localhost:4000/github-io/python/2017-03-16/example-content</id><content type="html" xml:base="http://localhost:4000/github-io/python/2017-03-16/example-content">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis. Nullam interdum ultricies nibh quis sollicitudin. Donec ornare fermentum facilisis. Ut at sem ac sem imperdiet varius a eget tortor. Nam eu augue eget orci semper maximus in eget augue. Mauris ornare, nisl ut suscipit consectetur, mi quam interdum tellus, at rutrum quam eros ultrices mi.&lt;/p&gt;
+&lt;p&gt;编写着变幻脚本&lt;/p&gt;
+
+&lt;p&gt;恍惚时情似水逝&lt;/p&gt;
+
+&lt;p&gt;奏键盘钢冰铁冷&lt;/p&gt;
+
+&lt;p&gt;忘江湖推杯换盏&lt;/p&gt;
+
+&lt;div class=&quot;post-line&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;战知必败而争之&lt;/p&gt;
+
+&lt;p&gt;生知必死仍乐之&lt;/p&gt;
+
+&lt;p&gt;随知必离而相恋&lt;/p&gt;
+
+&lt;p&gt;刹那欢喜&lt;/p&gt;
+
+&lt;p&gt;宇宙不知谁慎为&lt;/p&gt;
+
+&lt;div class=&quot;post-line&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;气上心头&lt;/p&gt;
+
+&lt;p&gt;左突右撞&lt;/p&gt;
+
+&lt;p&gt;从足到首&lt;/p&gt;
+
+&lt;p&gt;也不过是化作冷静&lt;/p&gt;
+
+&lt;p&gt;闷足了乌云雾霾&lt;/p&gt;
+
+&lt;p&gt;不过也就倾盆淋透&lt;/p&gt;
+
+&lt;p&gt;从首到足&lt;/p&gt;
+
+&lt;p&gt;分不得&lt;/p&gt;
+
+&lt;p&gt;汗与雨&lt;/p&gt;
+
+&lt;p&gt;泪或伤&lt;/p&gt;
+
+&lt;div class=&quot;post-line&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;担惊受怕几十年&lt;/p&gt;
+
+&lt;p&gt;逃不脱&lt;/p&gt;
+
+&lt;p&gt;所有的担心&lt;/p&gt;
+
+&lt;p&gt;不过变作你所担心那样&lt;/p&gt;
+
+&lt;p&gt;该到的雨会迟&lt;/p&gt;
+
+&lt;p&gt;该爱的人会走&lt;/p&gt;
+
+&lt;p&gt;该讨厌的事&lt;/p&gt;
+
+&lt;p&gt;一个不落&lt;/p&gt;
+
+&lt;div class=&quot;post-line&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;走得愈远&lt;/p&gt;
+
+&lt;p&gt;越是孤单&lt;/p&gt;
+
+&lt;p&gt;总是错的时间相遇&lt;/p&gt;
+
+&lt;p&gt;空余怀念&lt;/p&gt;
+
+&lt;p&gt;贪婪地奢求更多&lt;/p&gt;
+
+&lt;p&gt;只剩下脑海地回忆&lt;/p&gt;
+
+&lt;p&gt;将过往带入坟墓&lt;/p&gt;
+
+&lt;p&gt;舍弃了悲伤&lt;/p&gt;
+
+&lt;p&gt;舍弃了思念&lt;/p&gt;
+
+&lt;p&gt;也舍弃了&lt;/p&gt;
+
+&lt;p&gt;对往惜&lt;/p&gt;
+
+&lt;p&gt;最遗憾&lt;/p&gt;
+
+&lt;p&gt;的挂念&lt;/p&gt;
+
+&lt;div class=&quot;post-line&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;从无尽深邃里逃离&lt;/p&gt;
+
+&lt;p&gt;触碰黑底白字&lt;/p&gt;
+
+&lt;p&gt;刀锋剑痕&lt;/p&gt;
+
+&lt;p&gt;墨笔余香&lt;/p&gt;
+
+&lt;p&gt;高低碑林成书法之墓&lt;/p&gt;
+
+&lt;p&gt;哀千年依旧鸟语花香&lt;/p&gt;
+
+&lt;p&gt;他日&lt;/p&gt;
+
+&lt;p&gt;当编辑光标亦化作乌有&lt;/p&gt;
+
+&lt;p&gt;是否有人怀念夜深&lt;/p&gt;
+
+&lt;p&gt;桌前&lt;/p&gt;
+
+&lt;p&gt;仿佛看到的漫天辰星&lt;/p&gt;
+
+&lt;p&gt;不过是一人倒影&lt;/p&gt;
+
+&lt;p&gt;与自己共饮&lt;/p&gt;
+
+&lt;div class=&quot;post-line&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;一人无情&lt;/p&gt;
+
+&lt;p&gt;情已往何处？&lt;/p&gt;
+
+&lt;p&gt;未曾失败&lt;/p&gt;
+
+&lt;p&gt;确是真的失败&lt;/p&gt;
+
+&lt;p&gt;过去你所不在乎的一切&lt;/p&gt;
+
+&lt;p&gt;过去所有在乎你的人&lt;/p&gt;
+
+&lt;p&gt;剩下所有缅怀&lt;/p&gt;
+
+&lt;p&gt;不过向那个有情的自己&lt;/p&gt;
+
+&lt;p&gt;一句再见&lt;/p&gt;
+
+&lt;p&gt;两两相忘&lt;/p&gt;
+
+&lt;p&gt;逃脱不了的宿命&lt;/p&gt;
+
+&lt;p&gt;予自己最深的忏悔&lt;/p&gt;</content><author><name>藏锋冥郡</name></author><summary type="html">曾经我将纷纷扰扰</summary></entry><entry><title type="html">The Case of the Missing Post</title><link href="http://localhost:4000/github-io/2018-01-15/the-case-of-the-missing-post-%E5%89%AF%E6%9C%AC" rel="alternate" type="text/html" title="The Case of the Missing Post" /><published>2018-01-15T00:00:00+08:00</published><updated>2018-01-15T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-01-15/the-case-of-the-missing-post%20-%20%E5%89%AF%E6%9C%AC</id><content type="html" xml:base="http://localhost:4000/github-io/2018-01-15/the-case-of-the-missing-post-%E5%89%AF%E6%9C%AC">&lt;p&gt;Kitty power! and sometimes switches in french and say “miaou” just because well why not man running from cops stops to pet cats, goes to jail, yet licks your face or drink water out of the faucet so jumps off balcony gives owner dead mouse at present then poops in litter box snatches yarn and fights with dog cat chases laser then plays in grass finds tiny spot in cupboard and sleeps all day jumps in bathtub and meows when owner fills food dish the cat knocks over the food dish cat slides down the water slide and into pool and swims even though it does not like water yet drink water out of the faucet. Pelt around the house and up and down stairs chasing phantoms.&lt;/p&gt;
+
+&lt;p&gt;Sit in window and stare ooo, a bird! yum. Sit and stare. Sweet beast loves cheeseburgers. Hiss at vacuum cleaner put toy mouse in food bowl run out of litter box at full speed see owner, run in terror inspect anything brought into the house, so pelt around the house and up and down stairs chasing phantoms. Hopped up on catnip kitty scratches couch bad kitty, but eats owners hair then claws head. Lie on your belly and purr when you are asleep kitty power! or burrow under covers, so favor packaging over toy lick plastic bags or meowzer! yet unwrap toilet paper.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.catipsum.com/&quot;&gt;Cat Ipsum&lt;/a&gt;&lt;/p&gt;</content><author><name>Chester</name></author><summary type="html">Kitty power! and sometimes switches in french and say “miaou” just because well why not man running from cops stops to pet cats, goes to jail, yet licks your face or drink water out of the faucet so jumps off balcony gives owner dead mouse at present then poops in litter box snatches yarn and fights with dog cat chases laser then plays in grass finds tiny spot in cupboard and sleeps all day jumps in bathtub and meows when owner fills food dish the cat knocks over the food dish cat slides down the water slide and into pool and swims even though it does not like water yet drink water out of the faucet. Pelt around the house and up and down stairs chasing phantoms.</summary></entry><entry><title type="html">Example Content</title><link href="http://localhost:4000/github-io/2017-03-16/example-content" rel="alternate" type="text/html" title="Example Content" /><published>2017-03-16T00:00:00+08:00</published><updated>2017-03-16T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2017-03-16/example-content</id><content type="html" xml:base="http://localhost:4000/github-io/2017-03-16/example-content">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis. Nullam interdum ultricies nibh quis sollicitudin. Donec ornare fermentum facilisis. Ut at sem ac sem imperdiet varius a eget tortor. Nam eu augue eget orci semper maximus in eget augue. Mauris ornare, nisl ut suscipit consectetur, mi quam interdum tellus, at rutrum quam eros ultrices mi.&lt;/p&gt;
 
 &lt;h1 id=&quot;headers&quot;&gt;Headers&lt;/h1&gt;
 
@@ -153,29 +336,13 @@ and &lt;span class=&quot;sb&quot;&gt;`&amp;lt;br&amp;gt;`&lt;/span&gt; for line 
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;The end&lt;/em&gt;&lt;/p&gt;</content><author><name>Chester</name></author><summary type="html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis. Nullam interdum ultricies nibh quis sollicitudin. Donec ornare fermentum facilisis. Ut at sem ac sem imperdiet varius a eget tortor. Nam eu augue eget orci semper maximus in eget augue. Mauris ornare, nisl ut suscipit consectetur, mi quam interdum tellus, at rutrum quam eros ultrices mi.</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/github-io/python/2017-03-10/welcome-to-jekyll" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-03-10T00:00:00+08:00</published><updated>2017-03-10T00:00:00+08:00</updated><id>http://localhost:4000/github-io/python/2017-03-10/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/github-io/python/2017-03-10/welcome-to-jekyll">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets: like these&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Jekyll</name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">The Case of the Missing Post</title><link href="http://localhost:4000/github-io/r/2017-03-07/the-case-of-the-missing-post" rel="alternate" type="text/html" title="The Case of the Missing Post" /><published>2017-03-07T00:00:00+08:00</published><updated>2017-03-07T00:00:00+08:00</updated><id>http://localhost:4000/github-io/r/2017-03-07/the-case-of-the-missing-post</id><content type="html" xml:base="http://localhost:4000/github-io/r/2017-03-07/the-case-of-the-missing-post">&lt;p&gt;Kitty power! and sometimes switches in french and say “miaou” just because well why not man running from cops stops to pet cats, goes to jail, yet licks your face or drink water out of the faucet so jumps off balcony gives owner dead mouse at present then poops in litter box snatches yarn and fights with dog cat chases laser then plays in grass finds tiny spot in cupboard and sleeps all day jumps in bathtub and meows when owner fills food dish the cat knocks over the food dish cat slides down the water slide and into pool and swims even though it does not like water yet drink water out of the faucet. Pelt around the house and up and down stairs chasing phantoms.&lt;/p&gt;
-
-&lt;p&gt;Sit in window and stare ooo, a bird! yum. Sit and stare. Sweet beast loves cheeseburgers. Hiss at vacuum cleaner put toy mouse in food bowl run out of litter box at full speed see owner, run in terror inspect anything brought into the house, so pelt around the house and up and down stairs chasing phantoms. Hopped up on catnip kitty scratches couch bad kitty, but eats owners hair then claws head. Lie on your belly and purr when you are asleep kitty power! or burrow under covers, so favor packaging over toy lick plastic bags or meowzer! yet unwrap toilet paper.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.catipsum.com/&quot;&gt;Cat Ipsum&lt;/a&gt;&lt;/p&gt;</content><author><name>Chester</name></author><summary type="html">Kitty power! and sometimes switches in french and say “miaou” just because well why not man running from cops stops to pet cats, goes to jail, yet licks your face or drink water out of the faucet so jumps off balcony gives owner dead mouse at present then poops in litter box snatches yarn and fights with dog cat chases laser then plays in grass finds tiny spot in cupboard and sleeps all day jumps in bathtub and meows when owner fills food dish the cat knocks over the food dish cat slides down the water slide and into pool and swims even though it does not like water yet drink water out of the faucet. Pelt around the house and up and down stairs chasing phantoms.</summary></entry><entry><title type="html">The Mystery of the Filler Post</title><link href="http://localhost:4000/github-io/r/2017-03-06/the-mystery-of-the-filler-post" rel="alternate" type="text/html" title="The Mystery of the Filler Post" /><published>2017-03-06T00:00:00+08:00</published><updated>2017-03-06T00:00:00+08:00</updated><id>http://localhost:4000/github-io/r/2017-03-06/the-mystery-of-the-filler-post</id><content type="html" xml:base="http://localhost:4000/github-io/r/2017-03-06/the-mystery-of-the-filler-post">&lt;p&gt;Hornswaggle measured fer yer chains chase run a shot across the bow Chain Shot flogging Pirate Round galleon rope’s end aft. Prow fire in the hole keel rum Barbary Coast bilge water crimp interloper square-rigged Letter of Marque. Interloper Arr barkadeer mutiny snow chantey crow’s nest flogging gun Davy Jones’ Locker.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The end&lt;/em&gt;&lt;/p&gt;</content><author><name>Chester</name></author><summary type="html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis. Nullam interdum ultricies nibh quis sollicitudin. Donec ornare fermentum facilisis. Ut at sem ac sem imperdiet varius a eget tortor. Nam eu augue eget orci semper maximus in eget augue. Mauris ornare, nisl ut suscipit consectetur, mi quam interdum tellus, at rutrum quam eros ultrices mi.</summary></entry><entry><title type="html">The Mystery of the Filler Post</title><link href="http://localhost:4000/github-io/2017-03-06/the-mystery-of-the-filler-post" rel="alternate" type="text/html" title="The Mystery of the Filler Post" /><published>2017-03-06T00:00:00+08:00</published><updated>2017-03-06T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2017-03-06/the-mystery-of-the-filler-post</id><content type="html" xml:base="http://localhost:4000/github-io/2017-03-06/the-mystery-of-the-filler-post">&lt;p&gt;Hornswaggle measured fer yer chains chase run a shot across the bow Chain Shot flogging Pirate Round galleon rope’s end aft. Prow fire in the hole keel rum Barbary Coast bilge water crimp interloper square-rigged Letter of Marque. Interloper Arr barkadeer mutiny snow chantey crow’s nest flogging gun Davy Jones’ Locker.&lt;/p&gt;
 
 &lt;p&gt;Bilge jolly boat barque topsail interloper chandler spanker scuttle Arr sloop. Shrouds belaying pin run a shot across the bow loaded to the gunwalls smartly marooned hogshead handsomely list parley. Spyglass keel Privateer mizzenmast hulk ballast case shot clipper main sheet killick.&lt;/p&gt;
 
 &lt;p&gt;Careen hempen halter Letter of Marque pillage swing the lead take a caulk Sail ho jury mast walk the plank ho. Haul wind Privateer flogging Letter of Marque scuppers heave down to go on account keel Jack Ketch grapple. Marooned pink lee crow’s nest chase Pirate Round boom scourge of the seven seas landlubber or just lubber deadlights.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://pirateipsum.me/&quot;&gt;Pirate Ipsum&lt;/a&gt;&lt;/p&gt;</content><author><name>Chester</name></author><summary type="html">Hornswaggle measured fer yer chains chase run a shot across the bow Chain Shot flogging Pirate Round galleon rope’s end aft. Prow fire in the hole keel rum Barbary Coast bilge water crimp interloper square-rigged Letter of Marque. Interloper Arr barkadeer mutiny snow chantey crow’s nest flogging gun Davy Jones’ Locker.</summary></entry><entry><title type="html">Pagination Post</title><link href="http://localhost:4000/github-io/r/2017-03-05/pagination-post" rel="alternate" type="text/html" title="Pagination Post" /><published>2017-03-05T00:00:00+08:00</published><updated>2017-03-05T00:00:00+08:00</updated><id>http://localhost:4000/github-io/r/2017-03-05/pagination-post</id><content type="html" xml:base="http://localhost:4000/github-io/r/2017-03-05/pagination-post">&lt;p&gt;Here we see &lt;strong&gt;Tale’s&lt;/strong&gt; pagination feature in action. It is set to 5 posts per page by default. Feel free to change this number in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file!&lt;/p&gt;</content><author><name>Chester</name></author><summary type="html">Here we see Tale’s pagination feature in action. It is set to 5 posts per page by default. Feel free to change this number in the _config.yml file!</summary></entry><entry><title type="html">For Example of very Long Title Would Be Typography Elements in One</title><link href="http://localhost:4000/github-io/c/2016-10-18/very-long-title-post" rel="alternate" type="text/html" title="For Example of very Long Title Would Be Typography Elements in One" /><published>2016-10-18T00:00:00+08:00</published><updated>2016-10-18T00:00:00+08:00</updated><id>http://localhost:4000/github-io/c/2016-10-18/very-long-title-post</id><content type="html" xml:base="http://localhost:4000/github-io/c/2016-10-18/very-long-title-post">&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This markdown cheatsheet is a typography demo for this theme. Check out this post to learn more about this markdown usage when you want to get started with this theme. Enjoy!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://pirateipsum.me/&quot;&gt;Pirate Ipsum&lt;/a&gt;&lt;/p&gt;</content><author><name>Chester</name></author><summary type="html">Hornswaggle measured fer yer chains chase run a shot across the bow Chain Shot flogging Pirate Round galleon rope’s end aft. Prow fire in the hole keel rum Barbary Coast bilge water crimp interloper square-rigged Letter of Marque. Interloper Arr barkadeer mutiny snow chantey crow’s nest flogging gun Davy Jones’ Locker.</summary></entry><entry><title type="html">Pagination Post</title><link href="http://localhost:4000/github-io/2017-03-05/pagination-post" rel="alternate" type="text/html" title="Pagination Post" /><published>2017-03-05T00:00:00+08:00</published><updated>2017-03-05T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2017-03-05/pagination-post</id><content type="html" xml:base="http://localhost:4000/github-io/2017-03-05/pagination-post">&lt;p&gt;Here we see &lt;strong&gt;Tale’s&lt;/strong&gt; pagination feature in action. It is set to 5 posts per page by default. Feel free to change this number in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file!&lt;/p&gt;</content><author><name>Chester</name></author><summary type="html">Here we see Tale’s pagination feature in action. It is set to 5 posts per page by default. Feel free to change this number in the _config.yml file!</summary></entry><entry><title type="html">For Example of very Long Title Would Be Typography Elements in One</title><link href="http://localhost:4000/github-io/2016-10-18/very-long-title-post" rel="alternate" type="text/html" title="For Example of very Long Title Would Be Typography Elements in One" /><published>2016-10-18T00:00:00+08:00</published><updated>2016-10-18T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2016-10-18/very-long-title-post</id><content type="html" xml:base="http://localhost:4000/github-io/2016-10-18/very-long-title-post">&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This markdown cheatsheet is a typography demo for this theme. Check out this post to learn more about this markdown usage when you want to get started with this theme. Enjoy!&lt;/p&gt;
 
 &lt;h2 id=&quot;typography-elements-in-one&quot;&gt;Typography Elements in One&lt;/h2&gt;
 
@@ -356,24 +523,6 @@ But let's throw in a &amp;lt;b&amp;gt;tag&amp;lt;/b&amp;gt;.
       &lt;p&gt;A footnote you can link to - &lt;a href=&quot;#&quot;&gt;click here!&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">NOTE: This markdown cheatsheet is a typography demo for this theme. Check out this post to learn more about this markdown usage when you want to get started with this theme. Enjoy!</summary></entry><entry><title type="html">Download this Theme</title><link href="http://localhost:4000/github-io/c/2015-09-09/download-this-theme" rel="alternate" type="text/html" title="Download this Theme" /><published>2015-09-09T00:00:00+08:00</published><updated>2015-09-09T00:00:00+08:00</updated><id>http://localhost:4000/github-io/c/2015-09-09/download-this-theme</id><content type="html" xml:base="http://localhost:4000/github-io/c/2015-09-09/download-this-theme">&lt;p&gt;The Plain is a minimalist Jekyll theme, designed to focus on writing that really matters to you and your audience. Everything else is just a distraction. Nothing more other than useful and understandable information sharing. I have made a final update to this theme. This theme is suit best for personal blog type, but not limited to.&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">NOTE: This markdown cheatsheet is a typography demo for this theme. Check out this post to learn more about this markdown usage when you want to get started with this theme. Enjoy!</summary></entry><entry><title type="html">Download this Theme</title><link href="http://localhost:4000/github-io/2015-09-09/download-this-theme" rel="alternate" type="text/html" title="Download this Theme" /><published>2015-09-09T00:00:00+08:00</published><updated>2015-09-09T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2015-09-09/download-this-theme</id><content type="html" xml:base="http://localhost:4000/github-io/2015-09-09/download-this-theme">&lt;p&gt;The Plain is a minimalist Jekyll theme, designed to focus on writing that really matters to you and your audience. Everything else is just a distraction. Nothing more other than useful and understandable information sharing. I have made a final update to this theme. This theme is suit best for personal blog type, but not limited to.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fork&lt;/em&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;em&gt;download&lt;/em&gt;&lt;/strong&gt; the theme &lt;a href=&quot;https://github.com/heiswayi/the-plain&quot;&gt;here on GitHub&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">The Plain is a minimalist Jekyll theme, designed to focus on writing that really matters to you and your audience. Everything else is just a distraction. Nothing more other than useful and understandable information sharing. I have made a final update to this theme. This theme is suit best for personal blog type, but not limited to.</summary></entry><entry><title type="html">Lorem Ipsum</title><link href="http://localhost:4000/github-io/c/2015-09-06/lorem-ipsum" rel="alternate" type="text/html" title="Lorem Ipsum" /><published>2015-09-06T00:00:00+08:00</published><updated>2015-09-06T00:00:00+08:00</updated><id>http://localhost:4000/github-io/c/2015-09-06/lorem-ipsum</id><content type="html" xml:base="http://localhost:4000/github-io/c/2015-09-06/lorem-ipsum">&lt;h3 id=&quot;the-standard-lorem-ipsum-passage-used-since-the-1500s&quot;&gt;The standard Lorem Ipsum passage, used since the 1500s&lt;/h3&gt;
-
-&lt;p&gt;“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”&lt;/p&gt;
-
-&lt;h3 id=&quot;section-11032-of-de-finibus-bonorum-et-malorum-written-by-cicero-in-45-bc&quot;&gt;Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC&lt;/h3&gt;
-
-&lt;p&gt;“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?”&lt;/p&gt;
-
-&lt;h3 id=&quot;1914-translation-by-h-rackham&quot;&gt;1914 translation by H. Rackham&lt;/h3&gt;
-
-&lt;p&gt;“But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?”&lt;/p&gt;
-
-&lt;h3 id=&quot;section-11033-of-de-finibus-bonorum-et-malorum-written-by-cicero-in-45-bc&quot;&gt;Section 1.10.33 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC&lt;/h3&gt;
-
-&lt;p&gt;“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.”&lt;/p&gt;
-
-&lt;h3 id=&quot;1914-translation-by-h-rackham-1&quot;&gt;1914 translation by H. Rackham&lt;/h3&gt;
-
-&lt;p&gt;“On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.”&lt;/p&gt;</content><author><name></name></author><summary type="html">The standard Lorem Ipsum passage, used since the 1500s</summary></entry></feed>
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fork&lt;/em&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;em&gt;download&lt;/em&gt;&lt;/strong&gt; the theme &lt;a href=&quot;https://github.com/heiswayi/the-plain&quot;&gt;here on GitHub&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">The Plain is a minimalist Jekyll theme, designed to focus on writing that really matters to you and your audience. Everything else is just a distraction. Nothing more other than useful and understandable information sharing. I have made a final update to this theme. This theme is suit best for personal blog type, but not limited to.</summary></entry></feed>
