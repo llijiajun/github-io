@@ -159,8 +159,8 @@
 <!-- Services Section -->
 <section class="our-services slideanim" id="MATLAB">
 	<h3 class="text-center slideanim">
-	<a href='/github-io/Matlab.html'>Our Services</a></h3>
-	<p class="text-center slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	<a href='/github-io/Matlab.html'>Matlab 2016.9-?</a></h3>
+	<p class="text-center slideanim">简单尝试，尚未深入</p>
 	<div id="features">
 		<div class="container">
 			<div class="row">
@@ -168,45 +168,18 @@
 					<!-- ACCORDION -->
 					<div class="accordion ac" id="accordion2">
 						<div class="accordion-group">
-							<div class="accordion-heading">
-								<a class="accordion-toggle slideanim" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">First Class Design</a>
-							</div><!-- /accordion-heading -->
 							<div id="collapseOne" class="accordion-body collapse in">
 								<div class="accordion-inner slideanim">
-									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+									<p>x=-8:0.5:8;</p>
+									<p>y=x;</p>
+									<p>[X,Y]=meshgrid(x,y);</p>
+									<p>R=sqrt(x.^2+Y.^2)+eps;</p>
+									<p>Z=sin(R)./R;</p>
+									<p>mesh(X,Y,Z)</p>
 								</div><!-- /accordion-inner -->
 							</div><!-- /collapse -->
 						</div><!-- /accordion-group -->
-						<div class="accordion-group">
-							<div class="accordion-heading">
-								<a class="accordion-toggle slideanim" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">Retina Ready Theme</a>
-							</div>
-							<div id="collapseTwo" class="accordion-body collapse">
-								<div class="accordion-inner slideanim">
-									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-								</div><!-- /accordion-inner -->
-							</div><!-- /collapse -->
-						</div><!-- /accordion-group -->
-						<div class="accordion-group">
-							<div class="accordion-heading">
-								<a class="accordion-toggle slideanim" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">Awesome Support</a>
-							</div>
-							<div id="collapseThree" class="accordion-body collapse">
-								<div class="accordion-inner slideanim">
-									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-								</div><!-- /accordion-inner -->
-							</div><!-- /collapse -->
-						</div><!-- /accordion-group -->
-						<div class="accordion-group">
-							<div class="accordion-heading">
-								<a class="accordion-toggle slideanim" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">Responsive Design</a>
-							</div>
-							<div id="collapseFour" class="accordion-body collapse">
-								<div class="accordion-inner slideanim">
-									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-								</div><!-- /accordion-inner -->
-							</div><!-- /collapse -->
-						</div><!-- /accordion-group -->
+						
 					</div><!-- Accordion -->
 				</div>
 				<div class="col-md-6">
@@ -219,58 +192,61 @@
 <!-- /Services Section -->
 <!-- Events -->
 <section class="our-events slideanim" id="PYTHON">
-	<h3 class="text-center slideanim">Our Events</h3>
-	<p class="text-center slideanim"><a href='/github-io/Python.html'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a></p>
+	<h3 class="text-center slideanim"><a href='/github-io/Python.html'>Python 2016.8-?</a></h3>
+	<p class="text-center slideanim">懵懂的尝试，数据分析的开始</p>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-4 col-md-4">
-				<div class="event-info">
-					<h4 class="text-center slideanim">March 24th</h4>
-					<p class="eve slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<div class="col-md-6 centered">
+					<!-- ACCORDION -->
+					<div  id="accordion2">
+						<div class="slideanim" style="color:#00CCFF;font-size: large;font-weight: 600;">
+							
+								<div >
+									<p>import gym</p>
+									<p>env=gym.make('CartPole-v0')</p>
+									<p>env.reset()</p>
+									<p>for&nbsp;_ in&nbsp;range(1000):</p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;env.render()</p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;env.step(env.action_space.sample())</p>
+								</div><!-- /accordion-inner -->
+							<!-- /collapse -->
+						</div><!-- /accordion-group -->
+						
+					</div><!-- Accordion -->
+				</div>
+				<div class="col-md-6">
+					<img src="images/beauty.jpg" class="img-responsive slideanim" alt="service">
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-4">
-				<div class="event-info">
-					<h4 class="text-center slideanim">March 26th</h4>
-					<p class="eve slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				</div>
-			</div>	
-			<div class="col-lg-4 col-md-4">
-				<div class="event-info">
-					<h4 class="text-center slideanim">March 28th</h4>
-					<p class="eve slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				</div>
-			</div>	
-		</div>
 	</div>
 </section>
 <div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
 <!-- /Events -->
 
 <section class="our-testimonials slideanim" id="Algorithm">
-	<h3 class="text-center slideanim">What Our Clients Say</h3>
-	<p class="text-center slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	<h3 class="text-center slideanim">Algorithm</h3>
+	<p class="text-center slideanim">条条大路通罗马，终将归于算法中</p>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-4">
 				<div class="test">
 					<img src="images/test-img1.png" class="img-responsive slideanim" alt="">
-					<h4 class="text-center slideanim">Lorem Ipsum</h4>
-					<p class="t1 slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>	
+					<h4 class="text-center slideanim">基础算法</h4>
+					<p class="t1 slideanim">潜修数年，难窥门径</p>	
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4">
 				<div class="test">
 					<img src="images/test-img2.png" class="img-responsive slideanim" alt="">
-					<h4 class="text-center slideanim">Lorem Ipsum</h4>
-					<p class="t1 slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>	
+					<h4 class="text-center slideanim">图算法</h4>
+					<p class="t1 slideanim">图中自有真意</p>	
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4">
 				<div class="test">
 					<img src="images/test-img3.png" class="img-responsive slideanim" alt="">
-					<h4 class="text-center slideanim">Lorem Ipsum</h4>
-					<p class="t1 slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>	
+					<h4 class="text-center slideanim">机器学习</h4>
+					<p class="t1 slideanim">巧合还是必然</p>	
 				</div>
 			</div>
 		</div>
