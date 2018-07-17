@@ -22,11 +22,12 @@
 
   <!-- RSS -->
   <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/github-io/feed.xml" title="Hades Jun" />
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 </head>
 
 
   <body>
-    <nav class="nav">
+  <nav class="nav">
       <div class="nav-container">
         <a href="/github-io/">
           <h2 class="nav-title">Hades Jun</h2>
@@ -50,6 +51,27 @@
     
   
     
+  
+    
+  
+    
+  
+    
+    <a href="/github-io/2018-04-10/R-02" class="catalogue-item">
+      <div>
+        <time datetime="2018-04-10 00:00:00 +0800" class="catalogue-time">April 10, 2018</time>
+        <h1 class="catalogue-title">“神抽”还是“鬼抽”?炉石发牌员偏好探究</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          背景介绍 《炉石传说》是一款集换式卡牌游戏，玩家根据自己现有的卡牌组建合适的卡组，驱动随从，施展法术，与对手一决高下。而作为一款卡牌游戏，除了自身收藏卡牌之外，取得胜负最为关键的一点在于，关键时候是否能抽到关键的卡牌。不少玩家吐槽炉石传说可能存在一个发牌员，为了增加玩家的游戏时间，对发牌机制做了控制，以达到鬼抽/神抽的目的。而实际上，炉石暗地里调整各种选牌概率也不是第一次了。例如：著名的竞技场11只剑龙骑术，极大的降低了玩家的用户体验。 笔者学习《实验设计》课程中，便希望能利用上课知识，为了验证网络上一直以来对发牌员偏好的猜测，开始了简单的实验。研究游戏动态过程过于复杂，所以以起手发牌换牌为例，完成一次简单的探究——炉石中的起手发牌规律。 一、实验设计 1.数据说明，为了探究抽牌上手的因素，将因变量确定为以下几类: 名称 数据记作 备注 “上手卡牌顺序” 记为”次序”...
+        </p>
+
+      </div>
+    </a>
+    
+  
+    
     <a href="/github-io/2018-03-12/R-01" class="catalogue-item">
       <div>
         <time datetime="2018-03-12 00:00:00 +0800" class="catalogue-time">March 12, 2018</time>
@@ -57,60 +79,13 @@
         <div class="catalogue-line"></div>
 
         <p>
-          1. 研究问题 1.1研究问题背景 多年来，全国雾霾爆发，在地理空间上是否存在规律？2017年全国数学建模大赛提出给“拍照赚钱”任务定价，数据是否在位置上呈现一些规律？越来越多的研究定位在空间数据之上。 多维数据存在着展示上不直观的特点，数据容易“纠缠在一起”，想看出数据的变化规律、空间分布规律存在一定的障碍，通常人们将多维数据投影到二维上，但数据的“纠缠”仍然是比较难解决的，而展示多维数据的变化规律需要有一种能动态变化可视化手段。在看到水滴产生的涟漪、画画时颜色的相互交融时，突发灵感，提出一种新的可视化图——涟漪图。 1.2研究问题说明 多维分类型数据，分类的展示可以用点图轻松展示，但无法体现出多维分类数据的每一个分类的紧密程度，哪些分类间存在着“纠缠”，以及数据变化的主要方向。总的来说，多维数据是不能简单用每个维度的均值来衡量的，于是需要一种动态化展示的方法。 1.3数据说明 本次作业为了降低采集数据成本，使用2017年全国数学建模大赛的部分数据集，但制作涟漪图的核心在于中心点如何选取，目前采用的是kmeans方法，选取核心点，所以核心数据仅剩下两部分，经度、维度。对任意数据集，都可以使用二维投射，将点放置到二位图像中。 2. 方法介绍 2.1涟漪图说明 空间数据存在着重心，从kmeans出发，在聚类之后，数据有着一个核心的中点，借着这个核心的中点，可以在一定规则下画一组曲线集，从例子来说，在空间上确定中心后，可以从中心向外不断扩散，选定步长以后画椭圆，而椭圆实际是有方向的，可以将长轴看作是一个方向，确定中心和方向的椭圆，只再需要两个点即可确定其图形，同时新画的椭圆是可以包含原椭圆的。从另一个中心发射出的椭圆，会与原来的中心的椭圆相交，这样很可能产生新的颜色，这也就和涟漪一样，故我命名其为涟漪图。 2.2算法说明 算法如下： 1. 根据kmeans将数据分类(如果数据本身有分类，其实不需要这一步) 2. 以kmeans确定的中心C，将数据集按照到中心的距离进行排序，按升序排列 3. 选定步长为k,k为每次画椭圆包含进来的点的个数,设i=1 4. 以C为中心,设距离C最近的ik个点中最远的点为A,以|AC|为半长轴,CA的方向为长轴方向，绘制最小的能包含这ik个点的椭圆。 5. i=i+1, 重复步骤4,直到所有点都被椭圆覆盖 2.3算法实现 2.4图片描述分析 1. 目前将数据分作4组，从空间上看，每组数据都从经度方向扩散比较严重，也就是说可能经度是一个比纬度更为重要的一个因素。...
+          1. 研究问题 1.1研究问题背景 多年来，全国雾霾爆发，在地理空间上是否存在规律？2017年全国数学建模大赛提出给“拍照赚钱”任务定价，数据是否在位置上呈现一些规律？越来越多的研究定位在空间数据之上。 多维数据存在着展示上不直观的特点，数据容易“纠缠在一起”，想看出数据的变化规律、空间分布规律存在一定的障碍，通常人们将多维数据投影到二维上，但数据的“纠缠”仍然是比较难解决的，而展示多维数据的变化规律需要有一种能动态变化可视化手段。在看到水滴产生的涟漪、画画时颜色的相互交融时，突发灵感，提出一种新的可视化图——涟漪图。 1.2研究问题说明 多维分类型数据，分类的展示可以用点图轻松展示，但无法体现出多维分类数据的每一个分类的紧密程度，哪些分类间存在着“纠缠”，以及数据变化的主要方向。总的来说，多维数据是不能简单用每个维度的均值来衡量的，于是需要一种动态化展示的方法。 1.3数据说明 本次作业为了降低采集数据成本，使用2017年全国数学建模大赛的部分数据集，但制作涟漪图的核心在于中心点如何选取，目前采用的是kmeans方法，选取核心点，所以核心数据仅剩下两部分，经度、维度。对任意数据集，都可以使用二维投射，将点放置到二位图像中。 2....
         </p>
 
       </div>
     </a>
     
   
-    
-    <a href="/github-io/2018-01-15/the-case-of-the-missing-post-%E5%89%AF%E6%9C%AC" class="catalogue-item">
-      <div>
-        <time datetime="2018-01-15 00:00:00 +0800" class="catalogue-time">January 15, 2018</time>
-        <h1 class="catalogue-title">R markdown</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-          
-
-        </p>
-
-      </div>
-    </a>
-    
-  
-    
-  
-    
-    <a href="/github-io/2017-03-06/the-mystery-of-the-filler-post" class="catalogue-item">
-      <div>
-        <time datetime="2017-03-06 00:00:00 +0800" class="catalogue-time">March 06, 2017</time>
-        <h1 class="catalogue-title">The Mystery of the Filler Post</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-          Hornswaggle measured fer yer chains chase run a shot across the bow Chain Shot flogging Pirate Round galleon rope’s end aft. Prow fire in the hole keel rum Barbary Coast...
-        </p>
-
-      </div>
-    </a>
-    
-  
-    
-    <a href="/github-io/2017-03-05/pagination-post" class="catalogue-item">
-      <div>
-        <time datetime="2017-03-05 00:00:00 +0800" class="catalogue-time">March 05, 2017</time>
-        <h1 class="catalogue-title">Pagination Post</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-          Here we see Tale’s pagination feature in action. It is set to 5 posts per page by default. Feel free to change this number in the _config.yml file!
-
-        </p>
-
-      </div>
-    </a>
     
   
     
@@ -126,7 +101,7 @@
 
     <footer>
       <span>
-        &copy; <time datetime="2018-07-15 21:50:13 +0800">2018</time> . Made with HadesJun.
+        &copy; <time datetime="2018-07-17 21:00:46 +0800">2018</time> . Made with HadesJun.
       </span>
     </footer>
   </body>

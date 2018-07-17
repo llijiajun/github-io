@@ -2,7 +2,7 @@
 title: C and C++ HelloWorld
 author: 冥郡
 layout: post
-categories: C
+categories: [C,algorithm1]
 ---
 
 ## 第一篇博客

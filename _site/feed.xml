@@ -1,4 +1,1367 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/github-io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/github-io/" rel="alternate" type="text/html" /><updated>2018-07-15T21:50:13+08:00</updated><id>http://localhost:4000/github-io/</id><title type="html">Hades Jun</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Python base skill</title><link href="http://localhost:4000/github-io/2018-07-15/Python-01_base" rel="alternate" type="text/html" title="Python base skill" /><published>2018-07-15T00:00:00+08:00</published><updated>2018-07-15T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-15/Python-01_base</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-15/Python-01_base">&lt;h2 id=&quot;标准数据类型&quot;&gt;标准数据类型&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/github-io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/github-io/" rel="alternate" type="text/html" /><updated>2018-07-17T21:00:46+08:00</updated><id>http://localhost:4000/github-io/</id><title type="html">Hades Jun</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">markdown</title><link href="http://localhost:4000/github-io/2018-07-16/other-01-mathjax_cmdeditor" rel="alternate" type="text/html" title="markdown" /><published>2018-07-16T00:00:00+08:00</published><updated>2018-07-16T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-16/other-01-mathjax_cmdeditor</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-16/other-01-mathjax_cmdeditor">&lt;hr /&gt;
+
+&lt;p&gt;#Cmd Markdown 公式指导手册&lt;/p&gt;
+
+&lt;p&gt;标签： Tutorial&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;2018-03-20 补档：
+收到很多小伙伴对本文的源文档转载需求，故传了一份 md 文件，请按需 &lt;a href=&quot;http://file.ericp.cn/work/mathjax_cmdeditor.md&quot;&gt;下载&lt;/a&gt; 。
+本文固定链接: https://www.zybuluo.com/codeep/note/163962&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;点击跳转至 &lt;a href=&quot;https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown&quot;&gt;Cmd Markdown 简明语法手册&lt;/a&gt; ，立刻开始 Cmd Markdown 编辑阅读器的记录和写作之旅！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;本文为 MathJax 在 Cmd Markdown 环境下的语法指引。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Cmd Markdown 编辑阅读器支持 $\LaTeX$ 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$，访问 &lt;a href=&quot;http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference&quot;&gt;MathJax&lt;/a&gt; 以参考更多使用方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;右键点击每一个公式，选择 &lt;strong&gt;[Show Math As] → [TeX Commands]&lt;/strong&gt; 以查看该公式的命令详情。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;[TOC]&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;一公式使用参考&quot;&gt;一、公式使用参考&lt;/h1&gt;
+
+&lt;h2 id=&quot;1如何插入公式&quot;&gt;1．如何插入公式&lt;/h2&gt;
+
+&lt;p&gt;$\LaTeX$ 的数学公式有两种：行中公式和独立公式。行中公式放在文中与其它文字混编，独立公式单独成行。&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;行中公式可以用如下方法表示：&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;$ 数学公式 $&lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;dt&gt;独立公式可以用如下方法表示：&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;数学公式&lt;/script&gt;
+  &lt;/dd&gt;
+  &lt;dt&gt;自动编号的公式可以用如下方法表示：&lt;/dt&gt;
+  &lt;dd&gt;若需要手动编号，参见 &lt;a href=&quot;#14大括号和行标的使用&quot;&gt;大括号和行标的使用&lt;/a&gt; 。&lt;/dd&gt;
+  &lt;dd&gt;
+    &lt;p&gt;\begin{equation}
+数学公式
+\label{eq:当前公式名}
+\end{equation}&lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;&lt;strong&gt;自动编号后的公式可在全文任意处使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;\eqref{eq:公式名}&lt;/code&gt; 语句引用。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;例子：
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，行内公式示例} $
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;显示：$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，行内公式示例} $&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;例子：
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，独立公式示例} $$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;显示：&lt;script type=&quot;math/tex&quot;&gt;J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，独立公式示例}&lt;/script&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;例子：
+```
+在公式 \eqref{eq:sample} 中，我们看到了这个被自动编号的公式。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;\begin{equation}
+E=mc^2 \text{，自动编号公式示例}
+\label{eq:Sample}
+\end{equation}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+
+$$在公式 \eqref{eq:sample} 中，我们看到了这个被自动编号的公式。$$
+
+\begin{equation}
+E=mc^2 \text{，自动编号公式示例}
+\label{eq:sample}
+\end{equation}
+
+##2．如何输入上下标
+
+`^` 表示上标, `_` 表示下标。如果上下标的内容多于一个字符，需要用 `{}` 将这些内容括成一个整体。上下标可以嵌套，也可以同时使用。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;x^{y^z}=(1+{\rm e}^x)^{-2xy^w}&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：$$ x^{y^z}=(1+{\rm e}^x)^{-2xy^w} $$
+
+另外，如果要在左右两边都有上下标，可以用 `\sideset` 命令。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\sideset{^1_2}{^3_4}\bigotimes&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 显示：$$\sideset{^1_2}{^3_4}\bigotimes$$
+
+##3．如何输入括号和分隔符
+
+`()`、`[]` 和 `|` 表示符号本身，使用 `\{\}` 来表示 `{}` 。当要显示大号的括号或分隔符时，要用 `\left` 和 `\right` 命令。
+
+一些特殊的括号：
+|输入|显示|输入|显示|
+|:--:|:--:|:--:|:--:|
+|\langle|$\langle$|\rangle|$\rangle$|
+|\lceil|$\lceil$|\rceil|$\rceil$|
+|\lfloor|$\lfloor$|\rfloor|$\rfloor$|
+|\lbrace|$\lbrace$|\rbrace|$\rbrace$|
+
+
+- 例子：
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right)&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+
+##4．如何输入分数
+
+通常使用 `\frac {分子} {分母}` 命令产生一个分数，分数可嵌套。
+便捷情况可直接输入 `\frac ab` 来快速生成一个 $\frac ab$ 。
+如果分式很复杂，亦可使用 `分子 \over 分母` 命令，此时分数仅有一层。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\frac{a-1}{b-1} \quad and \quad {a+1\over b+1}&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 显示：$$\frac{a-1}{b-1} \quad and \quad {a+1\over b+1}$$
+
+##5．如何输入开方
+
+使用 `\sqrt [根指数，省略时为2] {被开方数}` 命令输入开方。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\sqrt{2} \quad and \quad \sqrt[n]{3}&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 显示：$$\sqrt{2} \quad and \quad \sqrt[n]{3}$$
+
+##6．如何输入省略号
+
+数学公式中常见的省略号有两种，`\ldots` 表示与文本底线对齐的省略号，`\cdots` 表示与文本中线对齐的省略号。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;f(x_1,x_2,\underbrace{\ldots}_{\rm ldots} ,x_n) = x_1^2 + x_2^2 + \underbrace{\cdots}_{\rm cdots} + x_n^2&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 显示：$$f(x_1,x_2,\underbrace{\ldots}_{\rm ldots} ,x_n) = x_1^2 + x_2^2 + \underbrace{\cdots}_{\rm cdots} + x_n^2$$
+
+##7．如何输入矢量
+
+使用 `\vec{矢量}` 来自动产生一个矢量。也可以使用 `\overrightarrow` 等命令自定义字母上方的符号。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\vec{a} \cdot \vec{b}=0&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：$$\vec{a} \cdot \vec{b}=0$$
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\overleftarrow{xy} \quad and \quad \overleftrightarrow{xy} \quad and \quad \overrightarrow{xy}&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 显示：$$\overleftarrow{xy} \quad and \quad \overleftrightarrow{xy} \quad and \quad \overrightarrow{xy}$$
+
+##8．如何输入积分
+
+使用 `\int_积分下限^积分上限 {被积表达式}` 来输入一个积分。
+
+例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\int_0^1 {x^2} \,{\rm d}x&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;显示：$$\int_0^1 {x^2} \,{\rm d}x$$
+
+本例中 `\,` 和 `{\rm d}` 部分可省略，但建议加入，能使式子更美观。
+
+##9．如何输入极限运算
+
+使用 `\lim_{变量 \to 表达式} 表达式` 来输入一个极限。如有需求，可以更改 `\to` 符号至任意符号。
+
+例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\lim_{n \to +\infty} \frac{1}{n(n+1)} \quad and \quad \lim_{x\leftarrow{示例}} \frac{1}{n(n+1)}&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+
+显示：$$\lim_{n \to +\infty} \frac{1}{n(n+1)} \quad and \quad \lim_{x\leftarrow{示例}} \frac{1}{n(n+1)}$$
+
+##10．如何输入累加、累乘运算
+
+使用 `\sum_{下标表达式}^{上标表达式} {累加表达式}` 来输入一个累加。
+与之类似，使用 `\prod` `\bigcup` `\bigcap` 来分别输入累乘、并集和交集。
+此类符号在行内显示时上下标表达式将会移至右上角和右下角。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad and \quad \bigcup_{i=1}^{2} R&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：$$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad and \quad \bigcup_{i=1}^{2} R$$
+
+##11．如何输入希腊字母
+
+输入 `\小写希腊字母英文全称` 和 `\首字母大写希腊字母英文全称` 来分别输入小写和大写希腊字母。
+**对于大写希腊字母与现有字母相同的，直接输入大写字母即可。**
+
+|输入|显示|输入|显示|输入|显示|输入|显示|
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|\alpha|$\alpha$|A|$A$|\beta|$\beta$|B|$B$|
+|\gamma|$\gamma$|\Gamma|$\Gamma$|\delta|$\delta$|\Delta|$\Delta$|
+|\epsilon|$\epsilon$|E|$E$|\zeta|$\zeta$|Z|$Z$|
+|\eta|$\eta$|H|$H$|\theta|$\theta$|\Theta|$\Theta$|
+|\iota|$\iota$|I|$I$|\kappa|$\kappa$|K|$K$|
+|\lambda|$\lambda$|\Lambda|$\Lambda$|\mu|$\mu$|M|$M$|
+|\nu|$\nu$|N|$N$|\xi|$\xi$|\Xi|$\Xi$|
+|o|$o$|O|$O$|\pi|$\pi$|\Pi|$\Pi$|
+|\rho|$\rho$|P|$P$|\sigma|$\sigma$|\Sigma|$\Sigma$|
+|\tau|$\tau$|T|$T$|\upsilon|$\upsilon$|\Upsilon|$\Upsilon$|
+|\phi|$\phi$|\Phi|$\Phi$|\chi|$\chi$|X|$X$|
+|\psi|$\psi$|\Psi|$\Psi$|\omega|$\omega$|\Omega|$\Omega$|
+
+**部分字母有变量专用形式，以 `\var-` 开头。**
+
+|小写形式|大写形式|变量形式|显示|
+|:--:|:--:|:--:|:--:|
+|\epsilon|E|\varepsilon|$\epsilon \mid E \mid \varepsilon$|
+|\theta|\Theta|\vartheta|$\theta \mid \Theta \mid \vartheta$|
+|\rho|P|\varrho|$\rho \mid P \mid \varrho$|
+|\sigma|\Sigma|\varsigma|$\sigma \mid \Sigma \mid \varsigma$|
+|\phi|\Phi|\varphi|$\phi \mid \Phi \mid \varphi$|
+
+##12．如何输入其它特殊字符
+
+&amp;gt; **若需要显示更大或更小的字符，在符号前插入 `\large` 或 `\small` 命令。**
+
+&amp;gt; 若找不到需要的符号，使用 [$\rm{Detexify^2}$](http://detexify.kirelabs.org/classify.html) 来画出想要的符号。
+
+&amp;gt; ![Detexify^2](http://i.stack.imgur.com/ScK3R.png)
+
+###(1)．关系运算符
+
+|输入|显示|输入|显示|输入|显示|输入|显示|
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|\pm|$\pm$|\times|$\times$|\div|$\div$|\mid|$\mid$|
+|\nmid|$\nmid$|\cdot|$\cdot$|\circ|$\circ$|\ast|$\ast$|
+|\bigodot|$\bigodot$|\bigotimes|$\bigotimes$|\bigoplus|$\bigoplus$|\leq|$\leq$|
+|\geq|$\geq$|\neq|$\neq$|\approx|$\approx$|\equiv|$\equiv$|
+|\sum|$\sum$|\prod|$\prod$|\coprod|$\coprod$|\backslash|$\backslash$|
+
+###(2)．集合运算符
+
+|输入|显示|输入|显示|输入|显示|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|\emptyset|$\emptyset$|\in|$\in$|\notin|$\notin$|
+|\subset|$\subset$|\supset|$\supset$|\subseteq|$\subseteq$|
+|\supseteq|$\supseteq$|\bigcap|$\bigcap$|\bigcup|$\bigcup$|
+|\bigvee|$\bigvee$|\bigwedge|$\bigwedge$|\biguplus|$\biguplus$|
+
+###(3)．对数运算符
+
+|输入|显示|输入|显示|输入|显示|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|\log|$\log$|\lg|$\lg$|\ln|$\ln$|
+
+###(4)．三角运算符
+
+|输入|显示|输入|显示|输入|显示|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|30^\circ|$30^\circ$|\bot|$\bot$|\angle A|$\angle A$|
+|\sin|$\sin$|\cos|$\cos$|\tan|$\tan$|
+|\csc|$\csc$|\sec|$\sec$|\cot|$\cot$|
+
+###(5)．微积分运算符
+
+|输入|显示|输入|显示|输入|显示|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|\int|$\int$|\iint|$\iint$|\iiint|$\iiint$|
+|\iiiint|$\iiiint$|\oint|$\oint$|\prime|$\prime$|
+|\lim|$\lim$|\infty|$\infty$|\nabla|$\nabla$|
+
+###(6)．逻辑运算符
+
+|输入|显示|输入|显示|输入|显示|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|\because|$\because$|\therefore|$\therefore$|
+|\forall|$\forall$|\exists|$\exists$|\not\subset|$\not\subset$|
+|\not&amp;lt;|$\not&amp;lt;$|\not&amp;gt;|$\not&amp;gt;$|\not=|$\not=$|
+
+###(7)．戴帽符号
+
+|输入|显示|输入|显示|
+|:--:|:--:|:--:|:--:|
+|\hat{xy}|$\hat{xy}$|\widehat{xyz}|$\widehat{xyz}$|
+|\tilde{xy}|$\tilde{xy}$|\widetilde{xyz}|$\widetilde{xyz}$|
+|\check{x}|$\check{x}$|\breve{y}|$\breve{y}$|
+|\grave{x}|$\grave{x}$|\acute{y}|$\acute{y}$|
+
+
+
+###(8)．连线符号
+|输入|显示|
+|:--:|:--:|
+|\fbox{a+b+c+d}|$\fbox{a+b+c+d}$|
+|\overleftarrow{a+b+c+d}|$\overleftarrow{a+b+c+d}$|
+|\overrightarrow{a+b+c+d}|$\overrightarrow{a+b+c+d}$|
+|\overleftrightarrow{a+b+c+d}|$\overleftrightarrow{a+b+c+d}$|
+|\underleftarrow{a+b+c+d}|$\underleftarrow{a+b+c+d}$|
+|\underrightarrow{a+b+c+d}|$\underrightarrow{a+b+c+d}$|
+|\underleftrightarrow{a+b+c+d}|$\underleftrightarrow{a+b+c+d}$|
+|\overline{a+b+c+d}|$\overline{a+b+c+d}$|
+|\underline{a+b+c+d}|$\underline{a+b+c+d}$|
+|\overbrace{a+b+c+d}^{Sample}|$\overbrace{a+b+c+d}^{Sample}$|
+|\underbrace{a+b+c+d}_{Sample}|$\underbrace{a+b+c+d}_{Sample}$|
+|\overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0}|$\overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0}$|
+|\underbrace{a\cdot a\cdots a}_{b\text{ times}}|$\underbrace{a\cdot a\cdots a}_{b\text{ times}}$|
+
+###(9)．箭头符号
+
+- 推荐使用符号：
+|输入|显示|输入|显示|输入|显示|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|\to|$\to$|\mapsto|$\mapsto$|
+|\implies|$\implies$|\iff|$\iff$|\impliedby|$\impliedby$|
+
+
+- 其它可用符号：
+|输入|显示|输入|显示|
+|:--:|:--:|:--:|:--:|
+|\uparrow|$\uparrow$|\Uparrow|$\Uparrow$|
+|\downarrow|$\downarrow$|\Downarrow|$\Downarrow$|
+|\leftarrow|$\leftarrow$|\Leftarrow|$\Leftarrow$|
+|\rightarrow|$\rightarrow$|\Rightarrow|$\Rightarrow$|
+|\leftrightarrow|$\leftrightarrow$|\Leftrightarrow|$\Leftrightarrow$|
+|\longleftarrow|$\longleftarrow$|\Longleftarrow|$\Longleftarrow$|
+|\longrightarrow|$\longrightarrow$|\Longrightarrow|$\Longrightarrow$|
+|\longleftrightarrow|$\longleftrightarrow$|\Longleftrightarrow|$\Longleftrightarrow$|
+
+##13．如何进行字体转换
+
+若要对公式的某一部分字符进行字体转换，可以用 `{\字体 {需转换的部分字符}}` 命令，其中 `\字体` 部分可以参照下表选择合适的字体。一般情况下，公式默认为意大利体 $italic$ 。
+
+示例中 **全部大写** 的字体仅大写可用。
+
+|输入|说明|显示|输入|说明|显示|
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|\rm|罗马体|$\rm{Sample}$|\cal|花体|$\cal{SAMPLE}$|
+|\it|意大利体|$\it{Sample}$|\Bbb|黑板粗体|$\Bbb{SAMPLE}$|
+|\bf|粗体|$\bf{Sample}$|\mit|数学斜体|$\mit{SAMPLE}$|
+|\sf|等线体|$\sf{Sample}$|\scr|手写体|$\scr{SAMPLE}$|
+|\tt|打字机体|$\tt{Sample}$|
+|\frak|旧德式字体|$\frak{Sample}$|
+
+
+转换字体十分常用，例如在积分中：
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;\begin{array}{cc}
+\mathrm{Bad} &amp;amp; \mathrm{Better} &lt;br /&gt;
+\hline &lt;br /&gt;
+\int_0^1 x^2 dx &amp;amp; \int_0^1 x^2 \,{\rm d}x
+\end{array}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+\begin{array}{cc}
+\mathrm{Bad} &amp;amp; \mathrm{Better} \\
+\hline \\
+\int_0^1 x^2 dx &amp;amp; \int_0^1 x^2 \,{\rm d}x
+\end{array}
+
+注意比较两个式子间 $dx$ 与 ${\rm d} x$ 的不同。
+使用 `\operatorname` 命令也可以达到相同的效果，详见 [定义新的符号 \operatorname](#1定义新的符号-operatorname) 。
+
+##14．大括号和行标的使用
+
+使用 `\left` 和 `\right` 来创建自动匹配高度的 (圆括号)，[方括号] 和 {花括号} 。
+在每个公式末尾前使用 `\tag{行标}` 来实现行标。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;f\left(
+   \left[ 
+     \frac{
+       1+\left\{x,y\right\}
+     }{
+       \left(
+          \frac{x}{y}+\frac{y}{x}
+       \right)
+       \left(u+1\right)
+     }+a
+   \right]^{3/2}
+\right)
+\tag{行标}&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+$$
+f\left(
+   \left[ 
+     \frac{
+       1+\left\{x,y\right\}
+     }{
+       \left(
+          \frac{x}{y}+\frac{y}{x}
+       \right)
+       \left(u+1\right)
+     }+a
+   \right]^{3/2}
+\right)
+\tag{行标}
+$$
+
+如果你需要在不同的行显示对应括号，可以在每一行对应处使用 `\left.` 或 `\right.` 来放一个&quot;影子&quot;括号：
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{aligned}
+a=&amp;\left(1+2+3+  \cdots \right. \\
+&amp; \cdots+ \left. \infty-2+\infty-1+\infty\right)
+\end{aligned} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+$$
+\begin{aligned}
+a=&amp;amp;\left(1+2+3+  \cdots \right. \\
+&amp;amp; \cdots+ \left. \infty-2+\infty-1+\infty\right)
+\end{aligned}
+$$
+
+如果你需要将行内显示的分隔符也变大，可以使用 `\middle` 命令：
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\left\langle  
+  q
+\middle\|
+  \frac{\frac{x}{y}}{\frac{u}{v}}
+\middle| 
+   p 
+\right\rangle&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+$$
+\left\langle  
+  q
+\middle\|
+  \frac{\frac{x}{y}}{\frac{u}{v}}
+\middle| 
+   p 
+\right\rangle
+$$
+
+##15．其它命令
+
+###(1)．定义新的符号 \operatorname
+
+查询 [关于此命令的定义](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference/15077#15077) 和 [关于此命令的讨论](http://meta.math.stackexchange.com/search?q=operatorname) 来进一步了解此命令。
+
+- 例子： 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\operatorname{Symbol} A&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示： $$\operatorname{Symbol} A$$
+
+###(2)．添加注释文字 \text
+
+在 `\text {文字}` 中仍可以使用 `$公式$` 插入其它公式。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+f(n)= \begin{cases} n/2, &amp; \text {if $n$ is even} \\ 3n+1, &amp; \text{if $n$ is odd} \end{cases} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+$$ f(n)= \begin{cases} n/2, &amp;amp; \text {if $n$ is even} \\ 3n+1, &amp;amp; \text{if $n$ is odd} \end{cases} $$
+
+###(3)．在字符间加入空格
+
+有四种宽度的空格可以使用： `\,`、`\;`、`\quad` 和 `\qquad` 。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;a \, b \mid a \; b \mid a \quad b \mid a \qquad b&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：$$ a \, b \mid a \; b \mid a \quad b \mid a \qquad b $$
+
+当然，使用 `\text {n个空格}` 也可以达到同样效果。
+
+###(4)．更改文字颜色
+
+使用 `\color{颜色}{文字}` 来更改特定的文字颜色。
+更改文字颜色 **需要浏览器支持** ，如果浏览器不知道你所需的颜色，那么文字将被渲染为黑色。
+
+对于较旧的浏览器（HTML4与CSS2），以下颜色是被支持的：
+
+|输入|显示|输入|显示|
+|:--:|:--:|:--:|:--:|
+|black|$\color{black}{text}$|grey|$\color{grey}{text}$|
+|silver|$\color{silver}{text}$|white|$\color{white}{text}$|
+|maroon|$\color{maroon}{text}$|red|$\color{red}{text}$|
+|yellow|$\color{yellow}{text}$|lime|$\color{lime}{text}$|
+|olive|$\color{olive}{text}$|green|$\color{green}{text}$|
+|teal|$\color{teal}{text}$|auqa|$\color{auqa}{text}$|
+|blue|$\color{blue}{text}$|navy|$\color{navy}{text}$|
+|purple|$\color{purple}{text}$|fuchsia|$\color{fuchsia}{text}$|
+
+对于较新的浏览器（HTML5与CSS3），额外的124种颜色将被支持：
+
+输入 `\color {#rgb} {text}` 来自定义更多的颜色，其中 `#rgb` 的 `r` `g` `b` 可输入 `0-9` 和 `a-f` 来表示红色、绿色和蓝色的纯度（饱和度）。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;\begin{array}{|rrrrrrrr|}\hline
+\verb+#000+ &amp;amp; \color{#000}{text} &amp;amp; &amp;amp; &amp;amp;
+\verb+#00F+ &amp;amp; \color{#00F}{text} &amp;amp; &amp;amp; &lt;br /&gt;
+&amp;amp; &amp;amp; \verb+#0F0+ &amp;amp; \color{#0F0}{text} &amp;amp;
+&amp;amp; &amp;amp; \verb+#0FF+ &amp;amp; \color{#0FF}{text}&lt;br /&gt;
+\verb+#F00+ &amp;amp; \color{#F00}{text} &amp;amp; &amp;amp; &amp;amp;
+\verb+#F0F+ &amp;amp; \color{#F0F}{text} &amp;amp; &amp;amp; &lt;br /&gt;
+&amp;amp; &amp;amp; \verb+#FF0+ &amp;amp; \color{#FF0}{text} &amp;amp;
+&amp;amp; &amp;amp; \verb+#FFF+ &amp;amp; \color{#FFF}{text}&lt;br /&gt;
+\hline
+\end{array}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+\begin{array}{|rrrrrrrr|}\hline
+\verb+#000+ &amp;amp; \color{#000}{text} &amp;amp; &amp;amp; &amp;amp;
+\verb+#00F+ &amp;amp; \color{#00F}{text} &amp;amp; &amp;amp; \\
+&amp;amp; &amp;amp; \verb+#0F0+ &amp;amp; \color{#0F0}{text} &amp;amp;
+&amp;amp; &amp;amp; \verb+#0FF+ &amp;amp; \color{#0FF}{text}\\
+\verb+#F00+ &amp;amp; \color{#F00}{text} &amp;amp; &amp;amp; &amp;amp;
+\verb+#F0F+ &amp;amp; \color{#F0F}{text} &amp;amp; &amp;amp; \\
+&amp;amp; &amp;amp; \verb+#FF0+ &amp;amp; \color{#FF0}{text} &amp;amp;
+&amp;amp; &amp;amp; \verb+#FFF+ &amp;amp; \color{#FFF}{text}\\
+\hline
+\end{array}
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;\begin{array}{|rrrrrrrr|}
+\hline
+\verb+#000+ &amp;amp; \color{#000}{text} &amp;amp; \verb+#005+ &amp;amp; \color{#005}{text} &amp;amp; \verb+#00A+ &amp;amp; \color{#00A}{text} &amp;amp; \verb+#00F+ &amp;amp; \color{#00F}{text}  &lt;br /&gt;
+\verb+#500+ &amp;amp; \color{#500}{text} &amp;amp; \verb+#505+ &amp;amp; \color{#505}{text} &amp;amp; \verb+#50A+ &amp;amp; \color{#50A}{text} &amp;amp; \verb+#50F+ &amp;amp; \color{#50F}{text}  &lt;br /&gt;
+\verb+#A00+ &amp;amp; \color{#A00}{text} &amp;amp; \verb+#A05+ &amp;amp; \color{#A05}{text} &amp;amp; \verb+#A0A+ &amp;amp; \color{#A0A}{text} &amp;amp; \verb+#A0F+ &amp;amp; \color{#A0F}{text}  &lt;br /&gt;
+\verb+#F00+ &amp;amp; \color{#F00}{text} &amp;amp; \verb+#F05+ &amp;amp; \color{#F05}{text} &amp;amp; \verb+#F0A+ &amp;amp; \color{#F0A}{text} &amp;amp; \verb+#F0F+ &amp;amp; \color{#F0F}{text}  &lt;br /&gt;
+\hline
+\verb+#080+ &amp;amp; \color{#080}{text} &amp;amp; \verb+#085+ &amp;amp; \color{#085}{text} &amp;amp; \verb+#08A+ &amp;amp; \color{#08A}{text} &amp;amp; \verb+#08F+ &amp;amp; \color{#08F}{text}  &lt;br /&gt;
+\verb+#580+ &amp;amp; \color{#580}{text} &amp;amp; \verb+#585+ &amp;amp; \color{#585}{text} &amp;amp; \verb+#58A+ &amp;amp; \color{#58A}{text} &amp;amp; \verb+#58F+ &amp;amp; \color{#58F}{text}  &lt;br /&gt;
+\verb+#A80+ &amp;amp; \color{#A80}{text} &amp;amp; \verb+#A85+ &amp;amp; \color{#A85}{text} &amp;amp; \verb+#A8A+ &amp;amp; \color{#A8A}{text} &amp;amp; \verb+#A8F+ &amp;amp; \color{#A8F}{text}  &lt;br /&gt;
+\verb+#F80+ &amp;amp; \color{#F80}{text} &amp;amp; \verb+#F85+ &amp;amp; \color{#F85}{text} &amp;amp; \verb+#F8A+ &amp;amp; \color{#F8A}{text} &amp;amp; \verb+#F8F+ &amp;amp; \color{#F8F}{text}  &lt;br /&gt;
+\hline
+\verb+#0F0+ &amp;amp; \color{#0F0}{text} &amp;amp; \verb+#0F5+ &amp;amp; \color{#0F5}{text} &amp;amp; \verb+#0FA+ &amp;amp; \color{#0FA}{text} &amp;amp; \verb+#0FF+ &amp;amp; \color{#0FF}{text}  &lt;br /&gt;
+\verb+#5F0+ &amp;amp; \color{#5F0}{text} &amp;amp; \verb+#5F5+ &amp;amp; \color{#5F5}{text} &amp;amp; \verb+#5FA+ &amp;amp; \color{#5FA}{text} &amp;amp; \verb+#5FF+ &amp;amp; \color{#5FF}{text}  &lt;br /&gt;
+\verb+#AF0+ &amp;amp; \color{#AF0}{text} &amp;amp; \verb+#AF5+ &amp;amp; \color{#AF5}{text} &amp;amp; \verb+#AFA+ &amp;amp; \color{#AFA}{text} &amp;amp; \verb+#AFF+ &amp;amp; \color{#AFF}{text}  &lt;br /&gt;
+\verb+#FF0+ &amp;amp; \color{#FF0}{text} &amp;amp; \verb+#FF5+ &amp;amp; \color{#FF5}{text} &amp;amp; \verb+#FFA+ &amp;amp; \color{#FFA}{text} &amp;amp; \verb+#FFF+ &amp;amp; \color{#FFF}{text}  &lt;br /&gt;
+\hline
+\end{array}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+\begin{array}{|rrrrrrrr|}
+\hline
+\verb+#000+ &amp;amp; \color{#000}{text} &amp;amp; \verb+#005+ &amp;amp; \color{#005}{text} &amp;amp; \verb+#00A+ &amp;amp; \color{#00A}{text} &amp;amp; \verb+#00F+ &amp;amp; \color{#00F}{text}  \\
+\verb+#500+ &amp;amp; \color{#500}{text} &amp;amp; \verb+#505+ &amp;amp; \color{#505}{text} &amp;amp; \verb+#50A+ &amp;amp; \color{#50A}{text} &amp;amp; \verb+#50F+ &amp;amp; \color{#50F}{text}  \\
+\verb+#A00+ &amp;amp; \color{#A00}{text} &amp;amp; \verb+#A05+ &amp;amp; \color{#A05}{text} &amp;amp; \verb+#A0A+ &amp;amp; \color{#A0A}{text} &amp;amp; \verb+#A0F+ &amp;amp; \color{#A0F}{text}  \\
+\verb+#F00+ &amp;amp; \color{#F00}{text} &amp;amp; \verb+#F05+ &amp;amp; \color{#F05}{text} &amp;amp; \verb+#F0A+ &amp;amp; \color{#F0A}{text} &amp;amp; \verb+#F0F+ &amp;amp; \color{#F0F}{text}  \\
+\hline
+\verb+#080+ &amp;amp; \color{#080}{text} &amp;amp; \verb+#085+ &amp;amp; \color{#085}{text} &amp;amp; \verb+#08A+ &amp;amp; \color{#08A}{text} &amp;amp; \verb+#08F+ &amp;amp; \color{#08F}{text}  \\
+\verb+#580+ &amp;amp; \color{#580}{text} &amp;amp; \verb+#585+ &amp;amp; \color{#585}{text} &amp;amp; \verb+#58A+ &amp;amp; \color{#58A}{text} &amp;amp; \verb+#58F+ &amp;amp; \color{#58F}{text}  \\
+\verb+#A80+ &amp;amp; \color{#A80}{text} &amp;amp; \verb+#A85+ &amp;amp; \color{#A85}{text} &amp;amp; \verb+#A8A+ &amp;amp; \color{#A8A}{text} &amp;amp; \verb+#A8F+ &amp;amp; \color{#A8F}{text}  \\
+\verb+#F80+ &amp;amp; \color{#F80}{text} &amp;amp; \verb+#F85+ &amp;amp; \color{#F85}{text} &amp;amp; \verb+#F8A+ &amp;amp; \color{#F8A}{text} &amp;amp; \verb+#F8F+ &amp;amp; \color{#F8F}{text}  \\
+\hline
+\verb+#0F0+ &amp;amp; \color{#0F0}{text} &amp;amp; \verb+#0F5+ &amp;amp; \color{#0F5}{text} &amp;amp; \verb+#0FA+ &amp;amp; \color{#0FA}{text} &amp;amp; \verb+#0FF+ &amp;amp; \color{#0FF}{text}  \\
+\verb+#5F0+ &amp;amp; \color{#5F0}{text} &amp;amp; \verb+#5F5+ &amp;amp; \color{#5F5}{text} &amp;amp; \verb+#5FA+ &amp;amp; \color{#5FA}{text} &amp;amp; \verb+#5FF+ &amp;amp; \color{#5FF}{text}  \\
+\verb+#AF0+ &amp;amp; \color{#AF0}{text} &amp;amp; \verb+#AF5+ &amp;amp; \color{#AF5}{text} &amp;amp; \verb+#AFA+ &amp;amp; \color{#AFA}{text} &amp;amp; \verb+#AFF+ &amp;amp; \color{#AFF}{text}  \\
+\verb+#FF0+ &amp;amp; \color{#FF0}{text} &amp;amp; \verb+#FF5+ &amp;amp; \color{#FF5}{text} &amp;amp; \verb+#FFA+ &amp;amp; \color{#FFA}{text} &amp;amp; \verb+#FFF+ &amp;amp; \color{#FFF}{text}  \\
+\hline
+\end{array}
+
+###(5)．添加删除线
+
+使用删除线功能必须声明 `$$` 符号。
+
+在公式内使用 `\require{cancel}` 来允许 **片段删除线** 的显示。
+声明片段删除线后，使用 `\cancel{字符}`、`\bcancel{字符}`、`\xcancel{字符}` 和 `\cancelto{字符}` 来实现各种片段删除线效果。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\require{cancel}\begin{array}{rl}
+\verb|y+\cancel{x}| &amp; y+\cancel{x}\\
+\verb|\cancel{y+x}| &amp; \cancel{y+x}\\
+\verb|y+\bcancel{x}| &amp; y+\bcancel{x}\\
+\verb|y+\xcancel{x}| &amp; y+\xcancel{x}\\
+\verb|y+\cancelto{0}{x}| &amp; y+\cancelto{0}{x}\\
+\verb+\frac{1\cancel9}{\cancel95} = \frac15+&amp; \frac{1\cancel9}{\cancel95} = \frac15 \\
+\end{array} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+$$
+\require{cancel}
+\begin{array}{rl}
+\verb|y+\cancel{x}| &amp;amp; y+\cancel{x}\\
+\verb|\cancel{y+x}| &amp;amp; \cancel{y+x}\\
+\verb|y+\bcancel{x}| &amp;amp; y+\bcancel{x}\\
+\verb|y+\xcancel{x}| &amp;amp; y+\xcancel{x}\\
+\verb|y+\cancelto{0}{x}| &amp;amp; y+\cancelto{0}{x}\\
+\verb+\frac{1\cancel9}{\cancel95} = \frac15+&amp;amp; \frac{1\cancel9}{\cancel95} = \frac15 \\
+\end{array}
+$$
+
+使用 `\require{enclose}` 来允许 **整段删除线** 的显示。
+声明整段删除线后，使用 `\enclose{删除线效果}{字符}` 来实现各种整段删除线效果。
+其中，删除线效果有 `horizontalstrike`、`verticalstrike`、`updiagonalstrike` 和 `downdiagonalstrike`，可叠加使用。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\require{enclose}\begin{array}{rl}
+\verb|\enclose{horizontalstrike}{x+y}| &amp; \enclose{horizontalstrike}{x+y}\\
+\verb|\enclose{verticalstrike}{\frac xy}| &amp; \enclose{verticalstrike}{\frac xy}\\
+\verb|\enclose{updiagonalstrike}{x+y}| &amp; \enclose{updiagonalstrike}{x+y}\\
+\verb|\enclose{downdiagonalstrike}{x+y}| &amp; \enclose{downdiagonalstrike}{x+y}\\
+\verb|\enclose{horizontalstrike,updiagonalstrike}{x+y}| &amp; \enclose{horizontalstrike,updiagonalstrike}{x+y}\\
+\end{array} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+$$
+\require{enclose}\begin{array}{rl}
+\verb|\enclose{horizontalstrike}{x+y}| &amp;amp; \enclose{horizontalstrike}{x+y}\\
+\verb|\enclose{verticalstrike}{\frac xy}| &amp;amp; \enclose{verticalstrike}{\frac xy}\\
+\verb|\enclose{updiagonalstrike}{x+y}| &amp;amp; \enclose{updiagonalstrike}{x+y}\\
+\verb|\enclose{downdiagonalstrike}{x+y}| &amp;amp; \enclose{downdiagonalstrike}{x+y}\\
+\verb|\enclose{horizontalstrike,updiagonalstrike}{x+y}| &amp;amp; \enclose{horizontalstrike,updiagonalstrike}{x+y}\\
+\end{array}
+$$
+
+此外， `\enclose` 命令还可以产生包围的边框和圆等，参见 [MathML Menclose Documentation](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/menclose) 以查看更多效果。
+
+
+#二、矩阵使用参考
+
+##1．如何输入无框矩阵
+
+在开头使用 `begin{matrix}`，在结尾使用 `end{matrix}`，在中间插入矩阵元素，每个元素之间插入 `&amp;amp;` ，并在每行结尾处使用 `\\` 。
+使用矩阵时必须声明 `$` 或 `$$` 符号。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{matrix}
+        1 &amp; x &amp; x^2 \\
+        1 &amp; y &amp; y^2 \\
+        1 &amp; z &amp; z^2 \\
+        \end{matrix} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 显示：
+$$
+        \begin{matrix}
+        1 &amp;amp; x &amp;amp; x^2 \\
+        1 &amp;amp; y &amp;amp; y^2 \\
+        1 &amp;amp; z &amp;amp; z^2 \\
+        \end{matrix}
+$$
+
+##2．如何输入边框矩阵
+
+在开头将 `matrix` 替换为 `pmatrix` `bmatrix` `Bmatrix` `vmatrix` `Vmatrix` 。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;$ \begin{matrix} 1 &amp;amp; 2 \ 3 &amp;amp; 4 \ \end{matrix} $
+$ \begin{pmatrix} 1 &amp;amp; 2 \ 3 &amp;amp; 4 \ \end{pmatrix} $
+$ \begin{bmatrix} 1 &amp;amp; 2 \ 3 &amp;amp; 4 \ \end{bmatrix} $
+$ \begin{Bmatrix} 1 &amp;amp; 2 \ 3 &amp;amp; 4 \ \end{Bmatrix} $
+$ \begin{vmatrix} 1 &amp;amp; 2 \ 3 &amp;amp; 4 \ \end{vmatrix} $
+$ \begin{Vmatrix} 1 &amp;amp; 2 \ 3 &amp;amp; 4 \ \end{Vmatrix} $&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+|matrix|pmatrix|bmatrix|Bmatrix|vmatrix|Vmatrix|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|$ \begin{matrix} 1 &amp;amp; 2 \\ 3 &amp;amp; 4 \\ \end{matrix} $|$ \begin{pmatrix} 1 &amp;amp; 2 \\ 3 &amp;amp; 4 \\ \end{pmatrix} $|$ \begin{bmatrix} 1 &amp;amp; 2 \\ 3 &amp;amp; 4 \\ \end{bmatrix} $|$ \begin{Bmatrix} 1 &amp;amp; 2 \\ 3 &amp;amp; 4 \\ \end{Bmatrix} $|$ \begin{vmatrix} 1 &amp;amp; 2 \\ 3 &amp;amp; 4 \\ \end{vmatrix} $|$ \begin{Vmatrix} 1 &amp;amp; 2 \\ 3 &amp;amp; 4 \\ \end{Vmatrix} $|
+　　　　
+##3．如何输入带省略符号的矩阵
+
+使用 `\cdots` $\cdots$ , `\ddots` $\ddots$ , `\vdots` $\vdots$ 来输入省略符号。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{pmatrix}
+        1 &amp; a_1 &amp; a_1^2 &amp; \cdots &amp; a_1^n \\
+        1 &amp; a_2 &amp; a_2^2 &amp; \cdots &amp; a_2^n \\
+        \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+        1 &amp; a_m &amp; a_m^2 &amp; \cdots &amp; a_m^n \\
+        \end{pmatrix} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+$$
+        \begin{pmatrix}
+        1 &amp;amp; a_1 &amp;amp; a_1^2 &amp;amp; \cdots &amp;amp; a_1^n \\
+        1 &amp;amp; a_2 &amp;amp; a_2^2 &amp;amp; \cdots &amp;amp; a_2^n \\
+        \vdots &amp;amp; \vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \\
+        1 &amp;amp; a_m &amp;amp; a_m^2 &amp;amp; \cdots &amp;amp; a_m^n \\
+        \end{pmatrix}
+$$
+
+##4．如何输入带分割符号的矩阵
+
+详见&quot;[数组使用参考](#五数组与表格使用参考)&quot;。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\left[
+    \begin{array}{cc|c}
+      1&amp;2&amp;3\\
+      4&amp;5&amp;6
+    \end{array}
+\right] %]]&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+$$
+\left[
+    \begin{array}{cc|c}
+      1&amp;amp;2&amp;amp;3\\
+      4&amp;amp;5&amp;amp;6
+    \end{array}
+\right]
+$$
+
+其中 `cc|c` 代表在一个三列矩阵中的第二和第三列之间插入分割线。
+
+##5．如何输入行中矩阵
+
+若想在一行内显示矩阵，
+使用`\bigl(\begin{smallmatrix} ... \end{smallmatrix}\bigr)`。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;这是一个行中矩阵的示例 $\bigl( \begin{smallmatrix} a &amp;amp; b \ c &amp;amp; d \end{smallmatrix} \bigr)$ 。&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：这是一个行中矩阵的示例 $\bigl( \begin{smallmatrix} a &amp;amp; b \\ c &amp;amp; d \end{smallmatrix} \bigr)$ 。
+
+#三、方程式序列使用参考
+
+##1．如何输入一个方程式序列
+
+人们经常想要一列整齐且居中的方程式序列。使用 `\begin{align}…\end{align}` 来创造一列方程式，其中在每行结尾处使用 `\\` 。
+使用方程式序列无需声明公式符号 `$` 或 `$$` 。
+
+请注意 `{align}` 语句是 **自动编号** 的。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;\begin{align}
+\sqrt{37} &amp;amp; = \sqrt{\frac{73^2-1}{12^2}} &lt;br /&gt;
+ &amp;amp; = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \ 
+ &amp;amp; = \sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}} &lt;br /&gt;
+ &amp;amp; = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \ 
+ &amp;amp; \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right)
+\end{align}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+\begin{align}
+\sqrt{37} &amp;amp; = \sqrt{\frac{73^2-1}{12^2}} \\
+ &amp;amp; = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \\ 
+ &amp;amp; = \sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}} \\
+ &amp;amp; = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \\ 
+ &amp;amp; \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right)
+\end{align}
+
+本例中每行公式的编号续自 [如何插入公式](#1如何插入公式) 中的自动编号公式 \eqref{eq:sample} 。
+
+##2．在一个方程式序列的每一行中注明原因
+
+在 `{align}` 中灵活组合 `\text` 和 `\tag` 语句。`\tag` 语句编号优先级高于自动编号。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;\begin{align}
+   v + w &amp;amp; = 0  &amp;amp;\text{Given} \tag 1&lt;br /&gt;
+   -w &amp;amp; = -w + 0 &amp;amp; \text{additive identity} \tag 2&lt;br /&gt;
+   -w + 0 &amp;amp; = -w + (v + w) &amp;amp; \text{equations $(1)$ and $(2)$}
+\end{align}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+\begin{align}
+   v + w &amp;amp; = 0  &amp;amp;\text{Given} \tag 1\\
+   -w &amp;amp; = -w + 0 &amp;amp; \text{additive identity} \tag 2\\
+   -w + 0 &amp;amp; = -w + (v + w) &amp;amp; \text{equations $(1)$ and $(2)$}
+\end{align}
+
+本例中第一、第二行的自动编号被 `\tag` 语句覆盖，第三行的编号为自动编号。
+
+#四、条件表达式使用参考
+
+##1．如何输入一个条件表达式
+
+使用 `begin{cases}` 来创造一组条件表达式，在每一行条件中插入 `&amp;amp;` 来指定需要对齐的内容，并在每一行结尾处使用 `\\`，以 `end{cases}` 结束。
+条件表达式无需声明 `$` 或 `$$` 符号。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+f(n) =
+        \begin{cases}
+        n/2,  &amp; \text{if $n$ is even} \\
+        3n+1, &amp; \text{if $n$ is odd}
+        \end{cases} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+$$
+        f(n) =
+        \begin{cases}
+        n/2,  &amp;amp; \text{if $n$ is even} \\
+        3n+1, &amp;amp; \text{if $n$ is odd}
+        \end{cases}
+$$
+
+##2．如何输入一个左侧对齐的条件表达式
+
+若想让文字在 **左侧对齐显示** ，则有如下方式：
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\left.
+        \begin{array}{l}
+        \text{if $n$ is even:}&amp;n/2\\
+        \text{if $n$ is odd:}&amp;3n+1
+        \end{array}
+        \right\}
+        =f(n) %]]&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+$$
+        \left.
+        \begin{array}{l}
+        \text{if $n$ is even:}&amp;amp;n/2\\
+        \text{if $n$ is odd:}&amp;amp;3n+1
+        \end{array}
+        \right\}
+        =f(n)
+$$
+
+##3．如何使条件表达式适配行高
+
+在一些情况下，条件表达式中某些行的行高为非标准高度，此时使用 `\\[2ex]` 语句代替该行末尾的 `\\` 来让编辑器适配。
+
+- 例子：
+|不适配[2ex]|
+|:--:|
+|
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+f(n) = 
+\begin{cases}
+\frac{n}{2},  &amp; \text{if $n$ is even} \\
+3n+1, &amp; \text{if $n$ is odd}
+\end{cases} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;|适配[2ex]|
+|:--:|
+|
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+f(n) = 
+\begin{cases}
+\frac{n}{2},  &amp; \text{if $n$ is even} \\[2ex]
+3n+1, &amp; \text{if $n$ is odd}
+\end{cases} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+|不适配[2ex]|
+|:--:|
+|$$
+f(n) =
+\begin{cases}
+\frac{n}{2},  &amp;amp; \text{if $n$ is even} \\
+3n+1, &amp;amp; \text{if $n$ is odd}
+\end{cases}
+$$|
+
+|适配[2ex]|
+|:--:|
+|$$
+f(n) =
+\begin{cases}
+\frac{n}{2},  &amp;amp; \text{if $n$ is even} \\[2ex]
+3n+1, &amp;amp; \text{if $n$ is odd}
+\end{cases}
+$$|
+
+**一个 `[ex]` 指一个 &quot;X-Height&quot;，即x字母高度。可以根据情况指定多个 `[ex]`，如 `[3ex]`、`[4ex]` 等。**
+其实可以在任何地方使用 `\\[2ex]` 语句，只要你觉得合适。
+
+#五、数组与表格使用参考
+
+##1．如何输入一个数组或表格
+
+通常，一个格式化后的表格比单纯的文字或排版后的文字更具有可读性。数组和表格均以 `begin{array}` 开头，并在其后定义列数及每一列的文本对齐属性，`c` `l` `r` 分别代表居中、左对齐及右对齐。若需要插入垂直分割线，在定义式中插入 `|` ，若要插入水平分割线，在下一行输入前插入 `\hline` 。与矩阵相似，每行元素间均须要插入 `&amp;amp;` ，每行元素以 `\\` 结尾，最后以 `end{array}` 结束数组。
+使用单个数组或表格时无需声明 `$` 或 `$$` 符号。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;\begin{array}{c|lcr}
+n &amp;amp; \text{左对齐} &amp;amp; \text{居中对齐} &amp;amp; \text{右对齐} &lt;br /&gt;
+\hline
+1 &amp;amp; 0.24 &amp;amp; 1 &amp;amp; 125 &lt;br /&gt;
+2 &amp;amp; -1 &amp;amp; 189 &amp;amp; -8 &lt;br /&gt;
+3 &amp;amp; -20 &amp;amp; 2000 &amp;amp; 1+10i
+\end{array}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+\begin{array}{c|lcr}
+n &amp;amp; \text{左对齐} &amp;amp; \text{居中对齐} &amp;amp; \text{右对齐} \\
+\hline
+1 &amp;amp; 0.24 &amp;amp; 1 &amp;amp; 125 \\
+2 &amp;amp; -1 &amp;amp; 189 &amp;amp; -8 \\
+3 &amp;amp; -20 &amp;amp; 2000 &amp;amp; 1+10i
+\end{array}
+
+##2．如何输入一个嵌套的数组或表格
+
+多个数组/表格可 **互相嵌套** 并组成一组数组/一组表格。
+使用嵌套前必须声明 `$$` 符号。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+% outer vertical array of arrays 外层垂直表格
+\begin{array}{c}
+    % inner horizontal array of arrays 内层水平表格
+    \begin{array}{cc}
+        % inner array of minimum values 内层&quot;最小值&quot;数组
+        \begin{array}{c|cccc}
+        \text{min} &amp; 0 &amp; 1 &amp; 2 &amp; 3\\
+        \hline
+        0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+        1 &amp; 0 &amp; 1 &amp; 1 &amp; 1\\
+        2 &amp; 0 &amp; 1 &amp; 2 &amp; 2\\
+        3 &amp; 0 &amp; 1 &amp; 2 &amp; 3
+        \end{array}
+    &amp;
+        % inner array of maximum values 内层&quot;最大值&quot;数组
+        \begin{array}{c|cccc}
+        \text{max}&amp;0&amp;1&amp;2&amp;3\\
+        \hline
+        0 &amp; 0 &amp; 1 &amp; 2 &amp; 3\\
+        1 &amp; 1 &amp; 1 &amp; 2 &amp; 3\\
+        2 &amp; 2 &amp; 2 &amp; 2 &amp; 3\\
+        3 &amp; 3 &amp; 3 &amp; 3 &amp; 3
+        \end{array}
+    \end{array}
+    % 内层第一行表格组结束
+    \\
+    % inner array of delta values 内层第二行Delta值数组
+        \begin{array}{c|cccc}
+        \Delta&amp;0&amp;1&amp;2&amp;3\\
+        \hline
+        0 &amp; 0 &amp; 1 &amp; 2 &amp; 3\\
+        1 &amp; 1 &amp; 0 &amp; 1 &amp; 2\\
+        2 &amp; 2 &amp; 1 &amp; 0 &amp; 1\\
+        3 &amp; 3 &amp; 2 &amp; 1 &amp; 0
+        \end{array}
+        % 内层第二行表格组结束
+\end{array} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+$$
+% outer vertical array of arrays 外层垂直表格
+\begin{array}{c}
+    % inner horizontal array of arrays 内层水平表格
+    \begin{array}{cc}
+        % inner array of minimum values 内层&quot;最小值&quot;数组
+        \begin{array}{c|cccc}
+        \text{min} &amp;amp; 0 &amp;amp; 1 &amp;amp; 2 &amp;amp; 3\\
+        \hline
+        0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0\\
+        1 &amp;amp; 0 &amp;amp; 1 &amp;amp; 1 &amp;amp; 1\\
+        2 &amp;amp; 0 &amp;amp; 1 &amp;amp; 2 &amp;amp; 2\\
+        3 &amp;amp; 0 &amp;amp; 1 &amp;amp; 2 &amp;amp; 3
+        \end{array}
+    &amp;amp;
+        % inner array of maximum values 内层&quot;最大值&quot;数组
+        \begin{array}{c|cccc}
+        \text{max}&amp;amp;0&amp;amp;1&amp;amp;2&amp;amp;3\\
+        \hline
+        0 &amp;amp; 0 &amp;amp; 1 &amp;amp; 2 &amp;amp; 3\\
+        1 &amp;amp; 1 &amp;amp; 1 &amp;amp; 2 &amp;amp; 3\\
+        2 &amp;amp; 2 &amp;amp; 2 &amp;amp; 2 &amp;amp; 3\\
+        3 &amp;amp; 3 &amp;amp; 3 &amp;amp; 3 &amp;amp; 3
+        \end{array}
+    \end{array}
+    % 内层第一行表格组结束
+    \\
+    % inner array of delta values 内层第二行Delta值数组
+        \begin{array}{c|cccc}
+        \Delta&amp;amp;0&amp;amp;1&amp;amp;2&amp;amp;3\\
+        \hline
+        0 &amp;amp; 0 &amp;amp; 1 &amp;amp; 2 &amp;amp; 3\\
+        1 &amp;amp; 1 &amp;amp; 0 &amp;amp; 1 &amp;amp; 2\\
+        2 &amp;amp; 2 &amp;amp; 1 &amp;amp; 0 &amp;amp; 1\\
+        3 &amp;amp; 3 &amp;amp; 2 &amp;amp; 1 &amp;amp; 0
+        \end{array}
+        % 内层第二行表格组结束
+\end{array}
+$$
+
+##3．如何输入一个方程组
+
+使用 `\begin{array}…\end{array}` 和 `\left\{…\right.` 来创建一个方程组。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\left\{ 
+\begin{array}{c}
+a_1x+b_1y+c_1z=d_1 \\ 
+a_2x+b_2y+c_2z=d_2 \\ 
+a_3x+b_3y+c_3z=d_3
+\end{array}
+\right.&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+$$
+\left\{ 
+\begin{array}{c}
+a_1x+b_1y+c_1z=d_1 \\ 
+a_2x+b_2y+c_2z=d_2 \\ 
+a_3x+b_3y+c_3z=d_3
+\end{array}
+\right. 
+$$
+
+或者使用条件表达式组 `\begin{cases}…\end{cases}` 来实现相同效果：
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;\begin{cases}
+a_1x+b_1y+c_1z=d_1 \ 
+a_2x+b_2y+c_2z=d_2 \ 
+a_3x+b_3y+c_3z=d_3
+\end{cases}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+\begin{cases}
+a_1x+b_1y+c_1z=d_1 \\ 
+a_2x+b_2y+c_2z=d_2 \\ 
+a_3x+b_3y+c_3z=d_3
+\end{cases}
+
+#六、连分数使用参考
+
+##1．如何输入一个连分式
+
+就像输入分式时使用 `\frac` 一样，使用 `\cfrac` 来创建一个连分数。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;x = a_0 + \cfrac{1^2}{a_1
+          + \cfrac{2^2}{a_2
+          + \cfrac{3^2}{a_3 + \cfrac{4^4}{a_4 + \cdots}}}}&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+$$
+x = a_0 + \cfrac{1^2}{a_1
+          + \cfrac{2^2}{a_2
+          + \cfrac{3^2}{a_3 + \cfrac{4^4}{a_4 + \cdots}}}}
+$$
+
+不要使用普通的 `\frac` 或 `\over` 来创建，否则会看起来 **很恶心** 。
+
+- 反例：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;x = a_0 + \frac{1^2}{a_1
+          + \frac{2^2}{a_2
+          + \frac{3^2}{a_3 + \frac{4^4}{a_4 + \cdots}}}}&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+$$
+x = a_0 + \frac{1^2}{a_1
+          + \frac{2^2}{a_2
+          + \frac{3^2}{a_3 + \frac{4^4}{a_4 + \cdots}}}}
+$$
+
+当然，你可以使用 `\frac` 来表达连分数的 **紧缩记法** 。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;x = a_0 + \frac{1^2}{a_1+}
+          \frac{2^2}{a_2+}
+          \frac{3^2}{a_3 +} \frac{4^4}{a_4 +} \cdots&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+$$
+x = a_0 + \frac{1^2}{a_1+}
+          \frac{2^2}{a_2+}
+          \frac{3^2}{a_3 +} \frac{4^4}{a_4 +} \cdots
+$$
+
+连分数通常都太大以至于不易排版，所以建议在连分数前后声明 `$$` 符号，或使用像 `[a0;a1,a2,a3,…]` 一样的紧缩记法。
+
+#七、交换图表使用参考
+
+##1．如何输入一个交换图表
+
+使用一行 `$ \require{AMScd} $` 语句来允许交换图表的显示。
+声明交换图表后，语法与矩阵相似，在开头使用 `begin{CD}`，在结尾使用 `end{CD}`，在中间插入图表元素，每个元素之间插入 `&amp;amp;` ，并在每行结尾处使用 `\\` 。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;$\require{AMScd}$
+\begin{CD}
+    A @&amp;gt;a» B&lt;br /&gt;
+    @V b V V# @VV c V&lt;br /&gt;
+    C @»d&amp;gt; D
+\end{CD}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+$\require{AMScd}$
+\begin{CD}
+    A @&amp;gt;a&amp;gt;&amp;gt; B\\
+    @V b V V\# @VV c V\\
+    C @&amp;gt;&amp;gt;d&amp;gt; D
+\end{CD}
+
+其中，`@&amp;gt;&amp;gt;&amp;gt;` 代表右箭头、`@&amp;lt;&amp;lt;&amp;lt;` 代表左箭头、`@VVV` 代表下箭头、`@AAA` 代表上箭头、`@=` 代表水平双实线、`@|` 代表竖直双实线、`@.`代表没有箭头。
+在 `@&amp;gt;&amp;gt;&amp;gt;` 的 `&amp;gt;&amp;gt;&amp;gt;` 之间任意插入文字即代表该箭头的注释文字。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;\begin{CD}
+    A @»&amp;gt; B @&amp;gt;{\text{very long label}}» C &lt;br /&gt;
+    @. @AAA @| &lt;br /&gt;
+    D @= E @«&amp;lt; F
+\end{CD}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+\begin{CD}
+    A @&amp;gt;&amp;gt;&amp;gt; B @&amp;gt;{\text{very long label}}&amp;gt;&amp;gt; C \\
+    @. @AAA @| \\
+    D @= E @&amp;lt;&amp;lt;&amp;lt; F
+\end{CD}
+
+在本例中， &quot;very long label&quot;自动延长了它所在箭头以及对应箭头的长度。
+
+
+#八、一些特殊的注意事项
+
+|**!! 本段内容为个人翻译，可能有不准确之处 !!**|
+|:--:|
+
+These are issues that won't affect the correctness of formulas, but might make them look significantly better or worse. Beginners should feel free to ignore this advice; someone else will correct it for them, or more likely nobody will care.
+
+现在指出的小问题并不会影响方程式及公式等的正确显示，但能让它们看起来明显更好看。初学者可无视这些建议，自然会有强迫症患者替你们改掉它的，或者更可能地，根本没人发现这些问题。
+
+Don't use `\frac` in exponents or limits of integrals; it looks bad and can be confusing, which is why it is rarely done in professional mathematical typesetting. Write the fraction horizontally, with a slash:
+
+在以e为底的指数函数、极限和积分中尽量不要使用 `\frac` 符号：它会使整段函数看起来很怪，而且可能产生歧义。也正是因此它在专业数学排版中几乎从不出现。
+横着写这些分式，中间使用斜线间隔 `/` （用斜线代替分数线）。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;\begin{array}{cc}
+\mathrm{Bad} &amp;amp; \mathrm{Better} &lt;br /&gt;
+\hline &lt;br /&gt;
+e^{i\frac{\pi}2} \quad e^{\frac{i\pi}2}&amp;amp; e^{i\pi/2} &lt;br /&gt;
+\int_{-\frac\pi2}^\frac\pi2 \sin x\,dx &amp;amp; \int_{-\pi/2}^{\pi/2}\sin x\,dx &lt;br /&gt;
+\end{array}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+\begin{array}{cc}
+\mathrm{Bad} &amp;amp; \mathrm{Better} \\
+\hline \\
+e^{i\frac{\pi}2} \quad e^{\frac{i\pi}2}&amp;amp; e^{i\pi/2} \\
+\int_{-\frac\pi2}^\frac\pi2 \sin x\,dx &amp;amp; \int_{-\pi/2}^{\pi/2}\sin x\,dx \\
+\end{array}
+
+The `|` symbol has the wrong spacing when it is used as a divider, for example in set comprehensions. Use `\mid` instead:
+
+`|` 符号在被当作分隔符时会产生错误的间隔，因此在需要分隔时最好使用 `\mid` 来代替它。
+
+- 例子:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;\begin{array}{cc}
+\mathrm{Bad} &amp;amp; \mathrm{Better} &lt;br /&gt;
+\hline &lt;br /&gt;
+{x|x^2\in\Bbb Z} &amp;amp; {x\mid x^2\in\Bbb Z} &lt;br /&gt;
+\end{array}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+\begin{array}{cc}
+\mathrm{Bad} &amp;amp; \mathrm{Better} \\
+\hline \\
+\{x|x^2\in\Bbb Z\} &amp;amp; \{x\mid x^2\in\Bbb Z\} \\
+\end{array}
+
+For double and triple integrals, don't use `\int\int` or `\int\int\int`. Instead use the special forms `\iint` and `\iiint`:
+
+使用多重积分符号时，不要多次使用 `\int` 来声明，直接使用 `\iint` 来表示 **二重积分** ，使用 `\iiint` 来表示 **三重积分** 等。对于无限次积分，可以用 `\int \cdots \int` 表示。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;\begin{array}{cc}
+\mathrm{Bad} &amp;amp; \mathrm{Better} &lt;br /&gt;
+\hline &lt;br /&gt;
+\int\int_S f(x)\,dy\,dx &amp;amp; \iint_S f(x)\,dy\,dx &lt;br /&gt;
+\int\int\int_V f(x)\,dz\,dy\,dx &amp;amp; \iiint_V f(x)\,dz\,dy\,dx
+\end{array}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 显示：
+\begin{array}{cc}
+\mathrm{Bad} &amp;amp; \mathrm{Better} \\
+\hline \\
+\int\int_S f(x)\,dy\,dx &amp;amp; \iint_S f(x)\,dy\,dx \\
+\int\int\int_V f(x)\,dz\,dy\,dx &amp;amp; \iiint_V f(x)\,dz\,dy\,dx
+\end{array}
+
+$$无限次积分：\int \cdots \int$$
+
+Use `\,`, to insert a thin space before differentials; without this $\TeX$ will mash them together:
+
+在微分符号前加入 `\,` 来插入一个小的间隔空隙；没有 `\,` 符号的话，$\TeX$ 将会把不同的微分符号堆在一起。
+
+- 例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;\begin{array}{cc}
+\mathrm{Bad} &amp;amp; \mathrm{Better} &lt;br /&gt;
+\hline &lt;br /&gt;
+\iiint_V f(x){\rm d}z {\rm d}y {\rm d}x &amp;amp; \iiint_V f(x)\,{\rm d}z\,{\rm d}y\,{\rm d}x
+\end{array}
+```&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;显示：
+\begin{array}{cc}
+\mathrm{Bad} &amp;amp; \mathrm{Better} &lt;br /&gt;
+\hline &lt;br /&gt;
+\iiint_V f(x){\rm d}z {\rm d}y {\rm d}x &amp;amp; \iiint_V f(x)\,{\rm d}z\,{\rm d}y\,{\rm d}x
+\end{array}&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;感谢您花费时间阅读这份指导手册，本手册内容可能有疏漏之处，欢迎更改指正。
+更多语法请参见：&lt;a href=&quot;https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown&quot;&gt;Cmd Markdown 简明语法手册&lt;/a&gt;，&lt;a href=&quot;https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-高阶语法手册&quot;&gt;Cmd Markdown 高阶语法手册&lt;/a&gt;。
+祝您记录、阅读、分享愉快！&lt;/p&gt;
+
+&lt;p&gt;Drafted &amp;amp; Translated by &lt;a href=&quot;https://ericp.cn/&quot;&gt;Eric P.&lt;/a&gt;
+2015-10-02&lt;/p&gt;</content><author><name>冥郡</name></author><summary type="html"></summary></entry><entry><title type="html">模式匹配之KMP算法</title><link href="http://localhost:4000/github-io/2018-07-16/CAL-01_KMP" rel="alternate" type="text/html" title="模式匹配之KMP算法" /><published>2018-07-16T00:00:00+08:00</published><updated>2018-07-16T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-16/CAL-01_KMP</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-16/CAL-01_KMP">&lt;h2 id=&quot;问题描述&quot;&gt;问题描述&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;模式匹配:&lt;/strong&gt;字串的定位操作通常被称为串的&lt;strong&gt;模式匹配&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;最简单的模式匹配方式：从主串S的第pos个字符起和模式的第一个字符比较之，若相等，则继续逐个比较后续字符；否则从主串S的下一个字符起再重新和模式的字符比较之。依次类推，直至模式T中的每个字符依次和主串S中的一个连续的字符序列相等，则称&lt;strong&gt;匹配成功&lt;/strong&gt;，函数值为和模式T中第一个字符相等的字符在主串中的序号，否则称&lt;strong&gt;匹配失败&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;h2 id=&quot;模式匹配的改进算法&quot;&gt;模式匹配的改进算法&lt;/h2&gt;
+
+&lt;p&gt;D.E.Knuth 、V.R.Pratt 和 J.H.Morris同时发现，其算法的本质改变在于：每当一趟匹配过程中出现字符比较不等时，不需要回溯指针，而是利用已经得到的部分匹配结果将模式向右移动尽可能远的一段距离后，继续进行比较。&lt;/p&gt;
+
+&lt;p&gt;在此不对算法本身做太多阐述，网上有很多说明，仅仅是，完成我自己在理解此算法之后，写出相应的代码。&lt;/p&gt;
+
+&lt;h3 id=&quot;求next与nextval与匹配&quot;&gt;求next与nextval与匹配&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{c}&quot;&gt;#include&amp;lt;stdio.h&amp;gt;
+#include&amp;lt;string.h&amp;gt;
+#include&amp;lt;malloc.h&amp;gt;
+#include&amp;lt;memory.h&amp;gt;
+#include&amp;lt;time.h&amp;gt;
+
+
+void Next1(char *pattern, int next[]){
+	int length=strlen(pattern);
+	*(next)=0;
+	*(next+1)=1;
+	for(int i=2;i&amp;lt;length;i++){
+		int aim=i-1;
+		while(pattern[i-1]!=pattern[next[aim]-1]){
+			aim=next[aim]-1;
+			if(aim==0)
+				break;
+		}
+		next[i]=next[aim]+1;
+		
+	}
+	for(int i=1;i&amp;lt;length;i++){
+		if(pattern[i]==pattern[next[i]-1])
+			next[i]=next[next[i]-1];
+	}
+
+}
+
+void NextVal(char *pattern, int next[]){
+	int length=strlen(pattern);
+	*(next)=0;
+	*(next+1)=1;
+	for(int i=2;i&amp;lt;length;i++){
+		int aim=i-1;
+		while(pattern[i-1]!=pattern[next[aim]-1]){
+			aim=next[aim]-1;
+			if(aim==0)
+				break;
+		}
+		next[i]=next[aim]+1;
+		
+	}
+	for(int i=1;i&amp;lt;length;i++){
+		if(pattern[i]==pattern[next[i]-1])
+			next[i]=next[next[i]-1];
+	}
+
+}
+
+int Index_KMP(char *S,char *T,int pos){
+	//利用模式串T的next函数求在主串S中第pos个字符开始匹配到的位置
+	//返回-1时代表没匹配到
+	int i=pos,j=0; //i是指主串的，j是指模式串的
+	int *next=(int *)malloc(sizeof(int)*strlen(T));
+	NextVal(T,next);//这个过程是O(m)的
+	while(i&amp;lt;strlen(S)&amp;amp;&amp;amp;j&amp;lt;strlen(T)){//这个过程O(m+n)
+		if(j==0||S[i]==T[j]){
+			++i;++j;
+		}else{
+			j=next[j]-1;
+		}
+	}
+	if(j&amp;gt;=strlen(T))
+		return i-strlen(T);
+	else
+		return -1;
+}
+
+int main()
+{
+	char *a=&quot;aaaab&quot;;
+	char *b=&quot;aaaaab&quot;;
+	printf(&quot;a&amp;amp;b KMP position: %d&quot;,Index_KMP(b,a,0));
+	int n=strlen(a);
+	int *nex1,*nex2;
+	nex1=(int *)malloc(sizeof(int)*n);
+	memset(nex1,0,sizeof(nex1));
+	nex2=(int *)malloc(sizeof(int)*(1+n));
+	memset(nex2,0,sizeof(nex2));
+	for(int k=0;k&amp;lt;100000;k++)
+		Next1(a,nex1);
+	for(int i=0;i&amp;lt;n;i++)
+		printf(&quot;%d &quot;,nex1[i]);
+	printf(&quot;\n&quot;);
+	for(int k=0;k&amp;lt;100000;k++)
+		NextVal(a,nex2);
+	for(int i=0;i&amp;lt;n;i++)
+		printf(&quot;%d &quot;,nex2[i]);
+	printf(&quot;\n&quot;);
+	
+	return 0;
+}
+
+&lt;/code&gt;&lt;/pre&gt;</content><author><name>冥郡</name></author><summary type="html">问题描述</summary></entry><entry><title type="html">Python base skill</title><link href="http://localhost:4000/github-io/2018-07-15/Python-01_base" rel="alternate" type="text/html" title="Python base skill" /><published>2018-07-15T00:00:00+08:00</published><updated>2018-07-15T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-15/Python-01_base</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-15/Python-01_base">&lt;h2 id=&quot;标准数据类型&quot;&gt;标准数据类型&lt;/h2&gt;
 &lt;p&gt;与其他语言十分不一样的是python 封装的几种数据类型&lt;/p&gt;
 
 &lt;h2 id=&quot;六种数据类型&quot;&gt;六种数据类型&lt;/h2&gt;
@@ -60,7 +1423,69 @@ using namespace std;
 int main(){
 	cout&amp;lt;&amp;lt;&quot;HelloWorld&quot;&amp;lt;&amp;lt;endl;
 }
-&lt;/code&gt;&lt;/pre&gt;</content><author><name>冥郡</name></author><summary type="html">第一篇博客</summary></entry><entry><title type="html">情绪</title><link href="http://localhost:4000/github-io/2018-05-15/Poem-01" rel="alternate" type="text/html" title="情绪" /><published>2018-05-15T00:00:00+08:00</published><updated>2018-05-15T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-05-15/Poem-01</id><content type="html" xml:base="http://localhost:4000/github-io/2018-05-15/Poem-01">&lt;p&gt;曾经我将纷纷扰扰&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;</content><author><name>冥郡</name></author><summary type="html">第一篇博客</summary></entry><entry><title type="html">EJB——Ant Demo——simple package</title><link href="http://localhost:4000/github-io/2018-06-11/EJB-01-Ant-demo" rel="alternate" type="text/html" title="EJB——Ant Demo——simple package" /><published>2018-06-11T00:00:00+08:00</published><updated>2018-06-11T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-06-11/EJB-01-Ant-demo</id><content type="html" xml:base="http://localhost:4000/github-io/2018-06-11/EJB-01-Ant-demo">&lt;h2 id=&quot;背景&quot;&gt;背景&lt;/h2&gt;
+
+&lt;p&gt;简单的java情况下，使用命令行编译运行一个jar包的demo&lt;/p&gt;
+
+&lt;h2 id=&quot;目录结构&quot;&gt;目录结构&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C:.
+│  mymanifest
+│  run.bat
+│  runjar.bat
+│
+├─build
+│  ├─classes
+│  │  └─AntDemo
+│  │          HelloWorld.class
+│  │
+│  └─jar
+│          HelloWorld.jar
+│
+└─src
+    └─AntDemo
+            HelloWorld.java
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;源文件内容&quot;&gt;源文件内容&lt;/h2&gt;
+
+&lt;h3 id=&quot;mymainifest&quot;&gt;mymainifest&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Main-Class: AntDemo.HelloWorld
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;runbat&quot;&gt;run.bat&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;javac -sourcepath src -d build\classes src\AntDemo\HelloWorld.java
+java -cp build\classes AntDemo.HelloWorld
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;runjarbat&quot;&gt;runjar.bat&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;echo Main-Class: AntDemo.HelloWorld&amp;gt;mymanifest
+md build\jar
+jar cfm build\jar\HelloWorld.jar myManifest -C build\classes .
+java -jar build\jar\HelloWorld.jar
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;srcantdemohelloworldjava&quot;&gt;src/AntDemo/HelloWorld.java&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AntDemo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+		&lt;span class=&quot;nf&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;HelloWorld&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;运行过程&quot;&gt;运行过程&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;命令行运行run.bat，注意一定先运行run命令生成.class文件才能打包&lt;/li&gt;
+  &lt;li&gt;看到输出HelloWorld，证明编译通过，也就证明了程序的正确性&lt;/li&gt;
+  &lt;li&gt;其次再运行runjar.bat，这里的runjar是将运行得到的class文件打包压缩到.jar文件中&lt;/li&gt;
+  &lt;li&gt;成功打包后，jar包内部是会有主类的，此时同样输出HelloWorld&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;其他说明的点&quot;&gt;其他说明的点&lt;/h2&gt;
+&lt;p&gt;简单的Java打包程序，主要熟悉命令行的编译方式，为ant的引入做铺垫&lt;/p&gt;</content><author><name>冥郡</name></author><summary type="html">背景</summary></entry><entry><title type="html">情绪</title><link href="http://localhost:4000/github-io/2018-05-15/Poem-01" rel="alternate" type="text/html" title="情绪" /><published>2018-05-15T00:00:00+08:00</published><updated>2018-05-15T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-05-15/Poem-01</id><content type="html" xml:base="http://localhost:4000/github-io/2018-05-15/Poem-01">&lt;p&gt;曾经我将纷纷扰扰&lt;/p&gt;
 
 &lt;p&gt;封入文字&lt;/p&gt;
 
@@ -206,7 +1631,314 @@ int main(){
 
 &lt;p&gt;逃脱不了的宿命&lt;/p&gt;
 
-&lt;p&gt;予自己最深的忏悔&lt;/p&gt;</content><author><name>藏锋冥郡</name></author><summary type="html">曾经我将纷纷扰扰</summary></entry><entry><title type="html">空间多维数据展示–涟漪图</title><link href="http://localhost:4000/github-io/2018-03-12/R-01" rel="alternate" type="text/html" title="空间多维数据展示--涟漪图" /><published>2018-03-12T00:00:00+08:00</published><updated>2018-03-12T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-03-12/R-01</id><content type="html" xml:base="http://localhost:4000/github-io/2018-03-12/R-01">&lt;h2 id=&quot;1-研究问题&quot;&gt;1. 研究问题&lt;/h2&gt;
+&lt;p&gt;予自己最深的忏悔&lt;/p&gt;</content><author><name>藏锋冥郡</name></author><summary type="html">曾经我将纷纷扰扰</summary></entry><entry><title type="html">“神抽”还是“鬼抽”?炉石发牌员偏好探究</title><link href="http://localhost:4000/github-io/2018-04-10/R-02" rel="alternate" type="text/html" title="“神抽”还是“鬼抽”?炉石发牌员偏好探究" /><published>2018-04-10T00:00:00+08:00</published><updated>2018-04-10T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-04-10/R-02</id><content type="html" xml:base="http://localhost:4000/github-io/2018-04-10/R-02">&lt;style type=&quot;text/css&quot;&gt;
+p.name {color:rgb(0,0,0);font:bold 16px arial;}
+p.vs {color:rgb(248,0,142);font:bold 18px arial;}
+p.tit {color:rgb(248,75,77);font:bold 17px arial;}
+p.special {color:rgb(255,0,0);font:bold 19px arial;}
+p.clusion{color:rgb(252,156,18);font:bold 17px arial;}
+&lt;/style&gt;
+
+&lt;h2 id=&quot;背景介绍&quot;&gt;背景介绍&lt;/h2&gt;
+
+&lt;h4 id=&quot;炉石传说是一款集换式卡牌游戏玩家根据自己现有的卡牌组建合适的卡组驱动随从施展法术与对手一决高下而作为一款卡牌游戏除了自身收藏卡牌之外取得胜负最为关键的一点在于关键时候是否能抽到关键的卡牌不少玩家吐槽炉石传说可能存在一个发牌员为了增加玩家的游戏时间对发牌机制做了控制以达到鬼抽神抽的目的而实际上炉石暗地里调整各种选牌概率也不是第一次了例如著名的竞技场11只剑龙骑术极大的降低了玩家的用户体验&quot;&gt;《炉石传说》是一款集换式卡牌游戏，玩家根据自己现有的卡牌组建合适的卡组，驱动随从，施展法术，与对手一决高下。而作为一款卡牌游戏，除了自身收藏卡牌之外，取得胜负最为关键的一点在于，关键时候是否能抽到关键的卡牌。不少玩家吐槽炉石传说可能存在一个发牌员，为了增加玩家的游戏时间，对发牌机制做了控制，以达到鬼抽/神抽的目的。而实际上，炉石暗地里调整各种选牌概率也不是第一次了。例如：著名的竞技场11只剑龙骑术，极大的降低了玩家的用户体验。&lt;/h4&gt;
+&lt;h4 id=&quot;笔者学习实验设计课程中便希望能利用上课知识为了验证网络上一直以来对发牌员偏好的猜测开始了简单的实验研究游戏动态过程过于复杂所以以起手发牌换牌为例完成一次简单的探究炉石中的起手发牌规律&quot;&gt;笔者学习《实验设计》课程中，便希望能利用上课知识，为了验证网络上一直以来对发牌员偏好的猜测，开始了简单的实验。研究游戏动态过程过于复杂，所以以起手发牌换牌为例，完成一次简单的探究——炉石中的起手发牌规律。&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/github-io/images/R02-2.jpg&quot; alt=&quot;炉石游戏封面&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;一实验设计&quot;&gt;一、实验设计&lt;/h2&gt;
+&lt;h3 id=&quot;1数据说明为了探究抽牌上手的因素将因变量确定为以下几类&quot;&gt;1.数据说明，为了探究抽牌上手的因素，将因变量确定为以下几类:&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;名称&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;数据记作&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;备注&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;“上手卡牌顺序”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;记为”次序”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;标识每次实验中，抽到的卡牌&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;“法力水晶费用”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;记为”费用”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;取值为0-9+&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;“卡牌稀有度”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;记为”稀有度”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;取值为0-3，对应白卡/蓝卡/紫卡/橙卡(卡牌稀有度越高，越难收集，若暴雪公司需要盈利，迎合”人民币玩家”,稀有卡牌的上手率可能会高)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;“是否为职业卡牌”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;记为”职卡”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;取值为0/1，1为是职业卡牌&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;“法术或随从”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;记为”法随”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;取值为0/1，1为随从牌，0为法术牌&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;“初始手牌或二次手牌”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;记为”牌次”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;取值为0/1，1为初始手牌，2为更换手牌后的手牌，这里是为了验证更换手牌是否能得到更好的结果。&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;2-实验总体说明炉石卡牌很多但每次游戏仅能携带30张卡牌所以为了方便实验构造了一个卡组尽量满足均匀设计进行实验实验卡牌说明如下&quot;&gt;2. 实验总体说明，炉石卡牌很多，但每次游戏仅能携带30张卡牌，所以为了方便实验，构造了一个卡组尽量满足均匀设计，进行实验。实验卡牌说明如下：&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;变量&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;类型&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;30张卡牌中各类型张数&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;其他说明&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;费用&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0-9&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;每个费用各三张&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;对战起始费用是1，每个回合能拥有的费用+1，上限是10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;稀有度&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;白/蓝/紫/橙&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;8/8/7/7&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;因为橙卡比较难得到&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;职卡&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;职业/非职业&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;15/15&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;职业一般更强&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;法随&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;法术/随从&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10/20&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;法术比较少，大部分是随从，所以比例定为1:2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;牌次&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;首次/二次&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1:1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;每次将初始手牌更换，得到更换手牌数据&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;3-实验流程说明&quot;&gt;3. 实验流程说明&lt;/h3&gt;
+&lt;h4 id=&quot;1-利用构造好的实验卡组在2018年4月1日连续开始对局55局并认输仅测试起手抽牌&quot;&gt;1. 利用构造好的实验卡组，在2018年4月1日，连续开始对局55局，并认输(仅测试起手抽牌)。&lt;/h4&gt;
+&lt;h4 id=&quot;2-人工记录每次对局开始时上手的卡牌的详细情况为防止出现错记情况李某刘某两人同时开始记录并核对数据&quot;&gt;2. 人工记录每次对局开始时，上手的卡牌的详细情况，为防止出现错记情况，李某、刘某两人同时开始记录，并核对数据。&lt;/h4&gt;
+&lt;h4 id=&quot;3-测试时仅用一个炉石账号进行比较防止由于用户之间存在区别对待带来的差异&quot;&gt;3. 测试时，仅用一个炉石账号进行比较，防止由于用户之间存在区别对待带来的差异。&lt;/h4&gt;
+
+&lt;h2 id=&quot;二数据分析&quot;&gt;二、数据分析&lt;/h2&gt;
+&lt;h3 id=&quot;1描述统计&quot;&gt;1.描述统计&lt;/h3&gt;
+&lt;h4 id=&quot;实际游戏中起手换不换牌是一个博弈的过程而为了增加天胡的可能性如何换牌是一个值得探究的内容所以借着下面一副简单的直方图和概率密度图像验证一下心中的疑惑以及为发牌员的喜好因素做一个简单的探索&quot;&gt;实际游戏中，起手换不换牌是一个博弈的过程，而为了增加“天胡”的可能性，如何换牌，是一个值得探究的内容，所以借着下面一副简单的直方图和概率密度图像，验证一下心中的疑惑，以及为“发牌员”的喜好因素做一个简单的探索。&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/github-io/images/R02-3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;p class=&quot;name&quot;&gt;
+图1. 不同轮次，不同因素上手次数图 
+
+ 左上记为图1.1,右上记为图1.2,左下记为图1.3,右下记为图1.4
+&lt;/p&gt;
+&lt;/center&gt;
+
+&lt;h5 id=&quot;a根据图11可以发现换不换牌存在区别换牌之后费用会稍高一些也就是说当起始手牌适中时希望搏一搏换更小的点数手牌时发牌员可能会给你更糟糕的牌但是不是整体上2次选牌费用会变高还需要进一步检验&quot;&gt;a.根据图1.1可以发现，换不换牌存在区别，换牌之后费用会稍高一些，也就是说当起始手牌适中时，希望搏一搏，换更小的点数手牌时，“发牌员”可能会给你更糟糕的牌，但是不是整体上2次选牌费用会变高还需要进一步检验。&lt;/h5&gt;
+&lt;h5 id=&quot;b根据图12发现本应该8877的概率分布图并不是心理预期的比例橙卡是否真的容易上手需要进一步检验但橙卡容易被抽到的确更能增加玩家的兴趣&quot;&gt;b.根据图1.2发现，本应该8:8:7:7的概率分布图并不是心理预期的比例，“橙卡”是否真的容易“上手”，需要进一步检验，但橙卡容易被抽到，的确更能增加玩家的兴趣。&lt;/h5&gt;
+&lt;h5 id=&quot;c根据图13换卡似乎更能将非职业卡换到手上但实际两者对比差别并不大也并不特别影响游戏的平衡发牌员是不是职业卡并不是很有兴趣&quot;&gt;c.根据图1.3换卡似乎更能将非职业卡换到手上，但实际两者对比差别并不大，也并不特别影响游戏的平衡，“发牌员”是不是职业卡并不是很有兴趣&lt;/h5&gt;
+&lt;h5 id=&quot;d卡组法术随从12但从图14手时法术随从37两者存在差别但发牌员是否对随从情有独钟仍需要进一步检验&quot;&gt;d.卡组法术:随从=1:2,但从图1.4手时,法术:随从=3:7,两者存在差别,但发牌员是否对“随从”情有独钟,仍需要进一步检验。&lt;/h5&gt;
+
+&lt;h3 id=&quot;2非参数检验&quot;&gt;2.非参数检验&lt;/h3&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\chi^2&lt;/script&gt; 检验&lt;/p&gt;
+
+&lt;p class=&quot;tit&quot;&gt;
+a.检验整体来说，上手的费用是不是均匀的
+&lt;/p&gt;
+&lt;p class=&quot;vs&quot;&gt;
+$$ H_0: 均匀 vs  H_1:  不均匀 $$
+&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## 
+## 	Chi-squared test for given probabilities
+## 
+## data:  table(dat$费用)
+## X-squared = 2.7, df = 9, p-value = 0.975
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p class=&quot;clusion&quot;&gt;
+没有足够把握认为能拒绝原假设，认为上手费用是均匀的
+&lt;/p&gt;
+
+&lt;p class=&quot;tit&quot;&gt;
+b.检验先后次序不同，是否对费用产生影响
+&lt;/p&gt;
+&lt;p class=&quot;vs&quot;&gt;
+$$ H_0 :先后费用频次来自同一总体 vs  H_1 :先后费用不来自一个总体 $$
+&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## 
+## 	Pearson's Chi-squared test
+## 
+## data:  first and second
+## X-squared = 32.5, df = 25, p-value = 0.144
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p class=&quot;clusion&quot;&gt;
+没有90%的把握认为先后次序会对费用产生影响，无法拒绝原假设
+&lt;/p&gt;
+
+&lt;p class=&quot;tit&quot;&gt;
+c.检验卡牌稀有度是否会影响上手概率
+&lt;/p&gt;
+&lt;p class=&quot;vs&quot;&gt;
+$$ H_0:卡牌稀有度不会影响上手概率 vs H_1:卡牌稀有度会影响上手概率 $$
+&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## 
+## 	Chi-squared test for given probabilities
+## 
+## data:  table(dat$稀有度)
+## X-squared = 5.28, df = 3, p-value = 0.1524
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p class=&quot;clusion&quot;&gt;
+没有90%的把握认为卡牌稀有度会影响上手概率，无法拒绝原假设
+&lt;/p&gt;
+
+&lt;p class=&quot;special&quot;&gt;
+binom检验
+&lt;/p&gt;
+
+&lt;p class=&quot;tit&quot;&gt;
+a.简单探究交互作用
+    玩家通常还比较关注的一个点是，强力低费橙卡是否特别容易上手，所以对低费橙卡的上手率也做一个简单的检验
+&lt;/p&gt;
+&lt;p class=&quot;vs&quot;&gt;
+$$ H_0:低费橙卡上手概率 = \frac{1}{30} vs H_1:低费橙卡上手概率\neq\frac{1}{30} $$
+&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## 
+## 	Exact binomial test
+## 
+## data:  length(d[, 1]) and 200
+## number of successes = 7, number of trials = 200, p-value = 0.8426
+## alternative hypothesis: true probability of success is not equal to 0.03333333
+## 95 percent confidence interval:
+##  0.01418553 0.07078100
+## sample estimates:
+## probability of success 
+##                  0.035
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p class=&quot;clusion&quot;&gt;
+无法拒绝原假设，证明类似于“二王子贼”这样的强大“天胡”卡组，每次核心牌在手上的概率并没有被调整过，实际上，这与赌徒心态特别类似，少量的赢钱给了玩家每次都能赢钱的暗示，但实际上，这样一张橙卡起手就在手上的概率才3%，但低费将其拍出的概率则更高，这也就验证了每套卡组仅能带一张橙卡的合理性。
+&lt;/p&gt;
+
+&lt;p class=&quot;tit&quot;&gt;
+b.验证是否随从比法术更容易上手
+&lt;/p&gt;
+&lt;p class=&quot;vs&quot;&gt;
+$$H_0:随从上手率=\frac{1}{3} vs H_1:随从上手率\neq\frac{1}{3}$$
+&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## 
+## 	Exact binomial test
+## 
+## data:  sum(dat$法随) and 200
+## number of successes = 140, number of trials = 200, p-value =
+## 0.3305
+## alternative hypothesis: true probability of success is not equal to 0.6666667
+## 95 percent confidence interval:
+##  0.6313501 0.7626104
+## sample estimates:
+## probability of success 
+##                    0.7
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p class=&quot;clusion&quot;&gt;
+无法拒绝原假设，认为随从和法术上手的几率是一样的。
+&lt;/p&gt;
+
+&lt;h5 id=&quot;尝试诸多检验之后沮丧的发现实际上整个实验都是与随机数做斗争并没有足够确切的证据显示网民所期待的那样炉石背后有位经验老道的发牌员&quot;&gt;尝试诸多检验之后，沮丧的发现，实际上整个实验都是与随机数做斗争，并没有足够确切的证据显示，网民所期待的那样，“炉石”背后有位“经验老道”的发牌员。&lt;/h5&gt;
+
+&lt;p&gt;&lt;img src=&quot;/github-io/images/R02-1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;三结论&quot;&gt;三、结论&lt;/h2&gt;
+
+&lt;h5 id=&quot;1单纯从直方图概率密度图看费用与轮次是有一定关系的但仅在放宽犯错误的概率的情况下卡方检验能得到先后次序会影响上手费用但整体上看费用出现情况比较均匀也就是说对照详细频数发牌员趋向于给玩家更不好的卡07费实际上是玩家不太希望第一轮上手的卡而12费则是玩家最希望上手的卡根据直方图第二轮派牌策略实际上更趋向于给不太好的卡这是单纯用检验没有办法得到的&quot;&gt;1.单纯从直方图、概率密度图看，费用与轮次是有一定关系的，但仅在放宽犯错误的概率的情况下，卡方检验能得到先后次序会影响上手费用，但整体上看费用出现情况比较均匀，也就是说，对照详细频数，“发牌员”趋向于给玩家更不好的卡，0、7+费实际上是玩家不太希望第一轮上手的卡，而1、2费则是玩家最希望上手的卡，根据直方图，第二轮派牌策略实际上更趋向于给不太好的卡，这是单纯用检验没有办法得到的。&lt;/h5&gt;
+&lt;h5 id=&quot;2从多个检验的失效看出也许炉石背后并没有网络上谣传的发牌员而发牌时所遵循的策略仅仅是生成一系列来自均匀分布的随机数罢了但毫无疑问在暴雪承认暗改竞技场选牌机制之后改动抽牌概率也是极有可能的当前在实验中发现仅有选牌轮次可能存在差异可以提醒玩家尽量不要怀有搏一搏的心态&quot;&gt;2.从多个检验的失效看出，也许“炉石”背后并没有网络上谣传的“发牌员”，而发牌时所遵循的策略仅仅是生成一系列来自均匀分布的随机数罢了。但毫无疑问，在暴雪承认暗改竞技场选牌机制之后，改动抽牌概率也是极有可能的，当前在实验中发现仅有选牌轮次可能存在差异，可以提醒玩家尽量不要怀有“搏一搏”的心态&lt;/h5&gt;
+
+&lt;h2 id=&quot;四不足与局限&quot;&gt;四、不足与局限&lt;/h2&gt;
+
+&lt;h5 id=&quot;1由于本人卡牌有限无法更好的排列出更多的实验模型还有潜在的一些选牌因素无法得到验证例如为了增加玩家对新版本的熟悉度是否选牌与卡牌版本有关之前有过的概率调整是将新版本卡牌在竞技场中的被选率提高&quot;&gt;1.由于本人卡牌有限，无法更好的排列出更多的实验模型，还有潜在的一些选牌因素无法得到验证，例如：为了增加玩家对新版本的熟悉度，是否选牌与卡牌版本有关(之前有过的概率调整是将新版本卡牌在竞技场中的被选率提高)&lt;/h5&gt;
+&lt;h5 id=&quot;2无法消除由个人账号带来的影响本人非人民币玩家可能并不在炉石希望改善用户体验的范畴之内所以可能没有被暗中改动&quot;&gt;2.无法消除由个人账号带来的影响，本人非人民币玩家，可能并不在炉石希望改善用户体验的范畴之内，所以可能没有被暗中改动&lt;/h5&gt;
+&lt;h5 id=&quot;3比较难研究交叉项带来的影响由于法术牌最高也就到7费而大部分高费牌卡牌稀有度比较高这样研究交互项时无法排除各因素之间的联系所以仅能对单独的一些感兴趣的交互项做研究&quot;&gt;3.比较难研究交叉项带来的影响，由于法术牌最高也就到7费，而大部分高费牌卡牌稀有度比较高，这样研究交互项时，无法排除各因素之间的联系，所以仅能对单独的一些感兴趣的交互项做研究&lt;/h5&gt;
+&lt;h4 id=&quot;4炉石最吸引玩家的其实是卡牌开包机制的研究但由于每天能靠任务赚得的包是有限的所以无法得到大量数据探究开包出橙率与时间开包姿势开包玩家是否是连续开包等等更为有趣的因素所以目前仍有很大的探索空间&quot;&gt;4.炉石最吸引玩家的其实是卡牌开包机制的研究，但由于每天能靠任务赚得的包是有限的，所以无法得到大量数据，探究“开包出橙率”与“时间”、“开包姿势”、“开包玩家”、“是否是连续开包”等等更为有趣的因素。所以目前仍有很大的探索空间。&lt;/h4&gt;
+
+&lt;h2 id=&quot;五参考文献&quot;&gt;五、参考文献&lt;/h2&gt;
+
+&lt;h5 id=&quot;1我来决定你的牌运-炉石发牌员现身说法httplsduowancom1606328720305017html&quot;&gt;1.我来决定你的牌运 炉石发牌员现身说法(http://ls.duowan.com/1606/328720305017.html)&lt;/h5&gt;
+&lt;h5 id=&quot;2第六篇r语言数据可视化之数据分布图直方图密度曲线箱线图等高线2d密度图httpswwwcnblogscommuchenp5430536html&quot;&gt;2.第六篇：R语言数据可视化之数据分布图（直方图、密度曲线、箱线图、等高线、2D密度图）(https://www.cnblogs.com/muchen/p/5430536.html)&lt;/h5&gt;
+&lt;h5 id=&quot;3神抽or鬼抽-炉石中的发牌员真的存在吗httpgamessinacomcnozhs2016-05-23fxsktkp9166036shtml&quot;&gt;3.神抽or鬼抽 炉石中的发牌员真的存在吗？(http://games.sina.com.cn/o/z/hs/2016-05-23/fxsktkp9166036.shtml)&lt;/h5&gt;
+
+&lt;h2 id=&quot;六附录代码&quot;&gt;六、附录代码&lt;/h2&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read.csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;01.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;,&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;###画图&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;as.factor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;easyGgplot2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;费用&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_histogram&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;..density..&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;dodge&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;black&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binwidth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stat_density&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;line&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;identity&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;费用&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;density&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;guides&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scale_fill_discrete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;轮次&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;稀有度&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_histogram&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;..density..&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;dodge&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;black&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binwidth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stat_density&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;line&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;dodge&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;稀有度&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;density&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;guides&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scale_fill_discrete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;轮次&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;factor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;职卡&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_histogram&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;dodge&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;是否是职业卡&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;频率&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scale_fill_discrete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;轮次&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;factor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;法随&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_histogram&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;dodge&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;是法术或随从&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;频率&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scale_fill_discrete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;轮次&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot2.multiplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cols&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;###各种检验&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;稀有度&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;real&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;testdat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;real&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;byrow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;F&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chisq.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;testdat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;费用&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;real&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;testdat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;real&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;byrow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chisq.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;testdat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;费用&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;费用&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chisq.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;稀有度&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;费用&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binom.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binom.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;法随&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chisq.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;费用&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;费用&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;费用&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;###观察详情&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;n&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;l&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;black&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;l&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;blue&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;l&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;l&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>冥郡</name></author><summary type="html"></summary></entry><entry><title type="html">空间多维数据展示–涟漪图</title><link href="http://localhost:4000/github-io/2018-03-12/R-01" rel="alternate" type="text/html" title="空间多维数据展示--涟漪图" /><published>2018-03-12T00:00:00+08:00</published><updated>2018-03-12T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-03-12/R-01</id><content type="html" xml:base="http://localhost:4000/github-io/2018-03-12/R-01">&lt;h2 id=&quot;1-研究问题&quot;&gt;1. 研究问题&lt;/h2&gt;
 &lt;h3 id=&quot;11研究问题背景&quot;&gt;1.1研究问题背景&lt;/h3&gt;
 &lt;h4 id=&quot;多年来全国雾霾爆发在地理空间上是否存在规律2017年全国数学建模大赛提出给拍照赚钱任务定价数据是否在位置上呈现一些规律越来越多的研究定位在空间数据之上&quot;&gt;多年来，全国雾霾爆发，在地理空间上是否存在规律？2017年全国数学建模大赛提出给“拍照赚钱”任务定价，数据是否在位置上呈现一些规律？越来越多的研究定位在空间数据之上。&lt;/h4&gt;
 &lt;h4 id=&quot;多维数据存在着展示上不直观的特点数据容易纠缠在一起想看出数据的变化规律空间分布规律存在一定的障碍通常人们将多维数据投影到二维上但数据的纠缠仍然是比较难解决的而展示多维数据的变化规律需要有一种能动态变化可视化手段在看到水滴产生的涟漪画画时颜色的相互交融时突发灵感提出一种新的可视化图涟漪图&quot;&gt;多维数据存在着展示上不直观的特点，数据容易“纠缠在一起”，想看出数据的变化规律、空间分布规律存在一定的障碍，通常人们将多维数据投影到二维上，但数据的“纠缠”仍然是比较难解决的，而展示多维数据的变化规律需要有一种能动态变化可视化手段。在看到水滴产生的涟漪、画画时颜色的相互交融时，突发灵感，提出一种新的可视化图——涟漪图。&lt;/h4&gt;
@@ -326,139 +2058,7 @@ int main(){
     &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ani.pause&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
   &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>冥郡</name></author><summary type="html">1. 研究问题 1.1研究问题背景 多年来，全国雾霾爆发，在地理空间上是否存在规律？2017年全国数学建模大赛提出给“拍照赚钱”任务定价，数据是否在位置上呈现一些规律？越来越多的研究定位在空间数据之上。 多维数据存在着展示上不直观的特点，数据容易“纠缠在一起”，想看出数据的变化规律、空间分布规律存在一定的障碍，通常人们将多维数据投影到二维上，但数据的“纠缠”仍然是比较难解决的，而展示多维数据的变化规律需要有一种能动态变化可视化手段。在看到水滴产生的涟漪、画画时颜色的相互交融时，突发灵感，提出一种新的可视化图——涟漪图。 1.2研究问题说明 多维分类型数据，分类的展示可以用点图轻松展示，但无法体现出多维分类数据的每一个分类的紧密程度，哪些分类间存在着“纠缠”，以及数据变化的主要方向。总的来说，多维数据是不能简单用每个维度的均值来衡量的，于是需要一种动态化展示的方法。 1.3数据说明 本次作业为了降低采集数据成本，使用2017年全国数学建模大赛的部分数据集，但制作涟漪图的核心在于中心点如何选取，目前采用的是kmeans方法，选取核心点，所以核心数据仅剩下两部分，经度、维度。对任意数据集，都可以使用二维投射，将点放置到二位图像中。</summary></entry><entry><title type="html">R markdown</title><link href="http://localhost:4000/github-io/2018-01-15/the-case-of-the-missing-post-%E5%89%AF%E6%9C%AC" rel="alternate" type="text/html" title="R markdown" /><published>2018-01-15T00:00:00+08:00</published><updated>2018-01-15T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-01-15/the-case-of-the-missing-post%20-%20%E5%89%AF%E6%9C%AC</id><content type="html" xml:base="http://localhost:4000/github-io/2018-01-15/the-case-of-the-missing-post-%E5%89%AF%E6%9C%AC">&lt;p&gt;&lt;img src=&quot;/github-io/images/R-img8.png&quot; alt=&quot;R&quot; /&gt;&lt;/p&gt;</content><author><name>冥郡</name></author><summary type="html"></summary></entry><entry><title type="html">Example Content</title><link href="http://localhost:4000/github-io/2017-03-16/example-content" rel="alternate" type="text/html" title="Example Content" /><published>2017-03-16T00:00:00+08:00</published><updated>2017-03-16T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2017-03-16/example-content</id><content type="html" xml:base="http://localhost:4000/github-io/2017-03-16/example-content">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis. Nullam interdum ultricies nibh quis sollicitudin. Donec ornare fermentum facilisis. Ut at sem ac sem imperdiet varius a eget tortor. Nam eu augue eget orci semper maximus in eget augue. Mauris ornare, nisl ut suscipit consectetur, mi quam interdum tellus, at rutrum quam eros ultrices mi.&lt;/p&gt;
-
-&lt;h1 id=&quot;headers&quot;&gt;Headers&lt;/h1&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;gh&quot;&gt;# H1&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;## H2&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;### H3&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;#### H4&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;##### H5&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;###### H6&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h1 id=&quot;h1&quot;&gt;H1&lt;/h1&gt;
-&lt;h2 id=&quot;h2&quot;&gt;H2&lt;/h2&gt;
-&lt;h3 id=&quot;h3&quot;&gt;H3&lt;/h3&gt;
-&lt;h4 id=&quot;h4&quot;&gt;H4&lt;/h4&gt;
-&lt;h5 id=&quot;h5&quot;&gt;H5&lt;/h5&gt;
-&lt;h6 id=&quot;h6&quot;&gt;H6&lt;/h6&gt;
-
-&lt;h1 id=&quot;text-formatting&quot;&gt;Text formatting&lt;/h1&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;gs&quot;&gt;**Bold**&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; _Italics_
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; ~~Strikethrough~~
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;ins&amp;gt;&lt;/span&gt;Underline&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ins&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;sup&amp;gt;&lt;/span&gt;Superscript&lt;span class=&quot;nt&quot;&gt;&amp;lt;/sup&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;sub&amp;gt;&lt;/span&gt;Subscript&lt;span class=&quot;nt&quot;&gt;&amp;lt;/sub&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Abbreviation: &lt;span class=&quot;nt&quot;&gt;&amp;lt;abbr&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;HyperText Markup Language&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;HTML&lt;span class=&quot;nt&quot;&gt;&amp;lt;/abbr&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Citation: &lt;span class=&quot;nt&quot;&gt;&amp;lt;cite&amp;gt;&lt;/span&gt;&lt;span class=&quot;ni&quot;&gt;&amp;amp;mdash;&lt;/span&gt; Chester How&lt;span class=&quot;nt&quot;&gt;&amp;lt;/cite&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Bold&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Italics&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;del&gt;Strikethrough&lt;/del&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;ins&gt;Underline&lt;/ins&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;sup&gt;Superscript&lt;/sup&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;sub&gt;Subscript&lt;/sub&gt;&lt;/li&gt;
-  &lt;li&gt;Abbreviation: &lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt;&lt;/li&gt;
-  &lt;li&gt;Citation: &lt;cite&gt;— Chester How&lt;/cite&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;lists&quot;&gt;Lists&lt;/h1&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;p&quot;&gt;1.&lt;/span&gt; Ordered list item 1
-&lt;span class=&quot;p&quot;&gt;2.&lt;/span&gt; Ordered list item 2
-&lt;span class=&quot;p&quot;&gt;3.&lt;/span&gt; Ordered list item 3
-&lt;span class=&quot;p&quot;&gt;
-*&lt;/span&gt; Unordered list item 1
-&lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; Unordered list item 2
-&lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; Unordered list item 3&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Ordered list item 1&lt;/li&gt;
-  &lt;li&gt;Ordered list item 2&lt;/li&gt;
-  &lt;li&gt;Ordered list item 3&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Unordered list item 1&lt;/li&gt;
-  &lt;li&gt;Unordered list item 2&lt;/li&gt;
-  &lt;li&gt;Unordered list item 3&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;links&quot;&gt;Links&lt;/h1&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;Check out tale on &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GitHub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;https://github.com/chesterhow/tale&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out tale on &lt;a href=&quot;https://github.com/chesterhow/tale&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;images&quot;&gt;Images&lt;/h1&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;p&quot;&gt;![&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Placeholder image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;https://placehold.it/800x400&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;&quot;Placeholder image&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;![&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Image with caption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;https://placehold.it/700x400&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;&quot;Image with caption&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;ge&quot;&gt;_This is an image with a caption_&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://placehold.it/800x400&quot; alt=&quot;Placeholder image&quot; title=&quot;Placeholder image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://placehold.it/700x400&quot; alt=&quot;Image with caption&quot; title=&quot;Image with caption&quot; /&gt;
-&lt;em&gt;This is an image with a caption&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;code-and-syntax-highlighting&quot;&gt;Code and Syntax Highlighting&lt;/h1&gt;
-&lt;p&gt;Use back-ticks for &lt;code class=&quot;highlighter-rouge&quot;&gt;inline code&lt;/code&gt;. Multi-line code snippets are supported too through Pygments.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Sample javascript code&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;JavaScript syntax highlighting&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# Sample python code&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Python syntax highlighting&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Adding &lt;code class=&quot;highlighter-rouge&quot;&gt;linenos&lt;/code&gt; to the Pygments tag enables line numbers.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;// Sample javascript code&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;JavaScript syntax highlighting&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h1 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h1&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;gt&quot;&gt;&amp;gt; Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;horizontal-rule--line-break&quot;&gt;Horizontal Rule &amp;amp; Line Break&lt;/h1&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;Use &lt;span class=&quot;sb&quot;&gt;`&amp;lt;hr&amp;gt;`&lt;/span&gt; for horizontal rules
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&amp;gt;&lt;/span&gt;
-
-and &lt;span class=&quot;sb&quot;&gt;`&amp;lt;br&amp;gt;`&lt;/span&gt; for line breaks.
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;br&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; for horizontal rules&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;br&amp;gt;&lt;/code&gt; for line breaks.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The end&lt;/em&gt;&lt;/p&gt;</content><author><name>Chester</name></author><summary type="html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis. Nullam interdum ultricies nibh quis sollicitudin. Donec ornare fermentum facilisis. Ut at sem ac sem imperdiet varius a eget tortor. Nam eu augue eget orci semper maximus in eget augue. Mauris ornare, nisl ut suscipit consectetur, mi quam interdum tellus, at rutrum quam eros ultrices mi.</summary></entry><entry><title type="html">The Mystery of the Filler Post</title><link href="http://localhost:4000/github-io/2017-03-06/the-mystery-of-the-filler-post" rel="alternate" type="text/html" title="The Mystery of the Filler Post" /><published>2017-03-06T00:00:00+08:00</published><updated>2017-03-06T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2017-03-06/the-mystery-of-the-filler-post</id><content type="html" xml:base="http://localhost:4000/github-io/2017-03-06/the-mystery-of-the-filler-post">&lt;p&gt;Hornswaggle measured fer yer chains chase run a shot across the bow Chain Shot flogging Pirate Round galleon rope’s end aft. Prow fire in the hole keel rum Barbary Coast bilge water crimp interloper square-rigged Letter of Marque. Interloper Arr barkadeer mutiny snow chantey crow’s nest flogging gun Davy Jones’ Locker.&lt;/p&gt;
-
-&lt;p&gt;Bilge jolly boat barque topsail interloper chandler spanker scuttle Arr sloop. Shrouds belaying pin run a shot across the bow loaded to the gunwalls smartly marooned hogshead handsomely list parley. Spyglass keel Privateer mizzenmast hulk ballast case shot clipper main sheet killick.&lt;/p&gt;
-
-&lt;p&gt;Careen hempen halter Letter of Marque pillage swing the lead take a caulk Sail ho jury mast walk the plank ho. Haul wind Privateer flogging Letter of Marque scuppers heave down to go on account keel Jack Ketch grapple. Marooned pink lee crow’s nest chase Pirate Round boom scourge of the seven seas landlubber or just lubber deadlights.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://pirateipsum.me/&quot;&gt;Pirate Ipsum&lt;/a&gt;&lt;/p&gt;</content><author><name>Chester</name></author><summary type="html">Hornswaggle measured fer yer chains chase run a shot across the bow Chain Shot flogging Pirate Round galleon rope’s end aft. Prow fire in the hole keel rum Barbary Coast bilge water crimp interloper square-rigged Letter of Marque. Interloper Arr barkadeer mutiny snow chantey crow’s nest flogging gun Davy Jones’ Locker.</summary></entry><entry><title type="html">Pagination Post</title><link href="http://localhost:4000/github-io/2017-03-05/pagination-post" rel="alternate" type="text/html" title="Pagination Post" /><published>2017-03-05T00:00:00+08:00</published><updated>2017-03-05T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2017-03-05/pagination-post</id><content type="html" xml:base="http://localhost:4000/github-io/2017-03-05/pagination-post">&lt;p&gt;Here we see &lt;strong&gt;Tale’s&lt;/strong&gt; pagination feature in action. It is set to 5 posts per page by default. Feel free to change this number in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file!&lt;/p&gt;</content><author><name>Chester</name></author><summary type="html">Here we see Tale’s pagination feature in action. It is set to 5 posts per page by default. Feel free to change this number in the _config.yml file!</summary></entry><entry><title type="html">For Example of very Long Title Would Be Typography Elements in One</title><link href="http://localhost:4000/github-io/2016-10-18/very-long-title-post" rel="alternate" type="text/html" title="For Example of very Long Title Would Be Typography Elements in One" /><published>2016-10-18T00:00:00+08:00</published><updated>2016-10-18T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2016-10-18/very-long-title-post</id><content type="html" xml:base="http://localhost:4000/github-io/2016-10-18/very-long-title-post">&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This markdown cheatsheet is a typography demo for this theme. Check out this post to learn more about this markdown usage when you want to get started with this theme. Enjoy!&lt;/p&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>冥郡</name></author><summary type="html">1. 研究问题 1.1研究问题背景 多年来，全国雾霾爆发，在地理空间上是否存在规律？2017年全国数学建模大赛提出给“拍照赚钱”任务定价，数据是否在位置上呈现一些规律？越来越多的研究定位在空间数据之上。 多维数据存在着展示上不直观的特点，数据容易“纠缠在一起”，想看出数据的变化规律、空间分布规律存在一定的障碍，通常人们将多维数据投影到二维上，但数据的“纠缠”仍然是比较难解决的，而展示多维数据的变化规律需要有一种能动态变化可视化手段。在看到水滴产生的涟漪、画画时颜色的相互交融时，突发灵感，提出一种新的可视化图——涟漪图。 1.2研究问题说明 多维分类型数据，分类的展示可以用点图轻松展示，但无法体现出多维分类数据的每一个分类的紧密程度，哪些分类间存在着“纠缠”，以及数据变化的主要方向。总的来说，多维数据是不能简单用每个维度的均值来衡量的，于是需要一种动态化展示的方法。 1.3数据说明 本次作业为了降低采集数据成本，使用2017年全国数学建模大赛的部分数据集，但制作涟漪图的核心在于中心点如何选取，目前采用的是kmeans方法，选取核心点，所以核心数据仅剩下两部分，经度、维度。对任意数据集，都可以使用二维投射，将点放置到二位图像中。</summary></entry><entry><title type="html">For Example of very Long Title Would Be Typography Elements in One</title><link href="http://localhost:4000/github-io/2016-10-18/very-long-title-post" rel="alternate" type="text/html" title="For Example of very Long Title Would Be Typography Elements in One" /><published>2016-10-18T00:00:00+08:00</published><updated>2016-10-18T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2016-10-18/very-long-title-post</id><content type="html" xml:base="http://localhost:4000/github-io/2016-10-18/very-long-title-post">&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This markdown cheatsheet is a typography demo for this theme. Check out this post to learn more about this markdown usage when you want to get started with this theme. Enjoy!&lt;/p&gt;
 
 &lt;h2 id=&quot;typography-elements-in-one&quot;&gt;Typography Elements in One&lt;/h2&gt;
 
