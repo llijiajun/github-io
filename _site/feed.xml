@@ -1,4 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/github-io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/github-io/" rel="alternate" type="text/html" /><updated>2018-07-17T21:00:46+08:00</updated><id>http://localhost:4000/github-io/</id><title type="html">Hades Jun</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">markdown</title><link href="http://localhost:4000/github-io/2018-07-16/other-01-mathjax_cmdeditor" rel="alternate" type="text/html" title="markdown" /><published>2018-07-16T00:00:00+08:00</published><updated>2018-07-16T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-16/other-01-mathjax_cmdeditor</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-16/other-01-mathjax_cmdeditor">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/github-io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/github-io/" rel="alternate" type="text/html" /><updated>2018-07-19T23:32:28+08:00</updated><id>http://localhost:4000/github-io/</id><title type="html">Hades Jun</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">各式排序算法及其c语言实现</title><link href="http://localhost:4000/github-io/2018-07-17/CAL-02_Sort" rel="alternate" type="text/html" title="各式排序算法及其c语言实现" /><published>2018-07-17T00:00:00+08:00</published><updated>2018-07-17T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-17/CAL-02_Sort</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-17/CAL-02_Sort">&lt;h2 id=&quot;问题描述&quot;&gt;问题描述&lt;/h2&gt;
+
+&lt;p&gt;排序算法可以说是算法的一个基础，这里在我水平范围内进行总结和归纳，并给出我自己实现的源码。&lt;/p&gt;
+
+&lt;p&gt;以下，归纳基于比较的排序方法，因此，其运行时间上限基本都是O(nlog(n))&lt;/p&gt;
+
+&lt;h2 id=&quot;程序框架&quot;&gt;程序框架&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{c}&quot;&gt;#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;vector&amp;gt;
+using namespace std;
+
+template &amp;lt;class T&amp;gt;
+class Sort{
+private:
+	vector&amp;lt;T&amp;gt; arrayT;
+public:
+	Sort(){}
+	Sort(vector&amp;lt;T&amp;gt; arr){
+		arrayT=arr;//注意这里是深拷贝
+	}
+	bool compare(T a,T b,bool arise){
+		if(arise)
+			return (a&amp;gt;b);
+		else
+			return !(a&amp;gt;b);
+	}
+	void swap(int i,int j){
+		T temp=arrayT[i];
+		arrayT[i]=arrayT[j];
+		arrayT[j]=temp;
+	}
+	void print(){
+		for(int i=0;i&amp;lt;arrayT.size();i++)
+			cout&amp;lt;&amp;lt;arrayT[i]&amp;lt;&amp;lt;&quot; &quot;;
+		cout&amp;lt;&amp;lt;endl;
+	}
+	void bubbleSort(bool arise);//冒泡排序
+	void insertSort(bool arise);//插入排序
+};
+
+//这里加入冒泡排序部分代码
+//这里加入插入排序部分代码
+
+int main(){
+	int a[10]={1,3,5,7,9,2,4,6,8,0};
+	vector&amp;lt;int&amp;gt; b(a, a+10);
+	Sort&amp;lt;int&amp;gt; sortb(b);
+	sortb.print();
+	sortb.bubbleSort(true);
+	sortb.print();
+	for(int i=0;i&amp;lt;b.size();i++)
+			cout&amp;lt;&amp;lt;b[i]&amp;lt;&amp;lt;&quot; &quot;;
+		cout&amp;lt;&amp;lt;endl;
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;冒泡排序&quot;&gt;冒泡排序&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{c}&quot;&gt;template&amp;lt;class T&amp;gt;
+void Sort&amp;lt;T&amp;gt;::bubbleSort(bool arise){
+	int n=arrayT.size();
+	for(int i=0;i&amp;lt;n-1;i++)
+		for(int j=0;j&amp;lt;n-i-1;j++)
+			if(compare(arrayT[j],arrayT[j+1],arise))
+				swap(j,j+1);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;插入排序&quot;&gt;插入排序&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{c}&quot;&gt;template&amp;lt;class T&amp;gt;
+void Sort&amp;lt;T&amp;gt;::insertSort(bool arise){
+	int n=arrayT.size();
+	vector&amp;lt;T&amp;gt;::iterator it=arrayT.begin(),in;
+	for(int it=1;it&amp;lt;n;it++){
+		int flag=0;
+		for(in=arrayT.begin();in!=arrayT.begin()+it;in++){
+			if(compare(*in,arrayT[it],arise)){
+			//找到第一个不满足比较条件的进行插入，这里外循环使用index,内循环使用迭代器与vector的结构有关
+			//若外循环也使用迭代器，则会出现bug
+			//原因是，在删除元素之后，vector的元素会重构，所有在erase后的元素所在的位置都会改变，所以迭代器指的位置不再是原来的位置，也就形成了空引用
+				T temp=arrayT[it];
+				arrayT.erase(arrayT.begin()+it);
+				arrayT.insert(in,1,temp);
+				break;
+			}
+		}
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;</content><author><name>冥郡</name></author><summary type="html">问题描述</summary></entry><entry><title type="html">markdown</title><link href="http://localhost:4000/github-io/2018-07-16/other-01-mathjax_cmdeditor" rel="alternate" type="text/html" title="markdown" /><published>2018-07-16T00:00:00+08:00</published><updated>2018-07-16T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-16/other-01-mathjax_cmdeditor</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-16/other-01-mathjax_cmdeditor">&lt;hr /&gt;
 
 &lt;p&gt;#Cmd Markdown 公式指导手册&lt;/p&gt;
 
@@ -1485,7 +1576,9 @@ java -jar build\jar\HelloWorld.jar
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;其他说明的点&quot;&gt;其他说明的点&lt;/h2&gt;
-&lt;p&gt;简单的Java打包程序，主要熟悉命令行的编译方式，为ant的引入做铺垫&lt;/p&gt;</content><author><name>冥郡</name></author><summary type="html">背景</summary></entry><entry><title type="html">情绪</title><link href="http://localhost:4000/github-io/2018-05-15/Poem-01" rel="alternate" type="text/html" title="情绪" /><published>2018-05-15T00:00:00+08:00</published><updated>2018-05-15T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-05-15/Poem-01</id><content type="html" xml:base="http://localhost:4000/github-io/2018-05-15/Poem-01">&lt;p&gt;曾经我将纷纷扰扰&lt;/p&gt;
+&lt;p&gt;简单的Java打包程序，主要熟悉命令行的编译方式，为ant的引入做铺垫&lt;/p&gt;</content><author><name>冥郡</name></author><summary type="html">背景</summary></entry><entry><title type="html">情绪</title><link href="http://localhost:4000/github-io/2018-05-15/Poem-01" rel="alternate" type="text/html" title="情绪" /><published>2018-05-15T00:00:00+08:00</published><updated>2018-05-15T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-05-15/Poem-01</id><content type="html" xml:base="http://localhost:4000/github-io/2018-05-15/Poem-01">&lt;embed src=&quot;/github-io/images/music/01.mp3&quot; autostart=&quot;true&quot; loop=&quot;true&quot; hidden=&quot;true&quot; /&gt;
+
+&lt;p&gt;曾经我将纷纷扰扰&lt;/p&gt;
 
 &lt;p&gt;封入文字&lt;/p&gt;
 
@@ -1631,7 +1724,7 @@ java -jar build\jar\HelloWorld.jar
 
 &lt;p&gt;逃脱不了的宿命&lt;/p&gt;
 
-&lt;p&gt;予自己最深的忏悔&lt;/p&gt;</content><author><name>藏锋冥郡</name></author><summary type="html">曾经我将纷纷扰扰</summary></entry><entry><title type="html">“神抽”还是“鬼抽”?炉石发牌员偏好探究</title><link href="http://localhost:4000/github-io/2018-04-10/R-02" rel="alternate" type="text/html" title="“神抽”还是“鬼抽”?炉石发牌员偏好探究" /><published>2018-04-10T00:00:00+08:00</published><updated>2018-04-10T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-04-10/R-02</id><content type="html" xml:base="http://localhost:4000/github-io/2018-04-10/R-02">&lt;style type=&quot;text/css&quot;&gt;
+&lt;p&gt;予自己最深的忏悔&lt;/p&gt;</content><author><name>藏锋冥郡</name></author><summary type="html"></summary></entry><entry><title type="html">“神抽”还是“鬼抽”?炉石发牌员偏好探究</title><link href="http://localhost:4000/github-io/2018-04-10/R-02" rel="alternate" type="text/html" title="“神抽”还是“鬼抽”?炉石发牌员偏好探究" /><published>2018-04-10T00:00:00+08:00</published><updated>2018-04-10T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-04-10/R-02</id><content type="html" xml:base="http://localhost:4000/github-io/2018-04-10/R-02">&lt;style type=&quot;text/css&quot;&gt;
 p.name {color:rgb(0,0,0);font:bold 16px arial;}
 p.vs {color:rgb(248,0,142);font:bold 18px arial;}
 p.tit {color:rgb(248,75,77);font:bold 17px arial;}
@@ -2058,185 +2151,4 @@ $$H_0:随从上手率=\frac{1}{3} vs H_1:随从上手率\neq\frac{1}{3}$$
     &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ani.pause&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
   &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>冥郡</name></author><summary type="html">1. 研究问题 1.1研究问题背景 多年来，全国雾霾爆发，在地理空间上是否存在规律？2017年全国数学建模大赛提出给“拍照赚钱”任务定价，数据是否在位置上呈现一些规律？越来越多的研究定位在空间数据之上。 多维数据存在着展示上不直观的特点，数据容易“纠缠在一起”，想看出数据的变化规律、空间分布规律存在一定的障碍，通常人们将多维数据投影到二维上，但数据的“纠缠”仍然是比较难解决的，而展示多维数据的变化规律需要有一种能动态变化可视化手段。在看到水滴产生的涟漪、画画时颜色的相互交融时，突发灵感，提出一种新的可视化图——涟漪图。 1.2研究问题说明 多维分类型数据，分类的展示可以用点图轻松展示，但无法体现出多维分类数据的每一个分类的紧密程度，哪些分类间存在着“纠缠”，以及数据变化的主要方向。总的来说，多维数据是不能简单用每个维度的均值来衡量的，于是需要一种动态化展示的方法。 1.3数据说明 本次作业为了降低采集数据成本，使用2017年全国数学建模大赛的部分数据集，但制作涟漪图的核心在于中心点如何选取，目前采用的是kmeans方法，选取核心点，所以核心数据仅剩下两部分，经度、维度。对任意数据集，都可以使用二维投射，将点放置到二位图像中。</summary></entry><entry><title type="html">For Example of very Long Title Would Be Typography Elements in One</title><link href="http://localhost:4000/github-io/2016-10-18/very-long-title-post" rel="alternate" type="text/html" title="For Example of very Long Title Would Be Typography Elements in One" /><published>2016-10-18T00:00:00+08:00</published><updated>2016-10-18T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2016-10-18/very-long-title-post</id><content type="html" xml:base="http://localhost:4000/github-io/2016-10-18/very-long-title-post">&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This markdown cheatsheet is a typography demo for this theme. Check out this post to learn more about this markdown usage when you want to get started with this theme. Enjoy!&lt;/p&gt;
-
-&lt;h2 id=&quot;typography-elements-in-one&quot;&gt;Typography Elements in One&lt;/h2&gt;
-
-&lt;p&gt;Let’s start with a informative paragraph. &lt;strong&gt;This text is bolded.&lt;/strong&gt; But not this one! &lt;em&gt;How about italic text?&lt;/em&gt; Cool right? Ok, let’s &lt;strong&gt;&lt;em&gt;combine&lt;/em&gt;&lt;/strong&gt; them together. Yeah, that’s right! I have code to highlight, so &lt;code class=&quot;highlighter-rouge&quot;&gt;ThisIsMyCode()&lt;/code&gt;. What a nice! Good people will hyperlink away, so &lt;a href=&quot;#&quot;&gt;here we go&lt;/a&gt; or &lt;a href=&quot;http://www.example.com&quot;&gt;http://www.example.com&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;headings-h1-to-h6&quot;&gt;Headings H1 to H6&lt;/h2&gt;
-
-&lt;h1 id=&quot;h1-heading&quot;&gt;H1 Heading&lt;/h1&gt;
-
-&lt;h2 id=&quot;h2-heading&quot;&gt;H2 Heading&lt;/h2&gt;
-
-&lt;h3 id=&quot;h3-heading&quot;&gt;H3 Heading&lt;/h3&gt;
-
-&lt;h4 id=&quot;h4-heading&quot;&gt;H4 Heading&lt;/h4&gt;
-
-&lt;h5 id=&quot;h5-heading&quot;&gt;H5 Heading&lt;/h5&gt;
-
-&lt;h6 id=&quot;h6-heading&quot;&gt;H6 Heading&lt;/h6&gt;
-
-&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;footnote&quot;&gt;Footnote&lt;/h2&gt;
-
-&lt;p&gt;Let’s say you have text that you want to refer with a footnote, you can do that too! This is an example for the footnote number one &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. You can even add more footnotes, with link! &lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;blockquote&quot;&gt;Blockquote&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Start by doing what’s necessary; then do what’s possible; and suddenly you are doing the impossible. –Francis of Assisi&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; This theme does NOT support nested blockquotes.&lt;/p&gt;
-
-&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;list-items&quot;&gt;List Items&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;First order list item&lt;/li&gt;
-  &lt;li&gt;Second item&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Unordered list can use asterisks&lt;/li&gt;
-  &lt;li&gt;Or minuses&lt;/li&gt;
-  &lt;li&gt;Or pluses&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;code-blocks&quot;&gt;Code Blocks&lt;/h2&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;JavaScript syntax highlighting&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Python syntax highlighting&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;No language indicated, so no syntax highlighting.
-But let's throw in a &amp;lt;b&amp;gt;tag&amp;lt;/b&amp;gt;.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;mathematics&quot;&gt;Mathematics&lt;/h2&gt;
-
-&lt;p&gt;The theme comes ready with &lt;a href=&quot;https://www.mathjax.org/&quot;&gt;mathjax&lt;/a&gt; support built in, allowing for both simple inline equations like &lt;script type=&quot;math/tex&quot;&gt;ax^2 + bx + c = 0&lt;/script&gt; and much more complex mathematical expressions such as equation &lt;script type=&quot;math/tex&quot;&gt;\eqref{eq:sample}&lt;/script&gt; below.&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t}  &amp;= \frac{4\pi}{c}\vec{\mathbf{j}} \\   
-\nabla \cdot \vec{\mathbf{E}} &amp;= 4 \pi \rho \tag{2} \label{eq:sample}\\
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t}  &amp;= \vec{\mathbf{0}} \\
-\nabla \cdot \vec{\mathbf{B}}  &amp;= 0\\
-\end{align} %]]&gt;&lt;/script&gt;
-
-&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;table&quot;&gt;Table&lt;/h2&gt;
-
-&lt;h3 id=&quot;table-1-with-alignment&quot;&gt;Table 1: With Alignment&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Tables&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Are&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Cool&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;col 3 is&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;right-aligned&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;$1600&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;col 2 is&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;centered&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;$12&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;zebra stripes&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;are neat&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;$1&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;table-2-with-typography-elements&quot;&gt;Table 2: With Typography Elements&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Markdown&lt;/th&gt;
-      &lt;th&gt;Less&lt;/th&gt;
-      &lt;th&gt;Pretty&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;em&gt;Still&lt;/em&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;renders&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;nicely&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;2&lt;/td&gt;
-      &lt;td&gt;3&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;horizontal-line&quot;&gt;Horizontal Line&lt;/h2&gt;
-
-&lt;p&gt;The HTML &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; element is for creating a “thematic break” between paragraph-level elements. In markdown, you can create a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; with any of the following:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;___&lt;/code&gt;: three consecutive underscores&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;---&lt;/code&gt;: three consecutive dashes&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;***&lt;/code&gt;: three consecutive asterisks&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;renders to:&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;hr /&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;media&quot;&gt;Media&lt;/h2&gt;
-
-&lt;h3 id=&quot;youtube-embedded-iframe&quot;&gt;YouTube Embedded Iframe&lt;/h3&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/n1a7o44WxNo&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h3 id=&quot;image&quot;&gt;Image&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://octodex.github.com/images/minion.png&quot; alt=&quot;Minion&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Footnote number one yeah baby! Long sentence test of footnote to see how the words are wrapping between each other. Might overflowww! &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;A footnote you can link to - &lt;a href=&quot;#&quot;&gt;click here!&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">NOTE: This markdown cheatsheet is a typography demo for this theme. Check out this post to learn more about this markdown usage when you want to get started with this theme. Enjoy!</summary></entry></feed>
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>冥郡</name></author><summary type="html">1. 研究问题 1.1研究问题背景 多年来，全国雾霾爆发，在地理空间上是否存在规律？2017年全国数学建模大赛提出给“拍照赚钱”任务定价，数据是否在位置上呈现一些规律？越来越多的研究定位在空间数据之上。 多维数据存在着展示上不直观的特点，数据容易“纠缠在一起”，想看出数据的变化规律、空间分布规律存在一定的障碍，通常人们将多维数据投影到二维上，但数据的“纠缠”仍然是比较难解决的，而展示多维数据的变化规律需要有一种能动态变化可视化手段。在看到水滴产生的涟漪、画画时颜色的相互交融时，突发灵感，提出一种新的可视化图——涟漪图。 1.2研究问题说明 多维分类型数据，分类的展示可以用点图轻松展示，但无法体现出多维分类数据的每一个分类的紧密程度，哪些分类间存在着“纠缠”，以及数据变化的主要方向。总的来说，多维数据是不能简单用每个维度的均值来衡量的，于是需要一种动态化展示的方法。 1.3数据说明 本次作业为了降低采集数据成本，使用2017年全国数学建模大赛的部分数据集，但制作涟漪图的核心在于中心点如何选取，目前采用的是kmeans方法，选取核心点，所以核心数据仅剩下两部分，经度、维度。对任意数据集，都可以使用二维投射，将点放置到二位图像中。</summary></entry></feed>
