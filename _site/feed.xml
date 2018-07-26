@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/github-io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/github-io/" rel="alternate" type="text/html" /><updated>2018-07-20T00:42:42+08:00</updated><id>http://localhost:4000/github-io/</id><title type="html">Hades Jun</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">论码农、码商与码士</title><link href="http://localhost:4000/github-io/2018-07-20/Article-01" rel="alternate" type="text/html" title="论码农、码商与码士" /><published>2018-07-20T00:00:00+08:00</published><updated>2018-07-20T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-20/Article-01</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-20/Article-01">&lt;p&gt;产生这三个概念还源于学习时，话说某日某人问我，什么EJB。我回答说，所谓EJB就是企业级的Java Bean。那什么是Java Bean呢？就是java里的咖啡豆。劈头盖脸就是一句”我当然认识Bean这个单词”，我都没意识到，原来Bean这个单词是那么简单，以致于我这样的翻译回答是在侮辱对方的智商。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/github-io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/github-io/" rel="alternate" type="text/html" /><updated>2018-07-26T23:43:05+08:00</updated><id>http://localhost:4000/github-io/</id><title type="html">Hades Jun</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">论码农、码商与码士</title><link href="http://localhost:4000/github-io/2018-07-20/Article-01" rel="alternate" type="text/html" title="论码农、码商与码士" /><published>2018-07-20T00:00:00+08:00</published><updated>2018-07-20T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-20/Article-01</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-20/Article-01">&lt;p&gt;产生这三个概念还源于学习时，话说某日某人问我，什么EJB。我回答说，所谓EJB就是企业级的Java Bean。那什么是Java Bean呢？就是java里的咖啡豆。劈头盖脸就是一句”我当然认识Bean这个单词”，我都没意识到，原来Bean这个单词是那么简单，以致于我这样的翻译回答是在侮辱对方的智商。&lt;/p&gt;
 
 &lt;p&gt;什么是Java Bean呢?我认为还得从Java这门语言的产生说起。程序员经常熬夜，一熬夜就喝咖啡。Java成员在讨论新语言取什么名字时，当时他们在喝咖啡，有人提议叫Java，于是最终名字就定为Java了。这样想来，其实也难怪Java这个单词那么容易被命名作语言名。要我说什么蒙牛、特仑苏，安排给程序员们每晚一瓶牛奶，也许下一个百年，称霸世界的某种新语言就能被命名为特仑苏，想想就刺激。&lt;/p&gt;
 
@@ -16,9 +16,74 @@
 
 &lt;p&gt;以下，归纳基于比较的排序方法，因此，其运行时间上限基本都是O(nlog(n))&lt;/p&gt;
 
+&lt;h2 id=&quot;时间对比&quot;&gt;时间对比&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;排序方法&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;平均情况&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;最好情况&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;最坏情况&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;辅助空间&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;稳定性&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;冒泡排序&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;O(n^2)&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O(n)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;O(n^2)&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O(1)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;稳定&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;插入排序&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;O(n^2)&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O(n)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;O(n^2)&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O(1)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;稳定&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;希尔排序&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;O(nlogn)~O(n^2)&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;O(n^{1.3})&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;O(n^2)&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O(1)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;不稳定&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;堆排序&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;O(nlogn)&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O(nlogn)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O(nlogn)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O(1)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;不稳定&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;归并排序&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;O(nlogn)&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O(nlogn)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O(nlogn)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O(n)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;稳定&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;快速排序&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;O(nlogn)&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O(nlogn)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;O(n^2)&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O(1)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;不稳定&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
 &lt;h2 id=&quot;程序框架&quot;&gt;程序框架&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-{c}&quot;&gt;#include&amp;lt;iostream&amp;gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include&amp;lt;iostream&amp;gt;
 #include&amp;lt;vector&amp;gt;
 using namespace std;
 
@@ -26,10 +91,12 @@ template &amp;lt;class T&amp;gt;
 class Sort{
 private:
 	vector&amp;lt;T&amp;gt; arrayT;
+	vector&amp;lt;T&amp;gt; temp;
 public:
 	Sort(){}
 	Sort(vector&amp;lt;T&amp;gt; arr){
-		arrayT=arr;//注意这里是深拷贝
+		arrayT=arr;
+		temp=arr;
 	}
 	bool compare(T a,T b,bool arise){
 		if(arise)
@@ -47,8 +114,15 @@ public:
 			cout&amp;lt;&amp;lt;arrayT[i]&amp;lt;&amp;lt;&quot; &quot;;
 		cout&amp;lt;&amp;lt;endl;
 	}
+	int getSize(){return arrayT.size();}
 	void bubbleSort(bool arise);//冒泡排序
 	void insertSort(bool arise);//插入排序
+	void quickSort(bool arise,int low,int high);//快速排序 注意这里的high指的是最后一个元素的位置坐标
+	void adjustHeap(int i,int length,bool arise);//建堆
+	void HeapSort(bool arise);//堆排序
+	void MergeSort(int start,int end,bool arise);//归并排序
+	void Merge(int start,int mid,int end,bool arise);//归并
+	void ShellSort(bool arise);//希尔排序
 };
 
 //这里加入冒泡排序部分代码
@@ -66,11 +140,11 @@ int main(){
 		cout&amp;lt;&amp;lt;endl;
 }
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;冒泡排序&quot;&gt;冒泡排序&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-{c}&quot;&gt;template&amp;lt;class T&amp;gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;template&amp;lt;class T&amp;gt;
 void Sort&amp;lt;T&amp;gt;::bubbleSort(bool arise){
 	int n=arrayT.size();
 	for(int i=0;i&amp;lt;n-1;i++)
@@ -78,11 +152,11 @@ void Sort&amp;lt;T&amp;gt;::bubbleSort(bool arise){
 			if(compare(arrayT[j],arrayT[j+1],arise))
 				swap(j,j+1);
 }
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;插入排序&quot;&gt;插入排序&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-{c}&quot;&gt;template&amp;lt;class T&amp;gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;template&amp;lt;class T&amp;gt;
 void Sort&amp;lt;T&amp;gt;::insertSort(bool arise){
 	int n=arrayT.size();
 	vector&amp;lt;T&amp;gt;::iterator it=arrayT.begin(),in;
@@ -101,7 +175,95 @@ void Sort&amp;lt;T&amp;gt;::insertSort(bool arise){
 		}
 	}
 }
-&lt;/code&gt;&lt;/pre&gt;</content><author><name>冥郡</name></author><summary type="html">问题描述</summary></entry><entry><title type="html">markdown</title><link href="http://localhost:4000/github-io/2018-07-16/other-01-mathjax_cmdeditor" rel="alternate" type="text/html" title="markdown" /><published>2018-07-16T00:00:00+08:00</published><updated>2018-07-16T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-16/other-01-mathjax_cmdeditor</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-16/other-01-mathjax_cmdeditor">&lt;hr /&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;快速排序&quot;&gt;快速排序&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;template&amp;lt;class T&amp;gt;
+void Sort&amp;lt;T&amp;gt;::quickSort(bool arise,int low,int high){
+	if(low&amp;gt;=high){
+		return;
+	}
+	int i=low;
+	int j=high;
+	T temp=arrayT[i];
+	while(i&amp;lt;j){
+		while(i&amp;lt;j&amp;amp;&amp;amp;compare(arrayT[j],temp,arise))j--;
+		arrayT[i]=arrayT[j];
+		while(i&amp;lt;j&amp;amp;&amp;amp;compare(temp,arrayT[i],arise))i++;
+		arrayT[j]=arrayT[i];
+	}
+	arrayT[i]=temp;
+	quickSort(arise,low,i-1);
+	quickSort(arise,i+1,high);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;堆排序&quot;&gt;堆排序&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;template&amp;lt;class T&amp;gt;
+void Sort&amp;lt;T&amp;gt;::adjustHeap(int i,int length,bool arise){
+	T temp=arrayT[i];
+	for(int k=i*2+1;k&amp;lt;length;k=2*k+1){
+		if(k+1&amp;lt;length &amp;amp;&amp;amp; compare(arrayT[k+1],arrayT[k],arise))k++;
+		if(compare(arrayT[k],temp,arise)){
+			arrayT[i]=arrayT[k];
+			i=k;
+		}else
+			break;
+	}
+	arrayT[i]=temp;
+}
+template&amp;lt;class T&amp;gt;
+void Sort&amp;lt;T&amp;gt;::HeapSort(bool arise){
+	for(int i=arrayT.size()/2-1;i&amp;gt;=0;i--)
+		adjustHeap(i,arrayT.size(),arise);
+	for(int j=arrayT.size()-1;j&amp;gt;0;j--){
+		swap(0,j);
+		adjustHeap(0,j,arise);
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;归并排序&quot;&gt;归并排序&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;template&amp;lt;class T&amp;gt;
+void Sort&amp;lt;T&amp;gt;::Merge(int start,int mid,int end,bool arise){
+	int i=start,j=mid+1,k=start;
+	while(i!=mid+1&amp;amp;&amp;amp;j!=end+1){
+		if(compare(arrayT[i],arrayT[j],arise))
+			temp[k++]=arrayT[j++];
+		else
+			temp[k++]=arrayT[i++];
+	}
+	while(i!=mid+1)
+		temp[k++]=arrayT[i++];
+	while(j!=end+1)
+		temp[k++]=arrayT[j++];
+	for(i=start;i&amp;lt;=end;i++)
+		arrayT[i]=temp[i];
+}
+
+template&amp;lt;class T&amp;gt;
+void Sort&amp;lt;T&amp;gt;::MergeSort(int start,int end,bool arise){
+	int mid;
+	if(start&amp;lt;end){
+		mid=(start+end)/2;
+		MergeSort(start,mid,arise);
+		MergeSort(mid+1,end,arise);
+		Merge(start,mid,end,arise);
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;希尔排序&quot;&gt;希尔排序&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;template&amp;lt;class T&amp;gt;
+void Sort&amp;lt;T&amp;gt;::ShellSort(bool arise){
+	int len=arrayT.size();
+	for(int div=len/2;div&amp;gt;=1;div=div/2)
+		for(int i=0;i&amp;lt;=div;i++)
+			for(int j=i;j&amp;lt;len-div;j+=div)
+				for(int k=j;k&amp;lt;len;k+=div)
+					if(compare(arrayT[j],arrayT[k],arise))
+						swap(j,k);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>冥郡</name></author><summary type="html">问题描述</summary></entry><entry><title type="html">markdown</title><link href="http://localhost:4000/github-io/2018-07-16/other-01-mathjax_cmdeditor" rel="alternate" type="text/html" title="markdown" /><published>2018-07-16T00:00:00+08:00</published><updated>2018-07-16T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-16/other-01-mathjax_cmdeditor</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-16/other-01-mathjax_cmdeditor">&lt;hr /&gt;
 
 &lt;p&gt;#Cmd Markdown 公式指导手册&lt;/p&gt;
 
