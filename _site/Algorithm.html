@@ -45,6 +45,10 @@
     
   
     
+  
+    
+  
+    
     <a href="/github-io/2018-07-17/CAL-02_Sort" class="catalogue-item">
       <div>
         <time datetime="2018-07-17 00:00:00 +0800" class="catalogue-time">July 17, 2018</time>
@@ -69,7 +73,7 @@
         <div class="catalogue-line"></div>
 
         <p>
-          问题描述 模式匹配:字串的定位操作通常被称为串的模式匹配 最简单的模式匹配方式：从主串S的第pos个字符起和模式的第一个字符比较之，若相等，则继续逐个比较后续字符；否则从主串S的下一个字符起再重新和模式的字符比较之。依次类推，直至模式T中的每个字符依次和主串S中的一个连续的字符序列相等，则称匹配成功，函数值为和模式T中第一个字符相等的字符在主串中的序号，否则称匹配失败。 模式匹配的改进算法 D.E.Knuth 、V.R.Pratt 和 J.H.Morris同时发现，其算法的本质改变在于：每当一趟匹配过程中出现字符比较不等时，不需要回溯指针，而是利用已经得到的部分匹配结果将模式向右移动尽可能远的一段距离后，继续进行比较。 在此不对算法本身做太多阐述，网上有很多说明，仅仅是，完成我自己在理解此算法之后，写出相应的代码。 求next与nextval与匹配 #include&lt;stdio.h&gt; #include&lt;string.h&gt; #include&lt;malloc.h&gt; #include&lt;memory.h&gt; #include&lt;time.h&gt; void Next1(char *pattern, int next[]){ int length=strlen(pattern); *(next)=0; *(next+1)=1; for(int i=2;i&lt;length;i++){ int aim=i-1; while(pattern[i-1]!=pattern[next[aim]-1]){ aim=next[aim]-1;...
+          #问题描述 模式匹配:字串的定位操作通常被称为串的模式匹配 最简单的模式匹配方式：从主串S的第pos个字符起和模式的第一个字符比较之，若相等，则继续逐个比较后续字符；否则从主串S的下一个字符起再重新和模式的字符比较之。依次类推，直至模式T中的每个字符依次和主串S中的一个连续的字符序列相等，则称匹配成功，函数值为和模式T中第一个字符相等的字符在主串中的序号，否则称匹配失败。 模式匹配的改进算法 D.E.Knuth 、V.R.Pratt 和 J.H.Morris同时发现，其算法的本质改变在于：每当一趟匹配过程中出现字符比较不等时，不需要回溯指针，而是利用已经得到的部分匹配结果将模式向右移动尽可能远的一段距离后，继续进行比较。 在此不对算法本身做太多阐述，网上有很多说明，仅仅是，完成我自己在理解此算法之后，写出相应的代码。 求next与nextval与匹配 #include&lt;stdio.h&gt; #include&lt;string.h&gt; #include&lt;malloc.h&gt; #include&lt;memory.h&gt; #include&lt;time.h&gt; void Next1(char *pattern, int next[]){ int length=strlen(pattern); *(next)=0; *(next+1)=1; for(int i=2;i&lt;length;i++){ int aim=i-1; while(pattern[i-1]!=pattern[next[aim]-1]){ aim=next[aim]-1;...
         </p>
 
       </div>
@@ -138,7 +142,7 @@ int main(){
 
     <footer>
       <span>
-        &copy; <time datetime="2018-07-26 23:43:05 +0800">2018</time> . Made with HadesJun.
+        &copy; <time datetime="2018-07-30 09:16:05 +0800">2018</time> . Made with HadesJun.
       </span>
     </footer>
   </body>

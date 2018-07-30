@@ -1,4 +1,281 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/github-io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/github-io/" rel="alternate" type="text/html" /><updated>2018-07-26T23:43:05+08:00</updated><id>http://localhost:4000/github-io/</id><title type="html">Hades Jun</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">论码农、码商与码士</title><link href="http://localhost:4000/github-io/2018-07-20/Article-01" rel="alternate" type="text/html" title="论码农、码商与码士" /><published>2018-07-20T00:00:00+08:00</published><updated>2018-07-20T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-20/Article-01</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-20/Article-01">&lt;p&gt;产生这三个概念还源于学习时，话说某日某人问我，什么EJB。我回答说，所谓EJB就是企业级的Java Bean。那什么是Java Bean呢？就是java里的咖啡豆。劈头盖脸就是一句”我当然认识Bean这个单词”，我都没意识到，原来Bean这个单词是那么简单，以致于我这样的翻译回答是在侮辱对方的智商。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/github-io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/github-io/" rel="alternate" type="text/html" /><updated>2018-07-30T09:16:05+08:00</updated><id>http://localhost:4000/github-io/</id><title type="html">Hades Jun</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">reveal.js模板</title><link href="http://localhost:4000/github-io/2018-07-29/revealjs" rel="alternate" type="text/html" title="reveal.js模板" /><published>2018-07-29T00:00:00+08:00</published><updated>2018-07-29T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-29/revealjs</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-29/revealjs">&lt;section data-transition=&quot;convex&quot; data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+# Reveal.js
+### The HTML Presentation Framework
+
+Created by Hades
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-transition=&quot;convex&quot; data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Hello There
+reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-transition=&quot;convex&quot;&gt;
+&lt;section data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Vertical Slides
+
+Slides can be nested inside of each other.
+Use the &lt;em&gt;Space&lt;/em&gt; key to navigate through all slides.
+
+&lt;!--a href=&quot;#/2/1&quot;&gt;
+![](https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png)
+&lt;/a --&gt;
+&lt;a href=&quot;#/2/1&quot; class=&quot;navigate-down&quot;&gt;
+&lt;img width=&quot;178&quot; height=&quot;238&quot; data-src=&quot;https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png&quot; alt=&quot;Down arrow&quot;&gt;
+&lt;/a&gt;
+&lt;/script&gt;&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Basement Level 1&lt;/h2&gt;
+Nested slides are useful for adding additional detail underneath a high level horizontal slide.&lt;/p&gt;
+&lt;/script&gt;&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Basement Level 2&lt;/h2&gt;
+That's it, time to go back up.
+
+&lt;!--a href=&quot;#/2&quot;&gt;
+![](&quot;https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png&quot;)
+&lt;/a--&gt;
+&lt;a href=&quot;#/2&quot;&gt;
+&lt;img width=&quot;178&quot; height=&quot;238&quot; data-src=&quot;https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png&quot; alt=&quot;Up arrow&quot; style=&quot;transform: rotate(180deg); -webkit-transform: rotate(180deg);&quot;&gt;
+&lt;/a&gt;
+
+&lt;/script&gt;&lt;/section&gt;
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Slides
+Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at &lt;a href=&quot;https://slides.com&quot; target=&quot;_blank&quot;&gt;https://slides.com&lt;/a&gt;.
+&lt;/script&gt;&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Point of View
+Press &lt;strong&gt;ESC&lt;/strong&gt; to enter the slide overview.
+Hold down alt and click on any element to zoom in on it using &lt;a href=&quot;http://lab.hakim.se/zoom-js&quot;&gt;zoom.js&lt;/a&gt;. Alt + click anywhere to zoom back out.
+&lt;/script&gt;&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Touch Optimized
+Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Markdown support
+
+Write content using inline or external Markdown.
+Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+```
+&lt;section data-markdown&gt;
+## Markdown support
+Write content using inline or external Markdown.
+Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+&lt;/section&gt;
+```
+&lt;/script&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+&lt;section data-markdown=&quot;&quot; id=&quot;fragments&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Fragments
+Hit the next arrow...
+&lt;!--暂时没有比较好的markdown化的方法，就直接用标签--&gt;
+&lt;p class=&quot;fragment&quot;&gt;... to step through ...&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;fragment&quot;&gt;... a&lt;/span&gt; &lt;span class=&quot;fragment&quot;&gt;fragmented&lt;/span&gt; &lt;span class=&quot;fragment&quot;&gt;slide.&lt;/span&gt;&lt;/p&gt;
+&lt;aside class=&quot;notes&quot;&gt;
+This slide has fragments which are also stepped through in the notes window.
+&lt;/aside&gt;
+&lt;/script&gt;&lt;/section&gt;
+&lt;section&gt;
+&lt;h2&gt;Fragment Styles&lt;/h2&gt;
+&lt;p&gt;There's different types of fragments, like:&lt;/p&gt;
+&lt;p class=&quot;fragment grow&quot;&gt;grow&lt;/p&gt;
+&lt;p class=&quot;fragment shrink&quot;&gt;shrink&lt;/p&gt;
+&lt;p class=&quot;fragment fade-out&quot;&gt;fade-out&lt;/p&gt;
+&lt;p class=&quot;fragment fade-up&quot;&gt;fade-up (also down, left and right!)&lt;/p&gt;
+&lt;p class=&quot;fragment current-visible&quot;&gt;current-visible&lt;/p&gt;
+&lt;p&gt;Highlight &lt;span class=&quot;fragment highlight-red&quot;&gt;red&lt;/span&gt; &lt;span class=&quot;fragment highlight-blue&quot;&gt;blue&lt;/span&gt; &lt;span class=&quot;fragment highlight-green&quot;&gt;green&lt;/span&gt;&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;transitions&quot;&gt;
+	&lt;h2&gt;Transition Styles&lt;/h2&gt;
+	&lt;p&gt;
+		You can select from different transitions, like: &lt;br /&gt;
+		&lt;a href=&quot;?transition=none#/transitions&quot;&gt;None&lt;/a&gt; -
+		&lt;a href=&quot;?transition=fade#/transitions&quot;&gt;Fade&lt;/a&gt; -
+		&lt;a href=&quot;?transition=slide#/transitions&quot;&gt;Slide&lt;/a&gt; -
+		&lt;a href=&quot;?transition=convex#/transitions&quot;&gt;Convex&lt;/a&gt; -
+		&lt;a href=&quot;?transition=concave#/transitions&quot;&gt;Concave&lt;/a&gt; -
+		&lt;a href=&quot;?transition=zoom#/transitions&quot;&gt;Zoom&lt;/a&gt;
+	&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;themes&quot;&gt;
+	&lt;h2&gt;Themes&lt;/h2&gt;
+	&lt;p&gt;
+		reveal.js comes with a few themes built in: &lt;br /&gt;
+		&lt;!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. --&gt;
+		&lt;a href=&quot;#&quot; onclick=&quot;document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;&quot;&gt;Black (default)&lt;/a&gt; -
+		&lt;a href=&quot;#&quot; onclick=&quot;document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;&quot;&gt;White&lt;/a&gt; -
+		&lt;a href=&quot;#&quot; onclick=&quot;document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;&quot;&gt;League&lt;/a&gt; -
+		&lt;a href=&quot;#&quot; onclick=&quot;document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;&quot;&gt;Sky&lt;/a&gt; -
+		&lt;a href=&quot;#&quot; onclick=&quot;document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;&quot;&gt;Beige&lt;/a&gt; -
+		&lt;a href=&quot;#&quot; onclick=&quot;document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;&quot;&gt;Simple&lt;/a&gt; &lt;br /&gt;
+		&lt;a href=&quot;#&quot; onclick=&quot;document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;&quot;&gt;Serif&lt;/a&gt; -
+		&lt;a href=&quot;#&quot; onclick=&quot;document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;&quot;&gt;Blood&lt;/a&gt; -
+		&lt;a href=&quot;#&quot; onclick=&quot;document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;&quot;&gt;Night&lt;/a&gt; -
+		&lt;a href=&quot;#&quot; onclick=&quot;document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;&quot;&gt;Moon&lt;/a&gt; -
+		&lt;a href=&quot;#&quot; onclick=&quot;document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;&quot;&gt;Solarized&lt;/a&gt;
+	&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+&lt;section data-markdown=&quot;&quot; data-background=&quot;#dddddd&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Slide Backgrounds
+Set &lt;code&gt;data-background=&quot;#dddddd&quot;&lt;/code&gt; on a slide to change the background color. All CSS color formats are supported.
+&lt;a href=&quot;#&quot; class=&quot;navigate-down&quot;&gt;
+&lt;img width=&quot;178&quot; height=&quot;238&quot; data-src=&quot;https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png&quot; alt=&quot;Down arrow&quot;&gt;
+&lt;/a&gt;
+&lt;/script&gt;&lt;/section&gt;
+&lt;section data-background=&quot;/github-io/images/ppt.jpg&quot; data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Image Backgrounds
+&lt;pre&gt;&lt;code class=&quot;hljs&quot;&gt;&amp;lt;section data-background=&quot;image.png&quot;&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/script&gt;&lt;/section&gt;
+&lt;section data-background=&quot;/github-io/images/test-img1.png&quot; data-background-repeat=&quot;repeat&quot; data-background-size=&quot;100px&quot; data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Tiled Backgrounds
+&lt;pre&gt;&lt;code class=&quot;hljs&quot; style=&quot;word-wrap: break-word;&quot;&gt;&amp;lt;section data-background=&quot;image.png&quot; data-background-repeat=&quot;repeat&quot; data-background-size=&quot;100px&quot;&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/script&gt;&lt;/section&gt;
+&lt;section data-background=&quot;http://i.giphy.com/90F8aUepslB84.gif&quot; data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+##... and GIFs!
+&lt;/script&gt;&lt;/section&gt;
+&lt;/section&gt;
+
+&lt;section data-transition=&quot;slide&quot; data-background=&quot;#4d7e65&quot; data-background-transition=&quot;zoom&quot; data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Background Transitions&lt;/h2&gt;
+Different background transitions are available via the backgroundTransition option. This one's called &quot;zoom&quot;.
+&lt;pre&gt;&lt;code class=&quot;hljs&quot;&gt;Reveal.configure({ backgroundTransition: 'zoom' })&lt;/code&gt;&lt;/pre&gt;
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-transition=&quot;slide&quot; data-background=&quot;#b5533c&quot; data-background-transition=&quot;zoom&quot; data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Background Transitions&lt;/h2&gt;
+You can override background transitions per-slide.
+&lt;pre&gt;&lt;code class=&quot;hljs&quot; style=&quot;word-wrap: break-word;&quot;&gt;&amp;lt;section data-background-transition=&quot;zoom&quot;&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Pretty Code
+&lt;pre&gt;&lt;code class=&quot;hljs&quot; data-trim contenteditable&gt;
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &amp;lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+Code syntax highlighting courtesy of &lt;a href=&quot;http://softwaremaniacs.org/soft/highlight/en/description/&quot;&gt;highlight.js&lt;/a&gt;.
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Marvelous List
+&lt;ul&gt;
+	&lt;li&gt;No order here&lt;/li&gt;
+	&lt;li&gt;Or here&lt;/li&gt;
+	&lt;li&gt;Or here&lt;/li&gt;
+	&lt;li&gt;Or here&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Fantastic Ordered List
+1. One is smaller than...
+2. Two is smaller than...
+3. Three!
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Tabular Tables
+Item | Value | Quantity
+:-: | :-: | :-:
+Apples | $1 | 7
+Lemonade | $2 | 18
+Bread | $3 | 2
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Clever Quotes
+These guys come in two forms, inline: &lt;q cite=&quot;http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations&quot;&gt;The nice thing about standards is that there are so many to choose from&lt;/q&gt; and block:
+&lt;blockquote cite=&quot;http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations&quot;&gt;
+&amp;ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&amp;rdquo;
+&lt;/blockquote&gt;
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Intergalactic Interconnections
+You can link between slides internally,
+&lt;a href=&quot;#/2/3&quot;&gt;like this&lt;/a&gt;.
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Speaker View
+There's a &lt;a href=&quot;https://github.com/hakimel/reveal.js#speaker-notes&quot;&gt;speaker view&lt;/a&gt;. It includes a timer, preview of the upcoming slide as well as your speaker notes.&lt;/p&gt;
+Press the &lt;em&gt;S&lt;/em&gt; key to try it out.&lt;/p&gt;
+	&lt;aside class=&quot;notes&quot;&gt;
+		Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+	&lt;/aside&gt;
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Export to PDF
+Presentations can be &lt;a href=&quot;https://github.com/hakimel/reveal.js#pdf-export&quot;&gt;exported to PDF&lt;/a&gt;, here's an example:&lt;/p&gt;
+	&lt;iframe data-src=&quot;https://www.slideshare.net/slideshow/embed_code/42840540&quot; width=&quot;445&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:3px solid #666; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt;
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Global State
+Set &lt;code&gt;data-state=&quot;something&quot;&lt;/code&gt; on a slide and &lt;code&gt;&quot;something&quot;&lt;/code&gt;
+will be added as a class to the document element when the slide is open. This lets you
+apply broader style changes, like switching the page background.
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-state=&quot;customevent&quot; data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## State Events
+Additionally custom events can be triggered on a per slide basis by binding to the &lt;code&gt;data-state&lt;/code&gt; name.
+	&lt;pre&gt;&lt;code class=&quot;javascript&quot; data-trim contenteditable style=&quot;font-size: 18px;&quot;&gt;
+Reveal.addEventListener( 'customevent', function() {
+	console.log( '&quot;customevent&quot; has fired' );
+} );
+	&lt;/code&gt;&lt;/pre&gt;
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Take a Moment
+Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Much more
+	&lt;ul&gt;
+		&lt;li&gt;Right-to-left support&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;https://github.com/hakimel/reveal.js#api&quot;&gt;Extensive JavaScript API&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;https://github.com/hakimel/reveal.js#auto-sliding&quot;&gt;Auto-progression&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;https://github.com/hakimel/reveal.js#parallax-background&quot;&gt;Parallax backgrounds&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;https://github.com/hakimel/reveal.js#keyboard-bindings&quot;&gt;Custom keyboard bindings&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section style=&quot;text-align: left;&quot; data-markdown=&quot;&quot; data-transition=&quot;convex&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+# THE END
+
+- &lt;a href=&quot;https://slides.com&quot;&gt;Try the online editor&lt;/a&gt; &lt;br&gt;
+- &lt;a href=&quot;https://github.com/hakimel/reveal.js&quot;&gt;Source code &amp;amp; documentation&lt;/a&gt;
+
+&lt;/script&gt;&lt;/section&gt;</content><author><name>冥郡</name></author><summary type="html"></summary></entry><entry><title type="html">PPT 之remark.js的实现</title><link href="http://localhost:4000/github-io/2018-07-28/remarkjs" rel="alternate" type="text/html" title="PPT 之remark.js的实现" /><published>2018-07-28T00:00:00+08:00</published><updated>2018-07-28T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-28/remarkjs</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-28/remarkjs"></content><author><name>冥郡</name></author><summary type="html"></summary></entry><entry><title type="html">论码农、码商与码士</title><link href="http://localhost:4000/github-io/2018-07-20/Article-01" rel="alternate" type="text/html" title="论码农、码商与码士" /><published>2018-07-20T00:00:00+08:00</published><updated>2018-07-20T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-20/Article-01</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-20/Article-01">&lt;p&gt;产生这三个概念还源于学习时，话说某日某人问我，什么EJB。我回答说，所谓EJB就是企业级的Java Bean。那什么是Java Bean呢？就是java里的咖啡豆。劈头盖脸就是一句”我当然认识Bean这个单词”，我都没意识到，原来Bean这个单词是那么简单，以致于我这样的翻译回答是在侮辱对方的智商。&lt;/p&gt;
 
 &lt;p&gt;什么是Java Bean呢?我认为还得从Java这门语言的产生说起。程序员经常熬夜，一熬夜就喝咖啡。Java成员在讨论新语言取什么名字时，当时他们在喝咖啡，有人提议叫Java，于是最终名字就定为Java了。这样想来，其实也难怪Java这个单词那么容易被命名作语言名。要我说什么蒙牛、特仑苏，安排给程序员们每晚一瓶牛奶，也许下一个百年，称霸世界的某种新语言就能被命名为特仑苏，想想就刺激。&lt;/p&gt;
 
@@ -1519,19 +1796,19 @@ Use `\,`, to insert a thin space before differentials; without this $\TeX$ will 
 祝您记录、阅读、分享愉快！&lt;/p&gt;
 
 &lt;p&gt;Drafted &amp;amp; Translated by &lt;a href=&quot;https://ericp.cn/&quot;&gt;Eric P.&lt;/a&gt;
-2015-10-02&lt;/p&gt;</content><author><name>冥郡</name></author><summary type="html"></summary></entry><entry><title type="html">模式匹配之KMP算法</title><link href="http://localhost:4000/github-io/2018-07-16/CAL-01_KMP" rel="alternate" type="text/html" title="模式匹配之KMP算法" /><published>2018-07-16T00:00:00+08:00</published><updated>2018-07-16T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-16/CAL-01_KMP</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-16/CAL-01_KMP">&lt;h2 id=&quot;问题描述&quot;&gt;问题描述&lt;/h2&gt;
+2015-10-02&lt;/p&gt;</content><author><name>冥郡</name></author><summary type="html"></summary></entry><entry><title type="html">模式匹配之KMP算法</title><link href="http://localhost:4000/github-io/2018-07-16/CAL-01_KMP" rel="alternate" type="text/html" title="模式匹配之KMP算法" /><published>2018-07-16T00:00:00+08:00</published><updated>2018-07-16T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-16/CAL-01_KMP</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-16/CAL-01_KMP">&lt;p&gt;#问题描述&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;模式匹配:&lt;/strong&gt;字串的定位操作通常被称为串的&lt;strong&gt;模式匹配&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;最简单的模式匹配方式：从主串S的第pos个字符起和模式的第一个字符比较之，若相等，则继续逐个比较后续字符；否则从主串S的下一个字符起再重新和模式的字符比较之。依次类推，直至模式T中的每个字符依次和主串S中的一个连续的字符序列相等，则称&lt;strong&gt;匹配成功&lt;/strong&gt;，函数值为和模式T中第一个字符相等的字符在主串中的序号，否则称&lt;strong&gt;匹配失败&lt;/strong&gt;。&lt;/p&gt;
 
-&lt;h2 id=&quot;模式匹配的改进算法&quot;&gt;模式匹配的改进算法&lt;/h2&gt;
+&lt;h1 id=&quot;模式匹配的改进算法&quot;&gt;模式匹配的改进算法&lt;/h1&gt;
 
 &lt;p&gt;D.E.Knuth 、V.R.Pratt 和 J.H.Morris同时发现，其算法的本质改变在于：每当一趟匹配过程中出现字符比较不等时，不需要回溯指针，而是利用已经得到的部分匹配结果将模式向右移动尽可能远的一段距离后，继续进行比较。&lt;/p&gt;
 
 &lt;p&gt;在此不对算法本身做太多阐述，网上有很多说明，仅仅是，完成我自己在理解此算法之后，写出相应的代码。&lt;/p&gt;
 
-&lt;h3 id=&quot;求next与nextval与匹配&quot;&gt;求next与nextval与匹配&lt;/h3&gt;
+&lt;h1 id=&quot;求next与nextval与匹配&quot;&gt;求next与nextval与匹配&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-{c}&quot;&gt;#include&amp;lt;stdio.h&amp;gt;
 #include&amp;lt;string.h&amp;gt;
@@ -1561,6 +1838,7 @@ void Next1(char *pattern, int next[]){
 
 }
 
+
 void NextVal(char *pattern, int next[]){
 	int length=strlen(pattern);
 	*(next)=0;
@@ -1582,6 +1860,8 @@ void NextVal(char *pattern, int next[]){
 
 }
 
+
+
 int Index_KMP(char *S,char *T,int pos){
 	//利用模式串T的next函数求在主串S中第pos个字符开始匹配到的位置
 	//返回-1时代表没匹配到
@@ -1600,6 +1880,8 @@ int Index_KMP(char *S,char *T,int pos){
 	else
 		return -1;
 }
+
+
 
 int main()
 {
@@ -1626,7 +1908,7 @@ int main()
 	return 0;
 }
 
-&lt;/code&gt;&lt;/pre&gt;</content><author><name>冥郡</name></author><summary type="html">问题描述</summary></entry><entry><title type="html">Python base skill</title><link href="http://localhost:4000/github-io/2018-07-15/Python-01_base" rel="alternate" type="text/html" title="Python base skill" /><published>2018-07-15T00:00:00+08:00</published><updated>2018-07-15T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-15/Python-01_base</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-15/Python-01_base">&lt;h2 id=&quot;标准数据类型&quot;&gt;标准数据类型&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;</content><author><name>冥郡</name></author><summary type="html">#问题描述</summary></entry><entry><title type="html">Python base skill</title><link href="http://localhost:4000/github-io/2018-07-15/Python-01_base" rel="alternate" type="text/html" title="Python base skill" /><published>2018-07-15T00:00:00+08:00</published><updated>2018-07-15T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-15/Python-01_base</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-15/Python-01_base">&lt;h2 id=&quot;标准数据类型&quot;&gt;标准数据类型&lt;/h2&gt;
 &lt;p&gt;与其他语言十分不一样的是python 封装的几种数据类型&lt;/p&gt;
 
 &lt;h2 id=&quot;六种数据类型&quot;&gt;六种数据类型&lt;/h2&gt;
@@ -1750,459 +2032,4 @@ java -jar build\jar\HelloWorld.jar
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;其他说明的点&quot;&gt;其他说明的点&lt;/h2&gt;
-&lt;p&gt;简单的Java打包程序，主要熟悉命令行的编译方式，为ant的引入做铺垫&lt;/p&gt;</content><author><name>冥郡</name></author><summary type="html">背景</summary></entry><entry><title type="html">情绪</title><link href="http://localhost:4000/github-io/2018-05-15/Poem-01" rel="alternate" type="text/html" title="情绪" /><published>2018-05-15T00:00:00+08:00</published><updated>2018-05-15T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-05-15/Poem-01</id><content type="html" xml:base="http://localhost:4000/github-io/2018-05-15/Poem-01">&lt;embed src=&quot;/github-io/images/music/01.mp3&quot; autostart=&quot;true&quot; loop=&quot;true&quot; hidden=&quot;true&quot; /&gt;
-
-&lt;p&gt;曾经我将纷纷扰扰&lt;/p&gt;
-
-&lt;p&gt;封入文字&lt;/p&gt;
-
-&lt;p&gt;敲打琢磨&lt;/p&gt;
-
-&lt;p&gt;编写着变幻脚本&lt;/p&gt;
-
-&lt;p&gt;恍惚时情似水逝&lt;/p&gt;
-
-&lt;p&gt;奏键盘钢冰铁冷&lt;/p&gt;
-
-&lt;p&gt;忘江湖推杯换盏&lt;/p&gt;
-
-&lt;div class=&quot;post-line&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;战知必败而争之&lt;/p&gt;
-
-&lt;p&gt;生知必死仍乐之&lt;/p&gt;
-
-&lt;p&gt;随知必离而相恋&lt;/p&gt;
-
-&lt;p&gt;刹那欢喜&lt;/p&gt;
-
-&lt;p&gt;宇宙不知谁慎为&lt;/p&gt;
-
-&lt;div class=&quot;post-line&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;气上心头&lt;/p&gt;
-
-&lt;p&gt;左突右撞&lt;/p&gt;
-
-&lt;p&gt;从足到首&lt;/p&gt;
-
-&lt;p&gt;也不过是化作冷静&lt;/p&gt;
-
-&lt;p&gt;闷足了乌云雾霾&lt;/p&gt;
-
-&lt;p&gt;不过也就倾盆淋透&lt;/p&gt;
-
-&lt;p&gt;从首到足&lt;/p&gt;
-
-&lt;p&gt;分不得&lt;/p&gt;
-
-&lt;p&gt;汗与雨&lt;/p&gt;
-
-&lt;p&gt;泪或伤&lt;/p&gt;
-
-&lt;div class=&quot;post-line&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;担惊受怕几十年&lt;/p&gt;
-
-&lt;p&gt;逃不脱&lt;/p&gt;
-
-&lt;p&gt;所有的担心&lt;/p&gt;
-
-&lt;p&gt;不过变作你所担心那样&lt;/p&gt;
-
-&lt;p&gt;该到的雨会迟&lt;/p&gt;
-
-&lt;p&gt;该爱的人会走&lt;/p&gt;
-
-&lt;p&gt;该讨厌的事&lt;/p&gt;
-
-&lt;p&gt;一个不落&lt;/p&gt;
-
-&lt;div class=&quot;post-line&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;走得愈远&lt;/p&gt;
-
-&lt;p&gt;越是孤单&lt;/p&gt;
-
-&lt;p&gt;总是错的时间相遇&lt;/p&gt;
-
-&lt;p&gt;空余怀念&lt;/p&gt;
-
-&lt;p&gt;贪婪地奢求更多&lt;/p&gt;
-
-&lt;p&gt;只剩下脑海地回忆&lt;/p&gt;
-
-&lt;p&gt;将过往带入坟墓&lt;/p&gt;
-
-&lt;p&gt;舍弃了悲伤&lt;/p&gt;
-
-&lt;p&gt;舍弃了思念&lt;/p&gt;
-
-&lt;p&gt;也舍弃了&lt;/p&gt;
-
-&lt;p&gt;对往惜&lt;/p&gt;
-
-&lt;p&gt;最遗憾&lt;/p&gt;
-
-&lt;p&gt;的挂念&lt;/p&gt;
-
-&lt;div class=&quot;post-line&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;从无尽深邃里逃离&lt;/p&gt;
-
-&lt;p&gt;触碰黑底白字&lt;/p&gt;
-
-&lt;p&gt;刀锋剑痕&lt;/p&gt;
-
-&lt;p&gt;墨笔余香&lt;/p&gt;
-
-&lt;p&gt;高低碑林成书法之墓&lt;/p&gt;
-
-&lt;p&gt;哀千年依旧鸟语花香&lt;/p&gt;
-
-&lt;p&gt;他日&lt;/p&gt;
-
-&lt;p&gt;当编辑光标亦化作乌有&lt;/p&gt;
-
-&lt;p&gt;是否有人怀念夜深&lt;/p&gt;
-
-&lt;p&gt;桌前&lt;/p&gt;
-
-&lt;p&gt;仿佛看到的漫天辰星&lt;/p&gt;
-
-&lt;p&gt;不过是一人倒影&lt;/p&gt;
-
-&lt;p&gt;与自己共饮&lt;/p&gt;
-
-&lt;div class=&quot;post-line&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;一人无情&lt;/p&gt;
-
-&lt;p&gt;情已往何处？&lt;/p&gt;
-
-&lt;p&gt;未曾失败&lt;/p&gt;
-
-&lt;p&gt;确是真的失败&lt;/p&gt;
-
-&lt;p&gt;过去你所不在乎的一切&lt;/p&gt;
-
-&lt;p&gt;过去所有在乎你的人&lt;/p&gt;
-
-&lt;p&gt;剩下所有缅怀&lt;/p&gt;
-
-&lt;p&gt;不过向那个有情的自己&lt;/p&gt;
-
-&lt;p&gt;一句再见&lt;/p&gt;
-
-&lt;p&gt;两两相忘&lt;/p&gt;
-
-&lt;p&gt;逃脱不了的宿命&lt;/p&gt;
-
-&lt;p&gt;予自己最深的忏悔&lt;/p&gt;</content><author><name>藏锋冥郡</name></author><summary type="html"></summary></entry><entry><title type="html">“神抽”还是“鬼抽”?炉石发牌员偏好探究</title><link href="http://localhost:4000/github-io/2018-04-10/R-02" rel="alternate" type="text/html" title="“神抽”还是“鬼抽”?炉石发牌员偏好探究" /><published>2018-04-10T00:00:00+08:00</published><updated>2018-04-10T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-04-10/R-02</id><content type="html" xml:base="http://localhost:4000/github-io/2018-04-10/R-02">&lt;style type=&quot;text/css&quot;&gt;
-p.name {color:rgb(0,0,0);font:bold 16px arial;}
-p.vs {color:rgb(248,0,142);font:bold 18px arial;}
-p.tit {color:rgb(248,75,77);font:bold 17px arial;}
-p.special {color:rgb(255,0,0);font:bold 19px arial;}
-p.clusion{color:rgb(252,156,18);font:bold 17px arial;}
-&lt;/style&gt;
-
-&lt;h2 id=&quot;背景介绍&quot;&gt;背景介绍&lt;/h2&gt;
-
-&lt;h4 id=&quot;炉石传说是一款集换式卡牌游戏玩家根据自己现有的卡牌组建合适的卡组驱动随从施展法术与对手一决高下而作为一款卡牌游戏除了自身收藏卡牌之外取得胜负最为关键的一点在于关键时候是否能抽到关键的卡牌不少玩家吐槽炉石传说可能存在一个发牌员为了增加玩家的游戏时间对发牌机制做了控制以达到鬼抽神抽的目的而实际上炉石暗地里调整各种选牌概率也不是第一次了例如著名的竞技场11只剑龙骑术极大的降低了玩家的用户体验&quot;&gt;《炉石传说》是一款集换式卡牌游戏，玩家根据自己现有的卡牌组建合适的卡组，驱动随从，施展法术，与对手一决高下。而作为一款卡牌游戏，除了自身收藏卡牌之外，取得胜负最为关键的一点在于，关键时候是否能抽到关键的卡牌。不少玩家吐槽炉石传说可能存在一个发牌员，为了增加玩家的游戏时间，对发牌机制做了控制，以达到鬼抽/神抽的目的。而实际上，炉石暗地里调整各种选牌概率也不是第一次了。例如：著名的竞技场11只剑龙骑术，极大的降低了玩家的用户体验。&lt;/h4&gt;
-&lt;h4 id=&quot;笔者学习实验设计课程中便希望能利用上课知识为了验证网络上一直以来对发牌员偏好的猜测开始了简单的实验研究游戏动态过程过于复杂所以以起手发牌换牌为例完成一次简单的探究炉石中的起手发牌规律&quot;&gt;笔者学习《实验设计》课程中，便希望能利用上课知识，为了验证网络上一直以来对发牌员偏好的猜测，开始了简单的实验。研究游戏动态过程过于复杂，所以以起手发牌换牌为例，完成一次简单的探究——炉石中的起手发牌规律。&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&quot;/github-io/images/R02-2.jpg&quot; alt=&quot;炉石游戏封面&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;一实验设计&quot;&gt;一、实验设计&lt;/h2&gt;
-&lt;h3 id=&quot;1数据说明为了探究抽牌上手的因素将因变量确定为以下几类&quot;&gt;1.数据说明，为了探究抽牌上手的因素，将因变量确定为以下几类:&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;名称&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;数据记作&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;备注&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“上手卡牌顺序”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;记为”次序”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;标识每次实验中，抽到的卡牌&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“法力水晶费用”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;记为”费用”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;取值为0-9+&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“卡牌稀有度”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;记为”稀有度”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;取值为0-3，对应白卡/蓝卡/紫卡/橙卡(卡牌稀有度越高，越难收集，若暴雪公司需要盈利，迎合”人民币玩家”,稀有卡牌的上手率可能会高)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“是否为职业卡牌”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;记为”职卡”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;取值为0/1，1为是职业卡牌&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“法术或随从”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;记为”法随”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;取值为0/1，1为随从牌，0为法术牌&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“初始手牌或二次手牌”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;记为”牌次”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;取值为0/1，1为初始手牌，2为更换手牌后的手牌，这里是为了验证更换手牌是否能得到更好的结果。&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;2-实验总体说明炉石卡牌很多但每次游戏仅能携带30张卡牌所以为了方便实验构造了一个卡组尽量满足均匀设计进行实验实验卡牌说明如下&quot;&gt;2. 实验总体说明，炉石卡牌很多，但每次游戏仅能携带30张卡牌，所以为了方便实验，构造了一个卡组尽量满足均匀设计，进行实验。实验卡牌说明如下：&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;变量&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;类型&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;30张卡牌中各类型张数&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;其他说明&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;费用&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0-9&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;每个费用各三张&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;对战起始费用是1，每个回合能拥有的费用+1，上限是10&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;稀有度&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;白/蓝/紫/橙&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;8/8/7/7&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;因为橙卡比较难得到&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;职卡&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;职业/非职业&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;15/15&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;职业一般更强&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;法随&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;法术/随从&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;10/20&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;法术比较少，大部分是随从，所以比例定为1:2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;牌次&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;首次/二次&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1:1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;每次将初始手牌更换，得到更换手牌数据&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;3-实验流程说明&quot;&gt;3. 实验流程说明&lt;/h3&gt;
-&lt;h4 id=&quot;1-利用构造好的实验卡组在2018年4月1日连续开始对局55局并认输仅测试起手抽牌&quot;&gt;1. 利用构造好的实验卡组，在2018年4月1日，连续开始对局55局，并认输(仅测试起手抽牌)。&lt;/h4&gt;
-&lt;h4 id=&quot;2-人工记录每次对局开始时上手的卡牌的详细情况为防止出现错记情况李某刘某两人同时开始记录并核对数据&quot;&gt;2. 人工记录每次对局开始时，上手的卡牌的详细情况，为防止出现错记情况，李某、刘某两人同时开始记录，并核对数据。&lt;/h4&gt;
-&lt;h4 id=&quot;3-测试时仅用一个炉石账号进行比较防止由于用户之间存在区别对待带来的差异&quot;&gt;3. 测试时，仅用一个炉石账号进行比较，防止由于用户之间存在区别对待带来的差异。&lt;/h4&gt;
-
-&lt;h2 id=&quot;二数据分析&quot;&gt;二、数据分析&lt;/h2&gt;
-&lt;h3 id=&quot;1描述统计&quot;&gt;1.描述统计&lt;/h3&gt;
-&lt;h4 id=&quot;实际游戏中起手换不换牌是一个博弈的过程而为了增加天胡的可能性如何换牌是一个值得探究的内容所以借着下面一副简单的直方图和概率密度图像验证一下心中的疑惑以及为发牌员的喜好因素做一个简单的探索&quot;&gt;实际游戏中，起手换不换牌是一个博弈的过程，而为了增加“天胡”的可能性，如何换牌，是一个值得探究的内容，所以借着下面一副简单的直方图和概率密度图像，验证一下心中的疑惑，以及为“发牌员”的喜好因素做一个简单的探索。&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&quot;/github-io/images/R02-3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;center&gt;
-&lt;p class=&quot;name&quot;&gt;
-图1. 不同轮次，不同因素上手次数图 
-
- 左上记为图1.1,右上记为图1.2,左下记为图1.3,右下记为图1.4
-&lt;/p&gt;
-&lt;/center&gt;
-
-&lt;h5 id=&quot;a根据图11可以发现换不换牌存在区别换牌之后费用会稍高一些也就是说当起始手牌适中时希望搏一搏换更小的点数手牌时发牌员可能会给你更糟糕的牌但是不是整体上2次选牌费用会变高还需要进一步检验&quot;&gt;a.根据图1.1可以发现，换不换牌存在区别，换牌之后费用会稍高一些，也就是说当起始手牌适中时，希望搏一搏，换更小的点数手牌时，“发牌员”可能会给你更糟糕的牌，但是不是整体上2次选牌费用会变高还需要进一步检验。&lt;/h5&gt;
-&lt;h5 id=&quot;b根据图12发现本应该8877的概率分布图并不是心理预期的比例橙卡是否真的容易上手需要进一步检验但橙卡容易被抽到的确更能增加玩家的兴趣&quot;&gt;b.根据图1.2发现，本应该8:8:7:7的概率分布图并不是心理预期的比例，“橙卡”是否真的容易“上手”，需要进一步检验，但橙卡容易被抽到，的确更能增加玩家的兴趣。&lt;/h5&gt;
-&lt;h5 id=&quot;c根据图13换卡似乎更能将非职业卡换到手上但实际两者对比差别并不大也并不特别影响游戏的平衡发牌员是不是职业卡并不是很有兴趣&quot;&gt;c.根据图1.3换卡似乎更能将非职业卡换到手上，但实际两者对比差别并不大，也并不特别影响游戏的平衡，“发牌员”是不是职业卡并不是很有兴趣&lt;/h5&gt;
-&lt;h5 id=&quot;d卡组法术随从12但从图14手时法术随从37两者存在差别但发牌员是否对随从情有独钟仍需要进一步检验&quot;&gt;d.卡组法术:随从=1:2,但从图1.4手时,法术:随从=3:7,两者存在差别,但发牌员是否对“随从”情有独钟,仍需要进一步检验。&lt;/h5&gt;
-
-&lt;h3 id=&quot;2非参数检验&quot;&gt;2.非参数检验&lt;/h3&gt;
-
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\chi^2&lt;/script&gt; 检验&lt;/p&gt;
-
-&lt;p class=&quot;tit&quot;&gt;
-a.检验整体来说，上手的费用是不是均匀的
-&lt;/p&gt;
-&lt;p class=&quot;vs&quot;&gt;
-$$ H_0: 均匀 vs  H_1:  不均匀 $$
-&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## 
-## 	Chi-squared test for given probabilities
-## 
-## data:  table(dat$费用)
-## X-squared = 2.7, df = 9, p-value = 0.975
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p class=&quot;clusion&quot;&gt;
-没有足够把握认为能拒绝原假设，认为上手费用是均匀的
-&lt;/p&gt;
-
-&lt;p class=&quot;tit&quot;&gt;
-b.检验先后次序不同，是否对费用产生影响
-&lt;/p&gt;
-&lt;p class=&quot;vs&quot;&gt;
-$$ H_0 :先后费用频次来自同一总体 vs  H_1 :先后费用不来自一个总体 $$
-&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## 
-## 	Pearson's Chi-squared test
-## 
-## data:  first and second
-## X-squared = 32.5, df = 25, p-value = 0.144
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p class=&quot;clusion&quot;&gt;
-没有90%的把握认为先后次序会对费用产生影响，无法拒绝原假设
-&lt;/p&gt;
-
-&lt;p class=&quot;tit&quot;&gt;
-c.检验卡牌稀有度是否会影响上手概率
-&lt;/p&gt;
-&lt;p class=&quot;vs&quot;&gt;
-$$ H_0:卡牌稀有度不会影响上手概率 vs H_1:卡牌稀有度会影响上手概率 $$
-&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## 
-## 	Chi-squared test for given probabilities
-## 
-## data:  table(dat$稀有度)
-## X-squared = 5.28, df = 3, p-value = 0.1524
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p class=&quot;clusion&quot;&gt;
-没有90%的把握认为卡牌稀有度会影响上手概率，无法拒绝原假设
-&lt;/p&gt;
-
-&lt;p class=&quot;special&quot;&gt;
-binom检验
-&lt;/p&gt;
-
-&lt;p class=&quot;tit&quot;&gt;
-a.简单探究交互作用
-    玩家通常还比较关注的一个点是，强力低费橙卡是否特别容易上手，所以对低费橙卡的上手率也做一个简单的检验
-&lt;/p&gt;
-&lt;p class=&quot;vs&quot;&gt;
-$$ H_0:低费橙卡上手概率 = \frac{1}{30} vs H_1:低费橙卡上手概率\neq\frac{1}{30} $$
-&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## 
-## 	Exact binomial test
-## 
-## data:  length(d[, 1]) and 200
-## number of successes = 7, number of trials = 200, p-value = 0.8426
-## alternative hypothesis: true probability of success is not equal to 0.03333333
-## 95 percent confidence interval:
-##  0.01418553 0.07078100
-## sample estimates:
-## probability of success 
-##                  0.035
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p class=&quot;clusion&quot;&gt;
-无法拒绝原假设，证明类似于“二王子贼”这样的强大“天胡”卡组，每次核心牌在手上的概率并没有被调整过，实际上，这与赌徒心态特别类似，少量的赢钱给了玩家每次都能赢钱的暗示，但实际上，这样一张橙卡起手就在手上的概率才3%，但低费将其拍出的概率则更高，这也就验证了每套卡组仅能带一张橙卡的合理性。
-&lt;/p&gt;
-
-&lt;p class=&quot;tit&quot;&gt;
-b.验证是否随从比法术更容易上手
-&lt;/p&gt;
-&lt;p class=&quot;vs&quot;&gt;
-$$H_0:随从上手率=\frac{1}{3} vs H_1:随从上手率\neq\frac{1}{3}$$
-&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## 
-## 	Exact binomial test
-## 
-## data:  sum(dat$法随) and 200
-## number of successes = 140, number of trials = 200, p-value =
-## 0.3305
-## alternative hypothesis: true probability of success is not equal to 0.6666667
-## 95 percent confidence interval:
-##  0.6313501 0.7626104
-## sample estimates:
-## probability of success 
-##                    0.7
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p class=&quot;clusion&quot;&gt;
-无法拒绝原假设，认为随从和法术上手的几率是一样的。
-&lt;/p&gt;
-
-&lt;h5 id=&quot;尝试诸多检验之后沮丧的发现实际上整个实验都是与随机数做斗争并没有足够确切的证据显示网民所期待的那样炉石背后有位经验老道的发牌员&quot;&gt;尝试诸多检验之后，沮丧的发现，实际上整个实验都是与随机数做斗争，并没有足够确切的证据显示，网民所期待的那样，“炉石”背后有位“经验老道”的发牌员。&lt;/h5&gt;
-
-&lt;p&gt;&lt;img src=&quot;/github-io/images/R02-1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;三结论&quot;&gt;三、结论&lt;/h2&gt;
-
-&lt;h5 id=&quot;1单纯从直方图概率密度图看费用与轮次是有一定关系的但仅在放宽犯错误的概率的情况下卡方检验能得到先后次序会影响上手费用但整体上看费用出现情况比较均匀也就是说对照详细频数发牌员趋向于给玩家更不好的卡07费实际上是玩家不太希望第一轮上手的卡而12费则是玩家最希望上手的卡根据直方图第二轮派牌策略实际上更趋向于给不太好的卡这是单纯用检验没有办法得到的&quot;&gt;1.单纯从直方图、概率密度图看，费用与轮次是有一定关系的，但仅在放宽犯错误的概率的情况下，卡方检验能得到先后次序会影响上手费用，但整体上看费用出现情况比较均匀，也就是说，对照详细频数，“发牌员”趋向于给玩家更不好的卡，0、7+费实际上是玩家不太希望第一轮上手的卡，而1、2费则是玩家最希望上手的卡，根据直方图，第二轮派牌策略实际上更趋向于给不太好的卡，这是单纯用检验没有办法得到的。&lt;/h5&gt;
-&lt;h5 id=&quot;2从多个检验的失效看出也许炉石背后并没有网络上谣传的发牌员而发牌时所遵循的策略仅仅是生成一系列来自均匀分布的随机数罢了但毫无疑问在暴雪承认暗改竞技场选牌机制之后改动抽牌概率也是极有可能的当前在实验中发现仅有选牌轮次可能存在差异可以提醒玩家尽量不要怀有搏一搏的心态&quot;&gt;2.从多个检验的失效看出，也许“炉石”背后并没有网络上谣传的“发牌员”，而发牌时所遵循的策略仅仅是生成一系列来自均匀分布的随机数罢了。但毫无疑问，在暴雪承认暗改竞技场选牌机制之后，改动抽牌概率也是极有可能的，当前在实验中发现仅有选牌轮次可能存在差异，可以提醒玩家尽量不要怀有“搏一搏”的心态&lt;/h5&gt;
-
-&lt;h2 id=&quot;四不足与局限&quot;&gt;四、不足与局限&lt;/h2&gt;
-
-&lt;h5 id=&quot;1由于本人卡牌有限无法更好的排列出更多的实验模型还有潜在的一些选牌因素无法得到验证例如为了增加玩家对新版本的熟悉度是否选牌与卡牌版本有关之前有过的概率调整是将新版本卡牌在竞技场中的被选率提高&quot;&gt;1.由于本人卡牌有限，无法更好的排列出更多的实验模型，还有潜在的一些选牌因素无法得到验证，例如：为了增加玩家对新版本的熟悉度，是否选牌与卡牌版本有关(之前有过的概率调整是将新版本卡牌在竞技场中的被选率提高)&lt;/h5&gt;
-&lt;h5 id=&quot;2无法消除由个人账号带来的影响本人非人民币玩家可能并不在炉石希望改善用户体验的范畴之内所以可能没有被暗中改动&quot;&gt;2.无法消除由个人账号带来的影响，本人非人民币玩家，可能并不在炉石希望改善用户体验的范畴之内，所以可能没有被暗中改动&lt;/h5&gt;
-&lt;h5 id=&quot;3比较难研究交叉项带来的影响由于法术牌最高也就到7费而大部分高费牌卡牌稀有度比较高这样研究交互项时无法排除各因素之间的联系所以仅能对单独的一些感兴趣的交互项做研究&quot;&gt;3.比较难研究交叉项带来的影响，由于法术牌最高也就到7费，而大部分高费牌卡牌稀有度比较高，这样研究交互项时，无法排除各因素之间的联系，所以仅能对单独的一些感兴趣的交互项做研究&lt;/h5&gt;
-&lt;h4 id=&quot;4炉石最吸引玩家的其实是卡牌开包机制的研究但由于每天能靠任务赚得的包是有限的所以无法得到大量数据探究开包出橙率与时间开包姿势开包玩家是否是连续开包等等更为有趣的因素所以目前仍有很大的探索空间&quot;&gt;4.炉石最吸引玩家的其实是卡牌开包机制的研究，但由于每天能靠任务赚得的包是有限的，所以无法得到大量数据，探究“开包出橙率”与“时间”、“开包姿势”、“开包玩家”、“是否是连续开包”等等更为有趣的因素。所以目前仍有很大的探索空间。&lt;/h4&gt;
-
-&lt;h2 id=&quot;五参考文献&quot;&gt;五、参考文献&lt;/h2&gt;
-
-&lt;h5 id=&quot;1我来决定你的牌运-炉石发牌员现身说法httplsduowancom1606328720305017html&quot;&gt;1.我来决定你的牌运 炉石发牌员现身说法(http://ls.duowan.com/1606/328720305017.html)&lt;/h5&gt;
-&lt;h5 id=&quot;2第六篇r语言数据可视化之数据分布图直方图密度曲线箱线图等高线2d密度图httpswwwcnblogscommuchenp5430536html&quot;&gt;2.第六篇：R语言数据可视化之数据分布图（直方图、密度曲线、箱线图、等高线、2D密度图）(https://www.cnblogs.com/muchen/p/5430536.html)&lt;/h5&gt;
-&lt;h5 id=&quot;3神抽or鬼抽-炉石中的发牌员真的存在吗httpgamessinacomcnozhs2016-05-23fxsktkp9166036shtml&quot;&gt;3.神抽or鬼抽 炉石中的发牌员真的存在吗？(http://games.sina.com.cn/o/z/hs/2016-05-23/fxsktkp9166036.shtml)&lt;/h5&gt;
-
-&lt;h2 id=&quot;六附录代码&quot;&gt;六、附录代码&lt;/h2&gt;
-
-&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read.csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;01.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;,&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;###画图&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;as.factor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;easyGgplot2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;费用&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_histogram&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;..density..&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;dodge&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;black&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binwidth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stat_density&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;line&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;identity&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;费用&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;density&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;guides&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scale_fill_discrete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;轮次&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;稀有度&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_histogram&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;..density..&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;dodge&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;black&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binwidth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stat_density&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;line&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;dodge&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;稀有度&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;density&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;guides&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scale_fill_discrete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;轮次&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;factor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;职卡&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_histogram&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;dodge&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;是否是职业卡&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;频率&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scale_fill_discrete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;轮次&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;factor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;法随&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_histogram&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;dodge&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;是法术或随从&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;频率&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scale_fill_discrete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;轮次&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot2.multiplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cols&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;###各种检验&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;稀有度&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;real&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;testdat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;real&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;byrow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;F&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chisq.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;testdat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;费用&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;real&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;testdat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;real&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;byrow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chisq.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;testdat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;费用&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;费用&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chisq.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;稀有度&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;费用&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binom.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binom.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;法随&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chisq.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;费用&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;费用&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;轮次&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;费用&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;###观察详情&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;n&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;l&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;black&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;l&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;blue&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;l&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;l&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>冥郡</name></author><summary type="html"></summary></entry></feed>
+&lt;p&gt;简单的Java打包程序，主要熟悉命令行的编译方式，为ant的引入做铺垫&lt;/p&gt;</content><author><name>冥郡</name></author><summary type="html">背景</summary></entry></feed>
