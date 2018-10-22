@@ -1,4 +1,134 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/github-io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/github-io/" rel="alternate" type="text/html" /><updated>2018-07-30T09:16:05+08:00</updated><id>http://localhost:4000/github-io/</id><title type="html">Hades Jun</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">reveal.js模板</title><link href="http://localhost:4000/github-io/2018-07-29/revealjs" rel="alternate" type="text/html" title="reveal.js模板" /><published>2018-07-29T00:00:00+08:00</published><updated>2018-07-29T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-29/revealjs</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-29/revealjs">&lt;section data-transition=&quot;convex&quot; data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/github-io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/github-io/" rel="alternate" type="text/html" /><updated>2018-10-22T19:44:52+08:00</updated><id>http://localhost:4000/github-io/</id><title type="html">Hades Jun</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">信院二学位的分享</title><link href="http://localhost:4000/github-io/2018-10-22/double-degree" rel="alternate" type="text/html" title="信院二学位的分享" /><published>2018-10-22T00:00:00+08:00</published><updated>2018-10-22T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-10-22/double-degree</id><content type="html" xml:base="http://localhost:4000/github-io/2018-10-22/double-degree">&lt;section data-transition=&quot;convex&quot; data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## 信息学院双学位经验分享
+Created by 李家郡
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-transition=&quot;convex&quot; data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+### 为什么要修双学位？
+### 修双学位有什么不利和有利影响？
+### 怎么样修成双学位？
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-transition=&quot;convex&quot;&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+### 为什么要修双学位？
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+### 为什么要修双学位？
+ * 双学位和二专业的区别
+ * 信院双学位和统院双学位的区别
+ * 信院可以修的二学位
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+### 为什么要修双学位？
+ * 能力的提升 ( 1+1&gt;2 ?)
+ * 出国以及科研的需要
+ * 自我满足，填充剩余时间
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;/section&gt;
+
+&lt;section data-transition=&quot;convex&quot;&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+### 修双学位有什么不利和有利影响？
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+### 修二学位的不利影响
+ * 学习生活将会被占据很多时间
+ * 需要有很强的主观能动性
+ * 付出很多努力也可能会收获较低的学分绩
+ * 付出很多努力也可能最终也学不完双学位
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+### 修二学位的有利影响
+ * 训练出两种思维模式。理学、工学 1+1&gt;2
+ * 若是真的付出了，编程能力，解决问题能力会很强
+ * 有机会认识很多新朋友，参与各种竞赛能找到特别多人组队
+ * 可以多一条选择的道路
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;/section&gt;
+
+&lt;section data-transition=&quot;convex&quot;&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+### 怎么样修成双学位？
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+### 内因
+ * 决心，置诸死地而后生
+ * 平常心，修不完的可能很高
+ * 努力，不努力不可能修完，毕业都成问题(信院绩点观和统院绩点观)
+ * 主动，包括找导师、找教秘选课
+ * 取舍，想清楚什么是你要的，什么是你不要的
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+### 外因
+ * 天时地利，信院的课怎么才能选得上
+ * 多交朋友，包括老师，修二学位最佳的助力是信院小伙伴
+ * 取舍，当遇到两门课冲突怎么办
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot; id=&quot;fragments&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+### 其他注意事项
+
+&lt;p class=&quot;fragment&quot;&gt;
+1. 二学位需要写毕业论文
+&lt;/p&gt;
+&lt;p class=&quot;fragment&quot;&gt;
+2. 信院的课买一送一
+&lt;/p&gt;
+&lt;p class=&quot;fragment&quot;&gt;
+3. 多问教秘
+&lt;/p&gt;
+&lt;p class=&quot;fragment&quot;&gt;
+4. 尽量自己DIY自己的课程
+&lt;/p&gt;
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot; id=&quot;fragments&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+### Thanks!
+### 更多疑惑可以扫码加微信
+&lt;img src=&quot;/github-io/images/me.jpg&quot; height=300/&gt;
+&lt;/script&gt;&lt;/section&gt;</content><author><name>冥郡</name></author><summary type="html"></summary></entry><entry><title type="html">Visualization</title><link href="http://localhost:4000/github-io/2018-07-31/visualization" rel="alternate" type="text/html" title="Visualization" /><published>2018-07-31T00:00:00+08:00</published><updated>2018-07-31T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-31/visualization</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-31/visualization">&lt;section data-transition=&quot;convex&quot; data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+### 可视化初探
+
+&lt;div class=&quot;fragment&quot;&gt;
+![随机的艺术](/github-io/images/visualization/animation1.gif)
+&lt;/div&gt;
+
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section data-transition=&quot;convex&quot; data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+### 可视化初探
+
+![随机的艺术](/github-io/images/visualization/animation1.gif){.fragments}
+
+&lt;/script&gt;&lt;/section&gt;
+
+&lt;section&gt;
+&lt;section data-markdown=&quot;&quot; id=&quot;fragments&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
+## Fragments
+Hit the next arrow...
+&lt;!--暂时没有比较好的markdown化的方法，就直接用标签--&gt;
+&lt;p class=&quot;fragment&quot;&gt;... to step through ...&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;fragment&quot;&gt;... a&lt;/span&gt; &lt;span class=&quot;fragment&quot;&gt;fragmented&lt;/span&gt; &lt;span class=&quot;fragment&quot;&gt;slide.&lt;/span&gt;&lt;/p&gt;
+&lt;aside class=&quot;notes&quot;&gt;
+This slide has fragments which are also stepped through in the notes window.
+&lt;/aside&gt;
+&lt;/script&gt;&lt;/section&gt;
+&lt;section&gt;
+&lt;/section&gt;&lt;/section&gt;</content><author><name>冥郡</name></author><summary type="html"></summary></entry><entry><title type="html">reveal.js模板</title><link href="http://localhost:4000/github-io/2018-07-29/revealjs" rel="alternate" type="text/html" title="reveal.js模板" /><published>2018-07-29T00:00:00+08:00</published><updated>2018-07-29T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-29/revealjs</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-29/revealjs">&lt;section data-transition=&quot;convex&quot; data-markdown=&quot;&quot;&gt;&lt;script type=&quot;text/template&quot;&gt;
 # Reveal.js
 ### The HTML Presentation Framework
 
@@ -1951,85 +2081,4 @@ public class HelloWorld{
 		System.out.println(&quot;HelloWorld&quot;);
 	}
 }
-&lt;/code&gt;&lt;/pre&gt;</content><author><name>冥郡</name></author><summary type="html">Java HelloWorld</summary></entry><entry><title type="html">C and C++ HelloWorld</title><link href="http://localhost:4000/github-io/2018-07-10/C-01_HelloWorld" rel="alternate" type="text/html" title="C and C++ HelloWorld" /><published>2018-07-10T00:00:00+08:00</published><updated>2018-07-10T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-07-10/C-01_HelloWorld</id><content type="html" xml:base="http://localhost:4000/github-io/2018-07-10/C-01_HelloWorld">&lt;h2 id=&quot;第一篇博客&quot;&gt;第一篇博客&lt;/h2&gt;
-
-&lt;h2 id=&quot;关于-hello-world&quot;&gt;关于 Hello World&lt;/h2&gt;
-&lt;h2 id=&quot;c&quot;&gt;C&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-{c}&quot;&gt;#include&amp;lt;stdio.h&amp;gt;
-int main(){
-  printf(&quot;HelloWorld&quot;);
-  return 0;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;c-1&quot;&gt;C++&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-{c++}&quot;&gt;#include&amp;lt;iostream&amp;gt;
-using namespace std;
-int main(){
-	cout&amp;lt;&amp;lt;&quot;HelloWorld&quot;&amp;lt;&amp;lt;endl;
-}
-&lt;/code&gt;&lt;/pre&gt;</content><author><name>冥郡</name></author><summary type="html">第一篇博客</summary></entry><entry><title type="html">EJB——Ant Demo——simple package</title><link href="http://localhost:4000/github-io/2018-06-11/EJB-01-Ant-demo" rel="alternate" type="text/html" title="EJB——Ant Demo——simple package" /><published>2018-06-11T00:00:00+08:00</published><updated>2018-06-11T00:00:00+08:00</updated><id>http://localhost:4000/github-io/2018-06-11/EJB-01-Ant-demo</id><content type="html" xml:base="http://localhost:4000/github-io/2018-06-11/EJB-01-Ant-demo">&lt;h2 id=&quot;背景&quot;&gt;背景&lt;/h2&gt;
-
-&lt;p&gt;简单的java情况下，使用命令行编译运行一个jar包的demo&lt;/p&gt;
-
-&lt;h2 id=&quot;目录结构&quot;&gt;目录结构&lt;/h2&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C:.
-│  mymanifest
-│  run.bat
-│  runjar.bat
-│
-├─build
-│  ├─classes
-│  │  └─AntDemo
-│  │          HelloWorld.class
-│  │
-│  └─jar
-│          HelloWorld.jar
-│
-└─src
-    └─AntDemo
-            HelloWorld.java
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;源文件内容&quot;&gt;源文件内容&lt;/h2&gt;
-
-&lt;h3 id=&quot;mymainifest&quot;&gt;mymainifest&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Main-Class: AntDemo.HelloWorld
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;runbat&quot;&gt;run.bat&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;javac -sourcepath src -d build\classes src\AntDemo\HelloWorld.java
-java -cp build\classes AntDemo.HelloWorld
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;runjarbat&quot;&gt;runjar.bat&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;echo Main-Class: AntDemo.HelloWorld&amp;gt;mymanifest
-md build\jar
-jar cfm build\jar\HelloWorld.jar myManifest -C build\classes .
-java -jar build\jar\HelloWorld.jar
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;srcantdemohelloworldjava&quot;&gt;src/AntDemo/HelloWorld.java&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AntDemo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-		&lt;span class=&quot;nf&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;HelloWorld&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;运行过程&quot;&gt;运行过程&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;命令行运行run.bat，注意一定先运行run命令生成.class文件才能打包&lt;/li&gt;
-  &lt;li&gt;看到输出HelloWorld，证明编译通过，也就证明了程序的正确性&lt;/li&gt;
-  &lt;li&gt;其次再运行runjar.bat，这里的runjar是将运行得到的class文件打包压缩到.jar文件中&lt;/li&gt;
-  &lt;li&gt;成功打包后，jar包内部是会有主类的，此时同样输出HelloWorld&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;其他说明的点&quot;&gt;其他说明的点&lt;/h2&gt;
-&lt;p&gt;简单的Java打包程序，主要熟悉命令行的编译方式，为ant的引入做铺垫&lt;/p&gt;</content><author><name>冥郡</name></author><summary type="html">背景</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;</content><author><name>冥郡</name></author><summary type="html">Java HelloWorld</summary></entry></feed>

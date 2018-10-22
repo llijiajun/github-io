@@ -28,10 +28,10 @@
 			link.href = window.location.search.match( print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
-
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+		<script src="https://cdn.bootcss.com/markdown-it/8.4.1/markdown-it.js"></script>
 	</head>
 
 	<body>
@@ -43,6 +43,9 @@
 			</div>
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+			<script>
+			document.getElementById('theme').setAttribute('href','/github-io/css/theme/solarized.css');
+			</script>
 				<section data-transition="convex" data-markdown=""><script type="text/template">
 # Reveal.js
 ### The HTML Presentation Framework
