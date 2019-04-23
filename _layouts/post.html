@@ -34,20 +34,17 @@ layout: default
   <a href="#" class="top">Top</a>
 </div>
 
-<div id="container"> </div>
+<div id="vcomments"> </div>
 
 <script src="{{site.baseurl}}/dist/gitment.browser.js"></script>
 <script>
-    var clientId = 'e11f5919eb25fa0a374a'
-    var clientSecret = 'd2d7da0ab1a43f5143041729154cbe53030005fb'
-    var gitment = new Gitment({
-      id: 'Hades Jun',
-      owner: 'llijiajun',
-      repo: 'https://github.com/llijiajun/commet.git',
-      oauth: {
-        client_id: clientId,
-        client_secret: clientSecret,
-      },
-    })
-gitment.render('container')
-</script>
+        new Valine({
+    el: '#vcomments' ,
+    appId: '83MesIX83EeatMBS5lpx8OQQ-gzGzoHsz',
+    appKey: '6JDfOeJJ7vDKheMHt5oB66H0',
+    notify:false, 
+    verify:false, 
+    avatar:'mp', 
+    placeholder: 'just go go' 
+});
+    </script>
