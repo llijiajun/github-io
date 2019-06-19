@@ -117,7 +117,7 @@ output:
 
 <h2 id="rticles">rticles</h2>
 
-<p>在两年前记得有人问我pdf生成怎么老是出错，老是有问题。其实我也没有完全探索明白，但有个很好用的R包，rticles。rticles是谢大大开发的，比较方便的是默认的CTeX这个模板。其他模板并不是不能用，很多时候bug甚至都不在R，而是在于latex本身，出于沉迷R Markdown的探索，我并不是很会写LaTeX。使用时大部分情况下也是网上抄代码。探索自己到底在使用那个LaTeX编译，最重要的方式也是看console的命令。从命令中，很容易就可以抓取到模板的位置，如下：</p>
+<p>在两年前记得有人问我pdf生成怎么老是出错，老是有问题。其实我也没有完全探索明白，但有个很好用的R包，rticles。rticles是谢大大开发的，比较方便的是默认的CTeX这个模板。其他模板并不是不能用，很多时候bug甚至都不在R，而是在于LaTeX本身，出于沉迷R Markdown的探索，我并不是很会写LaTeX。使用时大部分情况下也是网上抄代码。探索自己到底在使用那个LaTeX编译，最重要的方式也是看console的命令。从命令中，很容易就可以抓取到模板的位置，如下：</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"C:/PROGRA~2/Pandoc/pandoc" +RTS -K512m -RTS 00.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output 00.tex --table-of-contents --toc-depth 2 --template "C:\Users\m1881\Documents\R\win-library\3.5\rticles\rmarkdown\templates\ctex\resources\default.latex" --number-sections --highlight-style tango --pdf-engine xelatex 
 </code></pre></div></div>
@@ -173,7 +173,7 @@ reveal.js似乎是更新了，或者是之前没注意到，某页的背景可�
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pandoc -D beamer &gt; beamer-template.tex
 </code></pre></div></div>
 
-<p>在我的latex中加中文，通常就一句</p>
+<p>在我的LaTeX中加中文，通常就一句</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\usepackage[UTF8, heading = false, scheme = plain]{ctex}
 </code></pre></div></div>
@@ -220,7 +220,7 @@ reveal.js似乎是更新了，或者是之前没注意到，某页的背景可�
 
     <footer>
       <span>
-        &copy; <time datetime="2019-06-19 13:07:18 +0800">2019</time> . Made with HadesJun.
+        &copy; <time datetime="2019-06-19 13:12:51 +0800">2019</time> . Made with HadesJun.
       </span>
     </footer>
   </body>
