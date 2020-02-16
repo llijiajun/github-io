@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      模式匹配之KMP算法 &middot; Hades Jun
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/github-io/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/github-io/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/github-io/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/github-io/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/github-io/feed.xml" title="Hades Jun" />
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+</head>
+
+
+  <body>
+  <nav class="nav">
+      <div class="nav-container">
+        <a href="/github-io/">
+          <h2 class="nav-title">Hades Jun</h2>
+        </a>
+        <ul>
+          <li><a href="/github-io/about">About</a></li>
+          <li><a href="/github-io/">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    
+        冥郡
+    
+
+    
+      <br>
+      <span>on&nbsp;</span><time datetime="2018-07-16 00:00:00 +0800">July 16, 2018</time>
+    
+  </div>
+
+  <h1 class="post-title">模式匹配之KMP算法</h1>
+
+  <p>#问题描述</p>
+
+<p><strong>模式匹配:</strong>字串的定位操作通常被称为串的<strong>模式匹配</strong></p>
+
+<p>最简单的模式匹配方式：从主串S的第pos个字符起和模式的第一个字符比较之，若相等，则继续逐个比较后续字符；否则从主串S的下一个字符起再重新和模式的字符比较之。依次类推，直至模式T中的每个字符依次和主串S中的一个连续的字符序列相等，则称<strong>匹配成功</strong>，函数值为和模式T中第一个字符相等的字符在主串中的序号，否则称<strong>匹配失败</strong>。</p>
+
+<h1 id="模式匹配的改进算法">模式匹配的改进算法</h1>
+
+<p>D.E.Knuth 、V.R.Pratt 和 J.H.Morris同时发现，其算法的本质改变在于：每当一趟匹配过程中出现字符比较不等时，不需要回溯指针，而是利用已经得到的部分匹配结果将模式向右移动尽可能远的一段距离后，继续进行比较。</p>
+
+<p>在此不对算法本身做太多阐述，网上有很多说明，仅仅是，完成我自己在理解此算法之后，写出相应的代码。</p>
+
+<h1 id="求next与nextval与匹配">求next与nextval与匹配</h1>
+
+<pre><code class="language-{c}">#include&lt;stdio.h&gt;
+#include&lt;string.h&gt;
+#include&lt;malloc.h&gt;
+#include&lt;memory.h&gt;
+#include&lt;time.h&gt;
+
+
+void Next1(char *pattern, int next[]){
+	int length=strlen(pattern);
+	*(next)=0;
+	*(next+1)=1;
+	for(int i=2;i&lt;length;i++){
+		int aim=i-1;
+		while(pattern[i-1]!=pattern[next[aim]-1]){
+			aim=next[aim]-1;
+			if(aim==0)
+				break;
+		}
+		next[i]=next[aim]+1;
+		
+	}
+	for(int i=1;i&lt;length;i++){
+		if(pattern[i]==pattern[next[i]-1])
+			next[i]=next[next[i]-1];
+	}
+
+}
+
+
+void NextVal(char *pattern, int next[]){
+	int length=strlen(pattern);
+	*(next)=0;
+	*(next+1)=1;
+	for(int i=2;i&lt;length;i++){
+		int aim=i-1;
+		while(pattern[i-1]!=pattern[next[aim]-1]){
+			aim=next[aim]-1;
+			if(aim==0)
+				break;
+		}
+		next[i]=next[aim]+1;
+		
+	}
+	for(int i=1;i&lt;length;i++){
+		if(pattern[i]==pattern[next[i]-1])
+			next[i]=next[next[i]-1];
+	}
+
+}
+
+
+
+int Index_KMP(char *S,char *T,int pos){
+	//利用模式串T的next函数求在主串S中第pos个字符开始匹配到的位置
+	//返回-1时代表没匹配到
+	int i=pos,j=0; //i是指主串的，j是指模式串的
+	int *next=(int *)malloc(sizeof(int)*strlen(T));
+	NextVal(T,next);//这个过程是O(m)的
+	while(i&lt;strlen(S)&amp;&amp;j&lt;strlen(T)){//这个过程O(m+n)
+		if(j==0||S[i]==T[j]){
+			++i;++j;
+		}else{
+			j=next[j]-1;
+		}
+	}
+	if(j&gt;=strlen(T))
+		return i-strlen(T);
+	else
+		return -1;
+}
+
+
+
+int main()
+{
+	char *a="aaaab";
+	char *b="aaaaab";
+	printf("a&amp;b KMP position: %d",Index_KMP(b,a,0));
+	int n=strlen(a);
+	int *nex1,*nex2;
+	nex1=(int *)malloc(sizeof(int)*n);
+	memset(nex1,0,sizeof(nex1));
+	nex2=(int *)malloc(sizeof(int)*(1+n));
+	memset(nex2,0,sizeof(nex2));
+	for(int k=0;k&lt;100000;k++)
+		Next1(a,nex1);
+	for(int i=0;i&lt;n;i++)
+		printf("%d ",nex1[i]);
+	printf("\n");
+	for(int k=0;k&lt;100000;k++)
+		NextVal(a,nex2);
+	for(int i=0;i&lt;n;i++)
+		printf("%d ",nex2[i]);
+	printf("\n");
+	
+	return 0;
+}
+
+</code></pre>
+
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/github-io/2018-07-17/CAL-02_Sort" class="left arrow">&#8592;</a>
+  
+  
+    <a href="/github-io/2018-07-15/Python-01_base" class="right arrow">&#8594;</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+<div id="vcomments"> </div>
+
+<script src="/github-io/dist/gitment.browser.js"></script>
+<script>
+        new Valine({
+    el: '#vcomments' ,
+    appId: '83MesIX83EeatMBS5lpx8OQQ-gzGzoHsz',
+    appKey: '6JDfOeJJ7vDKheMHt5oB66H0',
+    notify:false, 
+    verify:false, 
+    avatar:'mp', 
+    placeholder: 'just go go' 
+});
+    </script>
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="2020-02-16 14:11:39 +0800">2020</time> . Made with HadesJun.
+      </span>
+    </footer>
+  </body>
+</html>

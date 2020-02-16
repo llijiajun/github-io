@@ -27,14 +27,16 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
-  <body>
-    <section id="intro" style="background-image: url('images/banner2.jpg');" class="intro">       
+  <body >
+  <!-- navbar-->
+
+  <!--section id="intro" style="background-image: url('images/banner3.jpg');" class="intro carousel-item active">       
       <div class="overlay"></div>
       <div class="content">
         <div class="container clearfix">
           <div class="row">
             <div class="col-lg-8 col-md-12 mx-auto">
-            	<p class="bold">Seven times have I despised my soul</h1>
+              <h4 class="bold">Seven times have I despised my soul</h4>
               <p class="italic">The first time when I saw her being meek that she might attain height.</p>
               <p class="italic">The second time when I saw her limping before the crippled.</p>
               <p class="italic">The third time when she was given to choose between the hard and the easy, and she chose the easy.</p>
@@ -42,35 +44,122 @@
               <p class="italic">The fifth time when she forbore for weakness, and attributed her patience to strength.</p>
               <p class="italic">The sixth time when she despised the ugliness of a face, and knew not that it was one of her own mistakes.</p>
               <p class="italic">And the seventh time when she sang a song of praise, and deemed it a virtue.</p>
-              <p>—— Kahlil Gibran</h1>
+              <p>—— Kahlil Gibran</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- intro end-->
-    <!-- navbar-->
-    <header class="header">
-      <nav class="navbar navbar-expand-lg">
+</section-->
+
+    <div class="header navbar-fixed-top navbar">
+      <nav class="navbar navbar-expand-lg navbar-fixed-top">
         <div class="container">
-        	<a href="#intro" class="navbar-brand link-scroll">
-        		<h1>冥郡</h1>
-        	<!--img src="img/logo.png" alt="" class="img-fluid"-->
+
+          <a href="#" class="navbar-brand link-scroll">
+            <h1>冥郡</h1>
+          <!--img src="img/logo.png" alt="" class="img-fluid"-->
         </a>
           <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a href="#" class="nav-link link-scroll">Home</a></li>
-              <li class="nav-item"><a href="#CODE" class="nav-link link-scroll">Learning-Coding </a></li>
-              <li class="nav-item"><a href="#ALG" class="nav-link link-scroll">Learning-Algorithm </a></li>
-              <li class="nav-item"><a href="#STATS" class="nav-link link-scroll">Learning-Stats</a></li>
-              <li class="nav-item"><a href="#RTK" class="nav-link link-scroll">Article</a></li>
-              <li class="nav-item"><a href="#Other" class="nav-link link-scroll">Others</a></li>
+              <li class="nav-item"><a href="{{ site.baseurl }}/CODE.html" class="nav-link link-scroll">Learning-Coding </a></li>
+              <li class="nav-item"><a href="{{ site.baseurl }}/Algorithm.html" class="nav-link link-scroll">Learning-Algorithm </a></li>
+              <li class="nav-item"><a href="{{ site.baseurl }}/Stats.html" class="nav-link link-scroll">Learning-Stats</a></li>
+              <li class="nav-item"><a href="{{ site.baseurl }}/A_P.html" class="nav-link link-scroll">Article-Poem</a></li>
+              <li class="nav-item"><a href="{{ site.baseurl }}/Other.html" class="nav-link link-scroll">Others</a></li>
             </ul>
           </div>
         </div>
       </nav>
-    </header>
+    </div>
+
+
+
+  <div id="demo" class="carousel slide " style="height:100%" data-ride="carousel">
+ 
+  <!-- 指示符 -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner" style="height:100%" role="listbox">
+
+    <section id="intro" style="background-image: url('images/banner3.jpg');" class="intro carousel-item active">       
+      <!--div class="overlay"></div-->
+      <div class="content" >
+        <div class="container clearfix">
+          <div class="row">
+            <div class="col-lg-8 col-md-12 mx-auto">
+            	<h4 class="bold">Seven times have I despised my soul</h4>
+              <p class="italic">The first time when I saw her being meek that she might attain height.</p>
+              <p class="italic">The second time when I saw her limping before the crippled.</p>
+              <p class="italic">The third time when she was given to choose between the hard and the easy, and she chose the easy.</p>
+              <p class="italic">The fourth time when she committed a wrong, and comforted herself that others also commit wrong.</p>
+              <p class="italic">The fifth time when she forbore for weakness, and attributed her patience to strength.</p>
+              <p class="italic">The sixth time when she despised the ugliness of a face, and knew not that it was one of her own mistakes.</p>
+              <p class="italic">And the seventh time when she sang a song of praise, and deemed it a virtue.</p>
+              <p>—— Kahlil Gibran</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="intro" style="background-image: url('images/banner2.jpg');" class="intro carousel-item">       
+      <!--div class="overlay"></div-->
+      <div class="content">
+        <div class="container clearfix">
+          <div class="row">
+            <div class="col-lg-8 col-md-12 mx-auto">
+              <h4 class="bold">Seven times have I despised my soul</h4>
+              <p class="italic">The first time when I saw her being meek that she might attain height.</p>
+              <p class="italic">The second time when I saw her limping before the crippled.</p>
+              <p class="italic">The third time when she was given to choose between the hard and the easy, and she chose the easy.</p>
+              <p class="italic">The fourth time when she committed a wrong, and comforted herself that others also commit wrong.</p>
+              <p class="italic">The fifth time when she forbore for weakness, and attributed her patience to strength.</p>
+              <p class="italic">The sixth time when she despised the ugliness of a face, and knew not that it was one of her own mistakes.</p>
+              <p class="italic">And the seventh time when she sang a song of praise, and deemed it a virtue.</p>
+              <p>—— Kahlil Gibran</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="intro" style="background-image: url('images/banner1.jpg');" class="intro carousel-item">       
+      <!--div class="overlay"></div-->
+      <div class="content">
+        <div class="container clearfix">
+          <div class="row">
+            <div class="col-lg-8 col-md-12 mx-auto">
+              <h4 class="bold">Seven times have I despised my soul</h4>
+              <p class="italic">The first time when I saw her being meek that she might attain height.</p>
+              <p class="italic">The second time when I saw her limping before the crippled.</p>
+              <p class="italic">The third time when she was given to choose between the hard and the easy, and she chose the easy.</p>
+              <p class="italic">The fourth time when she committed a wrong, and comforted herself that others also commit wrong.</p>
+              <p class="italic">The fifth time when she forbore for weakness, and attributed her patience to strength.</p>
+              <p class="italic">The sixth time when she despised the ugliness of a face, and knew not that it was one of her own mistakes.</p>
+              <p class="italic">And the seventh time when she sang a song of praise, and deemed it a virtue.</p>
+              <p>—— Kahlil Gibran</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+ 
+</div>
+</div>
+    <!-- intro end-->
+    
     <!-- about-->
     <!--section id="about" class="text">
       <div class="container">
@@ -97,7 +186,7 @@
             
             <div class="row">
                 	<div class="box col-md-6">
-                    <a href='{{ site.baseurl }}/C.html'>
+                    <a href='{{ site.baseurl }}/CODE.html'>
                  <h5>Coding</h5>
                  <p>记录计算机编程学习中的文章.</p>
                   </a>
@@ -123,7 +212,7 @@
             
             <div class="row">
                 	<div class="box col-md-6">
-                    <a href='{{ site.baseurl }}/R.html'>
+                    <a href='{{ site.baseurl }}/Stats.html'>
                  <h5>Statas</h5>
                  <p>记录统计学习时写的文章</p>
                </a>
@@ -136,7 +225,7 @@
             
             <div class="row">
                 	<div class="box col-md-6">
-                    <a href='{{ site.baseurl }}/Article.html'>
+                    <a href='{{ site.baseurl }}/A_P.html'>
                  <h5>Article</h5>
                  <p>文章与诗</p>
                </a>
@@ -216,30 +305,35 @@
     
     <!-- Portfolio / gallery end-->
     <!-- text page-->
-    <section id="text" class="text-page section-inverse">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2 class="heading">Text page</h2>
-            <div class="row">
-              <div class="col-md-6">
-                <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. </p>
-                <p>Betrayed cheerful declared end and. Questions we additions is extremely incommode. Next half add call them eat face. Age lived smile six defer bed their few. Had admitting concluded too behaviour him she. Of death to or to being other. </p>
-              </div>
-              <div class="col-md-6">
-                <p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed. </p>
-                <p>Saw yet kindness too replying whatever marianne. Old sentiments resolution admiration unaffected its mrs literature. Behaviour new set existence dashwoods. It satisfied to mr commanded consisted disposing engrossed. Tall snug do of till on easy. Form not calm new fail. </p>
-              </div>
-            </div>
+    <footer style="background-color: #111;">
+  <h2 class="text-center" style="color: #8899FF">THANKS FOR VISITING ME</h2>
+  <hr>
+  <div id="text" class="text-page section-inverse container">
+    <div class="row">
+      <div class="col-md-6 footer-left">
+        <h4 style="color: #000099">Contact Information</h4>
+        <div class="contact-info">
+          <div class="email-info">
+            <i class="glyphicon glyphicon-envelope"></i>
+            <p class="p3" style="background-color:#110"><a href="#" style="color: #ABCDAA">522278689@qq.com</a></p> 
+            <p class="p3" style="background-color:#110"><a href="#" style="color: #ABCDAA">m18811567511@163.com</a></p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- text page end-->
-    
-    
-    <footer style="background-color: #111;">
-      <div class="container"> 
+      <div class="col-md-6 footer-right">
+      <div class=" footer-right">
+        <ul class="social-icons2">
+          <li onclick="alert('ljj522278689')"><i class="col-md-3 fa fa-wechat"></i></li>
+          <li onclick="alert('522278689')"><i class="col-md-3 fa fa-qq"></i></li>
+          <li onclick="alert('HHHH')"><i class="col-md-3 fa fa-smile-o"></i></li>
+          <li onclick="alert('BiuBiu')"><i class="col-md-3 fa fa-star"></i></li>
+        </ul>
+      </div>
+      </div><!-- col -->
+    </div><!-- row -->
+  </div><!-- container -->
+  <hr>
+  <div class="container"> 
         <div class="row copyright">
           <div class="col-md-6">
             <p class="mb-md-0 text-center text-md-left">&copy;2019 . Bootstrapious </p>
@@ -250,9 +344,10 @@
           </div>
         </div>
       </div>
-    </footer>
+</footer>
     <!-- JavaScript files-->
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
     <!--script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script-->
     <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"> </script>
