@@ -150,13 +150,13 @@ p {
   margin-top: 0; }
 
 a {
-  color: #F5235D;
+  color: #39279D;
   -webkit-transition: .5s all;
   -o-transition: .5s all;
   -moz-transition: .5s all;
   transition: .5s all; }
   a:hover {
-    color: #92072d;
+    color: #AA22CC;
     -webkit-transition: .5s all;
     -o-transition: .5s all;
     -moz-transition: .5s all;

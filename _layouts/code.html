@@ -14,7 +14,7 @@
 		<!-- Mobile Specific Metas
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+		<link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
 		<!-- FONT
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700,800' rel='stylesheet' type='text/css'>
@@ -83,9 +83,9 @@
 
 		<!-- Main Nav -->
 		<section class="container">
-			<nav class="nav">
+			<nav class="nav" style="">
 	 
-				<ul>
+				<ul style="position:relative;">
 					<li><a href="{{ site.baseurl }}/C.html">C/C++</a></li>
 					<li><a href="{{ site.baseurl }}/R.html">R</a></li>
 					<li><a href="{{ site.baseurl }}/Python.html">Python</a></li>
@@ -529,30 +529,12 @@
 					<li><a class="prev" href="#0">prev page &rarr;</a></li>
 				</ul>
 			</nav>  
-		</section>
+		</section-->
 
-		<!-- Footer -->
 		
 
 
-		<script src="js/scripts.js"></script>
-
-		<script>
 		
-			$('.article #info').readmore({
-				speed: 600,
-				moreLink: '<a class="button-text" href="#">Read More <span>&darr;</span></a>',
-				lessLink: '<a class="button-text" href="#">Read Less <span>&uarr;</span></a>',
-				collapsedHeight: 120,
-				heightMargin: 20,
-				afterToggle: function(trigger, element, expanded) {
-						if(! expanded) { // The "Close" link was clicked
-						$('html, body').animate({scrollTop: element.offset().top}, {duration: 300});
-					}
-				}
-			});
-
-	  	</script>
 
 	</body>
 
