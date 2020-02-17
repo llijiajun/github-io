@@ -531,8 +531,24 @@
 			</nav>  
 		</section-->
 
-		
+		<script src="js/scripts.js"></script>
 
+		<script>
+		
+			$('.article #info').readmore({
+				speed: 600,
+				moreLink: '<a class="button-text" href="#">Read More <span>&darr;</span></a>',
+				lessLink: '<a class="button-text" href="#">Read Less <span>&uarr;</span></a>',
+				collapsedHeight: 120,
+				heightMargin: 20,
+				afterToggle: function(trigger, element, expanded) {
+						if(! expanded) { // The "Close" link was clicked
+						$('html, body').animate({scrollTop: element.offset().top}, {duration: 300});
+					}
+				}
+			});
+
+	  	</script>
 
 		
 
