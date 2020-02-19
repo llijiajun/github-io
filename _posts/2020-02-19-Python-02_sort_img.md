@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Python base skill"
+title:  "整理提取图片始"
 author: "冥郡"
 categories: Python
 ---
