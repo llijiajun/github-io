@@ -9,6 +9,8 @@ categories: [Python,C,Algorithm]
 
 Kmeans 是机器学习比较基础的算法，利用包调用比较容易，未来的算法可以很复杂，但基础都是一样简单的。算法层面尽量写得简单，将优化过程尽量写复杂。由于想使用Cython，先写C++部分，这里需要定义命名空间。头文件代码如下：
 
+## 代码
+
 #### KMeans.h
 
 ```
@@ -207,22 +209,64 @@ cdef class KMeans:
 ```
 from distutils.core import setup,Extension
 from Cython.Build import cythonize
-
+import eigency
 
 setup(
 	ext_modules=cythonize(Extension(
 		name='cluster',
+		author='jiajun',
 		version='0.0.1',
 		sources=['clu.pyx'],
 		language='c++',
 		extra_compile_args=["-std=c++11"],
-		include_dirs=["../eigen"],
+		include_dirs=[".", "module-dir-name"] + eigency.get_includes(),
+		#eigency的路径的配置方式
+		#include_dirs=["../eigen3","/Users/XXX/anaconda3/envs/py37/lib/python3.7/site-packages/numpy/core/include"],
+		#如果自己安装了eigen，则可以配置自己的路径，numpy引用出错时，需要将其头文件引入
 		install_requires=['Cython>=0.2.15','eigency>=1.77'],
 		packages=['little-try'],
 		python_requires='>=3'
 	))
 )
+
 ```
 
+## 编译
 
+最后，手动编译，即可得到想要的库
 
+```
+python setup.py build_ext --inplace
+```
+
+这里补充一个小测试：
+
+```
+from cluster import KMeans
+
+import numpy as np
+
+data=np.random.rand(100,20)
+
+cl=KMeans(2, 300 , 0.0001, 1 )
+
+cl.fit(data)
+
+cl.predict(np.random.rand(3,20))
+
+cl.center()
+```
+
+## 打包给其他人用
+
+#### 创建源码分发文件
+
+```
+python setup.py sdist
+```
+
+#### 创建二进制分发文件
+
+```
+python setup.py bdist
+```
