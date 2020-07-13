@@ -36,9 +36,89 @@ def load_label(file,variable_name="group"):
 
 ### edgelist
 
+```
+def load_adjacency_matrix(file):
+    fl=open(file,'r')
+    #这里有的-u文件会在第一行放节点个数，则需要用其他方法记录一下节点个数，比如用set
+    n=int(fl.readline().replace("\n",""))
+    row=[]
+    col=[]
+    while True:
+        data=fl.readline()
+        if not data:
+            break
+        #这里其实要视数据而定，有时候要加反边，往csr矩阵里导入的时候是不会自动加反边的，否则返回G+G^T
+        #也许整体读也不错，这里不一定要一行行读
+        data=data.replace("\n","").split(" ")
+        row.append(int(data[0]))
+        row.append(int(data[1]))
+    data=[1 for i in range(len(row))]
+    return csc_matrix((data,(row,col)),shape=(n,n))
+```
+
 
 ### GCN datasets
 
+GCN专用数据有三个，cora，citeseer，pubmed，因为有特征，所以跟其他单纯图数据稍微不太一样。基本都是用tkipf/gcn的读取方式
+
+```
+def load(dataset_str="cora"):
+    names = ['x', 'y', 'tx', 'ty', 'allx', 'ally', 'graph']
+    objects = []
+    for i in range(len(names)):
+        with open("data/ind.{}.{}".format(dataset_str, names[i]), 'rb') as f:
+            if sys.version_info > (3, 0):
+                objects.append(pkl.load(f, encoding='latin1'))
+            else:
+                objects.append(pkl.load(f))
+
+    x, y, tx, ty, allx, ally, graph = tuple(objects)
+    test_idx_reorder = parse_index_file("data/ind.{}.test.index".format(dataset_str))
+    test_idx_range = np.sort(test_idx_reorder)
+
+    if dataset_str == 'citeseer':
+        # Fix citeseer dataset (there are some isolated nodes in the graph)
+        # Find isolated nodes, add them as zero-vecs into the right position
+        test_idx_range_full = range(min(test_idx_reorder), max(test_idx_reorder)+1)
+        tx_extended = sp.lil_matrix((len(test_idx_range_full), x.shape[1]))
+        tx_extended[test_idx_range-min(test_idx_range), :] = tx
+        tx = tx_extended
+        ty_extended = np.zeros((len(test_idx_range_full), y.shape[1]))
+        ty_extended[test_idx_range-min(test_idx_range), :] = ty
+        ty = ty_extended
+
+    features = sp.vstack((allx, tx)).tolil()
+    features[test_idx_reorder, :] = features[test_idx_range, :]
+    adj = nx.adjacency_matrix(nx.from_dict_of_lists(graph))
+
+    labels = np.vstack((ally, ty))
+    labels[test_idx_reorder, :] = labels[test_idx_range, :]
+
+    idx_test = test_idx_range.tolist()
+    idx_train = range(len(y))
+    idx_val = range(len(y), len(y)+500)
+
+    train_mask = sample_mask(idx_train, labels.shape[0])
+    val_mask = sample_mask(idx_val, labels.shape[0])
+    test_mask = sample_mask(idx_test, labels.shape[0])
+
+    y_train = np.zeros(labels.shape)
+    y_val = np.zeros(labels.shape)
+    y_test = np.zeros(labels.shape)
+    y_train[train_mask, :] = labels[train_mask, :]
+    y_val[val_mask, :] = labels[val_mask, :]
+    y_test[test_mask, :] = labels[test_mask, :]
+
+    return adj, features, y_train, y_val, y_test, train_mask, val_mask, test_mask
+```
+
+### Matlab
+
+Matlab 这里主要提一下读取.matfile, 使用可视化界面尤为简单，直接拖拉就可以，等价于以下命令：
+```
+load(filename)
+```
+对于图数据来说，一般变量network是邻接矩阵，group是标签。
 
 ## C,C++
 
