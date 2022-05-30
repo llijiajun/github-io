@@ -1,0 +1,10 @@
+I"Ý<h2 id="java-helloworld">Java HelloWorld</h2>
+
+<pre><code class="language-{java}">//Helloworld.java
+public class HelloWorld{
+	public static void main(String args[]){
+		System.out.println("HelloWorld");
+	}
+}
+</code></pre>
+:ET

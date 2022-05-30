@@ -1,0 +1,255 @@
+I"�<h2 id="问题描述">问题描述</h2>
+
+<p>排序算法可以说是算法的一个基础，这里在我水平范围内进行总结和归纳，并给出我自己实现的源码。</p>
+
+<p>以下，归纳基于比较的排序方法，因此，其运行时间上限基本都是O(nlog(n))</p>
+
+<h2 id="时间对比">时间对比</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">排序方法</th>
+      <th style="text-align: center">平均情况</th>
+      <th style="text-align: center">最好情况</th>
+      <th style="text-align: center">最坏情况</th>
+      <th style="text-align: center">辅助空间</th>
+      <th style="text-align: center">稳定性</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">冒泡排序</td>
+      <td style="text-align: center">\(O(n^2)\)</td>
+      <td style="text-align: center">O(n)</td>
+      <td style="text-align: center">\(O(n^2)\)</td>
+      <td style="text-align: center">O(1)</td>
+      <td style="text-align: center">稳定</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">插入排序</td>
+      <td style="text-align: center">\(O(n^2)\)</td>
+      <td style="text-align: center">O(n)</td>
+      <td style="text-align: center">\(O(n^2)\)</td>
+      <td style="text-align: center">O(1)</td>
+      <td style="text-align: center">稳定</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">希尔排序</td>
+      <td style="text-align: center">\(O(nlogn)~O(n^2)\)</td>
+      <td style="text-align: center">\(O(n^{1.3})\)</td>
+      <td style="text-align: center">\(O(n^2)\)</td>
+      <td style="text-align: center">O(1)</td>
+      <td style="text-align: center">不稳定</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">堆排序</td>
+      <td style="text-align: center">\(O(nlogn)\)</td>
+      <td style="text-align: center">O(nlogn)</td>
+      <td style="text-align: center">O(nlogn)</td>
+      <td style="text-align: center">O(1)</td>
+      <td style="text-align: center">不稳定</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">归并排序</td>
+      <td style="text-align: center">\(O(nlogn)\)</td>
+      <td style="text-align: center">O(nlogn)</td>
+      <td style="text-align: center">O(nlogn)</td>
+      <td style="text-align: center">O(n)</td>
+      <td style="text-align: center">稳定</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">快速排序</td>
+      <td style="text-align: center">\(O(nlogn)\)</td>
+      <td style="text-align: center">O(nlogn)</td>
+      <td style="text-align: center">\(O(n^2)\)</td>
+      <td style="text-align: center">O(1)</td>
+      <td style="text-align: center">不稳定</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="程序框架">程序框架</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include&lt;iostream&gt;
+#include&lt;vector&gt;
+using namespace std;
+
+template &lt;class T&gt;
+class Sort{
+private:
+	vector&lt;T&gt; arrayT;
+	vector&lt;T&gt; temp;
+public:
+	Sort(){}
+	Sort(vector&lt;T&gt; arr){
+		arrayT=arr;
+		temp=arr;
+	}
+	bool compare(T a,T b,bool arise){
+		if(arise)
+			return (a&gt;b);
+		else
+			return !(a&gt;b);
+	}
+	void swap(int i,int j){
+		T temp=arrayT[i];
+		arrayT[i]=arrayT[j];
+		arrayT[j]=temp;
+	}
+	void print(){
+		for(int i=0;i&lt;arrayT.size();i++)
+			cout&lt;&lt;arrayT[i]&lt;&lt;" ";
+		cout&lt;&lt;endl;
+	}
+	int getSize(){return arrayT.size();}
+	void bubbleSort(bool arise);//冒泡排序
+	void insertSort(bool arise);//插入排序
+	void quickSort(bool arise,int low,int high);//快速排序 注意这里的high指的是最后一个元素的位置坐标
+	void adjustHeap(int i,int length,bool arise);//建堆
+	void HeapSort(bool arise);//堆排序
+	void MergeSort(int start,int end,bool arise);//归并排序
+	void Merge(int start,int mid,int end,bool arise);//归并
+	void ShellSort(bool arise);//希尔排序
+};
+
+//这里加入冒泡排序部分代码
+//这里加入插入排序部分代码
+
+int main(){
+	int a[10]={1,3,5,7,9,2,4,6,8,0};
+	vector&lt;int&gt; b(a, a+10);
+	Sort&lt;int&gt; sortb(b);
+	sortb.print();
+	sortb.bubbleSort(true);
+	sortb.print();
+	for(int i=0;i&lt;b.size();i++)
+			cout&lt;&lt;b[i]&lt;&lt;" ";
+		cout&lt;&lt;endl;
+}
+
+</code></pre></div></div>
+
+<h2 id="冒泡排序">冒泡排序</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>template&lt;class T&gt;
+void Sort&lt;T&gt;::bubbleSort(bool arise){
+	int n=arrayT.size();
+	for(int i=0;i&lt;n-1;i++)
+		for(int j=0;j&lt;n-i-1;j++)
+			if(compare(arrayT[j],arrayT[j+1],arise))
+				swap(j,j+1);
+}
+</code></pre></div></div>
+
+<h2 id="插入排序">插入排序</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>template&lt;class T&gt;
+void Sort&lt;T&gt;::insertSort(bool arise){
+	int n=arrayT.size();
+	vector&lt;T&gt;::iterator it=arrayT.begin(),in;
+	for(int it=1;it&lt;n;it++){
+		int flag=0;
+		for(in=arrayT.begin();in!=arrayT.begin()+it;in++){
+			if(compare(*in,arrayT[it],arise)){
+			//找到第一个不满足比较条件的进行插入，这里外循环使用index,内循环使用迭代器与vector的结构有关
+			//若外循环也使用迭代器，则会出现bug
+			//原因是，在删除元素之后，vector的元素会重构，所有在erase后的元素所在的位置都会改变，所以迭代器指的位置不再是原来的位置，也就形成了空引用
+				T temp=arrayT[it];
+				arrayT.erase(arrayT.begin()+it);
+				arrayT.insert(in,1,temp);
+				break;
+			}
+		}
+	}
+}
+</code></pre></div></div>
+
+<h2 id="快速排序">快速排序</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>template&lt;class T&gt;
+void Sort&lt;T&gt;::quickSort(bool arise,int low,int high){
+	if(low&gt;=high){
+		return;
+	}
+	int i=low;
+	int j=high;
+	T temp=arrayT[i];
+	while(i&lt;j){
+		while(i&lt;j&amp;&amp;compare(arrayT[j],temp,arise))j--;
+		arrayT[i]=arrayT[j];
+		while(i&lt;j&amp;&amp;compare(temp,arrayT[i],arise))i++;
+		arrayT[j]=arrayT[i];
+	}
+	arrayT[i]=temp;
+	quickSort(arise,low,i-1);
+	quickSort(arise,i+1,high);
+}
+</code></pre></div></div>
+
+<h2 id="堆排序">堆排序</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>template&lt;class T&gt;
+void Sort&lt;T&gt;::adjustHeap(int i,int length,bool arise){
+	T temp=arrayT[i];
+	for(int k=i*2+1;k&lt;length;k=2*k+1){
+		if(k+1&lt;length &amp;&amp; compare(arrayT[k+1],arrayT[k],arise))k++;
+		if(compare(arrayT[k],temp,arise)){
+			arrayT[i]=arrayT[k];
+			i=k;
+		}else
+			break;
+	}
+	arrayT[i]=temp;
+}
+template&lt;class T&gt;
+void Sort&lt;T&gt;::HeapSort(bool arise){
+	for(int i=arrayT.size()/2-1;i&gt;=0;i--)
+		adjustHeap(i,arrayT.size(),arise);
+	for(int j=arrayT.size()-1;j&gt;0;j--){
+		swap(0,j);
+		adjustHeap(0,j,arise);
+	}
+}
+</code></pre></div></div>
+<h2 id="归并排序">归并排序</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>template&lt;class T&gt;
+void Sort&lt;T&gt;::Merge(int start,int mid,int end,bool arise){
+	int i=start,j=mid+1,k=start;
+	while(i!=mid+1&amp;&amp;j!=end+1){
+		if(compare(arrayT[i],arrayT[j],arise))
+			temp[k++]=arrayT[j++];
+		else
+			temp[k++]=arrayT[i++];
+	}
+	while(i!=mid+1)
+		temp[k++]=arrayT[i++];
+	while(j!=end+1)
+		temp[k++]=arrayT[j++];
+	for(i=start;i&lt;=end;i++)
+		arrayT[i]=temp[i];
+}
+
+template&lt;class T&gt;
+void Sort&lt;T&gt;::MergeSort(int start,int end,bool arise){
+	int mid;
+	if(start&lt;end){
+		mid=(start+end)/2;
+		MergeSort(start,mid,arise);
+		MergeSort(mid+1,end,arise);
+		Merge(start,mid,end,arise);
+	}
+}
+</code></pre></div></div>
+
+<h2 id="希尔排序">希尔排序</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>template&lt;class T&gt;
+void Sort&lt;T&gt;::ShellSort(bool arise){
+	int len=arrayT.size();
+	for(int div=len/2;div&gt;=1;div=div/2)
+		for(int i=0;i&lt;=div;i++)
+			for(int j=i;j&lt;len-div;j+=div)
+				for(int k=j;k&lt;len;k+=div)
+					if(compare(arrayT[j],arrayT[k],arise))
+						swap(j,k);
+}
+</code></pre></div></div>
+:ET

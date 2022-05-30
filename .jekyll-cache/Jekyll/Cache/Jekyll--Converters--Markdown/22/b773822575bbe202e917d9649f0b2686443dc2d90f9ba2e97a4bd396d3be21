@@ -1,0 +1,32 @@
+I"�<h2 id="背景">背景</h2>
+
+<p>为了加速c++的矩阵计算，MKL是比较好的方案，但MKL写代码实在不太友好，其次容易出bug。MKL计算矩阵乘法速度十分快，但其实对代码优化到极致之后，Eigen矩阵计算速度是可以和MKL媲美的。由此，我也对CMake进行了一定的研究。我主要是从知乎<a href="https://www.zhihu.com/question/28571059">Eigen的速度为什么这么快？</a>中学习到的。我仅作为搬运工，并加入一些自己的实际探索。</p>
+
+<h2 id="优化手段">优化手段</h2>
+
+<p>从知乎中总结：</p>
+
+<blockquote>
+  <ol>
+    <li>矩阵乘法，若等式左边的变量与右式相乘变量没有关系，则可以使用 A.noalias() 替代 A</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <ol>
+    <li>-mavx 和 -mfma 两个参数， 若对g++ 编译而言， -O3 可以在编译上优化</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <ol>
+    <li>写 CMakefile 并链接矩阵加速库 MKL 、 Blas 、Lapack 。</li>
+  </ol>
+</blockquote>
+
+<p>这些都是比较容易实现达到的优化方法。主要讲一下利用MKL优化。</p>
+
+<h2 id="参考资料">参考资料</h2>
+
+<p>[1] <a href="https://www.zhihu.com/question/28571059">https://www.zhihu.com/question/28571059</a></p>
+:ET

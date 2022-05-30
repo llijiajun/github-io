@@ -1,0 +1,64 @@
+I"�<h2 id="背景">背景</h2>
+
+<p>简单的java情况下，使用命令行编译运行一个jar包的demo</p>
+
+<h2 id="目录结构">目录结构</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:.
+│  mymanifest
+│  run.bat
+│  runjar.bat
+│
+├─build
+│  ├─classes
+│  │  └─AntDemo
+│  │          HelloWorld.class
+│  │
+│  └─jar
+│          HelloWorld.jar
+│
+└─src
+    └─AntDemo
+            HelloWorld.java
+</code></pre></div></div>
+
+<h2 id="源文件内容">源文件内容</h2>
+
+<h3 id="mymainifest">mymainifest</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Main-Class: AntDemo.HelloWorld
+</code></pre></div></div>
+
+<h3 id="runbat">run.bat</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>javac -sourcepath src -d build\classes src\AntDemo\HelloWorld.java
+java -cp build\classes AntDemo.HelloWorld
+</code></pre></div></div>
+
+<h3 id="runjarbat">runjar.bat</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo Main-Class: AntDemo.HelloWorld&gt;mymanifest
+md build\jar
+jar cfm build\jar\HelloWorld.jar myManifest -C build\classes .
+java -jar build\jar\HelloWorld.jar
+</code></pre></div></div>
+
+<h3 id="srcantdemohelloworldjava">src/AntDemo/HelloWorld.java</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>package AntDemo;
+
+public class HelloWorld{
+	public static void main(String[] args){
+		System.out.println("HelloWorld");
+	}
+}
+</code></pre></div></div>
+
+<h2 id="运行过程">运行过程</h2>
+
+<ul>
+  <li>命令行运行run.bat，注意一定先运行run命令生成.class文件才能打包</li>
+  <li>看到输出HelloWorld，证明编译通过，也就证明了程序的正确性</li>
+  <li>其次再运行runjar.bat，这里的runjar是将运行得到的class文件打包压缩到.jar文件中</li>
+  <li>成功打包后，jar包内部是会有主类的，此时同样输出HelloWorld</li>
+</ul>
+
+<h2 id="其他说明的点">其他说明的点</h2>
+<p>简单的Java打包程序，主要熟悉命令行的编译方式，为ant的引入做铺垫</p>
+:ET

@@ -1,0 +1,67 @@
+I"J"<h2 id="背景">背景</h2>
+
+<p>为了加速c++，不可避免的需要使用矩阵运算库。最出名的、一般人用的最多的c++矩阵计算库可能是Eigen，从统计处我知道了Armadillo用的也不少。但说到底，python那些包用的最多的也许最后还是MKL。</p>
+
+<p>MKL全称 Intel Math Kernel Library， 是由Intel 公司开发的，专门用于矩阵计算的库。这个库经过我自己的评测，性能远超 Eigen 和Armadillo，毕竟Eigen 和Armadillo属于开源库，下载方便，但功能其实远不够完善。MKL其实不算免费使用的库，学生可以申请，之所以重新开始写这篇文章，正是因为一年前，我申请的linsence过期了。逼于无奈，我必须另辟蹊径，重新安装和配置这个库。过期的根本原因是MKL的特殊编译器icc过期，但本身MKL的库是可以下只含有MKL部分的版本，方法是选择单独下载 <a href="https://software.intel.com/en-us/mkl/choose-download/linux">Intel® Math Kernel Library</a>，这里需要下载对应系统的MKL文件，当注册之后，Intel会自动发送可用的lisense到邮箱，这里就不做展示。于我而言，为了方便本地测试，和服务器运行代码，我既配置了MAC的版本也配置了linux的版本，MAC版本的配置相对简单，下载dmg文件后，根据提示安装即可。</p>
+
+<p>使用parallel_studio的配置要稍显简单，只需要在得到license之后，按照安装步骤来即可，麻烦的是得到安装软件的license。只有短期需求时，比较推荐的做法是注册学生账号，以学生身份使用并安装parallel_stduio，结果也许会是license的过期，那时若对MKL仍抱有好感，只需重读此文即可。</p>
+
+<h2 id="编译和配置">编译和配置</h2>
+
+<p>安装完成后，会有产生目录：/opt/intel/，一般会有下面几个重要的文件夹：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>compilers_and_libraries	
+compilers_and_libraries_20XX
+compilers_and_libraries_20XX.X.XXX
+mkl
+</code></pre></div></div>
+
+<p>这些就是MKL安装和链接的库和关键。为了在g++编译的时候找到这些库的位置并连接上，需要使用以下的语句：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source /opt/intel/mkl/bin/mklvars.sh intel64
+source /opt/intel/bin/compilervars.sh intel64
+</code></pre></div></div>
+
+<p>这些语句应在编译前输入，也可以写到启动命令行时就会加载的文件里，例如.bashrc 、 .bash_profile、.zshrc，其作用是，将MKL的环境变量的路径通通加入环境中。这一点在MAC或者是在Ubuntu上都是一致的。这里intel64是作为链接的目标目录，选项有intel64和ia32，想必是与系统是多少位有关，这个参数除了看两个.sh文件和报错以外，也可以通过看对应bin目录相邻的lib目录了解。通常会有的各种库没链接上的原因，都有对应的undifine，没链接上的库也就对应lib目录下的库，查找到对应的.so文件之后，自然可以联想到需要去找对应邻居的bin中是否会有引入环境变量的.sh文件，这是个人的一些经验，并不一定能解决问题，仅供参考。</p>
+
+<p>解决完配置路径后，需要考虑的关键问题成为了如何写合适的g++命令，下面的g++链接命令是笔者参考许多博客，再三尝试之后，得到的可以编译mkl的方式，这里给出我工作中需要引入的头文件，核心头文件是mkl.h，它会引入许多的其他头文件，至于使用什么头文件需要参考<a href="https://software.intel.com/en-us/download/developer-reference-for-intel-math-kernel-library-c">MKL文档</a>中需要使用的函数的介绍。这份文档绝对是进行MKL开发最合适的参考工具。唯一的缺点是例子比较少，对于矩阵计算不熟悉的同学比较难理解函数的参数。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;mkl_spblas.h&gt;
+#include &lt;mkl.h&gt;
+</code></pre></div></div>
+
+<p>对于使用icc编译器的用户来说，引用这一切只需要使用-lmkl，但放弃了icc，也就意味着自己链接库的事需要做的更多，甚至于引用的顺序也会决定了编译是否能通过。经过在下的测试，MAC 的g++命令与Ubuntu并不一致，而是如下：</p>
+
+<p>这里的编译命令由于主要是靠“试”和“拼接博客”所凑出来的，所以有一些引用或许没有必要，特别是compilers_and_libraries_2019*这些链接，但本人并没有一个个删除进行测试，也许可以留给读者自测。这也是MAC命令和Ubuntu编译命令不一样的个人原因，MAC稍作堆砌，我便成功编译，所以有可能没有去处冗余的链接。</p>
+
+<h4 id="mac">MAC</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ test.cpp -o test.o -I/opt/intel/mkl/include -I/opt/intel/mkl/lib/intel64 -L/opt/intel/mkl/lib -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -I /opt/intel/compilers_and_libraries_2019.3.199/mac/mkl/include -L /opt/intel/compilers_and_libraries_2019.3.199/mac/mkl/lib -L /opt/intel/compilers_and_libraries_2019/mac/lib
+
+</code></pre></div></div>
+<h4 id="ubuntu">Ubuntu</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ main1.cpp -o test.o -I/opt/intel/mkl/include -I/opt/intel/mkl/lib/intel64 -I/opt/intel/lib/intel64 -lmkl_intel_lp64 -lmkl_core -lmkl_intel_thread -L/opt/intel/mkl/lib -I /opt/intel/compilers_and_libraries/linux/mkl/include -L /opt/intel/compilers_and_libraries/linux/mkl/lib -L /opt/intel/compilers_and_libraries/linux/lib -liomp5 -lpthread
+</code></pre></div></div>
+
+<p>Ubuntu上的编译测试花费我的时间远比MAC的尝试要多，其中经历了无数次的绝望，最后主要还是参考intel用户的issue中找到了蛛丝马迹，总结出了以上的编译方式。其中有的顺序是不可以搞错的，比如-liomp5 、-pthread，-liomp5必须在-pthread前，且最好后置，不能放在太前面。也许有的同学配置出错了，可以考虑尝试按照原理分析，交换一些引用的位置，这里也仅供参考，配置确实是一大难事，远比运行代码要麻烦。</p>
+
+<h2 id="例子">例子</h2>
+
+<p>我测试使用的运行参考例子主要来自 链接<a href="https://software.intel.com/zh-cn/node/814751">https://software.intel.com/zh-cn/node/814751</a>这里intel的问答也是我遇到问题并解决的一个关键性提醒和帮助，当同学测试时，也可以使用这里的例子，编译时，只需要加入以上的头文件和输入输出所对应的文件即可。用MKL的例子并不像其他数学库那么多，有能力写的人大多写在项目中，写成Release的版本供人使用即可，但直观性则降低了许多。</p>
+
+<h2 id="小结">小结</h2>
+
+<p>至此，笔者简单介绍了安装MKL中的核心要点，但配置过程中并不仅仅只有以上的问题，由于参考资料比较少，遇到问题也很难从一个博客中找到答案，需要参考多一些文件，感兴趣使用MKL库的同学可以与我联系。总的来说，MKL算是c++中我遇到最复杂的数学运算库，但在使用过MKL之后，由于其在计算上无可媲美的速度优势，使人无法舍弃，编写MKL程序涉及到大量的指针操作，这也意味着编程难度的上升，与其带来的速度优势比较，这些困难也是可以克服的，只需要参考<a href="https://software.intel.com/en-us/download/developer-reference-for-intel-math-kernel-library-c">文档</a>。接下来，我将立下flag，继续写一些关于MKL速度，或者进行矩阵计算的代码和分析。</p>
+
+<h2 id="参考资料">参考资料</h2>
+
+<p>[1] <a href="https://software.intel.com/zh-cn/node/814751">https://software.intel.com/zh-cn/node/814751</a></p>
+
+<p>[2] <a href="https://blog.csdn.net/yanerhao/article/details/82986924">https://blog.csdn.net/yanerhao/article/details/82986924</a></p>
+
+<p>[3] <a href="https://blog.csdn.net/thefighteran/article/details/54345070">https://blog.csdn.net/thefighteran/article/details/54345070</a></p>
+
+<p>[4] <a href="https://software.intel.com/en-us/download/developer-reference-for-intel-math-kernel-library-c">https://software.intel.com/en-us/download/developer-reference-for-intel-math-kernel-library-c</a></p>
+
+<p>[5] <a href="https://software.intel.com/zh-cn/forums/intel-math-kernel-library/topic/302693">https://software.intel.com/zh-cn/forums/intel-math-kernel-library/topic/302693</a></p>
+:ET
