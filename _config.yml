@@ -28,7 +28,7 @@ exclude: [ppt_md/KMP.md]
 
 # Build settings
 markdown: kramdown
-theme: tale
+theme: jekyll-theme-slate
 plugins:
   - jekyll-feed
 
