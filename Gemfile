@@ -16,6 +16,8 @@ source "https://rubygems.org"
 
 gem "webrick"
 
+gem "jekyll-theme-slate"
+
 gem "minima", "~> 2.0"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
