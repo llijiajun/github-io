@@ -1,0 +1,5 @@
+---
+layout: ahome
+title: Article
+---
+

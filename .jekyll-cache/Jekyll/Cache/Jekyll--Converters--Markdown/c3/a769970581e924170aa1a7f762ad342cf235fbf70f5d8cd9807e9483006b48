@@ -1,0 +1,37 @@
+I"�<h2 id="标准数据类型">标准数据类型</h2>
+<p>与其他语言十分不一样的是python 封装的几种数据类型</p>
+
+<h2 id="六种数据类型">六种数据类型</h2>
+
+<h3 id="number">Number</h3>
+<p>不用理会浮点型、整数型、为计算带来很多方便，当然不足之处还是运算比较慢，容易不精准计算</p>
+
+<h3 id="string-字符串">String 字符串</h3>
+<p>从String库提供的字符串处理函数来说，python String相对于其他语言十分的方便和友好</p>
+
+<h3 id="list-列表">List 列表</h3>
+<p>主要用[]修饰，比其他语言方便的一点是什么东西都能放，实在是特别好用</p>
+
+<h3 id="tuple-元组">Tuple 元组</h3>
+<p>主要用()修饰，和列表不同之处在于，不可修改</p>
+
+<h3 id="set-集合">Set 集合</h3>
+<p>和列表很像，区别是没有重复的项</p>
+
+<h3 id="dictionary-字典">Dictionary 字典</h3>
+<p>是我认为除了列表以外最好用的一种容器类型</p>
+
+<p>从Python语言的发明来看，这几种数据类型竟然真的几乎可以覆盖数据工作的方方面面，也就难怪python如此受人欢迎。</p>
+
+<p>而python最为让新手难受，让老手方便的一点，自然是那严格的缩进规则</p>
+
+<h2 id="简单python程序">简单python程序</h2>
+
+<pre><code class="language-{python}">#python2
+print "HelloWorld"
+</code></pre>
+
+<pre><code class="language-{python}">#python3
+print("HelloWorld")
+</code></pre>
+:ET

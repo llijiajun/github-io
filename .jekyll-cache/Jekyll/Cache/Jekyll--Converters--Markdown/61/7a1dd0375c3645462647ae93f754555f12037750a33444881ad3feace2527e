@@ -1,0 +1,16 @@
+I"Z<h2 id="前言">前言</h2>
+
+<p>​	Maximum Inner Product Search (MIPS) 是我最近感兴趣的一个问题，所以对其做一些调研。MIPS可以将一些稠密的问题转化为稀疏化解决，这在图算法的规模化是很有帮助的，之前的方法有 LSH-MIPS、PCA-MIPS、Diamond sampling approach，2020最新的方法则是Sampling-MIPS，本文将探究这几个算法。</p>
+
+<p>立个Flag， 两个星期搞定。</p>
+
+<h2 id="背景知识">背景知识</h2>
+
+<h3 id="最大点积搜索maximum-inner-product-search">最大点积搜索(Maximum Inner Product Search)</h3>
+
+<p>MIPS的含义正如其名，就是给定一个向量q(query)和一个向量集X(维度必然一致)，找出向量集X中与q点积比较大的一些向量。可以表示为：</p>
+
+\[p=\mathop{\arg\max}_{x\in X} x^\top q\]
+
+<p>众所周知，内积大的一对向量，在欧几里得空间下，其物理含义就是它们比较“近”。寻找内积比较大的节点对也就意味着寻找比较近的元素，而寻找相近元素最佳的方法不得不提局部敏感哈希(Locality-Sensitive Hashing)</p>
+:ET

@@ -1,0 +1,279 @@
+I"�2<section data-transition="convex" data-markdown=""><script type="text/template">
+# Reveal.js
+### The HTML Presentation Framework
+
+Created by Hades
+</script></section>
+
+<section data-transition="convex" data-markdown=""><script type="text/template">
+## Hello There
+reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+</script></section>
+
+<section data-transition="convex">
+<section data-markdown=""><script type="text/template">
+## Vertical Slides
+
+Slides can be nested inside of each other.
+Use the <em>Space</em> key to navigate through all slides.
+
+<!--a href="#/2/1">
+![](https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png)
+</a -->
+<a href="#/2/1" class="navigate-down">
+<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+</a>
+</script></section>
+<section data-markdown=""><script type="text/template">
+## Basement Level 1</h2>
+Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+</script></section>
+<section data-markdown=""><script type="text/template">
+## Basement Level 2</h2>
+That's it, time to go back up.
+
+<!--a href="#/2">
+![]("https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png")
+</a-->
+<a href="#/2">
+<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+</a>
+
+</script></section>
+</section>
+
+<section data-markdown="" data-transition="convex"><script type="text/template">
+## Slides
+Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="https://slides.com" target="_blank">https://slides.com</a>.
+</script></section>
+<section data-markdown="" data-transition="convex"><script type="text/template">
+## Point of View
+Press <strong>ESC</strong> to enter the slide overview.
+Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+</script></section>
+<section data-markdown="" data-transition="convex"><script type="text/template">
+## Touch Optimized
+Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+</script></section>
+
+<section data-markdown=""><script type="text/template">
+## Markdown support
+
+Write content using inline or external Markdown.
+Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+```
+<section data-markdown>
+## Markdown support
+Write content using inline or external Markdown.
+Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+</section>
+```
+</script>
+</section>
+
+<section>
+<section data-markdown="" id="fragments"><script type="text/template">
+## Fragments
+Hit the next arrow...
+<!--暂时没有比较好的markdown化的方法，就直接用标签-->
+<p class="fragment">... to step through ...</p>
+<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+<aside class="notes">
+This slide has fragments which are also stepped through in the notes window.
+</aside>
+</script></section>
+<section>
+<h2>Fragment Styles</h2>
+<p>There's different types of fragments, like:</p>
+<p class="fragment grow">grow</p>
+<p class="fragment shrink">shrink</p>
+<p class="fragment fade-out">fade-out</p>
+<p class="fragment fade-up">fade-up (also down, left and right!)</p>
+<p class="fragment current-visible">current-visible</p>
+<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
+</section>
+</section>
+
+<section id="transitions">
+	<h2>Transition Styles</h2>
+	<p>
+		You can select from different transitions, like: <br />
+		<a href="?transition=none#/transitions">None</a> -
+		<a href="?transition=fade#/transitions">Fade</a> -
+		<a href="?transition=slide#/transitions">Slide</a> -
+		<a href="?transition=convex#/transitions">Convex</a> -
+		<a href="?transition=concave#/transitions">Concave</a> -
+		<a href="?transition=zoom#/transitions">Zoom</a>
+	</p>
+</section>
+
+<section id="themes">
+	<h2>Themes</h2>
+	<p>
+		reveal.js comes with a few themes built in: <br />
+		<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+		<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+		<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+		<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+		<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+		<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+		<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br />
+		<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+		<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
+		<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+		<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+		<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+	</p>
+</section>
+
+<section>
+<section data-markdown="" data-background="#dddddd" data-transition="convex"><script type="text/template">
+## Slide Backgrounds
+Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+<a href="#" class="navigate-down">
+<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+</a>
+</script></section>
+<section data-background="/github-io/images/ppt.jpg" data-markdown="" data-transition="convex"><script type="text/template">
+## Image Backgrounds
+<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
+</script></section>
+<section data-background="/github-io/images/test-img1.png" data-background-repeat="repeat" data-background-size="100px" data-markdown="" data-transition="convex"><script type="text/template">
+## Tiled Backgrounds
+<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+</script></section>
+<section data-background="http://i.giphy.com/90F8aUepslB84.gif" data-markdown="" data-transition="convex"><script type="text/template">
+##... and GIFs!
+</script></section>
+</section>
+
+<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom" data-markdown=""><script type="text/template">
+## Background Transitions</h2>
+Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+</script></section>
+
+<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom" data-markdown=""><script type="text/template">
+## Background Transitions</h2>
+You can override background transitions per-slide.
+<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+</script></section>
+
+<section data-markdown="" data-transition="convex"><script type="text/template">
+## Pretty Code
+<pre><code class="hljs" data-trim contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+</code></pre>
+Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.
+</script></section>
+
+<section data-markdown="" data-transition="convex"><script type="text/template">
+## Marvelous List
+<ul>
+	<li>No order here</li>
+	<li>Or here</li>
+	<li>Or here</li>
+	<li>Or here</li>
+</ul>
+</script></section>
+
+<section data-markdown="" data-transition="convex"><script type="text/template">
+## Fantastic Ordered List
+1. One is smaller than...
+2. Two is smaller than...
+3. Three!
+</script></section>
+
+<section data-markdown="" data-transition="convex"><script type="text/template">
+## Tabular Tables
+Item | Value | Quantity
+:-: | :-: | :-:
+Apples | $1 | 7
+Lemonade | $2 | 18
+Bread | $3 | 2
+</script></section>
+
+<section data-markdown="" data-transition="convex"><script type="text/template">
+## Clever Quotes
+These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">The nice thing about standards is that there are so many to choose from</q> and block:
+<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+</blockquote>
+</script></section>
+
+<section data-markdown="" data-transition="convex"><script type="text/template">
+## Intergalactic Interconnections
+You can link between slides internally,
+<a href="#/2/3">like this</a>.
+</script></section>
+
+<section data-markdown="" data-transition="convex"><script type="text/template">
+## Speaker View
+There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+Press the <em>S</em> key to try it out.</p>
+	<aside class="notes">
+		Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+	</aside>
+</script></section>
+
+<section data-markdown="" data-transition="convex"><script type="text/template">
+## Export to PDF
+Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
+	<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+</script></section>
+
+<section data-markdown="" data-transition="convex"><script type="text/template">
+## Global State
+Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+will be added as a class to the document element when the slide is open. This lets you
+apply broader style changes, like switching the page background.
+</script></section>
+
+<section data-state="customevent" data-markdown="" data-transition="convex"><script type="text/template">
+## State Events
+Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+	<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+Reveal.addEventListener( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+	</code></pre>
+</script></section>
+
+<section data-markdown="" data-transition="convex"><script type="text/template">
+## Take a Moment
+Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+</script></section>
+
+<section data-markdown="" data-transition="convex"><script type="text/template">
+## Much more
+	<ul>
+		<li>Right-to-left support</li>
+		<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
+		<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
+		<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
+		<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+	</ul>
+</script></section>
+
+<section style="text-align: left;" data-markdown="" data-transition="convex"><script type="text/template">
+# THE END
+
+- <a href="https://slides.com">Try the online editor</a> <br>
+- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+
+</script></section>
+:ET
