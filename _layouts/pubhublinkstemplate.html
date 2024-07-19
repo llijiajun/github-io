@@ -1,0 +1,106 @@
+---
+---
+<ol class="link-list">
+{%- if entry.pdf %}
+  <li>
+    {% if entry.pdf contains '://' -%}
+      <a href="{{ entry.pdf }}" target="_blank", role="button" title="PDF">
+    {%- else -%}
+      <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank" role="button" title="PDF">
+    {%- endif %}
+        <i class="fas fa-file-pdf"></i>PDF
+    </a>
+  </li>
+{%- endif %}
+{%- if entry.code %}
+  <li>
+    <a href="{{ entry.code }}" target="_blank" role="button" title="Code">
+      <i class="fas fa-code"></i>Code
+    </a>
+  </li>
+{%- endif %}
+{%- if entry.slides %}
+  <li>
+    {% if entry.slides contains '://' -%}
+      <a href="{{ entry.slides }}" target="_blank" role="button" title="Slides">
+    {%- else -%}
+      <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" taget="_blank" role="button" title="Slides">
+    {%- endif %}
+        <i class="fas fa-chalkboard-teacher"></i>Slides
+      </a>
+  </li>
+{%- endif %}
+{%- if entry.poster %}
+  <li>
+    {% if entry.poster contains '://' -%}
+      <a href="{{ entry.poster }}" target="_blank" role="button" title="Poster">
+    {%- else -%}
+      <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" target="_blank" role="button" title="Poster">
+    {%- endif %}
+        <i class="fas fa-chalkboard-teacher"></i>Poster
+      </a>
+  </li>
+{%- endif %}
+{%- if entry.url %}
+  <li>
+    <a href="{{ entry.url }}" target="_blank" role="button" title="URL">
+      <i class="fas fa-link"></i>URL
+    </a>
+  </li>
+{%- endif %}
+{%- if entry.doi %}
+  <li>
+    <a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank" role="button" title="DOI">
+      <i class="ai ai-doi"></i>DOI
+    </a>
+  </li>
+{%- endif %}
+{%- if entry.html %}
+  <li>
+    <a href="{{ entry.html }}" target="_blank" role="button" title="HTML">
+      <i class="fas fa-link"></i>HTML
+    </a>
+  </li>
+{%- endif %}
+{%- if entry.arxiv %}
+  <li>
+    <a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank" role="button" title="arXiv">
+      <i class="ai ai-arxiv"></i>arXiv
+    </a>
+  </li>
+{%- endif %}
+{%- if entry.supp %}
+  <li>
+    {% if entry.supp contains '://' -%}
+      <a href="{{ entry.supp }}" target="_blank" role="button" title="Supplement">
+    {%- else -%}
+      <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" target="_blank" role="button" title="Supplement">
+    {%- endif %}
+        <i class="fas fa-archive"></i>Supplement
+      </a>
+  </li>
+{%- endif %}
+{%- if entry.blog %}
+  <li>
+    <a href="{{ entry.blog }}" target="_blank" role="button" title="Blog">
+      <i class="fas fa-blog"></i>Blog
+    </a>
+  </li>
+{%- endif %}
+{%- if entry.website %}
+  <li>
+    <a href="{{ entry.website }}" target="_blank" role="button" title="Website">
+      <i class="fas fa-globe"></i>Website
+    </a>
+  </li>
+{%- endif %}
+{%- if entry.latex_src %}
+  <li>
+    <a href="{{ entry.latex_src }}" target="_blank" role="button" title="LaTeX Source">
+      <i class="fas fa-file-code"></i>LaTeX Source
+    </a>
+  </li>
+{%- endif %}
+
+{% include hubadditionallinks.html %}
+</ol>

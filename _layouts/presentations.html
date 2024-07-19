@@ -1,0 +1,38 @@
+---
+layout: page
+---
+<div id="presentations">
+  <section class="bg"></section>
+  <h1 class="title">{{ page.title }}</h1>
+  <ol class="presentations-list">
+    {% for _ in site.data.presentations %}
+      {% assign presentation = _.presentation %}
+      <li>
+        <em class="title">{{ presentation.title }}</em> at <em class="event">{{ presentation.event }}</em> <em class="date">({{ presentation.date }})</em>
+        <p class="comment">{{ presentation.comment | markdownify }}</p>
+        <div class="links">
+          {%- if presentation.slides %}
+            {% if presentation.slides contains '://' -%}
+              [<a href="{{ presentation.slides }}" class="btn btn-sm z-depth-0" role="button" title="Slides">Slides</a>]
+            {%- else -%}
+              [<a href="{{ presentation.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" title="Slides">Slides</a>]
+            {%- endif %}
+          {%- endif %}
+          {%- if presentation.poster %}
+            {% if presentation.poster contains '://' -%}
+              [<a href="{{ presentation.poster }}" class="btn btn-sm z-depth-0" role="button" title="Poster">Poster</a>]
+            {%- else -%}
+              [<a href="{{ presentation.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" title="Poster">Poster</a>]
+            {%- endif %}
+          {%- endif %}
+          {%- if presentation.recording %}
+            [<a href="{{ presentation.recording }}" class="btn btn-sm z-depth-0" role="button">Recording</a>]
+          {%- endif %}
+          {%- if presentation.hub %}
+            [<a href="{{ presentation.hub | relative_url }}" class="btn btn-sm z-depth-0" role="button">All Information</a>]
+          {%- endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+</div>

@@ -1,0 +1,23 @@
+<!-- User Profile -->
+{% assign profile = site.data.profile %}
+{% assign urlstart = profile.image | split: '/' %}
+{% if urlstart == 'https:' %}
+  {% assign imgurl = profile.image %}
+{% else %}
+  {% assign imgurl = profile.image | relative_url %}
+{% endif %}
+<div id="profile">
+  <a href="{{ '/' | relative_url }}">
+    <div class="img-wrap">
+      <img src="{{ imgurl }}" alt="profile-image">
+    </div>
+  </a>
+  <p class="username">{{ profile.username }}</p>
+  <div class="description">{{ profile.description | markdownify }}</div>
+
+  <!-- Social icons from Font Awesome -->
+  <ul id="icons">
+    {% include social.html %}
+  </ul>
+</div>
+

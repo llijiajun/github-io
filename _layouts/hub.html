@@ -1,0 +1,36 @@
+---
+layout: page
+---
+<div id="hub">
+  <section id="header-content">
+    <h1>{{ page.title }}</h1>
+  </section>
+  <section class="bg"></section>
+  <div class="row">
+    <!-- Aside Navigation  -->
+    <aside id="aside" class="col-md-4">
+      {% include hubaside.html %}
+    </aside>
+    <!-- Post List -->
+    <section id="content" class="col-md-8">
+      {{ page.description | markdownify }}
+      <section class="links">
+        <h2>Links</h2>
+        {% if page.citekey %}
+          {% nocite page.citekey %}
+          {% bibliography --cited --template pubhublinkstemplate %}
+        {% else %}
+          <ol class="link-list">
+            {% include hubadditionallinks.html %}
+          </ol>
+        {% endif %}
+      </section>
+      {{ content }}
+      <section class="abs-bibtex">
+        {% if page.citekey %}
+          {% bibliography --cited --template pubhubabsbibtex %}
+        {% endif %}
+      </section>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,88 @@
+{%- assign entry = include.entry -%}
+{% if entry.type == "thesis" -%}
+  {{reference}}
+{%- else %}
+  <!-- Title -->
+  <div class="title">{{entry.title}}</div>
+  <!-- Author -->
+  <div class="author">
+    {%- for author in entry.author_array -%}
+      {%- assign author_is_self = false -%}
+      {%- if author.last == site.scholar.last_name %}
+        {%- if site.scholar.first_name contains author.first -%}
+          {%- assign author_is_self = true -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- assign coauthor_url = nil -%}
+      {%- if site.data.coauthors[author.last] -%}
+        {%- for coauthor in site.data.coauthors[author.last] -%}
+          {%- if coauthor.firstname contains author.first -%}
+            {%- assign coauthor_url = coauthor.url -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+      
+      {%- if forloop.length == 1 -%}
+        {%- if author_is_self %}
+          <em>{{author.last}}, {{author.first}}</em>
+        {%- else -%}
+          {{author.last}}, {{author.first}}
+        {%- endif -%}
+      {%- else -%}
+        {%- unless forloop.last -%}
+          {% if author_is_self %}
+            <em>{{author.last}}, {{author.first}}</em>,&nbsp;
+          {%- else -%}
+            {% if coauthor_url -%}
+              <a href="{{coauthor_url}}" target="_blank" rel="noopener noreferrer">{{author.last}}, {{author.first}}</a>,&nbsp;
+            {%- else -%}
+              {{author.last}}, {{author.first}},&nbsp;
+            {%- endif -%}
+          {%- endif -%}
+        {%- else -%}
+          {% if author_is_self -%}
+            and <em>{{author.last}}, {{author.first}}</em>
+          {% else -%}
+            {%- if coauthor_url -%}
+              and <a href="{{coauthor_url}}" target="_blank" rel="noopener noreferrer">{{author.last}}, {{author.first}}</a>
+            {% else -%}
+              and {{author.last}}, {{author.first}}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endfor %}
+  </div>
+
+  <!-- Journal/Book title and date -->
+  {% assign thirdLine = "" %}
+  {% if entry.type == "article" -%}
+    {%- capture thirdLine -%}{{entry.journal}}{%- endcapture -%}
+  {%- elsif entry.type == "inproceedings" -%}
+    {%- capture thirdLine -%}In {{entry.booktitle}}{%- endcapture -%}
+  {%- elsif entry.type == "phdthesis" -%}
+    {%- capture thirdLine -%}PhD thesis, {{entry.school}}{%- endcapture -%}
+  {%- elsif entry.type == "mastersthesis" -%}
+    {% if entry.thesis_type -%}
+      {%- capture thirdLine -%}{{entry.thesis_type}}, {{entry.school}}{%- endcapture -%}
+    {% else %}
+      {%- capture thirdLine -%}Master's thesis, {{entry.school}}{%- endcapture -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- if entry.volume -%}
+    {%- capture thirdLine -%}{{ thirdLine }}{% if thirdLine != blank %}, {% endif %}vol. {{ entry.volume }}{%- endcapture -%}
+  {%- endif -%}
+  {%- if entry.pages -%}
+    {%- capture thirdLine -%}{{ thirdLine }}{% if thirdLine != blank %}, {% endif %}pp. {{ entry.pages }}{%- endcapture -%}
+  {%- endif -%}
+  {%- if entry.month -%}
+    {%- capture thirdLine -%}{{ thirdLine }}{% if thirdLine != blank %}, {% endif %}{{ entry.month | capitalize }}{%- endcapture -%}
+  {%- endif -%}
+  {%- if entry.year -%}
+    {%- capture thirdLine -%}{{ thirdLine }}{% if thirdLine != blank %}, {% endif %}{{ entry.year }}{%- endcapture -%}
+  {%- endif -%}
+  <div class="third-line">
+    {{ thirdLine | strip }}
+  </div>
+{%- endif %}

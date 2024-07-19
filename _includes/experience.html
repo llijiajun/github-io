@@ -1,0 +1,11 @@
+{% if site.data.profile.experience %}
+  <p class="title">{{ site.theme_settings.experience_title }}</p>
+  <ul class="exper-list">
+    {% for exp in site.data.profile.experience %}
+    <li class="meta">
+      <p class="date">{{ exp.start }} &ndash; {{ exp.end }}</p>
+      <p class="description">{{ exp.experience }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+{% endif %}

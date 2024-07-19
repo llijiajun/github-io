@@ -1,0 +1,82 @@
+#hub {
+    #aside {
+        display:block;
+        @media (max-width: 991px) {
+           display: none;
+        }
+    }
+    #header-content, .bg {
+        display:block;
+        @media (max-width: 991px) {
+           display: block;
+        }
+    }
+    #header-content {
+        @extend %page-padding;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+    .bg {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        top: 105px;
+        left:0%;
+        height: 95px;
+        background-color: $theme-dark;
+    }
+
+    #content {
+        padding-top: 15px;
+
+        h2 {
+            margin-top: 15px;
+        }
+
+        h3 {
+            margin-top: 10px;
+        }
+
+        h4 {
+            margin-top: 5px;
+        }
+
+        ol.link-list {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 5px;
+                padding: 2px;
+                padding-left: 5px;
+                border: 1px solid $theme-dark;
+                border-radius: 5px;
+
+                &:hover {
+                    border-color: $theme-color;
+                }
+
+                a {
+                    display:block;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    ol.bibliography {
+        padding: 0;
+
+        p {
+            margin: 0;
+        }
+    }
+}

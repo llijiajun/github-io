@@ -1,0 +1,47 @@
+---
+layout: page
+---
+{% assign profile = site.data.profile %}
+{% assign urlstart = profile.image | split: '/' %}
+{% if urlstart == 'https:' %}
+  {% assign imgurl = profile.image %}
+{% else %}
+  {% assign imgurl = profile.image | relative_url %}
+{% endif %}
+
+</div><!-- This Tag means End .container -->
+<div id="portfolio">
+  <section id="about-me">
+    <div class="row">
+      <div class="img-wrap col-12 col-md-4">
+        <div class="img">
+          <img src="{{ imgurl }}" alt="user_image">
+        </div>
+      </div>
+      <div class="text-wrap col-12 col-md-8">
+        <h2 class="username">{{ profile.username }}</h2>
+        <div class="description">{{ profile.description | markdownify }}</div>
+
+        <ul id="icons">
+          {% include social.html %}
+        </ul>
+      </div>
+    </div>
+    <div class="bg"></div>
+  </section>
+  <!-- career section -->
+  <section id="career" class="row">
+    <article class="exper col-12 col-md-6">
+      {% include experience.html %}
+      {% include awards.html %}
+    </article>
+    <article class="skills col-12 col-md-6">
+      {% include interests.html %}
+      {% include skills.html %}
+    </article>
+  </section>
+
+  {% include projects.html %}
+
+  {% include recentpubs.html %}
+</div>

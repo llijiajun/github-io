@@ -1,0 +1,55 @@
+image: images/ljj.jpg  #assets/img/smile.png
+username: Jiajun Li
+description: Welcome to My Homepage. I’m Jiajun Li (李家郡), a fourth-year Ph.D. student at the Gaoling School of Artificial Intelligence Renmin University of China, advised by Prof. Zhewei Wei. Before that, I received my B.E. degree in School of Statistics, Renmin University of China in June 2019.
+
+webpage: https://llijiajun.github.io
+experience: # Remove for hiding the experience section
+  - start: 2019-09
+    end: present
+    experience : Gaoling School of Artificial Intelligence Renmin University of China
+  - start: 2020-12
+    end: present
+    experience: |
+      Internship at Alibaba Group. <br>
+      Collaborated with Alibaba DAMO Academy. <br>
+      Engaged in the deployment of a learning-based sampling estimator on the AliCloud platform. <br>
+      Involved in the study of the algorithm for query optimization.
+  - start : 2023-12
+    end: 2024-07
+    experience: |
+      Research Assistant at The Chinese University of Hong Kong. <br>
+      Applying machine learning algorithms for feature estimations advised by Prof. Sibo Wang.
+interests: # Remove for hiding the interests section
+  - Approximate Estimate
+  - Data Streaming
+  - Distributed computation
+  - Matrix factorization
+skills: # Remove for hiding the skills section
+  - skill: C++ (Eigen, Armadillo, MKL, ...)
+    value: 85  # Percent value
+  - skill: Python(Numpy, Pytorch, Cython ...)
+    value: 85  # Percent value
+  - skill: Spark/PySpark
+    value: 70
+  - skill: Badminton
+    value: 99
+
+social:
+  email: 2015201613@ruc.edu.cn # Full email address, e.g. "sample@google.com"
+  orcid: 0009-0008-4149-5165
+  scholar: MvBzsjwAAAAJ&hl
+  publons: 
+  research_gate: 
+  dblp:  # Full URL
+  semantic_scholar:  # Full URL
+  linkedin:  # Full URL 
+  github: llijiajun
+  gitlab: 
+  bitbucket: 
+  google_plus:
+  mastodon: 
+  twitter: 
+  youtube:
+  facebook:
+  instagram:
+  WeChat: ljj522278689

@@ -1,0 +1,13 @@
+{% for link in page.links %}
+  <li>
+    {% if link.url contains '://' %}
+      <a href="{{ link.url | relative_url }}" target="_blank" role="button" title="{{ link.description }}">
+    {% endif %}
+        {% if link.icon %}
+          <i class="{{ link.icon }}"></i>{{ link.description }}
+        {% else %}
+          <i class="fas fa-link"></i>{{ link.description }}
+        {% endif %}
+      </a>
+  </li>
+{% endfor %}

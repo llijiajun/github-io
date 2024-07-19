@@ -1,0 +1,7 @@
+<section id="recentpubs">
+  <div class="recentpubs-wrap">
+    <p class="title">{{ site.theme_settings.recentpubs_title }}</p>
+    [<a class="btn" href="{{ '/publications' | relative_url }}" title="Publications">All Publications</a>]
+    {% bibliography --template recentpubstemplate --max 3 %}
+  </div>
+</section>

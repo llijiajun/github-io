@@ -1,0 +1,136 @@
+{% assign social = site.data.profile.social %}
+{% if social.email %}
+<li>
+  <a href="mailto:{{ social.email | encode_email }}" target="_blank" title="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+</li>
+{% endif %}
+
+{% if social.orcid %}
+<li>
+  <a href="https://orcid.org/{{ social.orcid }}" target="_blank" title="ORCID">
+    <i class="ai ai-orcid"></i>
+  </a>
+</li>
+{% endif %}
+
+{% if social.scholar %}
+<li>
+  <a href="https://scholar.google.com/citations?user={{ social.scholar }}" target="_blank" title="Google Scholar">
+    <i class="ai ai-google-scholar"></i>
+  </a>
+</li>
+{% endif %}
+
+{% if social.publons %}
+<li>
+  <a href="https://publons.com/a/{{ social.publons }}/" target="_blank" title="Publons">
+    <i class="ai ai-publons"></i>
+  </a>
+</li>
+{% endif %}
+
+{% if social.research_gate %}
+<li>
+  <a href="https://www.researchgate.net/profile/{{ social.research_gate }}/" target="_blank" title="ResearchGate">
+    <i class="ai ai-researchgate"></i>
+  </a>
+</li>
+{% endif %}
+
+{% if social.dblp %}
+<li>
+  <a href="{{ social.dblp }}/" target="_blank" title="DBLP">
+    <i class="ai ai-dblp"></i>
+  </a>
+</li>
+{% endif %}
+
+{% if social.semantic_scholar %}
+<li>
+  <a href="{{ social.semantic_scholar }}/" target="_blank" title="Semantic Scholar">
+    <i class="ai ai-semantic-scholar"></i>
+  </a>
+</li>
+{% endif %}
+
+{% if social.linkedin %}
+<li>
+  <a href="{{ social.linkedin }}" target="_blank" title="Linkedin">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</li>
+{% endif %}
+
+{% if social.github %}
+<li>
+  <a href="https://github.com/{{ social.github }}" target="_blank" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+</li>
+{% endif %}
+
+{% if social.gitlab %}
+<li>
+  <a href="https://gitlab.com/{{ social.gitlab }}" target="_blank" title="Gitlab">
+    <i class="fab fa-gitlab"></i>
+  </a>
+</li>
+{% endif %}
+
+{% if social.bitbucket %}
+<li>
+  <a href="https://bitbucket.org/{{ social.bitbucket }}" target="_blank" title="Bitbucket">
+    <i class="fab fa-bitbucket"></i>
+  </a>
+</li>
+{% endif %}
+
+{% if social.google_plus %}
+<li>
+  <a href="https://plus.google.com/{{ social.google_plus }}" target="_blank" title="Google Plus">
+    <i class="fab fa-google-plus-g"></i>
+  </a>
+</li>
+{% endif %}
+
+{% if social.mastodon %}
+<li>
+  <a rel="me" href="{{ social.mastodon }}" target="_blank" title="Mastodon">
+    <i class="fab fa-mastodon"></i>
+  </a>
+</li>
+{% endif %}
+
+{% if social.twitter %}
+<li>
+  <a href="https://twitter.com/{{ social.twitter }}" target="_blank" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+</li>
+{% endif %}
+
+{% if social.youtube %}
+<li>
+  <a href="https://www.youtube.com/user/{{ social.youtube }}" target="_blank" title="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</li>
+{% endif %}
+
+{% if social.facebook %}
+<li>
+  <a href="https://www.facebook.com/{{ social.facebook }}" target="_blank" title="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+</li>
+{% endif %}
+
+{% if social.instagram %}
+<li>
+  <a href="http://instagram.com/{{ social.instagram }}" target="_blank" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</li>
+{% endif %}

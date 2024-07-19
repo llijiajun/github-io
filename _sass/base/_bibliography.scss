@@ -1,0 +1,74 @@
+h2.bibliography{
+    color: $text-gray;
+    text-align: right;
+    border-top: 1px solid $divider-color;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+    text-align: right;
+}
+
+ol.bibliography{
+    list-style-type: none;
+    padding: 0;
+    padding-right: 5rem;
+    margin-top: 0;
+
+    li {
+        margin-bottom: 1rem;
+        .title  {
+            font-weight: bolder;
+        }
+        .author  {
+            a {
+                border-bottom: 1px dashed;
+                &:hover  {
+                    border-bottom-style: solid;
+                    text-decoration: none;
+                }
+            }
+            > em {
+                border-bottom: 1px solid;
+                font-style: normal;
+            }
+        }
+        .third-line {
+            font-style: italic;
+        }
+        .hidden {
+            font-size: 0.875rem;
+            max-height: 0px;
+            overflow: hidden;
+            text-align: justify;
+            transition-property: 0.15s ease;
+            -moz-transition: 0.15s ease;
+            -ms-transition: 0.15s ease;
+            -o-transition: 0.15s ease;
+            transition: all 0.15s ease;
+        }
+
+        p {
+            line-height: 1.4em;
+            margin: 10px;
+        }
+        pre {
+            font-size: 1em;
+            line-height: 1.4em;
+            padding: 10px;
+        }
+        .hidden.open {
+            max-height: 100em;
+            transition-property: 0.15s ease;
+            -moz-transition: 0.15s ease;
+            -ms-transition: 0.15s ease;
+            -o-transition: 0.15s ease;
+            transition: all 0.15s ease;
+        }
+        div.abstract.hidden {
+            border: dashed 2px #ffffff;
+        }
+        div.abstract.hidden.open {
+            border-color: $divider-color;
+        }
+    }
+}

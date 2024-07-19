@@ -1,0 +1,8 @@
+{% if site.data.profile.interests %}
+  <p class="title">{{ site.theme_settings.interests_title }}</p>
+  <ul class="interests-list">
+    {% for interest in site.data.profile.interests %}
+    <li class="interest">{{ interest }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}

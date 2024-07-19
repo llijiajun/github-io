@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jun's Blog</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Google fonts - Montserrat for headings, Cardo for copy-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+    <!-- Lightbox-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/lightbox2/2.11.1/css/lightbox.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Leaflet CSS - For the map-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body >
+  <!-- navbar-->
+
+  <!--section id="intro" style="background-image: url('images/banner3.jpg');" class="intro carousel-item active">       
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="container clearfix">
+          <div class="row">
+            <div class="col-lg-8 col-md-12 mx-auto">
+              <h4 class="bold">Seven times have I despised my soul</h4>
+              <p class="italic">The first time when I saw her being meek that she might attain height.</p>
+              <p class="italic">The second time when I saw her limping before the crippled.</p>
+              <p class="italic">The third time when she was given to choose between the hard and the easy, and she chose the easy.</p>
+              <p class="italic">The fourth time when she committed a wrong, and comforted herself that others also commit wrong.</p>
+              <p class="italic">The fifth time when she forbore for weakness, and attributed her patience to strength.</p>
+              <p class="italic">The sixth time when she despised the ugliness of a face, and knew not that it was one of her own mistakes.</p>
+              <p class="italic">And the seventh time when she sang a song of praise, and deemed it a virtue.</p>
+              <p>—— Kahlil Gibran</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</section-->
+
+    <div class="header navbar-fixed-top navbar">
+      <nav class="navbar navbar-expand-lg navbar-fixed-top">
+        <div class="container">
+
+          <a href="#" class="navbar-brand link-scroll">
+            <h1>冥郡</h1>
+          <!--img src="img/logo.png" alt="" class="img-fluid"-->
+        </a>
+          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="#" class="nav-link link-scroll">Home</a></li>
+              <li class="nav-item"><a href="{{ site.baseurl }}/CODE.html" class="nav-link link-scroll">Learning-Coding </a></li>
+              <li class="nav-item"><a href="{{ site.baseurl }}/Algorithm.html" class="nav-link link-scroll">Learning-Algorithm </a></li>
+              <li class="nav-item"><a href="{{ site.baseurl }}/Stats.html" class="nav-link link-scroll">Learning-Stats</a></li>
+              <li class="nav-item"><a href="{{ site.baseurl }}/A_P.html" class="nav-link link-scroll">Article-Poem</a></li>
+              <li class="nav-item"><a href="{{ site.baseurl }}/Other.html" class="nav-link link-scroll">Others</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+
+  <div id="demo" class="carousel slide " style="height:100%" data-ride="carousel">
+ 
+  <!-- 指示符 -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner" style="height:100%" role="listbox">
+
+    <section id="intro" style="background-image: url('images/sllk.jpg');" class="intro carousel-item active">       
+      <!--div class="overlay"></div-->
+      <div class="content" >
+        <div class="container clearfix">
+          <div class="row">
+            <div class="col-lg-8 col-md-12 mx-auto " style="background-color: rgb(0.836,0.422,0.266,0.6)">
+            	<h4 class="bold" >Seven times have I despised my soul</h4>
+              <p class="italic" style="color: #B9CD74">The first time when I saw her being meek that she might attain height.</p>
+              <p class="italic" style="color: #EDA2B6">The second time when I saw her limping before the crippled.</p>
+              <p class="italic" style="color: #B9CD74">The third time when she was given to choose between the hard and the easy, and she chose the easy.</p>
+              <p class="italic" style="color: #EDA2B6">The fourth time when she committed a wrong, and comforted herself that others also commit wrong.</p>
+              <p class="italic" style="color: #B9CD74">The fifth time when she forbore for weakness, and attributed her patience to strength.</p>
+              <p class="italic" style="color: #EDA2B6">The sixth time when she despised the ugliness of a face, and knew not that it was one of her own mistakes.</p>
+              <p class="italic" style="color: #B9CD74">And the seventh time when she sang a song of praise, and deemed it a virtue.</p>
+              <p align="right">—— Kahlil Gibran</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="intro" style="background-image: url('images/mtl.jpg');" class="intro carousel-item">       
+      <!--div class="overlay"></div-->
+      <div class="content">
+        <div class="container clearfix">
+          <div class="row">
+            <div class="col-lg-8 col-md-12 mx-auto" style="background-color: rgb(0.66,0.871,0.902,0.6)">
+              <h4 class="bold">Bird and fish</h4>
+              <p class="italic" >The furthest distant way in the world</p>
+              <p class="italic" >is not the light that is fading away. </p>
+              <p class="italic">It is the coincidence of us</p>
+              <p class="italic">is not supposed for the love. </p>
+              <p class="italic">The furthest distant way in the world </p>
+              <p class="italic">is the love between the bird and fish. </p>
+              <p class="italic">One is flying in the sky, </p>
+              <p class="italic">the other is looking upon into the sea. </p>
+              <p align="right">—— Tagore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="intro" style="background-image: url('images/yu.jpg');" class="intro carousel-item">       
+      <!--div class="overlay"></div-->
+      <div class="content">
+        <div class="container clearfix">
+          <div class="row">
+            <div class="col-lg-8 col-md-12 mx-auto" style="background-color: rgb(0.66,0.871,0.902,0.6)">
+              <h4 class="bold">蝶恋花·伫倚危楼风细细</h4>
+              <p class="italic">伫倚危楼风细细</p>
+              <p class="italic">望极春愁 黯黯生天际</p>
+              <p class="italic">草色烟光残照里</p>
+              <p class="italic">无言谁会凭阑意</p>
+              <p class="italic">拟把疏狂图一醉</p>
+              <p class="italic">对酒当歌 强乐还无味</p>
+              <p class="italic">衣带渐宽终不悔</p>
+              <p class="italic">为伊消得人憔悴</p>
+              <p align="right">柳永</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+ 
+</div>
+</div>
+    <!-- intro end-->
+    
+    <!-- about-->
+    <!--section id="about" class="text">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="heading">About me</h2>
+            <p class="lead">This can be an about section.</p>
+            <p>Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved discovered comparison especially invitation. </p>
+            <p>Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery. </p>
+          </div>
+          <div class="col-lg-5 mx-auto">
+            <p><img src="img/japan-mountains.jpg" alt="" class="img-fluid rounded-circle"></p>
+          </div>
+        </div>
+      </div>
+    </section-->
+    <!-- about end-->
+    <!-- Services-->
+    <section id="Content" style="background-color: #eee">
+      <div class="container">
+        <div class="row services">
+          <div class="col-lg-12">
+            <h2 class="heading">Content</h2>
+            
+            <div class="row">
+                	<div class="box col-md-6">
+                    <a href='{{ site.baseurl }}/CODE.html'>
+                 <h5>Coding</h5>
+                 <p>记录计算机编程学习中的文章.</p>
+                  </a>
+                </div>
+                <div class="box col-md-6">
+                	<a href="images/banner3.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border">
+                	<img src="images/banner3.jpg" alt="image" class="img-fluid rounded-circle" ></a>
+                	</div>
+            </div>
+            
+            <div class="row">
+                	<div class="box col-md-6">
+                    <a href='{{ site.baseurl }}/Algorithm.html'>
+                 <h5>Algorithm</h5>
+                 <p>记录算法学习时写的文章</p>
+               </a>
+                </div>
+                <div class="box col-md-6">
+                	<a href="images/banner1.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border">
+                	<img src="images/banner1.jpg" alt="image" class="img-fluid rounded-pill"></a>
+                	</div>
+            </div> 
+            
+            <div class="row">
+                	<div class="box col-md-6">
+                    <a href='{{ site.baseurl }}/Stats.html'>
+                 <h5>Statas</h5>
+                 <p>记录统计学习时写的文章</p>
+               </a>
+                </div>
+                <div class="box col-md-6">
+                	<a href="images/R-img3.gif" data-lightbox="image-1" data-title="Some footer information" class="has-border">
+                	<img src="images/R-img3.gif" alt="image" class="img-fluid rounded-circle"></a>
+                	</div>
+            </div> 
+            
+            <div class="row">
+                	<div class="box col-md-6">
+                    <a href='{{ site.baseurl }}/A_P.html'>
+                 <h5>Article</h5>
+                 <p>文章与诗</p>
+               </a>
+                </div>
+                <div class="box col-md-6">
+                	<a href="images/stone.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border">
+                	<img src="images/stone.jpg" alt="image" class="img-fluid rounded-pill"></a>
+                	</div>
+            </div> 
+            <div class="row">
+                	<div class="box col-md-6">
+                    <a href='{{ site.baseurl }}/Other.html'>
+                 <h5>Others</h5>
+                 <p>其他东西</p>
+               </a>
+                </div>
+                <div class="box col-md-6">
+                	<a href="images/sllk.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border">
+                	<img src="images/sllk.jpg" alt="image" class="img-fluid rounded-lg"></a>
+                	</div>
+            </div> 
+           
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services end-->
+    
+    <!-- Portfolio / gallery>
+    <section id="portfolio" class="gallery">
+      <div class="container clearfix">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-md-12 col-lg-8">
+                <h2 class="heading">Portfolio</h2>
+                <p>Put your portfolio or gallery images here for example. Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box"><a href="img/portfolio-1.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/portfolio-1.jpg" alt="image" class="img-fluid"></a></div>
+              </div>
+              <div class="col-md-4">
+                <div class="box"><a href="img/portfolio-2.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/portfolio-2.jpg" alt="image" class="img-fluid"></a></div>
+              </div>
+              <div class="col-md-4">
+                <div class="box"><a href="img/portfolio-3.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/portfolio-3.jpg" alt="image" class="img-fluid"></a></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box"><a href="img/portfolio-4.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/portfolio-4.jpg" alt="image" class="img-fluid"></a></div>
+              </div>
+              <div class="col-md-4">
+                <div class="box"><a href="img/portfolio-5.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/portfolio-5.jpg" alt="image" class="img-fluid"></a></div>
+              </div>
+              <div class="col-md-4">
+                <div class="box"><a href="img/portfolio-6.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/portfolio-6.jpg" alt="image" class="img-fluid"></a></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box"><a href="img/portfolio-7.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/portfolio-7.jpg" alt="image" class="img-fluid"></a></div>
+              </div>
+              <div class="col-md-4">
+                <div class="box"><a href="img/portfolio-8.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/portfolio-8.jpg" alt="image" class="img-fluid"></a></div>
+              </div>
+              <div class="col-md-4">
+                <div class="box"><a href="img/portfolio-9.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/portfolio-9.jpg" alt="image" class="img-fluid"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section-->
+    
+    <!-- Portfolio / gallery end-->
+    <!-- text page-->
+    <footer style="background-color: #111;">
+  <h2 class="text-center" style="color: #8899FF">THANKS FOR VISITING ME</h2>
+  <hr>
+  <div id="text" class="text-page section-inverse container">
+    <div class="row">
+      <div class="col-md-6 footer-left">
+        <h4 style="color: #000099">Contact Information</h4>
+        <div class="contact-info">
+          <div class="email-info">
+            <i class="glyphicon glyphicon-envelope"></i>
+            <p class="p3" style="background-color:#110"><a href="#" style="color: #ABCDAA">522278689@qq.com</a></p> 
+            <p class="p3" style="background-color:#110"><a href="#" style="color: #ABCDAA">m18811567511@163.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 footer-right">
+      <div class=" footer-right">
+        <ul class="social-icons2">
+          <li onclick="alert('ljj522278689')"><i class="col-md-3 fa fa-wechat"></i></li>
+          <li onclick="alert('522278689')"><i class="col-md-3 fa fa-qq"></i></li>
+          <li onclick="alert('HHHH')"><i class="col-md-3 fa fa-smile-o"></i></li>
+          <li onclick="alert('BiuBiu')"><i class="col-md-3 fa fa-star"></i></li>
+        </ul>
+      </div>
+      </div><!-- col -->
+    </div><!-- row -->
+  </div><!-- container -->
+  <hr>
+  <div class="container"> 
+        <div class="row copyright">
+          <div class="col-md-6">
+            <p class="mb-md-0 text-center text-md-left">&copy;2019 . Bootstrapious </p>
+          </div>
+          <div class="col-md-6">
+            <p class="credit mb-md-0 text-center text-md-right"> / More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+            
+          </div>
+        </div>
+      </div>
+</footer>
+    <!-- JavaScript files-->
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <!--script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script-->
+    <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"> </script>
+    <script src="https://cdn.bootcss.com/lightbox2/2.11.1/js/lightbox.min.js"></script>
+    <!--div id="map"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script-->
+    <!--script src="js/front.js"></script-->
+  </body>
+</html>

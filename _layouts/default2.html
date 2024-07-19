@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head2.html %}
+  {% include scripts/jquery.html %}
+
+  <body>
+  <!--nav class="nav">
+      <div class="nav-container">
+        <a href="{{ site.baseurl }}/">
+          <h2 class="nav-title">{{ site.title }}</h2>
+        </a>
+        <ul>
+          <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+          <li><a href="{{ site.baseurl }}/">Home</a></li>
+        </ul>
+      </div>
+    </nav-->
+
+    <div class="container">
+    {{ content }}
+    </div>
+
+    <footer>
+      <span>
+        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Made by Jiajun Li.
+      </span>
+    </footer>
+  </body>
+</html>

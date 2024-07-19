@@ -1,0 +1,42 @@
+- project :
+    print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
+    modal: True # If 'True' is selected, modal can open in 'portfolio.html'. 
+    url: https://github.com/chrjabs/Grape-Academic-Theme # Full URL
+    image:
+      path: "portfolio.png" # path: assets/project/
+      alt: "A screenshot of the portfolio page"
+    date: 05/2022 &ndash; Developing
+    title: Grape-Theme
+    summary: Academic portfolio jekyll theme.
+    description: A modification of the Grape-Theme for jekyll to be useable as an academic portfolio.
+    contents:
+        - title: 1. Portfolio Page
+          image:
+            path: portfolio.png
+            alt: "A screenshot of the portfolio page"
+          description: <li>Concise portfolio page</li>
+            <li>Recent publications</li>
+            <li>Projects</li>
+        - title: 2. Optional Blog Functionality
+          image:
+            path: home.png
+            alt: "A screenshot of the blog page"
+          description: <li>Responsive Layout</li>
+            <li>Tags</li> 
+            <li>Pagination</li>
+        - title: 3. Tags Page
+          image:
+            path: tags.png
+            alt: "A screenshot of the tags page"
+          description: <li>Responsive Layout</li> 
+            <li>Tags</li> 
+
+- project:
+    print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
+    modal: True # If 'True' is selected, modal can open in 'portfolio.html'. 
+    url:  # Full URL
+    image: # path: assets/project/
+    date: 06/2019 &ndash; Developing
+    title: Dummy project
+    summary: This is a Dummy
+    description:  

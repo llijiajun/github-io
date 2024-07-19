@@ -1,0 +1,16 @@
+footer{
+    @extend %page-padding;
+    margin-top: 10px;
+    .footer {
+        text-align: center;
+        font-size: 0.75rem;
+        padding-top: 30px!important;
+        padding-bottom: 30px;
+        border-top: 1px solid $divider-color;
+        a {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: $theme-color!important;
+        }
+    }
+}

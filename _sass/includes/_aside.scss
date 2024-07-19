@@ -1,0 +1,76 @@
+#aside{
+    text-align: center;
+    padding : 0px 2%;
+    #profile, #tag-wrap {
+        margin-bottom: 60px;
+    }
+    p b{
+        // color: $theme-color;
+        letter-spacing: -0.05rem;
+        font-size: 1rem;
+    }
+    .img-wrap{
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        width: 180px;
+        height: 180px;
+        border-radius: 15px;
+        background-color: #ddd;
+        margin : 30px 0px;
+        img {
+            width : 100%;
+        }
+    }
+    // Profile Image Cover
+    .img-wrap::before{
+        content : "";
+        position : absolute;
+        top : 0;
+        left : 0;
+        right : 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.03);
+    }
+    .img-wrap:hover::before{
+        background: rgba($theme-color, 0.1);
+    }
+    .title, .username  {
+        font-size : 1.1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.5em;
+        margin-bottom: 20px;
+    }
+    .title:hover{
+        color: $theme-color;
+    }
+    .description{
+        font-size : 0.95rem;
+        a {
+          border-bottom: 1px dashed;
+          &:hover  {
+              border-bottom-style: solid;
+              text-decoration: none;
+          }
+        }
+    }
+    #proj-wrap{
+        .proj-title {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .meta, .meta span{
+            color: rgba(0,0,0,0.5);
+            font-size: 0.75rem;
+            margin : 3px 0 10px;
+        }
+        .proj-hr{
+            width: 100px;
+            border : 0.5px solid rgba(0,0,0,0.1);
+        }
+        .proj-content:hover *{
+            color: $theme-dark;
+        }
+    }
+}
