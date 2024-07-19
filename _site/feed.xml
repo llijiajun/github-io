@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="/github-io/feed.xml" rel="self" type="application/atom+xml" /><link href="/github-io/" rel="alternate" type="text/html" /><updated>2024-07-19T18:39:49+08:00</updated><id>/github-io/feed.xml</id><title type="html">Homepage of Jiajun Li</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>Jiajun Li</name></author><entry><title type="html">记配置n遍spark多机分布式环境</title><link href="/github-io/2022-03-02/Spark-01" rel="alternate" type="text/html" title="记配置n遍spark多机分布式环境" /><published>2022-03-02T00:00:00+08:00</published><updated>2022-03-02T00:00:00+08:00</updated><id>/github-io/2022-03-02/Spark-01</id><content type="html" xml:base="/github-io/2022-03-02/Spark-01"><![CDATA[<h2 id="背景">背景</h2>
+=======
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="/github-io/feed.xml" rel="self" type="application/atom+xml" /><link href="/github-io/" rel="alternate" type="text/html" /><updated>2024-07-19T10:35:51+00:00</updated><id>/github-io/feed.xml</id><title type="html">Homepage of Jiajun Li</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>Jiajun Li</name></author><entry><title type="html">记配置n遍spark多机分布式环境</title><link href="/github-io/2022-03-02/Spark-01" rel="alternate" type="text/html" title="记配置n遍spark多机分布式环境" /><published>2022-03-02T00:00:00+00:00</published><updated>2022-03-02T00:00:00+00:00</updated><id>/github-io/2022-03-02/Spark-01</id><content type="html" xml:base="/github-io/2022-03-02/Spark-01"><![CDATA[<h2 id="背景">背景</h2>
+>>>>>>> a4a28bae9a82ef46fefd69f0351e0c43cd57f6c9
 
 <p>最近由于论文的关系，设计的算法需要在分布式环境下，测试算法的通信时间通信代价，于是尝试配置了多台机器的分布式环境。由于配置过程较为复杂，其中也遇到许许多多问题，由于各式各样的因素，不得不一直转换不同的环境，完成机器的配置。虽然由于水平不足，犯了许多不必要的配置错误，有的问题看起来比较愚蠢，但为了之后避免踩入相同的坑，也就将这一路以来，不断配置更新的过程写成文章，以方便查找。</p>
 
@@ -305,7 +309,7 @@ sc._conf.set("spark.driver.maxResultSize", '50g')
 
 <h2 id="小结">小结</h2>
 
-<p>本文比较粗略记录了配置分布式 Spark 环境，但没有记录详细的 PySpark 代码。根据多次配置的经验，每次更换环境之后，都有可能出现新的问题，但总的来说，网络上都能找到解决方案。我将自己认为比较重要的部分进行了记录，将来如果还需要再基于 Spark 进行研究，只希望能利用此次记录快速再次进行配置。Spark 代码本身的书写并不算特别复杂，虽然我也并没完全掌握，但将来还需要对 Spark 进行更近一步研究时，会考虑再写一篇写 Spark 代码时，遇到的疑难杂症。</p>]]></content><author><name>冥郡</name></author><category term="Python" /><category term="Java" /><category term="other" /><summary type="html"><![CDATA[背景]]></summary></entry><entry><title type="html">如何用 R Markdown 生成每周实验报告</title><link href="/github-io/2020-11-16/R-05" rel="alternate" type="text/html" title="如何用 R Markdown 生成每周实验报告" /><published>2020-11-16T00:00:00+08:00</published><updated>2020-11-16T00:00:00+08:00</updated><id>/github-io/2020-11-16/R-05</id><content type="html" xml:base="/github-io/2020-11-16/R-05"><![CDATA[<h2 id="背景">背景</h2>
+<p>本文比较粗略记录了配置分布式 Spark 环境，但没有记录详细的 PySpark 代码。根据多次配置的经验，每次更换环境之后，都有可能出现新的问题，但总的来说，网络上都能找到解决方案。我将自己认为比较重要的部分进行了记录，将来如果还需要再基于 Spark 进行研究，只希望能利用此次记录快速再次进行配置。Spark 代码本身的书写并不算特别复杂，虽然我也并没完全掌握，但将来还需要对 Spark 进行更近一步研究时，会考虑再写一篇写 Spark 代码时，遇到的疑难杂症。</p>]]></content><author><name>冥郡</name></author><category term="Python" /><category term="Java" /><category term="other" /><summary type="html"><![CDATA[背景]]></summary></entry><entry><title type="html">如何用 R Markdown 生成每周实验报告</title><link href="/github-io/2020-11-16/R-05" rel="alternate" type="text/html" title="如何用 R Markdown 生成每周实验报告" /><published>2020-11-16T00:00:00+00:00</published><updated>2020-11-16T00:00:00+00:00</updated><id>/github-io/2020-11-16/R-05</id><content type="html" xml:base="/github-io/2020-11-16/R-05"><![CDATA[<h2 id="背景">背景</h2>
 
 <p>本科时，我主要交作业的报告，写成 HTML 文件，再转 PDF ，追求“花里胡哨”，让别人看起来很“认真”、很“高端”的感觉。用 Prettydoc写完全没问题，网页很容易加入特效。但 HTML 打印输出结果时，相信很多人都会遇到打印不完整的情况。转变为研究生和博士之后，有时依然需要每周给导师写报告。这时候，还像交作业一样给导师交花里胡哨的 HTML 就有些没有必要了，这样会掩盖汇报的重点。我们得认识到报告实际上是为最终论文准备的。所有实验最终是需要放到论文上的。学术论文需要图表，图表往往需要直观、体现重点。如果是在赶一篇论文，并需要不断反馈实验进度时，那么就应该考虑是否能比较方便地将实验结果放置到最终的论文中。最终论文需要使用规定的 LaTeX 模板完成，所以每周的实验报告如果都用之前的方式写，必然会需要返工，而且效率也不高。</p>
 
@@ -482,7 +486,7 @@ curve(-sqrt(1-x^2),xlim=c(-1,1),add=TRUE)
 
 <p>本文给出了一些 R Markdown 和 LaTeX 结合生成报告的，主要解决了表格批量插入的问题。我相信在这个基础之上，用 R Markdown 结合更多 LaTeX 其他包相信还能做到更多惊人的事。此外，在 R Markdown 中，插入一些python的代码也并不是什么难事，无非就是对数据流的控制。以上的功能应该也完全能通过内嵌python代码实现。</p>
 
-<p>就我整个探索过程而言，不难发现，现有的 R 包可能已经有了许许多多的功能与环境。比较可惜的是，他们资料并不多，使用的人也并不多，这就导致探索中所能参考的资料比较少。因此，我写此文也是希望能有更多有精力的人，尝试书写更多有意思的报告和展示。</p>]]></content><author><name>冥郡</name></author><category term="R" /><category term="Stats" /><summary type="html"><![CDATA[背景]]></summary></entry><entry><title type="html">2019-2020 领悟的优化 基于c++</title><link href="/github-io/2020-09-02/C-02_Opt" rel="alternate" type="text/html" title="2019-2020 领悟的优化 基于c++" /><published>2020-09-02T00:00:00+08:00</published><updated>2020-09-02T00:00:00+08:00</updated><id>/github-io/2020-09-02/C-02_Opt</id><content type="html" xml:base="/github-io/2020-09-02/C-02_Opt"><![CDATA[<h2 id="背景">背景</h2>
+<p>就我整个探索过程而言，不难发现，现有的 R 包可能已经有了许许多多的功能与环境。比较可惜的是，他们资料并不多，使用的人也并不多，这就导致探索中所能参考的资料比较少。因此，我写此文也是希望能有更多有精力的人，尝试书写更多有意思的报告和展示。</p>]]></content><author><name>冥郡</name></author><category term="R" /><category term="Stats" /><summary type="html"><![CDATA[背景]]></summary></entry><entry><title type="html">2019-2020 领悟的优化 基于c++</title><link href="/github-io/2020-09-02/C-02_Opt" rel="alternate" type="text/html" title="2019-2020 领悟的优化 基于c++" /><published>2020-09-02T00:00:00+00:00</published><updated>2020-09-02T00:00:00+00:00</updated><id>/github-io/2020-09-02/C-02_Opt</id><content type="html" xml:base="/github-io/2020-09-02/C-02_Opt"><![CDATA[<h2 id="背景">背景</h2>
 
 <p>这两年来，主要精力集中在使用c++做矩阵计算上，由此总结了一些c++的优化手段，虽然可能几年以后会对现在的水平嗤之以鼻，但至少可以记录一下自己的编程水平增长经历，以下希望随时间持续更新。</p>
 
@@ -665,7 +669,7 @@ clang++ main.cpp -std=c++11 -I/opt/intel/mkl/include -I/opt/intel/mkl/lib/intel6
 
 <h2 id="总结">总结</h2>
 
-<p>本文蜻蜓点水式回顾了2019-2020年我所比较常使用的一些优化技巧。其实每个部分都适合展开长篇大论，限于篇幅和水平，浅尝辄止。代码优化并非一蹴而就，通常在实现一个项目时，我往往会逐步优化，至少让代码先跑起来，再逐渐替换写的不好的部分。这也就意味着，可以积攒以上优化的组件，例如CMakeList、随机数生成、Sigmoid函数计算、Alias Method等。当每次推翻所有代码重构，而不留下一丝一毫时，那就像是在一直生产垃圾，但每次推翻都能积攒下一些组件时，那我认为这样写代码是在挖矿，积攒的代码都是财富。同理，读别人的代码什么都没留下时，又何必浪费时间呢？</p>]]></content><author><name>冥郡</name></author><category term="C" /><category term="algorithm1" /><category term="Article" /><summary type="html"><![CDATA[背景]]></summary></entry><entry><title type="html">论文阅读｜MIPS</title><link href="/github-io/2020-08-25/Article-04" rel="alternate" type="text/html" title="论文阅读｜MIPS" /><published>2020-08-25T00:00:00+08:00</published><updated>2020-08-25T00:00:00+08:00</updated><id>/github-io/2020-08-25/Article-04</id><content type="html" xml:base="/github-io/2020-08-25/Article-04"><![CDATA[<h2 id="前言">前言</h2>
+<p>本文蜻蜓点水式回顾了2019-2020年我所比较常使用的一些优化技巧。其实每个部分都适合展开长篇大论，限于篇幅和水平，浅尝辄止。代码优化并非一蹴而就，通常在实现一个项目时，我往往会逐步优化，至少让代码先跑起来，再逐渐替换写的不好的部分。这也就意味着，可以积攒以上优化的组件，例如CMakeList、随机数生成、Sigmoid函数计算、Alias Method等。当每次推翻所有代码重构，而不留下一丝一毫时，那就像是在一直生产垃圾，但每次推翻都能积攒下一些组件时，那我认为这样写代码是在挖矿，积攒的代码都是财富。同理，读别人的代码什么都没留下时，又何必浪费时间呢？</p>]]></content><author><name>冥郡</name></author><category term="C" /><category term="algorithm1" /><category term="Article" /><summary type="html"><![CDATA[背景]]></summary></entry><entry><title type="html">论文阅读｜MIPS</title><link href="/github-io/2020-08-25/Article-04" rel="alternate" type="text/html" title="论文阅读｜MIPS" /><published>2020-08-25T00:00:00+00:00</published><updated>2020-08-25T00:00:00+00:00</updated><id>/github-io/2020-08-25/Article-04</id><content type="html" xml:base="/github-io/2020-08-25/Article-04"><![CDATA[<h2 id="前言">前言</h2>
 
 <p>​	Maximum Inner Product Search (MIPS) 是我最近感兴趣的一个问题，所以对其做一些调研。MIPS可以将一些稠密的问题转化为稀疏化解决，这在图算法的规模化是很有帮助的，之前的方法有 LSH-MIPS、PCA-MIPS、Diamond sampling approach，2020最新的方法则是Sampling-MIPS，本文将探究这几个算法。</p>
 
@@ -679,7 +683,7 @@ clang++ main.cpp -std=c++11 -I/opt/intel/mkl/include -I/opt/intel/mkl/lib/intel6
 
 \[p=\mathop{\arg\max}_{x\in X} x^\top q\]
 
-<p>众所周知，内积大的一对向量，在欧几里得空间下，其物理含义就是它们比较“近”。寻找内积比较大的节点对也就意味着寻找比较近的元素，而寻找相近元素最佳的方法不得不提局部敏感哈希(Locality-Sensitive Hashing)</p>]]></content><author><name>冥郡</name></author><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">论文阅读｜图上的自监督学习——对比学习论文解读</title><link href="/github-io/2020-08-14/Article-02" rel="alternate" type="text/html" title="论文阅读｜图上的自监督学习——对比学习论文解读" /><published>2020-08-14T00:00:00+08:00</published><updated>2020-08-14T00:00:00+08:00</updated><id>/github-io/2020-08-14/Article-02</id><content type="html" xml:base="/github-io/2020-08-14/Article-02"><![CDATA[<h2 id="前言">前言</h2>
+<p>众所周知，内积大的一对向量，在欧几里得空间下，其物理含义就是它们比较“近”。寻找内积比较大的节点对也就意味着寻找比较近的元素，而寻找相近元素最佳的方法不得不提局部敏感哈希(Locality-Sensitive Hashing)</p>]]></content><author><name>冥郡</name></author><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">论文阅读｜图上的自监督学习——对比学习论文解读</title><link href="/github-io/2020-08-14/Article-02" rel="alternate" type="text/html" title="论文阅读｜图上的自监督学习——对比学习论文解读" /><published>2020-08-14T00:00:00+00:00</published><updated>2020-08-14T00:00:00+00:00</updated><id>/github-io/2020-08-14/Article-02</id><content type="html" xml:base="/github-io/2020-08-14/Article-02"><![CDATA[<h2 id="前言">前言</h2>
 
 <p>​	本文将围绕最近的一些在图上自监督学习的工作，对其中“Contrastive Learning”的内容进行一些解读，并包括一些自监督学习的思路。</p>
 
@@ -893,7 +897,7 @@ clang++ main.cpp -std=c++11 -I/opt/intel/mkl/include -I/opt/intel/mkl/lib/intel6
 
 <p>[6] Hjelm, R. D. , Fedorov, A. , Lavoie-Marchildon, S. , Grewal, K. , Bachman, P. , &amp; Trischler, A. , et al. (2018). Learning deep representations by mutual information estimation and maximization.</p>
 
-<p>[7] P. Bachman, R. D. Hjelm, and W. Buchwalter. Learning represen- tations by maximizing mutual information across views. In NIPS, pages 15509–15519, 2019.</p>]]></content><author><name>冥郡</name></author><category term="Article" /><category term="algorithm1" /><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">人生无常，生死如常</title><link href="/github-io/2020-08-14/Article-03" rel="alternate" type="text/html" title="人生无常，生死如常" /><published>2020-08-14T00:00:00+08:00</published><updated>2020-08-14T00:00:00+08:00</updated><id>/github-io/2020-08-14/Article-03</id><content type="html" xml:base="/github-io/2020-08-14/Article-03"><![CDATA[<p>如星辰般浩瀚的人啊，我走过世间，一生能认识的人或许只是星空的一角。</p>
+<p>[7] P. Bachman, R. D. Hjelm, and W. Buchwalter. Learning represen- tations by maximizing mutual information across views. In NIPS, pages 15509–15519, 2019.</p>]]></content><author><name>冥郡</name></author><category term="Article" /><category term="algorithm1" /><summary type="html"><![CDATA[前言]]></summary></entry><entry><title type="html">人生无常，生死如常</title><link href="/github-io/2020-08-14/Article-03" rel="alternate" type="text/html" title="人生无常，生死如常" /><published>2020-08-14T00:00:00+00:00</published><updated>2020-08-14T00:00:00+00:00</updated><id>/github-io/2020-08-14/Article-03</id><content type="html" xml:base="/github-io/2020-08-14/Article-03"><![CDATA[<p>如星辰般浩瀚的人啊，我走过世间，一生能认识的人或许只是星空的一角。</p>
 
 <p>统计有意思之处就在于，无论整个星空是多么庞大，我们都可以认为，观测到的点点星光，可以反映整个宇宙的所有情况。</p>
 
@@ -915,7 +919,7 @@ clang++ main.cpp -std=c++11 -I/opt/intel/mkl/include -I/opt/intel/mkl/lib/intel6
 
 <p>充满随机的世界啊，我即使探索再多的“定数”，也算不出未来，改变不了结果，能改的只有习惯。</p>
 
-<p>是的，随着老去，习惯，生死，如常。</p>]]></content><author><name>冥郡</name></author><category term="Article" /><summary type="html"><![CDATA[如星辰般浩瀚的人啊，我走过世间，一生能认识的人或许只是星空的一角。]]></summary></entry><entry><title type="html">读取Graph数据的代码</title><link href="/github-io/2020-06-28/C-Python-05_read_graph" rel="alternate" type="text/html" title="读取Graph数据的代码" /><published>2020-06-28T00:00:00+08:00</published><updated>2020-06-28T00:00:00+08:00</updated><id>/github-io/2020-06-28/C-Python-05_read_graph</id><content type="html" xml:base="/github-io/2020-06-28/C-Python-05_read_graph"><![CDATA[<h2 id="背景">背景</h2>
+<p>是的，随着老去，习惯，生死，如常。</p>]]></content><author><name>冥郡</name></author><category term="Article" /><summary type="html"><![CDATA[如星辰般浩瀚的人啊，我走过世间，一生能认识的人或许只是星空的一角。]]></summary></entry><entry><title type="html">读取Graph数据的代码</title><link href="/github-io/2020-06-28/C-Python-05_read_graph" rel="alternate" type="text/html" title="读取Graph数据的代码" /><published>2020-06-28T00:00:00+00:00</published><updated>2020-06-28T00:00:00+00:00</updated><id>/github-io/2020-06-28/C-Python-05_read_graph</id><content type="html" xml:base="/github-io/2020-06-28/C-Python-05_read_graph"><![CDATA[<h2 id="背景">背景</h2>
 
 <p>记录读图的一些代码，由于图一般都会储存为稀疏矩阵的形式，否则大图根本无法储存，所以最终返回的都是稀疏矩阵，比较节约空间的是csr matrix。</p>
 
@@ -1026,7 +1030,7 @@ def load_label(file,variable_name="group"):
 
 <h2 id="cc">C,C++</h2>
 
-<h3 id="edgelist-1">edgelist</h3>]]></content><author><name>冥郡</name></author><category term="C" /><category term="Python" /><summary type="html"><![CDATA[背景]]></summary></entry><entry><title type="html">一些乱七八糟的图片处理</title><link href="/github-io/2020-06-16/Python-04_pre_picture" rel="alternate" type="text/html" title="一些乱七八糟的图片处理" /><published>2020-06-16T00:00:00+08:00</published><updated>2020-06-16T00:00:00+08:00</updated><id>/github-io/2020-06-16/Python-04_pre_picture</id><content type="html" xml:base="/github-io/2020-06-16/Python-04_pre_picture"><![CDATA[<h2 id="背景">背景</h2>
+<h3 id="edgelist-1">edgelist</h3>]]></content><author><name>冥郡</name></author><category term="C" /><category term="Python" /><summary type="html"><![CDATA[背景]]></summary></entry><entry><title type="html">一些乱七八糟的图片处理</title><link href="/github-io/2020-06-16/Python-04_pre_picture" rel="alternate" type="text/html" title="一些乱七八糟的图片处理" /><published>2020-06-16T00:00:00+00:00</published><updated>2020-06-16T00:00:00+00:00</updated><id>/github-io/2020-06-16/Python-04_pre_picture</id><content type="html" xml:base="/github-io/2020-06-16/Python-04_pre_picture"><![CDATA[<h2 id="背景">背景</h2>
 
 <p>记录一些摸索图片处理过程中，看到的，和自己研究的图片预处理方法</p>
 
@@ -1167,7 +1171,7 @@ for files in filelist:
     if os.path.isdir(os.path.join(path,files)):
         continue
     decomp_img(os.path.join(path,files))
-</code></pre></div></div>]]></content><author><name>冥郡</name></author><category term="Python" /><summary type="html"><![CDATA[背景]]></summary></entry><entry><title type="html">如何提高Eigen效率</title><link href="/github-io/2020-04-04/C-03_Eigen_speed" rel="alternate" type="text/html" title="如何提高Eigen效率" /><published>2020-04-04T00:00:00+08:00</published><updated>2020-04-04T00:00:00+08:00</updated><id>/github-io/2020-04-04/C-03_Eigen_speed</id><content type="html" xml:base="/github-io/2020-04-04/C-03_Eigen_speed"><![CDATA[<h2 id="背景">背景</h2>
+</code></pre></div></div>]]></content><author><name>冥郡</name></author><category term="Python" /><summary type="html"><![CDATA[背景]]></summary></entry><entry><title type="html">如何提高Eigen效率</title><link href="/github-io/2020-04-04/C-03_Eigen_speed" rel="alternate" type="text/html" title="如何提高Eigen效率" /><published>2020-04-04T00:00:00+00:00</published><updated>2020-04-04T00:00:00+00:00</updated><id>/github-io/2020-04-04/C-03_Eigen_speed</id><content type="html" xml:base="/github-io/2020-04-04/C-03_Eigen_speed"><![CDATA[<h2 id="背景">背景</h2>
 
 <p>为了加速c++的矩阵计算，MKL是比较好的方案，但MKL写代码实在不太友好，其次容易出bug。MKL计算矩阵乘法速度十分快，但其实对代码优化到极致之后，Eigen矩阵计算速度是可以和MKL媲美的。由此，我也对CMake进行了一定的研究。我主要是从知乎<a href="https://www.zhihu.com/question/28571059">Eigen的速度为什么这么快？</a>中学习到的。我仅作为搬运工，并加入一些自己的实际探索。</p>
 
@@ -1197,7 +1201,7 @@ for files in filelist:
 
 <h2 id="参考资料">参考资料</h2>
 
-<p>[1] <a href="https://www.zhihu.com/question/28571059">https://www.zhihu.com/question/28571059</a></p>]]></content><author><name>冥郡</name></author><category term="C" /><category term="algorithm1" /><summary type="html"><![CDATA[背景]]></summary></entry><entry><title type="html">MKL 的坑与教训</title><link href="/github-io/2020-03-11/C-02_MKL_Begin" rel="alternate" type="text/html" title="MKL 的坑与教训" /><published>2020-03-11T00:00:00+08:00</published><updated>2020-03-11T00:00:00+08:00</updated><id>/github-io/2020-03-11/C-02_MKL_Begin</id><content type="html" xml:base="/github-io/2020-03-11/C-02_MKL_Begin"><![CDATA[<h2 id="背景">背景</h2>
+<p>[1] <a href="https://www.zhihu.com/question/28571059">https://www.zhihu.com/question/28571059</a></p>]]></content><author><name>冥郡</name></author><category term="C" /><category term="algorithm1" /><summary type="html"><![CDATA[背景]]></summary></entry><entry><title type="html">MKL 的坑与教训</title><link href="/github-io/2020-03-11/C-02_MKL_Begin" rel="alternate" type="text/html" title="MKL 的坑与教训" /><published>2020-03-11T00:00:00+00:00</published><updated>2020-03-11T00:00:00+00:00</updated><id>/github-io/2020-03-11/C-02_MKL_Begin</id><content type="html" xml:base="/github-io/2020-03-11/C-02_MKL_Begin"><![CDATA[<h2 id="背景">背景</h2>
 
 <p>为了加速c++，不可避免的需要使用矩阵运算库。最出名的、一般人用的最多的c++矩阵计算库可能是Eigen，从统计处我知道了Armadillo用的也不少。但说到底，python那些包用的最多的也许最后还是MKL。</p>
 
