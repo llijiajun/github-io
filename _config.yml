@@ -72,9 +72,6 @@ markdown: kramdown
 theme: jekyll-theme-slate
 
 
-# Build settings
-markdown:       kramdown
-
 # Assets
 sass:
   sass_dir:     _sass
@@ -84,7 +81,7 @@ bootstrap:
   assets: true
 
 scholar:
-  bibliography: publications.bib
+  bibliography: _bibliography/publications.bib
   bibliography_template: pubstemplate
   style: apa
   locale: en
