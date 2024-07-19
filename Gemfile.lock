@@ -22,7 +22,6 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.17.0-arm64-darwin)
-    ffi (1.17.0-x86_64-darwin)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
     i18n (1.14.5)
@@ -60,6 +59,8 @@ GEM
       listen (~> 3.0)
     kramdown (2.4.0)
       rexml
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
     latex-decode (0.4.0)
     liquid (4.0.4)
     listen (3.9.0)
@@ -101,6 +102,7 @@ DEPENDENCIES
   jekyll-scholar
   jekyll-seo-tag
   jekyll-theme-slate
+  kramdown-parser-gfm
   minima (~> 2.5)
   tzinfo-data
   webrick

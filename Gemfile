@@ -24,7 +24,7 @@ gem "jekyll-theme-slate"
 
 gem "minima", "~> 2.5"
 
-#gem "kramdown-parser-gfm"
+gem "kramdown-parser-gfm"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
