@@ -111,6 +111,7 @@ theme_settings:
 # Gems
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-scholar
   # - jemoji #Uncomment this to allow emoji in your post
