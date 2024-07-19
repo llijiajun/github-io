@@ -113,6 +113,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-sitemap
   - jekyll-scholar
   # - jemoji #Uncomment this to allow emoji in your post
 

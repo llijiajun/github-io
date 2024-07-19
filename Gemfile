@@ -26,7 +26,7 @@ gem "minima", "~> 2.5"
 
 gem "kramdown-parser-gfm"
 
-gem 'faraday-retry'
+
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -39,8 +39,11 @@ group :jekyll_plugins do
   gem "jekyll-scholar"#, "~> 3.5"
   gem "jekyll-paginate"
   gem "jekyll-seo-tag"
-  #gem "jekyll-sass-converter", ">= 3.0.0"
+  gem 'jekyll-sitemap'
+  gem "jekyll-sass-converter"
 end
+
+gem 'faraday-retry'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
