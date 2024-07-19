@@ -126,7 +126,7 @@ scholar:
   first_name: [Myself, M.]
   sort_by: year,month
   order: descending,ascending
-
+  source: ./_bibliography/publications.bib
 
 
 # Permalinks
