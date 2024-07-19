@@ -127,11 +127,7 @@ scholar:
   sort_by: year,month
   order: descending,ascending
 
-jekyll-scholar:
-  bibliography: bibliography.bib
-  style: apa
-  locale: en
-  source: ./_bibliography/publications.bib
+
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
