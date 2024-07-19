@@ -117,11 +117,31 @@ plugins:
   - jekyll-scholar
   # - jemoji #Uncomment this to allow emoji in your post
 
-jekyll-scholar:
-  bibliography: bibliography.bib
+# Pagination
+paginate: 5
+paginate_path: "blog/page:num"
+
+# Build Settings
+sass:
+  sass_dir: _sass
+  style: :compressed
+plugins: ['jekyll-paginate', 'jekyll/scholar', 'jekyll-seo-tag']
+bootstrap:
+  assets: true
+
+# Bibliography settings
+scholar:
+  bibliography: publications.bib
+  bibliography_template: pubstemplate
   style: apa
   locale: en
-  source: ./_bibliography/publications.bib
+  last_name: Me
+  first_name: [Myself, M.]
+  sort_by: year,month
+  order: descending,ascending
+
+filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website] # Filter out certain bibtex entry keywords used internally from the bib output
+
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
