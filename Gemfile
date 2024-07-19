@@ -4,7 +4,7 @@ source "https://rubygems.org"
 #source "https://rubygems.org"
 gem "jekyll", "~> 3.9.5"  # 使用与 github-pages 兼容的 Jekyll 版本
 
-gem "github-pages", "~> 231"  # 这里使用与当前 github-pages 版本兼容的版本
+#gem "github-pages", "~> 231"  # 这里使用与当前 github-pages 版本兼容的版本
 #gem "tale"#, "~> 0.2.3"
 
 # Hello! This is where you manage which Jekyll version is used to run.
