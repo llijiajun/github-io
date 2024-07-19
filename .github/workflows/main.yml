@@ -16,6 +16,20 @@ jobs:
       - name: Build site
         run: bundle exec jekyll build
 
+       - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1 # 选择适当的 Ruby 版本
+
+      - name: Install Bundler
+        run: gem install bundler
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Build site
+        run: bundle exec jekyll build
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
