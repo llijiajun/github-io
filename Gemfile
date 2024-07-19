@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 #source 'http://ruby.taobao.org/'
 #source "https://rubygems.org"
-gem "jekyll", "~> 3.9.5"
+gem "jekyll", "~> 3.9.3"
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-feed", "~> 0.15.1"
 gem "tale"#, "~> 0.2.3"
