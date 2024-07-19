@@ -74,8 +74,7 @@ exclude: [ppt_md/KMP.md]
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-slate
-plugins:
-  - jekyll-feed
+
 
 # Build settings
 markdown:       kramdown
@@ -113,7 +112,11 @@ theme_settings:
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-scholar
   # - jemoji #Uncomment this to allow emoji in your post
+
+jekyll-scholar:
+  bibliography: bibliography.bib
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
