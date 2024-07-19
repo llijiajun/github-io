@@ -3,7 +3,6 @@ GEM
   specs:
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
-    base64 (0.2.0)
     bibtex-ruby (4.4.7)
       latex-decode (~> 0.0)
     citeproc (1.0.10)
@@ -22,14 +21,36 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    faraday (2.8.1)
-      base64
-      faraday-net_http (>= 2.0, < 3.1)
+    faraday (1.10.3)
+      faraday-em_http (~> 1.0)
+      faraday-em_synchrony (~> 1.0)
+      faraday-excon (~> 1.1)
+      faraday-httpclient (~> 1.0)
+      faraday-multipart (~> 1.0)
+      faraday-net_http (~> 1.0)
+      faraday-net_http_persistent (~> 1.0)
+      faraday-patron (~> 1.0)
+      faraday-rack (~> 1.0)
+      faraday-retry (~> 1.0)
       ruby2_keywords (>= 0.0.4)
-    faraday-net_http (3.0.2)
-    faraday-retry (2.2.1)
-      faraday (~> 2.0)
+    faraday-em_http (1.0.0)
+    faraday-em_synchrony (1.0.0)
+    faraday-excon (1.1.0)
+    faraday-httpclient (1.0.1)
+    faraday-multipart (1.0.4)
+      multipart-post (~> 2)
+    faraday-net_http (1.0.1)
+    faraday-net_http_persistent (1.2.0)
+    faraday-patron (1.0.0)
+    faraday-rack (1.0.0)
+    faraday-retry (1.0.3)
+    faraday_middleware (1.2.0)
+      faraday (~> 1.0)
+    faraday_middleware-request-retry (0.2.3)
+      faraday (~> 1.10, >= 1.10.3)
+      faraday_middleware (~> 1.2, >= 1.2.0)
     ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x86_64-darwin)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
     i18n (1.14.5)
@@ -81,6 +102,7 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
+    multipart-post (2.4.1)
     namae (1.2.0)
       racc (~> 1.7)
     pathutil (0.16.2)
@@ -107,7 +129,8 @@ PLATFORMS
   universal-darwin-21
 
 DEPENDENCIES
-  faraday-retry (>= 2.2.1)
+  faraday-retry
+  faraday_middleware-request-retry
   jekyll (~> 3.9.5)
   jekyll-email-protect
   jekyll-paginate

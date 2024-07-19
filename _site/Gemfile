@@ -43,7 +43,8 @@ group :jekyll_plugins do
   gem "jekyll-sass-converter"
 end
 
-gem 'faraday-retry', '>= 2.2.1'
+gem 'faraday_middleware-request-retry'
+gem 'faraday-retry'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
