@@ -2,9 +2,9 @@ source "https://rubygems.org"
 
 #source 'http://ruby.taobao.org/'
 #source "https://rubygems.org"
-gem "jekyll", "~> 4.2.0"
-#gem "github-pages", group: :jekyll_plugins
-gem "jekyll-feed", "~> 0.15.1"
+gem "jekyll", "~> 3.9.5"  # 使用与 github-pages 兼容的 Jekyll 版本
+
+gem "github-pages", "~> 231"  # 这里使用与当前 github-pages 版本兼容的版本
 #gem "tale"#, "~> 0.2.3"
 
 # Hello! This is where you manage which Jekyll version is used to run.
@@ -24,7 +24,7 @@ gem "jekyll-theme-slate"
 
 gem "minima", "~> 2.5"
 
-gem "kramdown-parser-gfm"
+#gem "kramdown-parser-gfm"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -34,7 +34,7 @@ gem "kramdown-parser-gfm"
 group :jekyll_plugins do
   #gem "jekyll-feed", "~> 0.17.0"
   gem "jekyll-email-protect"
-  gem "jekyll-scholar", "~> 7.1.3"
+  gem "jekyll-scholar", "~> 3.5"
   gem "jekyll-paginate"
   gem "jekyll-seo-tag"
   #gem "jekyll-sass-converter", ">= 3.0.0"
