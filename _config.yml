@@ -118,7 +118,7 @@ plugins:
   # - jemoji #Uncomment this to allow emoji in your post
 
 jekyll-scholar:
-  bibliography: publications.bib
+  bibliography: _bibliography/publications.bib
   bibliography_template: pubstemplate
   style: apa
   locale: en
