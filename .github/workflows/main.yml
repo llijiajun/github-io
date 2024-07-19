@@ -13,16 +13,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Build site
-        run: bundle exec jekyll build
-
-       - name: Set up Ruby
+      - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1 # 选择适当的 Ruby 版本
+          ruby-version: 2.7 # 使用 Ruby 2.7
 
       - name: Install Bundler
-        run: gem install bundler
+        run: gem install bundler -v 2.4.22
 
       - name: Install dependencies
         run: bundle install
