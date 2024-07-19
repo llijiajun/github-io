@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      论文阅读｜MIPS &middot; Homepage of Jiajun Li
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/github-io/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/github-io/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/github-io/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/github-io/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+  <!-- RSS -->
+  <!-- feed_meta -->
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+</head>
+
+
+  <body>
+  <nav class="nav">
+      <div class="nav-container">
+        <a href="/github-io/">
+          <h2 class="nav-title">Homepage of Jiajun Li</h2>
+        </a>
+        <ul>
+          <li><a href="/github-io/about">About</a></li>
+          <li><a href="/github-io/">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    
+        冥郡
+    
+
+    
+      <br>
+      <span>on&nbsp;</span><time datetime="2020-08-25 00:00:00 +0800">August 25, 2020</time>
+    
+  </div>
+
+  <h1 class="post-title">论文阅读｜MIPS</h1>
+
+  <h2 id="前言">前言</h2>
+
+<p>​	Maximum Inner Product Search (MIPS) 是我最近感兴趣的一个问题，所以对其做一些调研。MIPS可以将一些稠密的问题转化为稀疏化解决，这在图算法的规模化是很有帮助的，之前的方法有 LSH-MIPS、PCA-MIPS、Diamond sampling approach，2020最新的方法则是Sampling-MIPS，本文将探究这几个算法。</p>
+
+<p>立个Flag， 两个星期搞定。</p>
+
+<h2 id="背景知识">背景知识</h2>
+
+<h3 id="最大点积搜索maximum-inner-product-search">最大点积搜索(Maximum Inner Product Search)</h3>
+
+<p>MIPS的含义正如其名，就是给定一个向量q(query)和一个向量集X(维度必然一致)，找出向量集X中与q点积比较大的一些向量。可以表示为：</p>
+
+\[p=\mathop{\arg\max}_{x\in X} x^\top q\]
+
+<p>众所周知，内积大的一对向量，在欧几里得空间下，其物理含义就是它们比较“近”。寻找内积比较大的节点对也就意味着寻找比较近的元素，而寻找相近元素最佳的方法不得不提局部敏感哈希(Locality-Sensitive Hashing)</p>
+
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/github-io/2020-09-02/C-02_Opt" class="left arrow">&#8592;</a>
+  
+  
+    <a href="/github-io/2020-08-14/Article-03" class="right arrow">&#8594;</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+<div id="vcomments"> </div>
+
+<script src="/github-io/dist/gitment.browser.js"></script>
+<script>
+        new Valine({
+    el: '#vcomments' ,
+    appId: '83MesIX83EeatMBS5lpx8OQQ-gzGzoHsz',
+    appKey: '6JDfOeJJ7vDKheMHt5oB66H0',
+    notify:false, 
+    verify:false, 
+    avatar:'mp', 
+    placeholder: 'just go go' 
+});
+    </script>
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="2024-07-20 02:53:21 +0800">2024</time> . Made with HadesJun.
+      </span>
+    </footer>
+  </body>
+</html>

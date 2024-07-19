@@ -71,6 +71,14 @@ exclude: [ppt_md/KMP.md]
 markdown: kramdown
 theme: jekyll-theme-slate
 
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-scholar
+  # - jemoji #Uncomment this to allow emoji in your post
 
 # Assets
 sass:
@@ -80,8 +88,8 @@ plugins: ['jekyll-paginate', 'jekyll/scholar', 'jekyll-seo-tag']
 bootstrap:
   assets: true
 
-scholar:
-  bibliography: _bibliography/publications.bib
+jekyll-scholar:
+  bibliography: references.bib
   bibliography_template: pubstemplate
   style: apa
   locale: en
@@ -101,25 +109,7 @@ theme_settings:
   projects_title: PROJECTS
   recentpubs_title: RECENT PUBLICATIONS
 
-# Gems
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-scholar
-  # - jemoji #Uncomment this to allow emoji in your post
 
-scholar:
-  bibliography: publications.bib
-  bibliography_template: pubstemplate
-  style: apa
-  locale: en
-  last_name: Me
-  first_name: [Myself, M.]
-  sort_by: year,month
-  order: descending,ascending
-  source: ./_bibliography/publications.bib
 
 
 # Permalinks

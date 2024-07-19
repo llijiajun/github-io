@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      如何提高Eigen效率 &middot; Homepage of Jiajun Li
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/github-io/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/github-io/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/github-io/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/github-io/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+  <!-- RSS -->
+  <!-- feed_meta -->
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+</head>
+
+
+  <body>
+  <nav class="nav">
+      <div class="nav-container">
+        <a href="/github-io/">
+          <h2 class="nav-title">Homepage of Jiajun Li</h2>
+        </a>
+        <ul>
+          <li><a href="/github-io/about">About</a></li>
+          <li><a href="/github-io/">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    
+        冥郡
+    
+
+    
+      <br>
+      <span>on&nbsp;</span><time datetime="2020-04-04 00:00:00 +0800">April 04, 2020</time>
+    
+  </div>
+
+  <h1 class="post-title">如何提高Eigen效率</h1>
+
+  <h2 id="背景">背景</h2>
+
+<p>为了加速c++的矩阵计算，MKL是比较好的方案，但MKL写代码实在不太友好，其次容易出bug。MKL计算矩阵乘法速度十分快，但其实对代码优化到极致之后，Eigen矩阵计算速度是可以和MKL媲美的。由此，我也对CMake进行了一定的研究。我主要是从知乎<a href="https://www.zhihu.com/question/28571059">Eigen的速度为什么这么快？</a>中学习到的。我仅作为搬运工，并加入一些自己的实际探索。</p>
+
+<h2 id="优化手段">优化手段</h2>
+
+<p>从知乎中总结：</p>
+
+<blockquote>
+  <ol>
+    <li>矩阵乘法，若等式左边的变量与右式相乘变量没有关系，则可以使用 A.noalias() 替代 A</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <ol>
+    <li>-mavx 和 -mfma 两个参数， 若对g++ 编译而言， -O3 可以在编译上优化</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <ol>
+    <li>写 CMakefile 并链接矩阵加速库 MKL 、 Blas 、Lapack 。</li>
+  </ol>
+</blockquote>
+
+<p>这些都是比较容易实现达到的优化方法。主要讲一下利用MKL优化。</p>
+
+<h2 id="参考资料">参考资料</h2>
+
+<p>[1] <a href="https://www.zhihu.com/question/28571059">https://www.zhihu.com/question/28571059</a></p>
+
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/github-io/2020-06-16/Python-04_pre_picture" class="left arrow">&#8592;</a>
+  
+  
+    <a href="/github-io/2020-03-11/C-02_MKL_Begin" class="right arrow">&#8594;</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+<div id="vcomments"> </div>
+
+<script src="/github-io/dist/gitment.browser.js"></script>
+<script>
+        new Valine({
+    el: '#vcomments' ,
+    appId: '83MesIX83EeatMBS5lpx8OQQ-gzGzoHsz',
+    appKey: '6JDfOeJJ7vDKheMHt5oB66H0',
+    notify:false, 
+    verify:false, 
+    avatar:'mp', 
+    placeholder: 'just go go' 
+});
+    </script>
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="2024-07-20 02:53:21 +0800">2024</time> . Made with HadesJun.
+      </span>
+    </footer>
+  </body>
+</html>

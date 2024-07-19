@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      Python &middot; Homepage of Jiajun Li
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/github-io/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/github-io/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/github-io/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/github-io/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+  <!-- RSS -->
+  <!-- feed_meta -->
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+</head>
+
+
+  <body>
+  <nav class="nav">
+      <div class="nav-container">
+        <a href="/github-io/">
+          <h2 class="nav-title">Homepage of Jiajun Li</h2>
+        </a>
+        <ul>
+          <li><a href="/github-io/about">About</a></li>
+          <li><a href="/github-io/">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="catalogue">
+  
+    
+    <a href="/github-io/2022-03-02/Spark-01" class="catalogue-item">
+      <div>
+        <time datetime="2022-03-02 00:00:00 +0800" class="catalogue-time">March 02, 2022</time>
+        <h1 class="catalogue-title">记配置n遍spark多机分布式环境</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          背景 最近由于论文的关系，设计的算法需要在分布式环境下，测试算法的通信时间通信代价，于是尝试配置了多台机器的分布式环境。由于配置过程较为复杂，其中也遇到许许多多问题，由于各式各样的因素，不得不一直转换不同的环境，完成机器的配置。虽然由于水平不足，犯了许多不必要的配置错误，有的问题看起来比较愚蠢，但为了之后避免踩入相同的坑，也就将这一路以来，不断配置更新的过程写成文章，以方便查找。 配置20遍 最初使用的平台是人大校级计算平台，在这个平台上，可以申请一定数量的机器，然后以科研结果作为经费抵扣。使用此平台的原因是之前有前辈在上面配置过 Spark 环境，而我有一定机会可以直接利用他配置好的成果，然而事情并没有像我想象的那么简单。此时出现了两个主要的问题，其一是该环境并没有真正配置yarn，并不能做到真正的并行；其次实际上此平台的集群是在一个大机器上分割出的小虚拟机组成集群，这样的集群实际上的通信代价是非常低的，这无法体现出我们算法的优势，因此我不得不寻找其他平台。之后就在组里先找了6台服务器，直接利用这6台服务器搭建一个集群，虽然机器数目少一点，但平摊下来，每个机器都比原来的配置要更好。当然事情不会那么顺利，由于我实验操作的数据量极大，我不断试探服务器计算能力的上限，最终这些服务器也难堪重负，纷纷内存耗尽、磁盘耗尽，引发了一系列不好的连锁反应，究其原因是我没有做docker环境隔离（要学的东西还很多）。由于当时论文ddl在即，让我只能在夜间跑代码，完全是不可能完成目标的，因此我不得不使用阿里云下的服务器。之后就搞了16台阿里云服务器，并在上面配置真·分布式环境，此时我已经有了十次左右配置环境的经验，但哪怕如此，又经历了经费不足、神秘bug等等意想不到的问题，但我最终还是勉强完成了论文，初次投稿当然还是被拒了。之后改投论文的过程中，吸取了服务器可能很容易崩，随时可能换机器的现实，尽可能地将许多作业改为了批处理，终于又配置了很多次，最终完成了实验和论文。 分布式环境的成分 HDFS 虽然说使用 Spark...
+        </p>
+
+      </div>
+    </a>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <a href="/github-io/2020-06-28/C-Python-05_read_graph" class="catalogue-item">
+      <div>
+        <time datetime="2020-06-28 00:00:00 +0800" class="catalogue-time">June 28, 2020</time>
+        <h1 class="catalogue-title">读取Graph数据的代码</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          背景 记录读图的一些代码，由于图一般都会储存为稀疏矩阵的形式，否则大图根本无法储存，所以最终返回的都是稀疏矩阵，比较节约空间的是csr matrix。 CSR Matrix and COO Matrix COO Matrix...
+        </p>
+
+      </div>
+    </a>
+    
+  
+    
+    <a href="/github-io/2020-06-16/Python-04_pre_picture" class="catalogue-item">
+      <div>
+        <time datetime="2020-06-16 00:00:00 +0800" class="catalogue-time">June 16, 2020</time>
+        <h1 class="catalogue-title">一些乱七八糟的图片处理</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          背景 记录一些摸索图片处理过程中，看到的，和自己研究的图片预处理方法 图片移动 # 给定判断函数的批量图片移动 import shutil import os def...
+        </p>
+
+      </div>
+    </a>
+    
+  
+    
+  
+    
+  
+    
+    <a href="/github-io/2020-02-29/Python-03_Kmeans_with_Cython" class="catalogue-item">
+      <div>
+        <time datetime="2020-02-29 00:00:00 +0800" class="catalogue-time">February 29, 2020</time>
+        <h1 class="catalogue-title">Kmeans base on Cython</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          背景 Kmeans 是机器学习比较基础的算法，利用包调用比较容易，未来的算法可以很复杂，但基础都是一样简单的。算法层面尽量写得简单，将优化过程尽量写复杂。由于想使用Cython，先写C++部分，这里需要定义命名空间。头文件代码如下： 代码 KMeans.h #ifndef KMEANS #define KMEANS #include...
+        </p>
+
+      </div>
+    </a>
+    
+  
+    
+    <a href="/github-io/2020-02-19/Python-02_sort_img" class="catalogue-item">
+      <div>
+        <time datetime="2020-02-19 00:00:00 +0800" class="catalogue-time">February 19, 2020</time>
+        <h1 class="catalogue-title">整理提取图片始</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          背景 这一切要从我清理手机开始说起，最大占用手机空间的内容当然是手机上的照片。糟糕的是，将照片传到计算机之后，照片就完全乱了，虽然之前也是一团乱麻。想到之前想存图片当壁纸，存了几万张照片，这次可以总结一下，用python对图片做些简单的分类。所以总的说，目标是尽可能提取高清的图片作为壁纸，必要时需要按风格分一下类。其次是手机上不需要的图片且质量差的，或者是无法打开的照片都清理掉。下面是清理过程中的代码： 简单整理图片的思路与实现 准备部分 #与图像处理相关的包 from PIL import Image import...
+        </p>
+
+      </div>
+    </a>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <a href="/github-io/2018-07-15/Python-01_base" class="catalogue-item">
+      <div>
+        <time datetime="2018-07-15 00:00:00 +0800" class="catalogue-time">July 15, 2018</time>
+        <h1 class="catalogue-title">Python base skill</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          标准数据类型 与其他语言十分不一样的是python 封装的几种数据类型 六种数据类型 Number 不用理会浮点型、整数型、为计算带来很多方便，当然不足之处还是运算比较慢，容易不精准计算 String 字符串 从String库提供的字符串处理函数来说，python String相对于其他语言十分的方便和友好...
+        </p>
+
+      </div>
+    </a>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</div>
+
+
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="2024-07-20 02:53:21 +0800">2024</time> . Made with HadesJun.
+      </span>
+    </footer>
+  </body>
+</html>
