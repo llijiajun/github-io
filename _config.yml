@@ -119,6 +119,9 @@ plugins:
 
 jekyll-scholar:
   bibliography: bibliography.bib
+  style: apa
+  locale: en
+  source: ./_bibliography
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
