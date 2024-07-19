@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 #source 'http://ruby.taobao.org/'
 #source "https://rubygems.org"
-gem "jekyll", "~> 4.2"  # 使用与 github-pages 兼容的 Jekyll 版本
+gem "jekyll", "~> 3.9.5"  # 使用与 github-pages 兼容的 Jekyll 版本
 
 #gem "github-pages", "~> 231"  # 这里使用与当前 github-pages 版本兼容的版本
 #gem "tale"#, "~> 0.2.3"
@@ -43,7 +43,7 @@ group :jekyll_plugins do
   gem "jekyll-sass-converter"
 end
 
-gem 'faraday-retry'
+gem 'faraday-retry', '>= 2.2.1'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
