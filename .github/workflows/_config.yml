@@ -34,6 +34,16 @@ jobs:
         with:
           ruby-version: 2.7 # 使用 Ruby 2.7
 
+      - name: Cache gems
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.bundle
+            vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
       - name: Install dependencies
         run: bundle install
 
