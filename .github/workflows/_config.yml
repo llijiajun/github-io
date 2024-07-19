@@ -1,0 +1,131 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7 # 使用 Ruby 2.7
+
+      - name: Install OpenSSL
+        run: sudo apt-get update && sudo apt-get install -y libssl-dev
+        
+      - name: Install Bundler
+        run: gem install bundler -v 2.4.22
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Build site
+        run: bundle exec jekyll build --incremental
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+publications: True
+#presentations: True
+blog: True
+
+title: Homepage of Jiajun Li
+author: Jiajun Li
+email: 522278689@qq.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "/github-io" # the subpath of your site, e.g. /blog
+#url: "https://git.coding.net/ljjwujun/" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+github_username:  llijiajun
+
+
+
+exclude: [ppt_md/KMP.md]
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-slate
+plugins:
+  - jekyll-feed
+
+# Build settings
+markdown:       kramdown
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+plugins: ['jekyll-paginate', 'jekyll/scholar', 'jekyll-seo-tag']
+bootstrap:
+  assets: true
+
+scholar:
+  bibliography: publications.bib
+  bibliography_template: pubstemplate
+  style: apa
+  locale: en
+  last_name: Me
+  first_name: [Myself, M.]
+  sort_by: year,month
+  order: descending,ascending
+filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website] # Filter out certain bibtex entry keywords used internally from the bib output
+
+theme_settings:
+  title: Jiajun Li's Homepage
+
+  experience_title: EXPERIENCE
+  interests_title: RESEARCH INTERESTS
+  skills_title: SKILLS
+  #awards_title: AWARDS
+  projects_title: PROJECTS
+  recentpubs_title: RECENT PUBLICATIONS
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5
+
+
+academicons:
+  version: "1.9.1"
+  integrity: "sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg="
+fontawesome:
+  version: "5.15.4"
+  integrity: "sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
+jquery:
+  version: "3.6.0"
+  integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
