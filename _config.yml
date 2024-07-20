@@ -45,7 +45,7 @@ bootstrap:
   assets: true
 
 scholar:
-  bibliography: _bibliography/publications.bib
+  bibliography: publications.bib
   bibliography_template: pubstemplate
   style: apa
   locale: en
