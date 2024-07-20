@@ -33,12 +33,17 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7 # 使用 Ruby 2.7
+          ruby-version: '3.1' # 使用 Ruby 2.7
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          cache-version: 0 # Increment this number if you need to re-download cached gems
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
 
       - name: Cache gems
         uses: actions/cache@v3
@@ -52,37 +57,47 @@ jobs:
 
       - name: Install dependencies
         run: bundle install
+        
+      - name: Build with Jekyll
+        # Outputs to the './_site' directory by default
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+      - name: Upload artifact
+        # Automatically uploads an artifact from the './_site' directory by default
+        uses: actions/upload-pages-artifact@v3
 
-      - name: Build site
-        run: bundle exec jekyll build
+      # - name: Build site
+      #   run: bundle exec jekyll build
+
+      # - name: Deploy to GitHub Pages
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./_site
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-  # deploy:
-  #   environment:
-  #     name: github-pages
-  #     url: ${{ steps.deployment.outputs.page_url }}
-  #   runs-on: ubuntu-latest
-  #   needs: build
-  #   steps:
-  #     - name: Deploy to GitHub Pages
-  #       id: deployment
-  #       uses: actions/deploy-pages@v4
+        id: deployment
+        uses: actions/deploy-pages@v4
 
-      - name: Configure Git
-        run: |
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email 'actions@github.com'
+      # - name: Configure Git
+      #   run: |
+      #     git config --global user.name 'GitHub Actions'
+      #     git config --global user.email 'actions@github.com'
 
-      - name: Deploy
-      run: |
-        git remote add origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/llijiajun/github-io.git
-        git checkout -B gh-pages
-        git add .
-        git commit -m "Deploy to GitHub Pages"
-        git push origin gh-pages --force
+      # - name: Deploy
+      # run: |
+      #   git remote add origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/llijiajun/github-io.git
+      #   git checkout -B gh-pages
+      #   git add .
+      #   git commit -m "Deploy to GitHub Pages"
+      #   git push origin gh-pages --force
       # - name: Commit and Push changes
       #   run: |
       #     git add .
