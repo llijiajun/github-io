@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      C &middot; Homepage of Jiajun Li
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/github-io/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/github-io/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/github-io/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/github-io/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+  <!-- RSS -->
+  <!-- feed_meta -->
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+</head>
+
+
+  <body>
+  <nav class="nav">
+      <div class="nav-container">
+        <a href="/github-io/">
+          <h2 class="nav-title">Homepage of Jiajun Li</h2>
+        </a>
+        <ul>
+          <li><a href="/github-io/about">About</a></li>
+          <li><a href="/github-io/">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="catalogue">
+  
+    
+  
+    
+  
+    
+    <a href="/github-io/2020-09-02/C-02_Opt" class="catalogue-item">
+      <div>
+        <time datetime="2020-09-02 00:00:00 +0800" class="catalogue-time">September 02, 2020</time>
+        <h1 class="catalogue-title">2019-2020 领悟的优化 基于c++</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          背景 这两年来，主要精力集中在使用c++做矩阵计算上，由此总结了一些c++的优化手段，虽然可能几年以后会对现在的水平嗤之以鼻，但至少可以记录一下自己的编程水平增长经历，以下希望随时间持续更新。 所谓代码的优化，个人认为有三个方面：更快，更省，更好看。快指的是时间少，省指的是省空间，好看指代码简洁。这三者有时候会有冲突，而我所追求的则是达到三者的平衡，有时甚至可以兼顾三者，个人的水平毕竟是有限的。对于尚未工作的我来说，更深层次的优化其实掌握得并不多，目前使用的优化，或许也仅限于单机以及平日研究所用。 底层优化 底层优化是我掌握得比较浅薄的方法。其核心在于利用计算机的金字塔物理结构，提高运算效率。CPU运算速度非常快，但数据在外存，也就是磁盘上，而计算通常都是发生在CPU，一个程序，分为计算密集型和io密集型，我通常面对的任务都是计算密集型，所以重点在于充分利用CPU。这里可以存在的优化有： 读写文件优化 通常网上教读写文件的方式是利用fstream，将文件转化为数据流，之后再按照数据类型，一个个地读入和转化数据，这里的优化就可以利用内存和缓存，先将所有的数据读入到内存，之后再进行数据的转换。两种代码如下： int n; ifstream...
+        </p>
+
+      </div>
+    </a>
+    
+  
+    
+  
+    
+  
+    
+    <a href="/github-io/2020-08-14/Article-02" class="catalogue-item">
+      <div>
+        <time datetime="2020-08-14 00:00:00 +0800" class="catalogue-time">August 14, 2020</time>
+        <h1 class="catalogue-title">论文阅读｜图上的自监督学习——对比学习论文解读</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          前言 ​ 本文将围绕最近的一些在图上自监督学习的工作，对其中“Contrastive Learning”的内容进行一些解读，并包括一些自监督学习的思路。 ​ 首先，介绍一篇2020的综述《Self-supervised Learning: Generative or Contrastive》，其内容覆盖了CV、NLP、Graph三个方向自监督学习的成果。而本文会将主要目光放在Graph上的自监督学习。...
+        </p>
+
+      </div>
+    </a>
+    
+  
+    
+  
+    
+  
+    
+    <a href="/github-io/2020-04-04/C-03_Eigen_speed" class="catalogue-item">
+      <div>
+        <time datetime="2020-04-04 00:00:00 +0800" class="catalogue-time">April 04, 2020</time>
+        <h1 class="catalogue-title">如何提高Eigen效率</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          背景 为了加速c++的矩阵计算，MKL是比较好的方案，但MKL写代码实在不太友好，其次容易出bug。MKL计算矩阵乘法速度十分快，但其实对代码优化到极致之后，Eigen矩阵计算速度是可以和MKL媲美的。由此，我也对CMake进行了一定的研究。我主要是从知乎Eigen的速度为什么这么快？中学习到的。我仅作为搬运工，并加入一些自己的实际探索。 优化手段 从知乎中总结： 矩阵乘法，若等式左边的变量与右式相乘变量没有关系，则可以使用 A.noalias() 替代 A -mavx 和...
+        </p>
+
+      </div>
+    </a>
+    
+  
+    
+    <a href="/github-io/2020-03-11/C-02_MKL_Begin" class="catalogue-item">
+      <div>
+        <time datetime="2020-03-11 00:00:00 +0800" class="catalogue-time">March 11, 2020</time>
+        <h1 class="catalogue-title">MKL 的坑与教训</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          背景 为了加速c++，不可避免的需要使用矩阵运算库。最出名的、一般人用的最多的c++矩阵计算库可能是Eigen，从统计处我知道了Armadillo用的也不少。但说到底，python那些包用的最多的也许最后还是MKL。 MKL全称 Intel Math Kernel Library， 是由Intel 公司开发的，专门用于矩阵计算的库。这个库经过我自己的评测，性能远超 Eigen...
+        </p>
+
+      </div>
+    </a>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <a href="/github-io/2019-04-23/CAL-03_Alias" class="catalogue-item">
+      <div>
+        <time datetime="2019-04-23 00:00:00 +0800" class="catalogue-time">April 23, 2019</time>
+        <h1 class="catalogue-title">Alias算法</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          问题描述 O(1)时间内产生离散随机数的方法。 class Alias{ public: double* p; int* h; int*...
+        </p>
+
+      </div>
+    </a>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <a href="/github-io/2018-07-17/CAL-02_Sort" class="catalogue-item">
+      <div>
+        <time datetime="2018-07-17 00:00:00 +0800" class="catalogue-time">July 17, 2018</time>
+        <h1 class="catalogue-title">各式排序算法及其c语言实现</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          问题描述 排序算法可以说是算法的一个基础，这里在我水平范围内进行总结和归纳，并给出我自己实现的源码。 以下，归纳基于比较的排序方法，因此，其运行时间上限基本都是O(nlog(n)) 时间对比 排序方法 平均情况 最好情况 最坏情况 辅助空间 稳定性...
+        </p>
+
+      </div>
+    </a>
+    
+  
+    
+    <a href="/github-io/2018-07-16/CAL-01_KMP" class="catalogue-item">
+      <div>
+        <time datetime="2018-07-16 00:00:00 +0800" class="catalogue-time">July 16, 2018</time>
+        <h1 class="catalogue-title">模式匹配之KMP算法</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          #问题描述 模式匹配:字串的定位操作通常被称为串的模式匹配 最简单的模式匹配方式：从主串S的第pos个字符起和模式的第一个字符比较之，若相等，则继续逐个比较后续字符；否则从主串S的下一个字符起再重新和模式的字符比较之。依次类推，直至模式T中的每个字符依次和主串S中的一个连续的字符序列相等，则称匹配成功，函数值为和模式T中第一个字符相等的字符在主串中的序号，否则称匹配失败。 模式匹配的改进算法 D.E.Knuth 、V.R.Pratt 和 J.H.Morris同时发现，其算法的本质改变在于：每当一趟匹配过程中出现字符比较不等时，不需要回溯指针，而是利用已经得到的部分匹配结果将模式向右移动尽可能远的一段距离后，继续进行比较。 在此不对算法本身做太多阐述，网上有很多说明，仅仅是，完成我自己在理解此算法之后，写出相应的代码。 求next与nextval与匹配...
+        </p>
+
+      </div>
+    </a>
+    
+  
+    
+  
+    
+  
+    
+    <a href="/github-io/2018-07-10/C-01_HelloWorld" class="catalogue-item">
+      <div>
+        <time datetime="2018-07-10 00:00:00 +0800" class="catalogue-time">July 10, 2018</time>
+        <h1 class="catalogue-title">C and C++ HelloWorld</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          第一篇博客 关于 Hello World C #include&lt;stdio.h&gt; int main(){ printf("HelloWorld"); return...
+        </p>
+
+      </div>
+    </a>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</div>
+
+
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="2024-07-20 13:22:27 +0800">2024</time> . Made with HadesJun.
+      </span>
+    </footer>
+  </body>
+</html>
