@@ -34,11 +34,17 @@ paginate_path: "blog/page:num"
 sass:
   sass_dir:     _sass
   style:        compressed
-plugins: ['jekyll-paginate', 'jekyll/scholar', 'jekyll-seo-tag']
+plugins:
+  - jekyll-scholar
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  
 bootstrap:
   assets: true
 
-jekyll-scholar:
+scholar:
   bibliography: _bibliography/publications.bib
   bibliography_template: pubstemplate
   style: apa
@@ -57,12 +63,12 @@ markdown: kramdown
 theme: jekyll-theme-slate
 
 # Gems
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-scholar
+# plugins:
+#   - jekyll-feed
+#   - jekyll-seo-tag
+#   - jekyll-paginate
+#   - jekyll-sitemap
+#   - jekyll-scholar
   # - jemoji #Uncomment this to allow emoji in your post
 
 # Assets
