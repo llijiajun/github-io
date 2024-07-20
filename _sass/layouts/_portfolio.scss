@@ -40,7 +40,7 @@
           width: 35px;
           height: 35px;
           color: #fff;
-          background: linear-gradient(90deg, #1b1b1b 0%, #333333 100%);  //$theme-dark;
+          background: linear-gradient(300deg, #ff0000 0%, #212b3652 100%);
           line-height: 35px;
         }
         i:hover {
@@ -57,7 +57,7 @@
       height: calc(100% + 120px);
       top: -60px;
       background: #6a5acd;
-      color: linear-gradient(90deg, #1b1b1b 0%, #333333 10%);
+      color: $theme-dark;//linear-gradient(90deg, #1b1b1b 0%, #333333 10%);
     }
   }
   #career {
