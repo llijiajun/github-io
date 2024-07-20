@@ -45,18 +45,18 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
 
-      - name: Cache gems
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.bundle
-            vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
+      # - name: Cache gems
+      #   uses: actions/cache@v3
+      #   with:
+      #     path: |
+      #       ~/.bundle
+      #       vendor/bundle
+      #     key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-gems-
 
-      - name: Install dependencies
-        run: bundle install
+      # - name: Install dependencies
+      #   run: bundle install
         
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
