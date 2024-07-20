@@ -36,7 +36,7 @@ gem "kramdown-parser-gfm"
 group :jekyll_plugins do
   #gem "jekyll-feed", "~> 0.17.0"
   gem "jekyll-email-protect"
-  gem "jekyll-scholar"
+  gem "jekyll-scholar", "~> 7.1.3"
   gem "jekyll-paginate"
   gem "jekyll-seo-tag"
   gem 'jekyll-sitemap'

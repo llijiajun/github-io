@@ -39,7 +39,7 @@ bootstrap:
   assets: true
 
 jekyll-scholar:
-  bibliography: references.bib
+  bibliography: _bibliography/references.bib
   bibliography_template: pubstemplate
   style: apa
   locale: en
@@ -47,6 +47,7 @@ jekyll-scholar:
   first_name: [Myself, M.]
   sort_by: year,month
   order: descending,ascending
+  source: ./_bibliography/references.bib
 filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website] # Filter out certain bibtex entry keywords used internally from the bib output
 
 
