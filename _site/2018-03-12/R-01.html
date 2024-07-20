@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      空间多维数据展示--涟漪图 &middot; Homepage of Jiajun Li
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/github-io/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/github-io/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/github-io/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/github-io/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+  <!-- RSS -->
+  <!-- feed_meta -->
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+</head>
+
+
+  <body>
+  <nav class="nav">
+      <div class="nav-container">
+        <a href="/github-io/">
+          <h2 class="nav-title">Homepage of Jiajun Li</h2>
+        </a>
+        <ul>
+          <li><a href="/github-io/about">About</a></li>
+          <li><a href="/github-io/">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    
+        冥郡
+    
+
+    
+      <br>
+      <span>on&nbsp;</span><time datetime="2018-03-12 00:00:00 +0800">March 12, 2018</time>
+    
+  </div>
+
+  <h1 class="post-title">空间多维数据展示--涟漪图</h1>
+
+  <h2 id="1-研究问题">1. 研究问题</h2>
+<h3 id="11研究问题背景">1.1研究问题背景</h3>
+<h4 id="多年来全国雾霾爆发在地理空间上是否存在规律2017年全国数学建模大赛提出给拍照赚钱任务定价数据是否在位置上呈现一些规律越来越多的研究定位在空间数据之上">多年来，全国雾霾爆发，在地理空间上是否存在规律？2017年全国数学建模大赛提出给“拍照赚钱”任务定价，数据是否在位置上呈现一些规律？越来越多的研究定位在空间数据之上。</h4>
+<h4 id="多维数据存在着展示上不直观的特点数据容易纠缠在一起想看出数据的变化规律空间分布规律存在一定的障碍通常人们将多维数据投影到二维上但数据的纠缠仍然是比较难解决的而展示多维数据的变化规律需要有一种能动态变化可视化手段在看到水滴产生的涟漪画画时颜色的相互交融时突发灵感提出一种新的可视化图涟漪图">多维数据存在着展示上不直观的特点，数据容易“纠缠在一起”，想看出数据的变化规律、空间分布规律存在一定的障碍，通常人们将多维数据投影到二维上，但数据的“纠缠”仍然是比较难解决的，而展示多维数据的变化规律需要有一种能动态变化可视化手段。在看到水滴产生的涟漪、画画时颜色的相互交融时，突发灵感，提出一种新的可视化图——涟漪图。</h4>
+<h3 id="12研究问题说明">1.2研究问题说明</h3>
+<h4 id="多维分类型数据分类的展示可以用点图轻松展示但无法体现出多维分类数据的每一个分类的紧密程度哪些分类间存在着纠缠以及数据变化的主要方向总的来说多维数据是不能简单用每个维度的均值来衡量的于是需要一种动态化展示的方法">多维分类型数据，分类的展示可以用点图轻松展示，但无法体现出多维分类数据的每一个分类的紧密程度，哪些分类间存在着“纠缠”，以及数据变化的主要方向。总的来说，多维数据是不能简单用每个维度的均值来衡量的，于是需要一种动态化展示的方法。</h4>
+<h3 id="13数据说明">1.3数据说明</h3>
+<h4 id="本次作业为了降低采集数据成本使用2017年全国数学建模大赛的部分数据集但制作涟漪图的核心在于中心点如何选取目前采用的是kmeans方法选取核心点所以核心数据仅剩下两部分经度维度对任意数据集都可以使用二维投射将点放置到二位图像中">本次作业为了降低采集数据成本，使用2017年全国数学建模大赛的部分数据集，但制作涟漪图的核心在于中心点如何选取，目前采用的是kmeans方法，选取核心点，所以核心数据仅剩下两部分，经度、维度。对任意数据集，都可以使用二维投射，将点放置到二位图像中。</h4>
+
+<h2 id="2-方法介绍">2. 方法介绍</h2>
+<h3 id="21涟漪图说明">2.1涟漪图说明</h3>
+<h4 id="空间数据存在着重心从kmeans出发在聚类之后数据有着一个核心的中点借着这个核心的中点可以在一定规则下画一组曲线集从例子来说在空间上确定中心后可以从中心向外不断扩散选定步长以后画椭圆而椭圆实际是有方向的可以将长轴看作是一个方向确定中心和方向的椭圆只再需要两个点即可确定其图形同时新画的椭圆是可以包含原椭圆的从另一个中心发射出的椭圆会与原来的中心的椭圆相交这样很可能产生新的颜色这也就和涟漪一样故我命名其为涟漪图">空间数据存在着重心，从kmeans出发，在聚类之后，数据有着一个核心的中点，借着这个核心的中点，可以在一定规则下画一组曲线集，从例子来说，在空间上确定中心后，可以从中心向外不断扩散，选定步长以后画椭圆，而椭圆实际是有方向的，可以将长轴看作是一个方向，确定中心和方向的椭圆，只再需要两个点即可确定其图形，同时新画的椭圆是可以包含原椭圆的。从另一个中心发射出的椭圆，会与原来的中心的椭圆相交，这样很可能产生新的颜色，这也就和涟漪一样，故我命名其为涟漪图。</h4>
+<h3 id="22算法说明">2.2算法说明</h3>
+<h4 id="算法如下">算法如下：</h4>
+<h5 id="1-根据kmeans将数据分类如果数据本身有分类其实不需要这一步">1. 根据kmeans将数据分类(如果数据本身有分类，其实不需要这一步)</h5>
+<h5 id="2-以kmeans确定的中心c将数据集按照到中心的距离进行排序按升序排列">2. 以kmeans确定的中心C，将数据集按照到中心的距离进行排序，按升序排列</h5>
+<h5 id="3-选定步长为kk为每次画椭圆包含进来的点的个数设i1">3. 选定步长为k,k为每次画椭圆包含进来的点的个数,设i=1</h5>
+<h5 id="4-以c为中心设距离c最近的ik个点中最远的点为a以ac为半长轴ca的方向为长轴方向绘制最小的能包含这ik个点的椭圆">4. 以C为中心,设距离C最近的ik个点中最远的点为A,以|AC|为半长轴,CA的方向为长轴方向，绘制最小的能包含这ik个点的椭圆。</h5>
+<h5 id="5-ii1-重复步骤4直到所有点都被椭圆覆盖">5. i=i+1, 重复步骤4,直到所有点都被椭圆覆盖</h5>
+<h3 id="23算法实现">2.3算法实现</h3>
+
+<p><img src="/github-io/images/lianyi.gif" alt="拍照赚钱点分布图" /></p>
+
+<h3 id="24图片描述分析">2.4图片描述分析</h3>
+<h5 id="1-目前将数据分作4组从空间上看每组数据都从经度方向扩散比较严重也就是说可能经度是一个比纬度更为重要的一个因素">1. 目前将数据分作4组，从空间上看，每组数据都从经度方向扩散比较严重，也就是说可能经度是一个比纬度更为重要的一个因素。</h5>
+<h5 id="2-从分类的散度上也能看出几个层次在前期的数据中绿色与红色扩散的比较快但蓝色黑色稍慢后期则是蓝色扩散比较快那么有可能是蓝色这个分类还需要进一步划分">2. 从分类的散度上，也能看出几个层次，在前期的数据中，绿色与红色扩散的比较快，但蓝色、黑色稍慢，后期则是蓝色扩散比较快，那么有可能是蓝色这个分类还需要进一步划分。</h5>
+<h5 id="3-从数据的纠缠上看蓝色与黑色的数据纠缠比较严重这和相关性应该是不一样的可能是两者之间存在一些联系反之绿色与红色虽然在一个方向但泾渭分明可以从一定层次上说明两者就属于两个不同的类别可借鉴的相似点少">3. 从数据的纠缠上看，蓝色与黑色的数据“纠缠”比较严重，这和相关性应该是不一样的，可能是两者之间存在一些联系。反之，绿色与红色虽然在一个方向，但“泾渭分明”，可以从一定层次上说明两者就属于两个不同的类别，可借鉴的相似点少</h5>
+
+<h2 id="3方法分析">3.方法分析</h2>
+<h3 id="31-与其他方法的对比">3.1 与其他方法的对比</h3>
+<h4 id="311-涟漪图的优势">3.1.1 涟漪图的优势</h4>
+<h5 id="1可扩展性相较于现在的涟漪使用的是椭圆但类似于五角星三角形心形线logo等等更多曲线只要定义了画图方式都能做出新的涟漪图同时目前定义的椭圆长轴方向也可以根据如主成分方向等等做出符合使用者目的的调整">(1).可扩展性，相较于现在的涟漪使用的是椭圆，但类似于五角星、三角形、心形线、logo等等更多曲线，只要定义了画图方式，都能做出新的涟漪图。同时目前定义的椭圆长轴方向也可以根据如主成分方向等等做出符合使用者目的的调整。</h5>
+<h5 id="2直观涟漪始终是在动态下最佳虽然制作动画有一定难度但从数据展示层面动画能最好的体现出数据之间的分散程度中心的位置数据空间上的变化趋势">(2).直观，涟漪始终是在动态下最佳，虽然制作动画有一定难度，但从数据展示层面，动画能最好的体现出数据之间的分散程度、中心的位置、数据空间上的变化趋势。</h5>
+<h5 id="3展现数据的重叠性在设计这个图的伊始我并未想起等高线图在突然想起等高线图后产生了对自我创新的怀疑后突然意识到等高线图也未必就比涟漪要更好这种创新恰恰能做到等高线做不到的事在数据重叠的部分登高线图形成鞍部但在涟漪图里表现出来的缺失动态性的数据之间的倾轧它能更好地表现出数据的趋势这是一层层画等高线是完全不一样的两种想法等高线图需要一层层切开去看是从上往下的而实际数据的本质应该是一层层堆积出来的假设有三类数据的层叠根据颜色的配比涟漪会更好的展示出底层的数据有多少是来自于那一类但显然等高线图是做不到的">(3).展现数据的重叠性，在设计这个图的伊始，我并未想起等高线图，在突然想起等高线图后，产生了对自我创新的怀疑后，突然意识到等高线图也未必就比涟漪要更好，这种创新恰恰能做到等高线做不到的事。在数据重叠的部分，登高线图形成鞍部，但在涟漪图里表现出来的缺失动态性的数据之间的倾轧，它能更好地表现出数据的趋势，这是一层层画等高线是完全不一样的两种想法，等高线图需要一层层切开去看，是从上往下的，而实际数据的本质应该是一层层堆积出来的，假设有三类数据的层叠，根据颜色的配比，涟漪会更好的展示出底层的数据有多少是来自于那一类，但显然等高线图是做不到的。</h5>
+<h4 id="312-涟漪图的不足">3.1.2 涟漪图的不足</h4>
+<h5 id="1绘制的困难涟漪图毕竟还未成熟在改变参数或者基础元素使需要考虑在空间中做什么样的变化这也是需要不断完善的">(1).绘制的困难，涟漪图毕竟还未成熟，在改变参数或者基础元素使需要考虑在空间中做什么样的变化，这也是需要不断完善的。</h5>
+<h5 id="2选择中心点过多时由于颜色混杂导致视觉效果展示不出来">(2).选择中心点过多时，由于颜色混杂，导致视觉效果展示不出来。</h5>
+
+<h2 id="4-总结">4. 总结</h2>
+<h4 id="从涟漪图的构造过程中可以很好地对比两个维度数据之间拉锯地关系但实际数据研究中该方法是不是有效还需要实践地不断检验">从涟漪图的构造过程中，可以很好地对比两个维度数据之间拉锯地关系。但实际数据研究中，该方法是不是有效，还需要实践地不断检验。</h4>
+
+<h2 id="5-参考文献">5. 参考文献</h2>
+
+<p>无</p>
+
+<h2 id="6-附录">6. 附录</h2>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">animation</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">jpeg</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">plotrix</span><span class="p">)</span><span class="w">
+</span><span class="n">three_point_oval</span><span class="o">&lt;-</span><span class="k">function</span><span class="p">(</span><span class="n">center</span><span class="p">,</span><span class="n">long_point</span><span class="p">,</span><span class="n">pointset</span><span class="p">,</span><span class="n">col</span><span class="p">){</span><span class="w">
+  </span><span class="c1">#三点画椭圆</span><span class="w">
+  </span><span class="n">distance</span><span class="o">&lt;-</span><span class="k">function</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">){</span><span class="nf">return</span><span class="p">(</span><span class="nf">sqrt</span><span class="p">((</span><span class="n">a</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="o">-</span><span class="n">b</span><span class="p">[</span><span class="m">1</span><span class="p">])</span><span class="o">^</span><span class="m">2</span><span class="o">+</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="m">2</span><span class="p">]</span><span class="o">-</span><span class="n">b</span><span class="p">[</span><span class="m">2</span><span class="p">])</span><span class="o">^</span><span class="m">2</span><span class="p">))}</span><span class="w">
+  </span><span class="n">cout_minor_axis</span><span class="o">&lt;-</span><span class="k">function</span><span class="p">(</span><span class="n">center</span><span class="p">,</span><span class="n">aim</span><span class="p">,</span><span class="n">dis</span><span class="p">){</span><span class="w">
+    </span><span class="nf">return</span><span class="p">(</span><span class="nf">min</span><span class="p">(</span><span class="w"> </span><span class="nf">sqrt</span><span class="p">(</span><span class="w"> </span><span class="p">(</span><span class="n">aim</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="o">-</span><span class="n">center</span><span class="p">[</span><span class="m">1</span><span class="p">])</span><span class="o">^</span><span class="m">2</span><span class="o">/</span><span class="p">(</span><span class="m">1</span><span class="o">-</span><span class="p">(</span><span class="n">aim</span><span class="p">[</span><span class="m">2</span><span class="p">]</span><span class="o">-</span><span class="n">center</span><span class="p">[</span><span class="m">2</span><span class="p">])</span><span class="o">^</span><span class="m">2</span><span class="o">/</span><span class="n">dis</span><span class="o">^</span><span class="m">2</span><span class="p">)</span><span class="w"> </span><span class="p">),</span><span class="nf">sqrt</span><span class="p">(</span><span class="w"> </span><span class="p">(</span><span class="n">aim</span><span class="p">[</span><span class="m">2</span><span class="p">]</span><span class="o">-</span><span class="n">center</span><span class="p">[</span><span class="m">2</span><span class="p">])</span><span class="o">^</span><span class="m">2</span><span class="o">/</span><span class="p">(</span><span class="m">1</span><span class="o">-</span><span class="p">(</span><span class="n">aim</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="o">-</span><span class="n">center</span><span class="p">[</span><span class="m">1</span><span class="p">])</span><span class="o">^</span><span class="m">2</span><span class="o">/</span><span class="n">dis</span><span class="o">^</span><span class="m">2</span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">))</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+  </span><span class="n">rotate</span><span class="o">&lt;-</span><span class="k">function</span><span class="p">(</span><span class="n">vec</span><span class="p">,</span><span class="n">center</span><span class="p">,</span><span class="n">mat</span><span class="p">){</span><span class="w">
+    </span><span class="nf">return</span><span class="p">((</span><span class="n">vec</span><span class="o">-</span><span class="n">center</span><span class="p">)</span><span class="o">%*%</span><span class="n">mat</span><span class="o">+</span><span class="n">center</span><span class="p">)</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+  </span><span class="n">point</span><span class="o">&lt;-</span><span class="k">function</span><span class="p">(</span><span class="n">vec</span><span class="p">){</span><span class="w">
+    </span><span class="n">points</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">vec</span><span class="p">[</span><span class="m">1</span><span class="p">],</span><span class="n">y</span><span class="o">=</span><span class="n">vec</span><span class="p">[</span><span class="m">2</span><span class="p">])</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+  </span><span class="n">direction_matrix</span><span class="o">&lt;</span><span class="m">-1</span><span class="o">/</span><span class="m">2</span><span class="o">*</span><span class="nf">sqrt</span><span class="p">((</span><span class="n">long_point</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="o">-</span><span class="n">center</span><span class="p">[</span><span class="m">1</span><span class="p">])</span><span class="o">^</span><span class="m">2</span><span class="o">+</span><span class="w">
+              </span><span class="p">(</span><span class="n">long_point</span><span class="p">[</span><span class="m">2</span><span class="p">]</span><span class="o">-</span><span class="n">center</span><span class="p">[</span><span class="m">2</span><span class="p">])</span><span class="o">^</span><span class="m">2</span><span class="p">)</span><span class="o">*</span><span class="n">matrix</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">/</span><span class="p">(</span><span class="n">long_point</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="o">-</span><span class="n">center</span><span class="p">[</span><span class="m">1</span><span class="p">]),</span><span class="w">
+              </span><span class="m">1</span><span class="o">/</span><span class="p">(</span><span class="n">long_point</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="o">-</span><span class="n">center</span><span class="p">[</span><span class="m">1</span><span class="p">]),</span><span class="m">1</span><span class="o">/</span><span class="p">(</span><span class="n">long_point</span><span class="p">[</span><span class="m">2</span><span class="p">]</span><span class="o">-</span><span class="n">center</span><span class="p">[</span><span class="m">2</span><span class="p">]),</span><span class="w">
+              </span><span class="m">-1</span><span class="o">/</span><span class="p">(</span><span class="n">long_point</span><span class="p">[</span><span class="m">2</span><span class="p">]</span><span class="o">-</span><span class="n">center</span><span class="p">[</span><span class="m">2</span><span class="p">])),</span><span class="n">nrow</span><span class="o">=</span><span class="m">2</span><span class="p">,</span><span class="n">ncol</span><span class="o">=</span><span class="m">2</span><span class="p">,</span><span class="n">byrow</span><span class="o">=</span><span class="nb">T</span><span class="p">)</span><span class="w">
+  </span><span class="c1">#计算出旋转矩阵</span><span class="w">
+  </span><span class="n">rotate_set</span><span class="o">&lt;-</span><span class="n">t</span><span class="p">(</span><span class="n">apply</span><span class="p">(</span><span class="n">pointset</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="n">rotate</span><span class="p">,</span><span class="n">center</span><span class="o">=</span><span class="n">center</span><span class="p">,</span><span class="n">mat</span><span class="o">=</span><span class="n">direction_matrix</span><span class="p">))</span><span class="w">
+  </span><span class="n">major_axis_dis</span><span class="o">&lt;-</span><span class="n">distance</span><span class="p">(</span><span class="n">center</span><span class="p">,</span><span class="n">long_point</span><span class="p">)</span><span class="w">
+  </span><span class="n">minor_axis_dis</span><span class="o">&lt;-</span><span class="nf">max</span><span class="p">(</span><span class="n">apply</span><span class="p">(</span><span class="n">rotate_set</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="n">cout_minor_axis</span><span class="p">,</span><span class="n">center</span><span class="o">=</span><span class="n">center</span><span class="p">,</span><span class="n">dis</span><span class="o">=</span><span class="n">major_axis_dis</span><span class="p">))</span><span class="w">
+  </span><span class="n">draw.ellipse</span><span class="p">(</span><span class="n">center</span><span class="p">[</span><span class="m">1</span><span class="p">],</span><span class="n">center</span><span class="p">[</span><span class="m">2</span><span class="p">],</span><span class="n">major_axis_dis</span><span class="p">,</span><span class="n">minor_axis_dis</span><span class="p">,</span><span class="n">col</span><span class="o">=</span><span class="n">col</span><span class="p">,</span><span class="n">angle</span><span class="o">=</span><span class="p">(</span><span class="nf">atan</span><span class="p">((</span><span class="n">long_point</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="o">-</span><span class="n">center</span><span class="p">[</span><span class="m">1</span><span class="p">])</span><span class="o">/</span><span class="p">(</span><span class="n">long_point</span><span class="p">[</span><span class="m">2</span><span class="p">]</span><span class="o">-</span><span class="n">center</span><span class="p">[</span><span class="m">2</span><span class="p">])))</span><span class="o">*</span><span class="m">180</span><span class="o">/</span><span class="nb">pi</span><span class="p">,</span><span class="n">border</span><span class="o">=</span><span class="n">col</span><span class="p">)</span><span class="w">
+  </span><span class="c1">#point(center)</span><span class="w">
+  </span><span class="c1">#point(long_point)</span><span class="w">
+  </span><span class="c1">#apply(pointset,1,point)</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="m">1.2</span><span class="o">*</span><span class="p">(</span><span class="n">dat</span><span class="o">$</span><span class="n">任务gps.纬度</span><span class="o">-</span><span class="n">median</span><span class="p">(</span><span class="n">dat</span><span class="o">$</span><span class="n">任务gps.纬度</span><span class="p">))</span><span class="o">+</span><span class="nf">rep</span><span class="p">(</span><span class="n">median</span><span class="p">(</span><span class="n">dat</span><span class="o">$</span><span class="n">任务gps.纬度</span><span class="p">),</span><span class="nf">length</span><span class="p">(</span><span class="n">dat</span><span class="p">[,</span><span class="m">1</span><span class="p">])),</span><span class="n">y</span><span class="o">=</span><span class="p">(</span><span class="n">dat</span><span class="o">$</span><span class="n">任务gps经度</span><span class="o">-</span><span class="n">median</span><span class="p">(</span><span class="n">dat</span><span class="o">$</span><span class="n">任务gps经度</span><span class="p">))</span><span class="o">*</span><span class="m">1.2</span><span class="o">+</span><span class="nf">rep</span><span class="p">(</span><span class="n">median</span><span class="p">(</span><span class="n">dat</span><span class="o">$</span><span class="n">任务gps经度</span><span class="p">),</span><span class="nf">length</span><span class="p">(</span><span class="n">dat</span><span class="p">[,</span><span class="m">1</span><span class="p">])),</span><span class="n">type</span><span class="o">=</span><span class="s2">"n"</span><span class="p">)</span><span class="w">
+</span><span class="c1">#将坐标扩充</span><span class="w">
+</span><span class="n">da</span><span class="o">&lt;-</span><span class="n">as.matrix</span><span class="p">(</span><span class="n">cbind</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="n">dat</span><span class="o">$</span><span class="n">任务gps.纬度</span><span class="p">),</span><span class="nf">c</span><span class="p">(</span><span class="n">dat</span><span class="o">$</span><span class="n">任务gps经度</span><span class="p">)))</span><span class="w">
+</span><span class="n">km</span><span class="o">&lt;-</span><span class="n">kmeans</span><span class="p">(</span><span class="n">da</span><span class="p">,</span><span class="m">4</span><span class="p">)</span><span class="w">
+</span><span class="n">set.seed</span><span class="p">(</span><span class="m">345</span><span class="p">)</span><span class="w">
+</span><span class="k">for</span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">4</span><span class="p">){</span><span class="w">
+  </span><span class="n">new_da</span><span class="o">&lt;-</span><span class="n">da</span><span class="p">[</span><span class="n">which</span><span class="p">(</span><span class="n">km</span><span class="o">$</span><span class="n">cluster</span><span class="o">==</span><span class="n">j</span><span class="p">),]</span><span class="w">
+  </span><span class="n">ds</span><span class="o">&lt;-</span><span class="n">apply</span><span class="p">(</span><span class="n">new_da</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="n">distance</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="n">km</span><span class="o">$</span><span class="n">centers</span><span class="p">[</span><span class="n">j</span><span class="p">,])</span><span class="w">
+  </span><span class="n">nda</span><span class="o">&lt;-</span><span class="n">new_da</span><span class="p">[</span><span class="n">order</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span><span class="n">decreasing</span><span class="o">=</span><span class="nb">F</span><span class="p">),]</span><span class="w">
+  </span><span class="n">col</span><span class="o">=</span><span class="n">rgb</span><span class="p">(</span><span class="n">runif</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">255</span><span class="p">),</span><span class="n">runif</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">255</span><span class="p">),</span><span class="n">runif</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">255</span><span class="p">),</span><span class="m">40</span><span class="p">,</span><span class="n">maxColorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">255</span><span class="p">)</span><span class="w">
+  </span><span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="nf">length</span><span class="p">(</span><span class="n">nda</span><span class="p">[,</span><span class="m">1</span><span class="p">]),</span><span class="m">3</span><span class="p">)){</span><span class="w">
+    </span><span class="n">three_point_oval</span><span class="p">(</span><span class="n">km</span><span class="o">$</span><span class="n">centers</span><span class="p">[</span><span class="n">j</span><span class="p">,],</span><span class="n">nda</span><span class="p">[</span><span class="n">i</span><span class="p">,],</span><span class="n">as.matrix</span><span class="p">(</span><span class="n">nda</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="n">i</span><span class="p">,]),</span><span class="n">col</span><span class="p">)</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="n">points</span><span class="p">(</span><span class="n">da</span><span class="p">,</span><span class="n">col</span><span class="o">=</span><span class="n">km</span><span class="o">$</span><span class="n">cluster</span><span class="p">)</span><span class="w">
+</span><span class="n">saveGIF</span><span class="p">({</span><span class="c1">#动画</span><span class="w">
+  </span><span class="n">ani.options</span><span class="p">(</span><span class="n">interval</span><span class="o">=</span><span class="m">0.2</span><span class="p">,</span><span class="n">nmax</span><span class="o">=</span><span class="m">1000</span><span class="p">,</span><span class="n">ani.width</span><span class="o">=</span><span class="m">1024</span><span class="p">,</span><span class="n">ani.height</span><span class="o">=</span><span class="m">1024</span><span class="p">,</span><span class="w">
+              </span><span class="n">convert</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">shQuote</span><span class="p">(</span><span class="s1">'C://Program Files (x86)/ImageMagick-6.2.7-Q16/convert.exe'</span><span class="p">))</span><span class="w">
+  </span><span class="n">minlen</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="nf">length</span><span class="p">(</span><span class="n">which</span><span class="p">(</span><span class="n">km</span><span class="o">$</span><span class="n">cluster</span><span class="o">==</span><span class="m">1</span><span class="p">)),</span><span class="nf">length</span><span class="p">(</span><span class="n">which</span><span class="p">(</span><span class="n">km</span><span class="o">$</span><span class="n">cluster</span><span class="o">==</span><span class="m">2</span><span class="p">)),</span><span class="nf">length</span><span class="p">(</span><span class="n">which</span><span class="p">(</span><span class="n">km</span><span class="o">$</span><span class="n">cluster</span><span class="o">==</span><span class="m">3</span><span class="p">)),</span><span class="nf">length</span><span class="p">(</span><span class="n">which</span><span class="p">(</span><span class="n">km</span><span class="o">$</span><span class="n">cluster</span><span class="o">==</span><span class="m">4</span><span class="p">)))</span><span class="w">
+  </span><span class="n">set.seed</span><span class="p">(</span><span class="m">345</span><span class="p">)</span><span class="w">
+  </span><span class="c1">#col=rbind(c(runif(1,0,255),runif(1,0,255),runif(1,0,255),40,maxColorValue = 255),</span><span class="w">
+   </span><span class="c1">#         c(runif(1,0,255),runif(1,0,255),runif(1,0,255),40,maxColorValue = 255),</span><span class="w">
+    </span><span class="c1">#        c(runif(1,0,255),runif(1,0,255),runif(1,0,255),40,maxColorValue = 255),</span><span class="w">
+     </span><span class="c1">#       c(runif(1,0,255),runif(1,0,255),runif(1,0,255),40,maxColorValue = 255))</span><span class="w">
+  </span><span class="c1">#随机颜色版本</span><span class="w">
+  </span><span class="n">col</span><span class="o">=</span><span class="n">rbind</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">),</span><span class="w">
+           </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">),</span><span class="w">
+          </span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0</span><span class="p">),</span><span class="w">
+         </span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">1</span><span class="p">))</span><span class="w">
+  </span><span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="nf">max</span><span class="p">(</span><span class="n">minlen</span><span class="p">),</span><span class="m">6</span><span class="p">)){</span><span class="w">
+    </span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="m">1.2</span><span class="o">*</span><span class="p">(</span><span class="n">dat</span><span class="o">$</span><span class="n">任务gps.纬度</span><span class="o">-</span><span class="n">median</span><span class="p">(</span><span class="n">dat</span><span class="o">$</span><span class="n">任务gps.纬度</span><span class="p">))</span><span class="o">+</span><span class="nf">rep</span><span class="p">(</span><span class="n">median</span><span class="p">(</span><span class="n">dat</span><span class="o">$</span><span class="n">任务gps.纬度</span><span class="p">),</span><span class="nf">length</span><span class="p">(</span><span class="n">dat</span><span class="p">[,</span><span class="m">1</span><span class="p">])),</span><span class="n">y</span><span class="o">=</span><span class="p">(</span><span class="n">dat</span><span class="o">$</span><span class="n">任务gps经度</span><span class="o">-</span><span class="n">median</span><span class="p">(</span><span class="n">dat</span><span class="o">$</span><span class="n">任务gps经度</span><span class="p">))</span><span class="o">*</span><span class="m">1.2</span><span class="o">+</span><span class="nf">rep</span><span class="p">(</span><span class="n">median</span><span class="p">(</span><span class="n">dat</span><span class="o">$</span><span class="n">任务gps经度</span><span class="p">),</span><span class="nf">length</span><span class="p">(</span><span class="n">dat</span><span class="p">[,</span><span class="m">1</span><span class="p">])),</span><span class="n">type</span><span class="o">=</span><span class="s2">"n"</span><span class="p">,</span><span class="n">xlab</span><span class="o">=</span><span class="s2">"经度"</span><span class="p">,</span><span class="n">ylab</span><span class="o">=</span><span class="s2">"纬度"</span><span class="p">)</span><span class="w">
+    </span><span class="n">points</span><span class="p">(</span><span class="n">dat</span><span class="p">,</span><span class="n">col</span><span class="o">=</span><span class="n">dat</span><span class="o">$</span><span class="n">任务标价</span><span class="p">)</span><span class="w">
+    </span><span class="k">for</span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">4</span><span class="p">){</span><span class="w">
+      </span><span class="n">templen</span><span class="o">=</span><span class="nf">min</span><span class="p">(</span><span class="n">minlen</span><span class="p">[</span><span class="n">j</span><span class="p">],</span><span class="n">i</span><span class="p">)</span><span class="w">
+      </span><span class="n">new_da</span><span class="o">&lt;-</span><span class="n">da</span><span class="p">[</span><span class="n">which</span><span class="p">(</span><span class="n">km</span><span class="o">$</span><span class="n">cluster</span><span class="o">==</span><span class="n">j</span><span class="p">),]</span><span class="w">
+      </span><span class="n">ds</span><span class="o">&lt;-</span><span class="n">apply</span><span class="p">(</span><span class="n">new_da</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="n">distance</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="n">km</span><span class="o">$</span><span class="n">centers</span><span class="p">[</span><span class="n">j</span><span class="p">,])</span><span class="w">
+      </span><span class="n">nda</span><span class="o">&lt;-</span><span class="n">new_da</span><span class="p">[</span><span class="n">order</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span><span class="n">decreasing</span><span class="o">=</span><span class="nb">F</span><span class="p">),]</span><span class="w">
+      </span><span class="n">colo</span><span class="o">=</span><span class="n">rgb</span><span class="p">(</span><span class="n">col</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="m">1</span><span class="p">],</span><span class="n">col</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="m">2</span><span class="p">],</span><span class="n">col</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="m">3</span><span class="p">],</span><span class="n">alpha</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.3</span><span class="p">)</span><span class="w">
+      </span><span class="k">for</span><span class="p">(</span><span class="n">k</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="n">templen</span><span class="p">,</span><span class="m">3</span><span class="p">)){</span><span class="w">
+        </span><span class="n">three_point_oval</span><span class="p">(</span><span class="n">km</span><span class="o">$</span><span class="n">centers</span><span class="p">[</span><span class="n">j</span><span class="p">,],</span><span class="n">nda</span><span class="p">[</span><span class="n">k</span><span class="p">,],</span><span class="n">as.matrix</span><span class="p">(</span><span class="n">nda</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="n">k</span><span class="p">,]),</span><span class="n">colo</span><span class="p">)</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+    </span><span class="n">ani.pause</span><span class="p">()</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">})</span><span class="w">
+</span></code></pre></div></div>
+
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/github-io/2018-04-10/R-02" class="left arrow">&#8592;</a>
+  
+  
+    <a href="/github-io/2016-10-18/very-long-title-post" class="right arrow">&#8594;</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+<div id="vcomments"> </div>
+
+<script src="/github-io/dist/gitment.browser.js"></script>
+<script>
+        new Valine({
+    el: '#vcomments' ,
+    appId: '83MesIX83EeatMBS5lpx8OQQ-gzGzoHsz',
+    appKey: '6JDfOeJJ7vDKheMHt5oB66H0',
+    notify:false, 
+    verify:false, 
+    avatar:'mp', 
+    placeholder: 'just go go' 
+});
+    </script>
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="2024-07-20 09:48:07 +0800">2024</time> . Made with HadesJun.
+      </span>
+    </footer>
+  </body>
+</html>

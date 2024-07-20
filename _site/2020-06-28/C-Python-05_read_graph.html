@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      读取Graph数据的代码 &middot; Homepage of Jiajun Li
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/github-io/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/github-io/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/github-io/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/github-io/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+  <!-- RSS -->
+  <!-- feed_meta -->
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+</head>
+
+
+  <body>
+  <nav class="nav">
+      <div class="nav-container">
+        <a href="/github-io/">
+          <h2 class="nav-title">Homepage of Jiajun Li</h2>
+        </a>
+        <ul>
+          <li><a href="/github-io/about">About</a></li>
+          <li><a href="/github-io/">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    
+        冥郡
+    
+
+    
+      <br>
+      <span>on&nbsp;</span><time datetime="2020-06-28 00:00:00 +0800">June 28, 2020</time>
+    
+  </div>
+
+  <h1 class="post-title">读取Graph数据的代码</h1>
+
+  <h2 id="背景">背景</h2>
+
+<p>记录读图的一些代码，由于图一般都会储存为稀疏矩阵的形式，否则大图根本无法储存，所以最终返回的都是稀疏矩阵，比较节约空间的是csr matrix。</p>
+
+<h2 id="csr-matrix-and-coo-matrix">CSR Matrix and COO Matrix</h2>
+
+<p>COO Matrix 比较容易理解。从图的角度出发其实就是将每条边都存下来。</p>
+
+<p>要想压缩数据，无论什么方法，其实都是在合并同类项。COO Matrix有什么好压缩的呢？单个顶点出发的边可以将它们的顶点合并，用一个数表示。最终也就得到了CSR Matrix。</p>
+
+<p>CSR Matrix可以理解为，先对顶点都预先编号为0-V，那么只需要记录一下，每个顶点有多少出边和出边的位置即可。CSR Matrix由三个数组构成：offsets、edges、values。有时候，offsets 在某些函数输入会拆分为 PointerB 和 PointE，意思也很简单，即某顶点开始时，已经记录边的数量，和此顶点结束时，会记录边的数量。至于 edges 记录的是边的终点，values 记录边的权重。对 CSR Matrix理解的程度决定了，你能对矩阵计算所沉浸的深度，利用CSR进行图的访问和计算是非常方便的，要使有机会写到 MKL 矩阵运算库的解析，会有更深的理解。</p>
+
+<h2 id="python-部分">Python 部分</h2>
+
+<h3 id="mat">Mat</h3>
+
+<p>Mat 格式的文件通常是由 Matlab 生成，读取可以使用scipy.io.loadmat，在图数据中，似乎是约定好的，变量”network”代表图的邻接矩阵，”group”代表的是图结点的分类，所以读取代码为：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 读取图的邻接矩阵
+def load_matrix(file,variable_name="network"):
+    return scipy.io.loadmat(file)[variable_name]
+# 读取图的结点的标签
+def load_label(file,variable_name="group"):
+    return scipy.io.loadmat(file)[variable_name]
+</code></pre></div></div>
+
+<p>值得注意的是，这里的标签需要根据对应的训练模型调整为合理的形式。例如多分类任务sklearn和logreg应该是有区别的。</p>
+
+<h3 id="edgelist">edgelist</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def load_adjacency_matrix(file):
+    fl=open(file,'r')
+    #这里有的-u文件会在第一行放节点个数，则需要用其他方法记录一下节点个数，比如用set
+    n=int(fl.readline().replace("\n",""))
+    row=[]
+    col=[]
+    while True:
+        data=fl.readline()
+        if not data:
+            break
+        #这里其实要视数据而定，有时候要加反边，往csr矩阵里导入的时候是不会自动加反边的，否则返回G+G^T
+        #也许整体读也不错，这里不一定要一行行读
+        data=data.replace("\n","").split(" ")
+        row.append(int(data[0]))
+        row.append(int(data[1]))
+    data=[1 for i in range(len(row))]
+    return csc_matrix((data,(row,col)),shape=(n,n))
+</code></pre></div></div>
+
+<h3 id="gcn-datasets">GCN datasets</h3>
+
+<p>GCN专用数据有三个，cora，citeseer，pubmed，因为有特征，所以跟其他单纯图数据稍微不太一样。基本都是用tkipf/gcn的读取方式</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def load(dataset_str="cora"):
+    names = ['x', 'y', 'tx', 'ty', 'allx', 'ally', 'graph']
+    objects = []
+    for i in range(len(names)):
+        with open("data/ind.{}.{}".format(dataset_str, names[i]), 'rb') as f:
+            if sys.version_info &gt; (3, 0):
+                objects.append(pkl.load(f, encoding='latin1'))
+            else:
+                objects.append(pkl.load(f))
+
+    x, y, tx, ty, allx, ally, graph = tuple(objects)
+    test_idx_reorder = parse_index_file("data/ind.{}.test.index".format(dataset_str))
+    test_idx_range = np.sort(test_idx_reorder)
+
+    if dataset_str == 'citeseer':
+        # Fix citeseer dataset (there are some isolated nodes in the graph)
+        # Find isolated nodes, add them as zero-vecs into the right position
+        test_idx_range_full = range(min(test_idx_reorder), max(test_idx_reorder)+1)
+        tx_extended = sp.lil_matrix((len(test_idx_range_full), x.shape[1]))
+        tx_extended[test_idx_range-min(test_idx_range), :] = tx
+        tx = tx_extended
+        ty_extended = np.zeros((len(test_idx_range_full), y.shape[1]))
+        ty_extended[test_idx_range-min(test_idx_range), :] = ty
+        ty = ty_extended
+
+    features = sp.vstack((allx, tx)).tolil()
+    features[test_idx_reorder, :] = features[test_idx_range, :]
+    adj = nx.adjacency_matrix(nx.from_dict_of_lists(graph))
+
+    labels = np.vstack((ally, ty))
+    labels[test_idx_reorder, :] = labels[test_idx_range, :]
+
+    idx_test = test_idx_range.tolist()
+    idx_train = range(len(y))
+    idx_val = range(len(y), len(y)+500)
+
+    train_mask = sample_mask(idx_train, labels.shape[0])
+    val_mask = sample_mask(idx_val, labels.shape[0])
+    test_mask = sample_mask(idx_test, labels.shape[0])
+
+    y_train = np.zeros(labels.shape)
+    y_val = np.zeros(labels.shape)
+    y_test = np.zeros(labels.shape)
+    y_train[train_mask, :] = labels[train_mask, :]
+    y_val[val_mask, :] = labels[val_mask, :]
+    y_test[test_mask, :] = labels[test_mask, :]
+
+    return adj, features, y_train, y_val, y_test, train_mask, val_mask, test_mask
+</code></pre></div></div>
+
+<h3 id="matlab">Matlab</h3>
+
+<p>Matlab 这里主要提一下读取.matfile, 使用可视化界面尤为简单，直接拖拉就可以，等价于以下命令：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>load(filename)
+</code></pre></div></div>
+<p>对于图数据来说，一般变量network是邻接矩阵，group是标签。</p>
+
+<h2 id="cc">C,C++</h2>
+
+<h3 id="edgelist-1">edgelist</h3>
+
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/github-io/2020-08-14/Article-02" class="left arrow">&#8592;</a>
+  
+  
+    <a href="/github-io/2020-06-16/Python-04_pre_picture" class="right arrow">&#8594;</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+<div id="vcomments"> </div>
+
+<script src="/github-io/dist/gitment.browser.js"></script>
+<script>
+        new Valine({
+    el: '#vcomments' ,
+    appId: '83MesIX83EeatMBS5lpx8OQQ-gzGzoHsz',
+    appKey: '6JDfOeJJ7vDKheMHt5oB66H0',
+    notify:false, 
+    verify:false, 
+    avatar:'mp', 
+    placeholder: 'just go go' 
+});
+    </script>
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="2024-07-20 09:48:07 +0800">2024</time> . Made with HadesJun.
+      </span>
+    </footer>
+  </body>
+</html>
